@@ -1,0 +1,19 @@
+{
+    "Metadata": {
+        "title": "힐링안과 | 프리미엄 시력교정",
+        "description": "차원이 다른 시력교정의 기준, 힐링안과."
+    },
+    "Common": {
+        "loading": "로딩 중...",
+        "error": "오류가 발생했습니다."
+    },
+    "Navigation": {
+        "about": "병원소개",
+        "vision": "시력교정술",
+        "cataract": "노안/백내장",
+        "dryeye": "건조증 클리닉",
+        "center": "안질환 센터",
+        "community": "커뮤니티",
+        "insight": "인사이트"
+    }
+}
