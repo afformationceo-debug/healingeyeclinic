@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -21,10 +21,11 @@ const navItems = [
 
 export default function Navbar() {
     const t = useTranslations('Navigation');
+    const locale = useLocale();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    // Pathname used only for active state if needed, but not for locale
     const pathname = usePathname();
-    const currentLocale = pathname.split("/")[1];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -46,7 +47,7 @@ export default function Navbar() {
             >
                 <div className="container mx-auto px-6 flex items-center justify-between">
                     {/* Logo */}
-                    <Link href={`/${currentLocale}`} className="relative z-50">
+                    <Link href={`/${locale}`} className="relative z-50">
                         <span className="font-serif text-2xl font-bold tracking-tight text-white">
                             Healing Eye<span className="text-primary">.</span>
                         </span>
@@ -57,7 +58,7 @@ export default function Navbar() {
                         {navItems.map((item) => (
                             <Link
                                 key={item.key}
-                                href={`/${currentLocale}${item.href}`}
+                                href={`/${locale}${item.href}`}
                                 className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
                             >
                                 {t(item.key)}
@@ -97,7 +98,7 @@ export default function Navbar() {
                             {navItems.map((item) => (
                                 <Link
                                     key={item.key}
-                                    href={`/${currentLocale}${item.href}`}
+                                    href={`/${locale}${item.href}`}
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="text-2xl font-serif font-medium text-foreground hover:text-primary"
                                 >

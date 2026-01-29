@@ -14,10 +14,18 @@ export default function LanguageSwitcher() {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleSwitch = (newLocale: string) => {
-        // Construct new path: /en/about -> /ko/about
-        // We assume pathname starts with /[locale]
         const segments = pathname.split("/");
-        segments[1] = newLocale;
+        // segments[0] is always empty for absolute paths
+        // Check if the first segment is a known locale
+        const isLocalePresent = locales.includes(segments[1] as any);
+
+        if (isLocalePresent) {
+            segments[1] = newLocale;
+        } else {
+            // Locale missing (default locale), insert new locale
+            segments.splice(1, 0, newLocale);
+        }
+
         const newPath = segments.join("/");
         router.push(newPath);
         setIsOpen(false);
