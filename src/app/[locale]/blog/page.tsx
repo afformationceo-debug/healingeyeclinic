@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getPosts } from '@/lib/blog';
 import { useTranslations } from 'next-intl';
 
-export default async function BlogPage({ params }: { params: { locale: string } }) {
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const posts = getPosts(locale);
     // const t = useTranslations('Blog');
