@@ -11,30 +11,48 @@ import VisionProcess from "@/components/vision/VisionProcess";
 const procedures = [
     {
         id: "01",
-        title: "스마일 라식 (SMILE PRO)",
-        subtitle: "3세대 레이저 시력교정의 정점",
-        desc: "각막 절개 최소화(2mm)로 통증 없이, 수술 다음 날 바로 일상 복귀가 가능합니다. 독일 ZEISS 비쥬맥스 장비의 초정밀 레이저 기술을 경험하세요.",
-        features: ["2mm 최소 절개", "무통증/무출혈", "다음날 일상복귀", "안구건조증 최소화"],
+        title: "뉴스마일 라식 (News Mile)",
+        subtitle: "5세대 시력교정의 완성",
+        desc: "스마일 라식의 장점을 넘어섰습니다. 700Hz 초고속 레이저로 기존보다 3배 더 빠른 수술 속도와 마이크로 단위의 정교함을 자랑합니다. 각막 손상을 최소화하여 다음 날 바로 일상으로 복귀하세요.",
+        features: ["700Hz 초고속 레이저", "로우 에너지 조사", "안구건조증 최소화", "빛 번짐 획기적 감소"],
         color: "from-blue-600 to-indigo-900",
-        bgUser: "https://images.pexels.com/photos/50692/pexels-photo-50692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        bgUser: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Futuristic eye scan
     },
     {
         id: "02",
-        title: "커스텀 라섹 (Custom LASEK)",
-        subtitle: "초고도근시/난시를 위한 안전한 선택",
-        desc: "각막 두께가 얇거나 충격에 민감한 분들을 위해, 각막 상피를 정교하게 제거하고 강화하는 2-Step 안전 프로토콜을 적용합니다.",
-        features: ["각막 보존 극대화", "외부 충격에 강함", "안구건조 최소화", "초고도근시 교정"],
-        color: "from-purple-600 to-fuchsia-900",
-        bgUser: "https://images.pexels.com/photos/8090137/pexels-photo-8090137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        title: "프리미엄 라식 (Premium LASIK)",
+        subtitle: "하루 만에 되찾는 선명함",
+        desc: "바쁜 현대인을 위한 원데이 솔루션. 20mm 최소 절개와 강화된 각막 보존 기술로 수술 당일 목표 시력의 90%를 회복합니다. 통증 없이 가장 빠르게 광명을 찾으세요.",
+        features: ["원데이 시력 회복", "통증 제로", "최소 절개", "야간 시력 향상"],
+        color: "from-cyan-600 to-blue-900",
+        bgUser: "https://images.pexels.com/photos/5752263/pexels-photo-5752263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Clear vision, woman with glasses looking
     },
     {
         id: "03",
-        title: "ICL 렌즈삽입술 (EVO+)",
-        subtitle: "각막을 깎지 않는 프리미엄 교정",
-        desc: "레이저 교정이 불가능한 초고도근시 환자분들을 위한 최적의 솔루션. 생체 친화적 재료인 Collamer 렌즈로 선명한 시력을 되찾으세요.",
-        features: ["각막 비절삭", "UHD 고해상도", "반영구적 수명", "자외선 차단"],
+        title: "프리미엄 라섹 (Premium LASEK)",
+        subtitle: "가장 보수적이고 안전한 선택",
+        desc: "각막 두께가 얇거나 충격에 민감한 특수 직업군(군인, 소방관, 운동선수)을 위해. 상피 세포를 정교하게 다듬어 외부 충격에 가장 강한 눈을 만듭니다.",
+        features: ["초고도근시 가능", "외부 충격 최강", "각막 절약형", "안구건조 케어"],
+        color: "from-purple-600 to-fuchsia-900",
+        bgUser: "https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Scientific/Medical precision
+    },
+    {
+        id: "04",
+        title: "ICL 렌즈삽입술 (EVO+ ICL)",
+        subtitle: "각막 그대로, 시력만 업그레이드",
+        desc: "레이저 교정이 불가능한 초고도근시 환자분들을 위한 최적의 솔루션. 생체 친화적 재료인 Collamer 렌즈로 시력을 디자인하며, 언제든 원상 복구가 가능합니다.",
+        features: ["각막 비절삭", "초고도근시/난시 해결", "자외선 차단", "반영구적 유지"],
         color: "from-amber-600 to-orange-900",
-        bgUser: "https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        bgUser: "https://images.pexels.com/photos/5621937/pexels-photo-5621937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Lens concept
+    },
+    {
+        id: "05",
+        title: "라식·라섹 재수술 (Re-Surgery)",
+        subtitle: "마지막 기회, 완벽한 복원",
+        desc: "과거 수술의 부작용(빛 번짐, 시력 저하)으로 고통받는 분들을 위한 고난도 클리닉. 대학병원 교수 출신 의료진의 경험과 노하우로 당신의 마지막 수술을 집도합니다.",
+        features: ["대학병원급 정밀 분석", "부작용 케어", "잔여 각막 보존", "1:1 전담 책임제"],
+        color: "from-red-900 to-rose-950",
+        bgUser: "https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Detailed eye exam, serious tone
     }
 ];
 
