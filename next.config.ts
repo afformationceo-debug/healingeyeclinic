@@ -7,6 +7,8 @@ const withNextIntl = createNextIntlPlugin(
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  // Disable Turbopack due to HMR version bug, use webpack instead
+  turbopack: false,
   images: {
     remotePatterns: [
       {

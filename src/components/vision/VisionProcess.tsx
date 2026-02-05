@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Clock, Shield, Eye, CheckCircle2 } from "lucide-react";
+import { Clock, Shield, Eye, CheckCircle2, ScanEye } from "lucide-react";
 
 export default function VisionProcess() {
     const containerRef = useRef(null);
@@ -15,14 +15,14 @@ export default function VisionProcess() {
             <div className="container mx-auto px-6 relative z-10">
 
                 <div className="mb-24 text-center">
-                    <span className="text-primary font-bold tracking-[0.2em] uppercase block mb-4">Recovery System</span>
+                    <span className="text-primary font-bold tracking-[0.2em] uppercase block mb-4">One-Day System</span>
                     <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-                        수술 후 <span className="text-primary">24시간</span>,<br />
+                        당일 <span className="text-primary">검사 & 수술</span>,<br />
                         당신의 일상은 멈추지 않습니다.
                     </h2>
                     <p className="text-neutral-400 text-lg">
-                        힐링안과의 스마일라식은 각막 손상을 최소화하여<br />
-                        수술 다음 날부터 세안, 샤워, 가벼운 운동이 가능합니다.
+                        힐링안과의 뉴스마일 라식은 각막 손상을 최소화하여<br />
+                        오전 검사 후 오후 수술, 다음 날부터 세안·샤워·가벼운 운동이 가능합니다.
                     </p>
                 </div>
 
@@ -33,8 +33,9 @@ export default function VisionProcess() {
 
                     <div className="space-y-24">
                         {[
-                            { time: "AM 10:00", title: "수술 당일", desc: "수술 시간 10분, 회복실 1시간 휴식 후 즉시 귀가", icon: <Clock /> },
-                            { time: "PM 02:00", title: "귀가 후 휴식", desc: "마취가 풀려도 이물감이 거의 없으며 편안한 휴식 가능", icon: <Eye /> },
+                            { time: "AM 10:00", title: "정밀 검사", desc: "60여가지 정밀 검사 및 상담, 수술 적합도 확인", icon: <ScanEye /> },
+                            { time: "PM 02:00", title: "수술 진행", desc: "수술 시간 10분, 각막 최소 절개로 통증 거의 없음", icon: <Clock /> },
+                            { time: "PM 03:00", title: "귀가 후 휴식", desc: "회복실 1시간 휴식 후 즉시 귀가, 마취 후에도 이물감 거의 없음", icon: <Eye /> },
                             { time: "Next Day", title: "수술 다음 날", desc: "목표 시력 90% 회복, 세안 및 기초 화장, 출근 가능", icon: <CheckCircle2 /> },
                             { time: "1 Week", title: "일주일 후", desc: "가벼운 운동 및 거의 모든 일상생활 가능 (음주/흡연 제외)", icon: <Shield /> }
                         ].map((step, i) => (

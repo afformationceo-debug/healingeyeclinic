@@ -2,8 +2,15 @@
 
 import { motion } from "framer-motion";
 import { Award, ShieldCheck, HeartHandshake } from "lucide-react";
+import { useLocale } from "next-intl";
+import Link from "next/link";
 
 export default function WhyHealingEye() {
+    const locale = useLocale();
+    const reviewUrl = locale === 'ko'
+        ? 'https://map.naver.com/p/entry/place/1217790716?placePath=/review'
+        : 'https://maps.app.goo.gl/jny3xdknHpJ2ggnW6';
+
     return (
         <section className="py-32 bg-white text-black">
             <div className="container mx-auto px-6">
@@ -16,12 +23,49 @@ export default function WhyHealingEye() {
                         </h2>
                     </div>
                     <div className="flex gap-4 mt-8 md:mt-0">
-                        <div className="px-6 py-3 rounded-full border border-neutral-200">
-                            <span className="font-bold">4.9/5.0</span> <span className="text-neutral-500 text-sm">Patient Review</span>
-                        </div>
-                        <div className="px-6 py-3 rounded-full border border-neutral-200">
-                            <span className="font-bold">50,000+</span> <span className="text-neutral-500 text-sm">Successful Cases</span>
-                        </div>
+                        <motion.a
+                            href={reviewUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-6 py-3 rounded-full border border-neutral-200 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-all duration-300 cursor-pointer"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            animate={{
+                                boxShadow: [
+                                    "0 0 0 0 rgba(212, 175, 55, 0)",
+                                    "0 0 0 8px rgba(212, 175, 55, 0.1)",
+                                    "0 0 0 0 rgba(212, 175, 55, 0)"
+                                ]
+                            }}
+                            transition={{
+                                duration: 2,
+                                repeat: Infinity,
+                                repeatDelay: 1
+                            }}
+                        >
+                            <span className="font-bold">4.9/5.0</span> <span className="text-sm opacity-70">Patient Review</span>
+                        </motion.a>
+                        <Link href={`/${locale}/community`} passHref legacyBehavior>
+                            <motion.a
+                                className="px-6 py-3 rounded-full border border-neutral-200 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-all duration-300 cursor-pointer"
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                animate={{
+                                    boxShadow: [
+                                        "0 0 0 0 rgba(212, 175, 55, 0)",
+                                        "0 0 0 8px rgba(212, 175, 55, 0.1)",
+                                        "0 0 0 0 rgba(212, 175, 55, 0)"
+                                    ]
+                                }}
+                                transition={{
+                                    duration: 2,
+                                    repeat: Infinity,
+                                    repeatDelay: 1
+                                }}
+                            >
+                                <span className="font-bold">50,000+</span> <span className="text-sm opacity-70">Successful Cases</span>
+                            </motion.a>
+                        </Link>
                     </div>
                 </div>
 
@@ -30,19 +74,19 @@ export default function WhyHealingEye() {
                         {
                             title: "University Faculty",
                             sub: "대학병원 교수 출신 의료진",
-                            desc: "풍부한 임상 경험과 노하우를 갖춘 의료진이 상담부터 수술, 사후관리까지 1:1 전담합니다.",
+                            desc: <>풍부한 임상 경험과 노하우를 갖춘 의료진이<br />상담부터 수술, 사후관리까지 1:1 전담합니다.</>,
                             icon: <Award size={40} className="text-primary" />
                         },
                         {
                             title: "High-End Equipment",
                             sub: "대학병원급 최첨단 장비",
-                            desc: "ZEISS VisuMax, SCHWIND Amaris Red 등 세계적으로 검증된 최신 장비만을 사용하여 오차를 줄입니다.",
+                            desc: <>Zimer Z8, ZEISS SUITE 등 최신 장비와<br />독일 라라렌즈 최초 사용, 4중초점 판옵틱스 사용량 전국 1위로<br />백내장 전문성을 입증합니다.</>,
                             icon: <ShieldCheck size={40} className="text-primary" />
                         },
                         {
                             title: "Lifetime Guarantee",
                             sub: "평생 시력 보증 시스템",
-                            desc: "수술 후 시력이 다시 저하되더라도 끝까지 책임지는 평생 보증 제도로 안심할 수 있습니다.",
+                            desc: <>앞으로의 40년, 제2의 인생을 책임지는<br />평생 보증 제도로 당신의 시력을 평생 보장합니다.</>,
                             icon: <HeartHandshake size={40} className="text-primary" />
                         }
                     ].map((item, i) => (

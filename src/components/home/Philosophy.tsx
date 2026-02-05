@@ -10,7 +10,7 @@ export default function Philosophy() {
         offset: ["start end", "end start"],
     });
 
-    const x = useTransform(scrollYProgress, [0.1, 0.9], ["100%", "-100%"]);
+    const x = useTransform(scrollYProgress, [0.1, 0.9], ["20%", "-120%"]);
     const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
     return (
@@ -25,8 +25,8 @@ export default function Philosophy() {
                     className="text-center mb-24"
                 >
                     <span className="text-primary text-sm tracking-[0.3em] uppercase block mb-4">우리의 철학</span>
-                    <h2 className="text-3xl md:text-5xl font-serif text-white font-light leading-relaxed">
-                        "눈을 치료하는 것을 넘어 <br /> <span className="text-primary font-normal">당신의 삶을 치유합니다.</span>"
+                    <h2 className="text-4xl md:text-6xl font-serif text-white font-bold leading-relaxed">
+                        "눈을 치료하는 것을 넘어 <br /> <span className="text-primary">당신의 삶을 치유합니다.</span>"
                     </h2>
                     <p className="text-neutral-400 mt-6 max-w-2xl mx-auto leading-loose">
                         단순히 시력을 교정하는 것이 아닙니다.<br />
@@ -43,14 +43,26 @@ export default function Philosophy() {
                         <span className="text-6xl md:text-8xl font-black text-white/5 tracking-tighter">PREMIUM CARE</span>
                         <span className="text-6xl md:text-8xl font-serif text-primary/20 tracking-tighter italic">MASTERPIECE</span>
                         <span className="text-6xl md:text-8xl font-black text-white/5 tracking-tighter">BEYOND VISION</span>
+                        <span className="text-6xl md:text-8xl font-serif text-primary/20 tracking-tighter italic">HEALING LIFE</span>
+                        <span className="text-6xl md:text-8xl font-black text-white/5 tracking-tighter">PREMIUM CARE</span>
+                        <span className="text-6xl md:text-8xl font-serif text-primary/20 tracking-tighter italic">MASTERPIECE</span>
                     </motion.div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-24 text-center md:text-left">
                     {[
-                        { title: "초정밀 (Precision)", desc: "2mm 최소 절개, 0.01D 오차 없는 완벽함으로 가장 안전한 시력을 선물합니다." },
-                        { title: "안전 (Safety)", desc: "대학병원 교수 출신 의료진의 3중 더블체크 시스템으로 부작용 0%에 도전합니다." },
-                        { title: "공감 (Empathy)", desc: "수술실의 차가운 공기가 아닌, 따뜻한 힐링의 공간에서 당신을 맞이합니다." }
+                        {
+                            title: "초정밀 (Precision)",
+                            desc: <>수술 오차 0%에 도전하는 초정밀 시스템으로<br />당신의 눈에 완벽한 시력을 새겨냅니다.</>
+                        },
+                        {
+                            title: "안전 (Safety)",
+                            desc: <>대학병원 교수 출신 의료진과 대학병원급 최신 장비가 함께하기에<br />안심하고 맡기실 수 있습니다.</>
+                        },
+                        {
+                            title: "공감 (Empathy)",
+                            desc: <>수만 건의 케이스로 완성된 수술 실력과<br />따뜻한 힐링 공간에서 당신의 눈을 진심으로 공감합니다.</>
+                        }
                     ].map((item, i) => (
                         <motion.div
                             key={i}
@@ -60,10 +72,10 @@ export default function Philosophy() {
                             viewport={{ once: true }}
                             className="group"
                         >
-                            <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-black transition-colors duration-500">
+                            <div className="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center mb-6 text-primary text-2xl font-bold group-hover:bg-primary group-hover:text-black transition-colors duration-500">
                                 {i + 1}
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-4">{item.title}</h3>
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">{item.title}</h3>
                             <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
                         </motion.div>
                     ))}

@@ -31,7 +31,7 @@ export default function Services() {
 
                 {/* 1. Vision Correction (Large) */}
                 <Link href="/vision" className="col-span-1 md:col-span-2 md:row-span-2 group relative rounded-[2.5rem] overflow-hidden bg-neutral-900 border border-white/10 hover:border-primary/50 transition-all duration-500">
-                    <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/5996684/pexels-photo-5996684.jpeg')] bg-cover bg-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" />
+                    <div className="absolute inset-0 bg-[url('/images/vision-correction-bg.jpg')] bg-cover bg-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
 
                     <div className="absolute bottom-0 left-0 p-10 md:p-14 w-full">
@@ -59,12 +59,12 @@ export default function Services() {
                         <Sun size={64} />
                     </div>
                     <div className="absolute bottom-0 left-0 p-10">
-                        <h3 className="text-3xl font-bold mb-2">Presbyopia & <br /> Cataract</h3>
-                        <p className="text-neutral-500 text-sm font-medium uppercase tracking-wider">Premium Lens Implant</p>
+                        <h3 className="text-3xl md:text-4xl font-bold mb-2">Presbyopia & <br /> Cataract</h3>
+                        <p className="text-neutral-500 text-base md:text-lg font-bold tracking-wide">노안/백내장센터 +</p>
                     </div>
                     {/* Reveal Text */}
                     <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-sm">
-                        <span className="text-black font-bold text-lg">노안/백내장 센터 +</span>
+                        <span className="text-black font-bold text-xl">노안/백내장센터 +</span>
                     </div>
                 </Link>
 
@@ -76,8 +76,9 @@ export default function Services() {
                             <span className="bg-white/10 px-3 py-1 rounded-full text-xs text-white">University Hospital Level</span>
                         </div>
                         <div>
-                            <h3 className="text-3xl font-bold text-white mb-2">Eye Disease <br /> Center</h3>
-                            <p className="text-neutral-500">Dry Eye, Glaucoma, Retina</p>
+                            <h3 className="text-3xl md:text-4xl font-bold text-white mb-3">Eye Disease <br /> Center</h3>
+                            <p className="text-neutral-300 text-base md:text-lg font-bold mb-2">안질환센터</p>
+                            <p className="text-neutral-400 text-sm md:text-base font-medium">안구건조증, 녹내장, 망막질환</p>
                         </div>
                     </div>
                 </Link>

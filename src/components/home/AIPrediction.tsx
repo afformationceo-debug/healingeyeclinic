@@ -21,30 +21,196 @@ export default function AIPrediction() {
                     <div className="flex flex-col md:flex-row items-center gap-16">
 
                         {/* Visual Area */}
-                        <div className="w-full md:w-1/2 relative">
+                        <div className="w-full md:w-[45%] relative max-w-lg">
                             <motion.div
                                 className="aspect-square bg-black rounded-3xl border border-white/10 overflow-hidden relative flex items-center justify-center cursor-pointer group"
                                 whileHover={{ scale: 1.02 }}
                                 onClick={() => setIsModalOpen(true)}
                             >
+                                {/* Holographic Background - Eye Grid */}
+                                <div className="absolute inset-0 opacity-25">
+                                    {/* Concentric Circles with Segments */}
+                                    {[...Array(8)].map((_, i) => (
+                                        <motion.div
+                                            key={`circle-${i}`}
+                                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border border-primary/40"
+                                            style={{
+                                                width: `${(i + 1) * 12}%`,
+                                                height: `${(i + 1) * 12}%`,
+                                                borderStyle: i % 2 === 0 ? 'solid' : 'dashed',
+                                                background: i === 2 || i === 4 || i === 6 ? `conic-gradient(
+                                                    from ${i * 45}deg,
+                                                    transparent 0deg,
+                                                    rgba(212, 175, 55, 0.15) 20deg,
+                                                    transparent 40deg,
+                                                    rgba(212, 175, 55, 0.15) 60deg,
+                                                    transparent 80deg,
+                                                    rgba(212, 175, 55, 0.15) 100deg,
+                                                    transparent 120deg,
+                                                    rgba(212, 175, 55, 0.15) 140deg,
+                                                    transparent 160deg,
+                                                    rgba(212, 175, 55, 0.15) 180deg,
+                                                    transparent 200deg,
+                                                    rgba(212, 175, 55, 0.15) 220deg,
+                                                    transparent 240deg,
+                                                    rgba(212, 175, 55, 0.15) 260deg,
+                                                    transparent 280deg,
+                                                    rgba(212, 175, 55, 0.15) 300deg,
+                                                    transparent 320deg,
+                                                    rgba(212, 175, 55, 0.15) 340deg,
+                                                    transparent 360deg
+                                                )` : 'none',
+                                            }}
+                                            animate={{
+                                                opacity: [0.3, 0.7, 0.3],
+                                                scale: [1, 1.03, 1],
+                                            }}
+                                            transition={{
+                                                duration: 3,
+                                                delay: i * 0.15,
+                                                repeat: Infinity,
+                                                ease: "easeInOut"
+                                            }}
+                                        />
+                                    ))}
+
+                                    {/* Degree Markers - 360 degree ticks */}
+                                    <div className="absolute inset-0">
+                                        {[...Array(72)].map((_, i) => {
+                                            const angle = (i * 5);
+                                            const isMajor = i % 6 === 0;
+                                            const isMedium = i % 3 === 0;
+                                            return (
+                                                <div
+                                                    key={`tick-${i}`}
+                                                    className="absolute top-1/2 left-1/2 origin-left"
+                                                    style={{
+                                                        width: isMajor ? '15%' : isMedium ? '10%' : '6%',
+                                                        height: isMajor ? '2px' : '1px',
+                                                        background: `linear-gradient(to right, rgba(212, 175, 55, ${isMajor ? 0.6 : isMedium ? 0.3 : 0.15}), transparent)`,
+                                                        transform: `rotate(${angle}deg)`,
+                                                    }}
+                                                />
+                                            );
+                                        })}
+                                        {/* Degree Numbers */}
+                                        {[0, 90, 180, 270].map((deg) => (
+                                            <div
+                                                key={`deg-${deg}`}
+                                                className="absolute text-primary/40 text-xs font-mono"
+                                                style={{
+                                                    top: deg === 0 ? '8%' : deg === 180 ? '88%' : '48%',
+                                                    left: deg === 90 ? '88%' : deg === 270 ? '8%' : '48%',
+                                                    transform: 'translate(-50%, -50%)',
+                                                }}
+                                            >
+                                                {deg}°
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    {/* Crosshair Lines */}
+                                    <div className="absolute inset-0">
+                                        <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+                                        <div className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
+                                        {/* Diagonal lines */}
+                                        <div className="absolute top-1/2 left-1/2 w-full h-px origin-left rotate-45 bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+                                        <div className="absolute top-1/2 left-1/2 w-full h-px origin-left -rotate-45 bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+                                    </div>
+
+                                    {/* Corner Brackets */}
+                                    <div className="absolute inset-0">
+                                        {/* Top-left */}
+                                        <div className="absolute top-[15%] left-[15%] w-12 h-12 border-l-2 border-t-2 border-primary/30" />
+                                        {/* Top-right */}
+                                        <div className="absolute top-[15%] right-[15%] w-12 h-12 border-r-2 border-t-2 border-primary/30" />
+                                        {/* Bottom-left */}
+                                        <div className="absolute bottom-[15%] left-[15%] w-12 h-12 border-l-2 border-b-2 border-primary/30" />
+                                        {/* Bottom-right */}
+                                        <div className="absolute bottom-[15%] right-[15%] w-12 h-12 border-r-2 border-b-2 border-primary/30" />
+                                    </div>
+
+                                    {/* Data Points */}
+                                    {[
+                                        { top: '20%', left: '25%', label: 'A1' },
+                                        { top: '30%', right: '22%', label: 'B2' },
+                                        { bottom: '28%', left: '24%', label: 'C3' },
+                                        { bottom: '22%', right: '28%', label: 'D4' },
+                                        { top: '45%', left: '15%', label: 'E5' },
+                                        { top: '45%', right: '15%', label: 'F6' },
+                                    ].map((pos, i) => (
+                                        <motion.div
+                                            key={`point-${i}`}
+                                            className="absolute"
+                                            style={{ top: pos.top, left: pos.left, right: pos.right, bottom: pos.bottom }}
+                                            animate={{
+                                                scale: [1, 1.2, 1],
+                                                opacity: [0.5, 1, 0.5],
+                                            }}
+                                            transition={{
+                                                duration: 2,
+                                                delay: i * 0.2,
+                                                repeat: Infinity,
+                                                ease: "easeInOut"
+                                            }}
+                                        >
+                                            <div className="w-2 h-2 rounded-full bg-primary/60" />
+                                            <div className="absolute top-3 left-3 text-[8px] text-primary/50 font-mono whitespace-nowrap">
+                                                {pos.label}
+                                            </div>
+                                        </motion.div>
+                                    ))}
+
+                                    {/* Rotating Radar Scan */}
+                                    <motion.div
+                                        className="absolute top-1/2 left-1/2 w-full h-px origin-left"
+                                        style={{
+                                            background: 'linear-gradient(to right, rgba(212, 175, 55, 0.6), transparent)',
+                                        }}
+                                        animate={{
+                                            rotate: [0, 360],
+                                        }}
+                                        transition={{
+                                            duration: 6,
+                                            repeat: Infinity,
+                                            ease: "linear"
+                                        }}
+                                    />
+
+                                    {/* Hexagonal Grid Pattern */}
+                                    <div
+                                        className="absolute inset-0"
+                                        style={{
+                                            backgroundImage: `
+                                                linear-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px),
+                                                linear-gradient(90deg, rgba(212, 175, 55, 0.08) 1px, transparent 1px)
+                                            `,
+                                            backgroundSize: '25px 25px',
+                                            maskImage: 'radial-gradient(circle at center, black 35%, transparent 65%)',
+                                        }}
+                                    />
+                                </div>
+
                                 {/* Scanning Animation */}
                                 <motion.div
-                                    className="absolute top-0 left-0 w-full h-1 bg-primary blur-md"
+                                    className="absolute top-0 left-0 w-full h-2 bg-primary blur-lg shadow-[0_0_20px_rgba(212,175,55,0.8)]"
                                     animate={{ top: ["0%", "100%", "0%"] }}
                                     transition={{ duration: 4, ease: "linear", repeat: Infinity }}
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent opacity-50" />
 
-                                <div className="text-center relative z-10">
-                                    <Scan size={80} className="text-primary mx-auto mb-6 opacity-80 group-hover:scale-110 transition-transform" />
-                                    <h3 className="text-2xl font-mono text-white mb-2">AI EYE SCANNING</h3>
-                                    <p className="text-primary/60 text-sm tracking-widest uppercase">Click to Start Analysis</p>
+                                <div className="absolute inset-0 flex items-center justify-center z-10">
+                                    <div className="text-center">
+                                        <Scan size={120} className="text-primary mx-auto mb-8 opacity-90 group-hover:scale-110 transition-transform duration-500" />
+                                        <h3 className="text-4xl font-mono font-bold text-white mb-4 tracking-wider">AI EYE SCANNING</h3>
+                                        <p className="text-primary/80 text-base tracking-widest uppercase font-semibold">Click to Start Analysis</p>
+                                    </div>
                                 </div>
                             </motion.div>
                         </div>
 
                         {/* Content Area */}
-                        <div className="w-full md:w-1/2">
+                        <div className="w-full md:w-[55%]">
                             <div className="flex items-center gap-4 mb-6">
                                 <BrainCircuit className="text-primary" size={32} />
                                 <span className="text-primary font-bold tracking-widest uppercase">Healing AI Solutions</span>

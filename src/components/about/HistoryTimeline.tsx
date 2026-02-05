@@ -4,19 +4,19 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const historyData = [
-    { year: "2018", title: "힐링안과 개원", desc: "강남 차원이 다른 시력교정 센터 오픈" },
-    { year: "2019", title: "ISO 9001 인증", desc: "국제 표준 품질경영시스템 획득" },
-    { year: "2020", title: "스마일라식 센터 확장", desc: "ZEISS VisuMax 최신 장비 도입" },
-    { year: "2021", title: "노안/백내장 수술 1만례", desc: "단일 의사 기준 최단 기간 달성" },
-    { year: "2022", title: "대한민국 메디컬 대상", desc: "안과 부문 2년 연속 대상 수상" },
-    { year: "2023", title: "스마일 프로 도입", desc: "국내 최초 스마일 프로 공식 인증 안과" },
-    { year: "2024", title: "비전 케어 랩 설립", desc: "AI 기반 정밀 검사 시스템 구축" }
+    { year: "2018", title: "힐링안과 개원", desc: "역삼동 808타워 프리미엄 시력교정 센터 오픈" },
+    { year: "2019", title: "대학병원급 장비 도입", desc: "최신 시력교정 장비 및 정밀 검사 시스템 구축" },
+    { year: "2020", title: "스마일라식 전문센터", desc: "최소 절개 스마일라식 본격 시작" },
+    { year: "2021", title: "노안/백내장 센터 확대", desc: "프리미엄 다초점 인공수정체 전문 진료 시작" },
+    { year: "2022", title: "최소절개술 클리어라식", desc: "차별화된 진료 시스템으로 클리어라식 도입" },
+    { year: "2023", title: "누적 수술 50,000안 달성", desc: "환자 만족도 4.9/5.0 달성, 지역 대표 안과로 성장" },
+    { year: "2024", title: "AI 정밀 검사 시스템", desc: "최첨단 AI 기반 맞춤형 시력교정 시스템 구축" }
 ];
 
 export default function HistoryTimeline() {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: targetRef });
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-60%"]);
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
 
     return (
         <section ref={targetRef} className="h-[300vh] bg-black relative">

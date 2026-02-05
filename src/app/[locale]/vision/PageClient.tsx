@@ -11,10 +11,10 @@ import VisionProcess from "@/components/vision/VisionProcess";
 const procedures = [
     {
         id: "01",
-        title: "뉴스마일 라식 (News Mile)",
-        subtitle: "5세대 시력교정의 완성",
-        desc: "스마일 라식의 장점을 넘어섰습니다. 700Hz 초고속 레이저로 기존보다 3배 더 빠른 수술 속도와 마이크로 단위의 정교함을 자랑합니다. 각막 손상을 최소화하여 다음 날 바로 일상으로 복귀하세요.",
-        features: ["700Hz 초고속 레이저", "로우 에너지 조사", "안구건조증 최소화", "빛 번짐 획기적 감소"],
+        title: "뉴스마일 라식 (New SMILE)",
+        subtitle: "4세대 시력교정의 완성",
+        desc: "ZIEMER Z8 펨토세컨드 레이저로 구현하는 최소절개 렌티큘 제거 방식. 각막 표면을 투과하여 각막 실질에만 레이저를 조사하며, 시야 중심축과 회전축의 정확한 계측으로 정밀한 난시 교정이 가능합니다.",
+        features: ["최소절개 방식", "각막 실질 조사", "정밀 난시 교정", "빠른 회복"],
         color: "from-blue-600 to-indigo-900",
         bgUser: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Futuristic eye scan
     },
@@ -104,25 +104,56 @@ export default function VisionPageClient() {
 
             {/* Hero */}
             <section className="h-[80vh] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.15),transparent_70%)]" />
+                {/* Technical Background */}
+                <div className="absolute inset-0">
+                    {/* Grid Pattern */}
+                    <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px]" />
+
+                    {/* Radial Gradient */}
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(218,165,32,0.15),transparent_70%)]" />
+
+                    {/* Laser Lines */}
+                    <motion.div
+                        className="absolute inset-0"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: [0.1, 0.3, 0.1] }}
+                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                    >
+                        <div className="absolute top-1/4 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+                        <div className="absolute top-3/4 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+                        <div className="absolute top-0 bottom-0 left-1/4 w-[1px] bg-gradient-to-b from-transparent via-primary/30 to-transparent" />
+                        <div className="absolute top-0 bottom-0 right-1/4 w-[1px] bg-gradient-to-b from-transparent via-primary/30 to-transparent" />
+                    </motion.div>
+
+                    {/* Corner Accents */}
+                    <div className="absolute top-10 left-10 w-20 h-20 border-t-2 border-l-2 border-primary/20" />
+                    <div className="absolute top-10 right-10 w-20 h-20 border-t-2 border-r-2 border-primary/20" />
+                    <div className="absolute bottom-10 left-10 w-20 h-20 border-b-2 border-l-2 border-primary/20" />
+                    <div className="absolute bottom-10 right-10 w-20 h-20 border-b-2 border-r-2 border-primary/20" />
+                </div>
+
                 <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1.2 }}
                     className="text-center relative z-10 px-4"
                 >
-                    <div className="flex items-center justify-center gap-2 mb-6 text-blue-400 border border-blue-400/30 rounded-full px-4 py-1 w-fit mx-auto bg-blue-400/5 backdrop-blur-md">
+                    <div className="flex items-center justify-center gap-2 mb-6 text-primary border border-primary/30 rounded-full px-4 py-1 w-fit mx-auto bg-primary/5 backdrop-blur-md">
                         <Zap size={14} fill="currentColor" />
-                        <span className="text-xs font-bold tracking-[0.2em] uppercase">Premium Vision Correction</span>
+                        <span className="text-xs font-bold tracking-[0.2em] uppercase">2026년 최소절개술 뉴스마일 라식</span>
                     </div>
 
                     <h1 className="text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
-                        BEYOND <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">YOUR LIMITS</span>
+                        NEW SMILE <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-400">LASIK</span>
                     </h1>
-                    <p className="text-neutral-400 max-w-xl mx-auto text-lg md:text-xl font-light leading-relaxed">
-                        세계적인 광학 기업 ZEISS의 최첨단 장비와 <br />
-                        대학병원 교수 출신 의료진의 완벽한 협연.
+                    <p className="text-neutral-400 max-w-3xl mx-auto text-lg md:text-xl font-light leading-relaxed mb-6">
+                        ZIEMER Z8 펨토세컨드 레이저로 구현하는 4세대 시력교정술<br />
+                        각막 표면을 투과하여 각막 실질에만 레이저를 조사하는 최소절개 렌티큘 제거 방식
+                    </p>
+                    <p className="text-neutral-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+                        시야 중심축과 회전축의 정확한 계측 및 절삭으로 정밀한 난시 교정이 가능한<br />
+                        대학병원 교수 출신 의료진의 차세대 시력교정 시스템
                     </p>
                 </motion.div>
 
@@ -134,9 +165,9 @@ export default function VisionPageClient() {
                         transition={{ duration: 20, ease: "linear", repeat: Infinity }}
                     >
                         {[
-                            "ZEISS VisuMax 800", "SCHWIND AMARIS RED", "Femtosecond Laser",
-                            "FDA Approved", "Smart Pulse Technology", "Real-time Eye Tracking",
-                            "ZEISS VisuMax 800", "SCHWIND AMARIS RED", "Femtosecond Laser"
+                            "ZIEMER FEMTO Z8", "4th Generation", "Minimal Incision",
+                            "Lenticule Extraction", "Precise Astigmatism Correction", "Real-time Eye Tracking",
+                            "ZIEMER FEMTO Z8", "4th Generation", "Minimal Incision"
                         ].map((tech, i) => (
                             <span key={i}>{tech}</span>
                         ))}
@@ -146,18 +177,28 @@ export default function VisionPageClient() {
 
             {/* Deep Process Section (New Rich Content) */}
             <section className="py-20 container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-20">
                     {[
-                        { title: "정밀 검사", desc: "60단계 안구 정밀 측정", icon: <ScanEye /> },
+                        { title: "정밀 검사", desc: "60여가지 안구 정밀 측정", icon: <ScanEye /> },
                         { title: "1:1 상담", desc: "라이프스타일 심층 분석", icon: <UserCheck /> },
                         { title: "맞춤 수술", desc: "대표원장 직접 집도", icon: <Microscope /> },
                         { title: "사후 관리", desc: "평생 안구 관리 보증", icon: <ShieldCheck /> },
                     ].map((step, i) => (
-                        <div key={i} className="bg-white/5 rounded-2xl p-6 border border-white/5 flex flex-col items-center text-center">
-                            <span className="text-2xl font-bold text-white mb-2 tracking-tighter">0{i + 1}</span>
-                            <h3 className="text-lg font-bold text-primary mb-1">{step.title}</h3>
-                            <p className="text-neutral-500 text-sm">{step.desc}</p>
-                        </div>
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: i * 0.1 }}
+                            viewport={{ once: true }}
+                            className="bg-white/5 rounded-2xl p-8 border border-white/5 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center group"
+                        >
+                            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-black transition-all">
+                                {step.icon}
+                            </div>
+                            <span className="text-3xl font-black text-primary mb-3 tracking-tighter">0{i + 1}</span>
+                            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{step.title}</h3>
+                            <p className="text-neutral-400 text-base leading-relaxed">{step.desc}</p>
+                        </motion.div>
                     ))}
                 </div>
 

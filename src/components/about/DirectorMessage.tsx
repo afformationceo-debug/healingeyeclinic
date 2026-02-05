@@ -18,7 +18,7 @@ export default function DirectorMessage() {
                     >
                         <div className="aspect-[3/4] rounded-[3rem] overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700">
                             <Image
-                                src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                src="/images/doctors/1.png"
                                 alt="Dr. Kim Sun-young"
                                 fill
                                 className="object-cover"
@@ -63,10 +63,6 @@ export default function DirectorMessage() {
                                 한 분 한 분의 눈 건강을 끝까지 책임지는 평생 주치의로 기억되고 싶습니다.
                                 당신의 가장 빛나는 순간을 위해, 힐링안과가 함께하겠습니다.
                             </p>
-                        </div>
-
-                        <div className="pt-10">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Signature_sample.svg" alt="Signature" className="h-16 invert opacity-80" />
                         </div>
                     </motion.div>
 

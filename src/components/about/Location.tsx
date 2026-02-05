@@ -21,8 +21,8 @@ export default function Location() {
                                 <div>
                                     <h3 className="text-xl font-bold mb-2">Address</h3>
                                     <p className="text-neutral-400 leading-relaxed">
-                                        서울시 강남구 테헤란로 123 힐링타워 4-5F<br />
-                                        (강남역 1번 출구 도보 1분)
+                                        서울특별시 강남구 강남대로 470 808타워 10-11층<br />
+                                        (신논현역 6번 출구 도보 1분)
                                     </p>
                                 </div>
                             </div>
@@ -34,7 +34,7 @@ export default function Location() {
                                 <div>
                                     <h3 className="text-xl font-bold mb-2">Contact</h3>
                                     <p className="text-neutral-400 leading-relaxed">
-                                        02.1234.5678<br />
+                                        02-566-1222<br />
                                         kakao @healingeye
                                     </p>
                                 </div>
@@ -47,9 +47,10 @@ export default function Location() {
                                 <div>
                                     <h3 className="text-xl font-bold mb-2">Hours</h3>
                                     <p className="text-neutral-400 leading-relaxed">
-                                        Mon - Fri: 09:30 - 18:30<br />
-                                        Sat: 09:30 - 16:00<br />
-                                        <span className="text-primary/70 text-sm">Sun / Holiday Closed</span>
+                                        평일: 09:30 - 18:30 (휴게시간 13:00 - 14:00)<br />
+                                        금요일: 09:30 - 21:00 (야간진료)<br />
+                                        토요일: 09:30 - 16:00<br />
+                                        <span className="text-primary/70 text-sm">일요일 / 공휴일 휴진</span>
                                     </p>
                                 </div>
                             </div>
@@ -65,7 +66,7 @@ export default function Location() {
                             <div className="w-4 h-4 bg-primary rounded-full relative z-10 box-content border-4 border-black" />
                         </div>
                         <div className="absolute bottom-6 left-6 bg-black/80 backdrop-blur px-6 py-3 rounded-xl border border-white/10">
-                            <span className="text-white font-bold">강남역 1번 출구</span>
+                            <span className="text-white font-bold">신논현역 6번 출구</span>
                         </div>
                     </div>
 
