@@ -1,5 +1,124 @@
 # 힐링안과 개발 일지
 
+## 2026-02-09 (일) - Insight 페이지 Featured Video 안정화
+
+### 📋 작업 개요
+Insight 페이지 Featured Video 표시 안정화 작업 (RSS 피드 외 비디오 하드코딩)
+
+---
+
+### ✅ 완료된 작업
+
+#### 1. **Featured Video 하드코딩 적용** 📺
+**파일**: `src/app/[locale]/insight/page.tsx`
+
+**문제**:
+- Featured Video ID `zb2s1BpBvac`가 YouTube RSS Feed에 포함되지 않음
+- `getFeaturedYouTubeVideo()` 함수가 YouTube 페이지 HTML을 스크래핑하여 제목 추출
+- Vercel 프로덕션 환경에서 스크래핑이 실패하여 제목이 올바르게 표시되지 않음
+- 로컬: 정상 작동 / Vercel: "Enjoy the videos and music..." 폴백 텍스트 표시
+
+**해결 방법**:
+- ✅ **Featured Video 정보를 상수로 하드코딩**
+  ```typescript
+  const FEATURED_VIDEO_INFO = {
+    id: 'zb2s1BpBvac',
+    title: '단 4곳에서만 사용 가능한 LAL 렌즈 백내장 수술 드디어 시작합니다 🎉',
+    link: 'https://www.youtube.com/watch?v=zb2s1BpBvac',
+    publishedAt: '2024-01-15T00:00:00Z',
+    thumbnail: 'https://i.ytimg.com/vi/zb2s1BpBvac/maxresdefault.jpg',
+    description: 'LAL(Light Adjustable Lens) 렌즈를 이용한 프리미엄 백내장 수술에 대해 소개합니다.',
+  };
+  ```
+
+- ✅ **데이터 Fetch 구조 변경**
+  ```typescript
+  // 변경 전:
+  const [featuredVideo, allVideos, blogPosts] = await Promise.all([
+    getFeaturedYouTubeVideo(FEATURED_VIDEO_ID),
+    getYouTubeVideos(15),
+    getNaverBlogPosts(3),
+  ]);
+
+  // 변경 후:
+  const [allVideos, blogPosts] = await Promise.all([
+    getYouTubeVideos(15),
+    getNaverBlogPosts(3),
+  ]);
+  const featuredVideo = FEATURED_VIDEO_INFO;
+  ```
+
+**변경 사항**:
+- `FEATURED_VIDEO_INFO` 상수 추가 (비디오 메타데이터 하드코딩)
+- `getFeaturedYouTubeVideo()` 함수 호출 제거
+- Featured Video는 하드코딩된 정보 사용
+- Gallery용 영상은 기존과 동일하게 RSS Feed에서 가져오기
+
+---
+
+### 🐛 발견 및 수정된 버그
+
+#### 버그: Featured Video 제목 표시 오류
+**문제**:
+- RSS 피드에 없는 오래된 비디오 (zb2s1BpBvac)
+- YouTube 페이지 스크래핑이 Vercel 프로덕션 환경에서 실패
+- 제목이 "Enjoy the videos and music you love..." 폴백 텍스트로 표시
+
+**증상**:
+- 로컬 서버: 정상 작동 (스크래핑 성공)
+- Vercel 배포: 제목 표시 실패 (스크래핑 실패)
+- 서버 로그: `Video zb2s1BpBvac not found in RSS feed. Fetching title from YouTube page.`
+
+**해결**:
+- Featured Video 정보를 하드코딩하여 안정적으로 표시
+- 네트워크 요청 제거로 성능 개선
+- 프로덕션 환경에서 일관된 동작 보장
+
+---
+
+### 📊 변경 파일 (1개)
+
+#### 수정
+1. `src/app/[locale]/insight/page.tsx` - Featured Video 하드코딩 (+13줄, -2줄)
+
+---
+
+### 🎯 주요 개선 포인트
+
+**안정성**:
+- YouTube 페이지 스크래핑 의존성 제거
+- 프로덕션 환경에서 일관된 동작 보장
+- 네트워크 에러 가능성 제거
+
+**성능**:
+- 불필요한 HTTP 요청 제거
+- 페이지 로딩 시간 단축
+
+**유지보수**:
+- Featured Video 정보를 코드에서 직접 관리
+- 필요시 쉽게 변경 가능
+
+---
+
+### 🛠 기술 스택
+- **Framework**: Next.js 16.1.6 (ISR)
+- **Data Fetching**: rss-parser (Gallery 영상)
+- **Hardcoded Data**: Featured Video 정보 상수
+
+---
+
+### 🔍 검증 완료
+- ✅ 로컬 서버 정상 작동 (http://localhost:3000/ko/insight)
+- ✅ Featured Video 제목 올바르게 표시
+- ✅ "Video not found" 에러 메시지 제거
+- ✅ Vercel 프로덕션 배포 완료
+- ✅ 프로덕션 사이트 Featured Video 정상 표시
+
+**최종 확인 일시**: 2026-02-09
+**구현 상태**: ✅ 완료 및 검증 완료
+
+---
+
 ## 2026-02-08 (토) - 다국어 번역 완료 및 한국어 원본 유지
 
 ### 📋 작업 개요

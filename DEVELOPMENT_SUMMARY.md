@@ -1,6 +1,6 @@
 # 힐링안과 웹사이트 개발 완료 보고서
 
-**최종 업데이트**: 2026-02-08
+**최종 업데이트**: 2026-02-09
 **프로젝트**: 힐링안과 프리미엄 웹사이트
 **기술 스택**: Next.js 16.1.6, TypeScript, Tailwind CSS v4, Framer Motion
 
@@ -55,6 +55,8 @@
 - ✅ **Insight (인사이트) - YouTube RSS Feed + 네이버 블로그 RSS 통합** (신규 완료)
   - YouTube 채널 @dreyesis (안과언니) 실시간 연동
   - Featured 영상 1개 (특정 ID 지정)
+    - ✅ **Featured Video 하드코딩 안정화** (2026-02-09)
+    - RSS 피드 외 비디오 정보를 하드코딩하여 Vercel 프로덕션 환경에서 안정적으로 표시
   - Gallery 영상 9개 (최신순)
   - 네이버 블로그 글 3개 (김선영 원장)
   - ISR 1시간 캐싱, 프리미엄 디자인 개선
@@ -104,6 +106,7 @@
 18. `src/lib/youtube.ts` - **YouTube RSS 유틸 함수** (신규)
 19. `src/lib/naver-blog.ts` - **네이버 블로그 RSS 유틸 함수** (신규)
 20. `src/app/[locale]/insight/page.tsx` - **서버 컴포넌트 데이터 fetch**
+    - ✅ **Featured Video 하드코딩 안정화** (2026-02-09)
 21. `src/app/[locale]/insight/PageClient.tsx` - **클라이언트 컴포넌트 디자인 개선**
 22. `src/components/insight/VideoGallery.tsx` - **9개 영상 표시**
 23. `package.json` - **rss-parser 추가**
