@@ -1,36 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shield, Eye, Activity, Database, Video, BadgeCheck } from "lucide-react";
+import { Shield, Eye, Activity, Database, BadgeCheck } from "lucide-react";
 
 const safetyItems = [
     {
-        icon: <BadgeCheck size={32} />,
+        icon: <BadgeCheck size={36} />,
         title: "1:1 Responsible Care",
         desc: "상담부터 수술, 사후관리까지 1명의 대표원장이 전담합니다. 대리 수술 걱정 없는 100% 실명제 시스템을 운영합니다."
     },
     {
-        icon: <Database size={32} />,
+        icon: <Database size={36} />,
         title: "DB & Backup",
         desc: "평생 보관되는 수술 데이터. 수술 후 10년, 20년이 지나도 고객님의 눈 상태를 정확히 추적 관찰할 수 있습니다."
     },
     {
-        icon: <Video size={32} />,
-        title: "Open Operating Room",
-        desc: "전면 유리로 공개된 수술실. 보호자분이 수술 과정을 직접 확인하실 수 있는 투명한 의료 환경을 제공합니다."
-    },
-    {
-        icon: <Activity size={32} />,
+        icon: <Activity size={36} />,
         title: "Emergency Power",
         desc: "무정전 전원 공급 장치(UPS) 가동. 천재지변이나 정전 상황에서도 레이저 장비는 멈추지 않고 안전하게 수술을 마칩니다."
     },
     {
-        icon: <Shield size={32} />,
+        icon: <Shield size={36} />,
         title: "Clean Room System",
         desc: "대학병원급 양압 수술실. 헤파필터와 에어샤워 시스템으로 미세먼지와 세균을 99.9% 차단하여 감염을 예방합니다."
     },
     {
-        icon: <Eye size={32} />,
+        icon: <Eye size={36} />,
         title: "Triple Check",
         desc: "검안사, 검안 원장, 수술 집도 원장의 3중 교차 검증. 사소한 데이터 오류도 허용하지 않는 철저한 검사 시스템."
     }
@@ -71,11 +66,11 @@ export default function SafetySystem() {
                             whileHover={{ y: -5 }}
                             className="bg-neutral-900/50 backdrop-blur-sm border border-white/5 p-8 rounded-2xl group hover:border-primary/30 transition-all duration-300"
                         >
-                            <div className="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-zinc-400 group-hover:bg-primary group-hover:text-black transition-all mb-6">
+                            <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center text-zinc-400 group-hover:bg-primary group-hover:text-black transition-all mb-6">
                                 {item.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                            <p className="text-zinc-400 text-sm leading-relaxed keep-all">
+                            <h3 className="text-xl md:text-2xl font-bold text-white mb-4 leading-tight">{item.title}</h3>
+                            <p className="text-zinc-400 text-base md:text-lg leading-relaxed keep-all">
                                 {item.desc}
                             </p>
                         </motion.div>

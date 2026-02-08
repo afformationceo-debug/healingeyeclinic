@@ -1,0 +1,485 @@
+{
+  "timestamp": "2026-02-07T15:16:51.218Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-07T15:01:02.586Z",
+    "activeFeatures": [
+      "about",
+      "vision",
+      "insight",
+      "healingeyeclinic",
+      "center",
+      "layout",
+      "home",
+      "cataract"
+    ],
+    "primaryFeature": "about",
+    "features": {
+      "about": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-04T15:01:53.407Z",
+          "lastUpdated": "2026-02-04T15:40:51.875Z"
+        },
+        "lastFile": "/Users/bangseonjun/Desktop/healingeyeclinic/src/components/about/DirectorMessage.tsx"
+      },
+      "vision": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-04T15:55:54.921Z",
+          "lastUpdated": "2026-02-07T13:52:41.300Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/components/vision/SafetySystem.tsx"
+      },
+      "insight": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T18:33:35.220Z",
+          "lastUpdated": "2026-02-05T18:55:14.993Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/app/[locale]/insight/PageClient.tsx"
+      },
+      "healingeyeclinic": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T18:34:07.330Z",
+          "lastUpdated": "2026-02-05T18:50:33.936Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/lib/youtube.ts"
+      },
+      "center": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T18:36:37.012Z",
+          "lastUpdated": "2026-02-05T18:36:37.012Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/components/center/EquipmentShowcase.tsx"
+      },
+      "layout": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-07T13:49:15.372Z",
+          "lastUpdated": "2026-02-07T13:49:15.372Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/components/layout/Footer.tsx"
+      },
+      "home": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-07T14:48:58.703Z",
+          "lastUpdated": "2026-02-07T14:49:47.188Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/components/home/Review.tsx"
+      },
+      "cataract": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-07T14:59:56.445Z",
+          "lastUpdated": "2026-02-07T15:01:02.586Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/components/cataract/LensGuide.tsx"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-02-04T14:35:12.402Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-02-07T15:01:02.586Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-02-04T15:01:53.407Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:01:54.879Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:01:57.511Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:01:59.426Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:05:01.760Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:05:09.161Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:05:19.445Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:07:05.082Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:37:21.735Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:37:25.693Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:37:38.921Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:37:44.862Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:38:19.470Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:39:05.222Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:40:51.875Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:55:54.921Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:56:05.823Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:56:32.180Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:56:52.426Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:57:08.647Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:57:13.432Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:57:19.979Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:33:35.220Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:33:54.833Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:34:07.330Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:36:37.012Z",
+        "feature": "center",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:36:40.648Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:38:35.939Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:38:45.277Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:43:53.189Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:44:10.626Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:50:33.936Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:51:59.152Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:52:24.173Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:52:48.969Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:53:13.656Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:53:47.852Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:54:53.069Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:54:58.718Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:55:14.993Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T13:49:15.372Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T13:51:53.932Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T13:52:23.603Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T13:52:34.395Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T13:52:41.300Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T14:48:58.703Z",
+        "feature": "home",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T14:49:09.721Z",
+        "feature": "home",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T14:49:19.715Z",
+        "feature": "home",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T14:49:29.023Z",
+        "feature": "home",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T14:49:38.737Z",
+        "feature": "home",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T14:49:47.188Z",
+        "feature": "home",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T14:59:56.445Z",
+        "feature": "cataract",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T15:00:15.059Z",
+        "feature": "cataract",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T15:00:19.471Z",
+        "feature": "cataract",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T15:00:43.315Z",
+        "feature": "cataract",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T15:00:52.185Z",
+        "feature": "cataract",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T15:00:58.271Z",
+        "feature": "cataract",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-07T15:01:02.586Z",
+        "feature": "cataract",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}

@@ -42,7 +42,7 @@ export default function CataractPageClient() {
                             <div>
                                 <p className="max-w-xl text-xl md:text-2xl text-white/90 leading-relaxed font-light mb-8 drop-shadow-md">
                                     노화는 자연스러운 현상이지만, 흐릿한 시야까지 당연한 것은 아닙니다.<br />
-                                    <strong className="text-white font-bold">프리미엄 다초점 인공수정체</strong>로 당신의 시력을 가장 젊었던 순간으로 되돌려드립니다.
+                                    <strong className="font-bold bg-gradient-to-r from-amber-300 via-primary to-amber-400 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">프리미엄 다초점 인공수정체</strong>로 당신의 시력을 가장 젊었던 순간으로 되돌려드립니다.
                                 </p>
                                 <h2 className="text-3xl md:text-4xl font-serif mb-8 text-white">다시, 선명한 세상을 만날 준비가 되셨나요?</h2>
                                 <Button size="lg" className="rounded-full px-12 h-16 text-lg bg-white text-black hover:bg-primary transition-colors font-bold">

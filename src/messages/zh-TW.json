@@ -1,0 +1,523 @@
+{
+  "Home": {
+    "Hero": {
+      "clinicName": "韓國Healing眼科",
+      "location": "首爾江南",
+      "established": "創立於 2016",
+      "directorName": "金善英",
+      "brandName": "治癒",
+      "brandSubtitle": "眼科",
+      "tagline": "以無妥協的精準度與安全性，重新定義視力矯正的標準。",
+      "ctaButton": "立即",
+      "ctaButtonSub": "預約"
+    },
+    "Philosophy": {
+      "sectionTitle": "我們的理念",
+      "mainQuote": "不僅是治療眼睛",
+      "mainQuoteHighlight": "更要治癒您的生活。",
+      "description": "不僅僅是矯正視力。\n從早晨睜開眼睛到入睡前，讓您所面對的世界\n更加清晰、更加美好。這是治癒眼科的承諾。",
+      "movingText": {
+        "text1": "超越視力",
+        "text2": "治癒生活",
+        "text3": "頂級照護",
+        "text4": "完美傑作"
+      },
+      "values": {
+        "precision": {
+          "title": "超精準（Precision）",
+          "description": "以挑戰手術誤差 0% 的超精準系統\n為您的雙眼刻劃完美視力。"
+        },
+        "safety": {
+          "title": "安全性（Safety）",
+          "description": "醫學中心教授級醫療團隊配備醫學中心等級的最新設備\n讓您能夠安心託付。"
+        },
+        "empathy": {
+          "title": "同理心（Empathy）",
+          "description": "透過數萬例手術案例累積的專業技術\n在溫馨的治癒空間中，真誠地同理您的需求。"
+        }
+      }
+    },
+    "Services": {
+      "sectionTitle": "Medical Centers",
+      "headline": "World Class",
+      "headlineSubtitle": "Healing Centers",
+      "viewAllButton": "View All Services",
+      "visionCorrection": {
+        "badge": "Most Popular",
+        "title": "Vision Correction",
+        "description": "從微笑雷射、客製化雷射到晶體植入術。\n超越傳統視力矯正極限的超精密雷射解決方案。"
+      },
+      "presbyopiaCataract": {
+        "title": "Presbyopia &",
+        "titleLine2": "Cataract",
+        "subtitle": "老花眼/白內障中心 +",
+        "hoverText": "老花眼/白內障中心 +"
+      },
+      "eyeDisease": {
+        "badge": "University Hospital Level",
+        "title": "Eye Disease",
+        "titleLine2": "Center",
+        "subtitle": "眼部疾病中心",
+        "description": "乾眼症、青光眼、視網膜疾病"
+      }
+    },
+    "WhyHealingEye": {
+      "sectionTitle": "為何選擇治癒眼科",
+      "headline": "不同等級的眼科，",
+      "headlineSubtitle": "結果就是證明。",
+      "stats": {
+        "rating": "4.9/5.0",
+        "ratingLabel": "患者評價",
+        "cases": "50,000+",
+        "casesLabel": "成功案例"
+      },
+      "features": {
+        "faculty": {
+          "title": "醫學中心教授",
+          "subtitle": "醫學中心教授級醫療團隊",
+          "description": "擁有豐富臨床經驗與專業的醫療團隊\n從諮詢到手術、術後管理，提供一對一專屬服務。"
+        },
+        "equipment": {
+          "title": "頂級設備",
+          "subtitle": "醫學中心等級尖端設備",
+          "description": "配備 Zimer Z8、ZEISS SUITE 等最新設備\n首家使用德國 Rara 鏡片，四焦點 PanOptix 使用量全國第一\n證明白內障專業實力。"
+        },
+        "guarantee": {
+          "title": "終身保證",
+          "subtitle": "終身視力保證系統",
+          "description": "為您未來的 40 年、第二人生負責\n終身保證制度，永久保障您的視力。"
+        }
+      }
+    },
+    "Review": {
+      "title": "真實故事",
+      "subtitle": "經數據證實的成果，患者們的真實體驗。",
+      "ctaSubtitle": "終身視力，從現在開始",
+      "ctaButton": "立即預約專家諮詢",
+      "reviews": [
+        {
+          "name": "金○○",
+          "age": "20多歲",
+          "surgery": "微笑雷射",
+          "content": "沒想到不戴眼鏡的早晨會如此令人感動。手術當天只是稍微模糊，隔天就是全新世界了。特別是我很擔心夜間眩光，但完全沒有不適感，夜間開車也很順利。",
+          "date": "2024.01.15"
+        },
+        {
+          "name": "李○○",
+          "age": "60多歲",
+          "surgery": "多焦點人工水晶體（老花白內障）",
+          "content": "沒有放大鏡連手機都很難看清楚，現在連高爾夫球都能看得清清楚楚，和朋友聊天也很方便。不僅僅是手術，更像是獲得了生活品質的提升。診所設施像飯店一樣高級，工作人員也非常親切，讓我能夠放心接受手術。",
+          "date": "2024.01.12"
+        },
+        {
+          "name": "朴○○",
+          "age": "30多歲",
+          "surgery": "ICL 晶體植入術",
+          "content": "因為角膜太薄被判定不能做雷射手術而感到挫折，在治癒眼科透過 ICL 重見光明。完全沒有鏡片異物感，乾眼症甚至比戴隱形眼鏡時還要輕。猶豫的時間真是太可惜了。強力推薦！",
+          "date": "2024.01.08"
+        },
+        {
+          "name": "崔○○",
+          "age": "50多歲",
+          "surgery": "老花雷射",
+          "content": "因為老花眼導致工作很辛苦，單眼視覺雷射手術後近距離作業輕鬆多了。一開始說需要適應期，但比預期更快適應，現在不戴眼鏡也能清楚看會議資料。",
+          "date": "2023.12.29"
+        },
+        {
+          "name": "鄭○○",
+          "age": "20多歲",
+          "surgery": "高階準分子雷射",
+          "content": "因為疼痛而很擔心，但只有前兩天眼睛刺痛，之後就很舒服了。取下保護鏡片後明顯感受到視力提升。目前維持 1.2 視力。非常感謝！",
+          "date": "2023.12.20"
+        },
+        {
+          "name": "安○○",
+          "age": "40多歲",
+          "surgery": "二次手術（雷射 → 老花準分子雷射）",
+          "content": "在其他醫院做完雷射後視力下降而接受二次手術。雖然不安，但院長仔細檢查角膜狀態並安全地進行手術，非常感謝。現在維持 1.2 視力，夜間視力也比以前好了。",
+          "date": "2023.12.15"
+        },
+        {
+          "name": "尹○○",
+          "age": "20多歲",
+          "surgery": "準分子雷射（角膜薄）",
+          "content": "因為角膜薄而煩惱很久，在治癒眼科安全地接受準分子雷射手術。恢復也很快，現在已經六個月了，視力非常滿意！",
+          "date": "2023.12.10"
+        },
+        {
+          "name": "趙○○",
+          "age": "60多歲",
+          "surgery": "白內障（高階鏡片）",
+          "content": "白內障手術後感覺回到了 30 年前的視力。不戴眼鏡就能打高爾夫、看書，人生完全改變了。不要猶豫，趕快預約諮詢吧！",
+          "date": "2023.12.05"
+        }
+      ]
+    },
+    "PremiumFacility": {
+      "sectionTitle": "Premium Lounge",
+      "headline": "Relaxation",
+      "headlineSubtitle": "Before Perfection",
+      "description": "連手術前的緊張感都能變成期待感的空間。\n希林眼科的高級貴賓廳擁有五星級飯店的品質。\n以最佳狀態迎接您的新視力。",
+      "galleryTitle": "參觀設施",
+      "facilityAlt": "希林眼科設施",
+      "backgroundAlt": "Premium Facility",
+      "floatingText": "Architecture & Interior Design"
+    },
+    "Doctor": {
+      "doctors": [
+        {
+          "name": "金善英",
+          "nameEng": "Kim Sun-young",
+          "position": "代表院長",
+          "positionEng": "代表院長",
+          "title": "眼科專科醫師/臨床教授",
+          "specialty": "微笑・清晰 / 老花白內障 / 乾眼症",
+          "quote": "視力不僅僅是看見，更是體驗。",
+          "quoteHighlight1": "看見",
+          "quoteHighlight2": "體驗",
+          "philosophy": "不允許 1% 誤差的完美主義。基於醫學中心教授級的豐富臨床經驗，以及對尖端設備的深入理解，為您找到人生中最清晰的時刻。",
+          "career": [
+            "天主教大學醫學院研究所碩士",
+            "2009-2013 天主教大學天主教中央醫療院眼科專科醫師",
+            "2013-2016 議政府聖母醫院角膜、白內障臨床教授",
+            "2009年 首爾聖母醫院最優秀住院醫師表揚",
+            "2008年 保健福祉部長官表揚",
+            "第108屆大韓眼科學會口頭報告獎",
+            "疾病管理本部流行病學調查表揚狀",
+            "大韓眼科學會（KOS）正式會員",
+            "韓國外眼部研究會（KEEDS）正式會員",
+            "韓國隱形眼鏡學會（KCLSS）正式會員",
+            "歐洲白內障與屈光手術學會（ESCRS）正式會員"
+          ]
+        },
+        {
+          "name": "林成雄",
+          "nameEng": "Lim Sung-woong",
+          "position": "代表院長",
+          "positionEng": "代表院長",
+          "title": "眼科專科醫師",
+          "specialty": "視網膜 / 青光眼 / 視力矯正",
+          "quote": "精準的診斷，卓越的治療。",
+          "quoteHighlight1": "診斷",
+          "quoteHighlight2": "治療",
+          "philosophy": "精準的診斷是成功手術的第一步。透過醫學中心級尖端檢查系統與數據分析洞察力，為您的眼睛狀態制定最合適的客製化治療計畫。",
+          "career": [
+            "延世大學醫學院畢業",
+            "世福蘭斯醫院眼科專科醫師",
+            "前）實羅岩眼科醫院診療科長",
+            "韓國視網膜學會正式會員"
+          ]
+        },
+        {
+          "name": "李容恩",
+          "nameEng": "Lee Yong-eun",
+          "position": "院長",
+          "positionEng": "院長",
+          "title": "眼科專科醫師",
+          "specialty": "小兒眼科 / 角膜塑型片",
+          "quote": "守護兒童視力，確保他們的未來。",
+          "quoteHighlight1": "兒童視力",
+          "quoteHighlight2": "未來",
+          "philosophy": "孩子的視力是一生的資產。從成長期近視控制到角膜塑型片處方，以符合孩子視角的溫暖細心診療，減輕家長的擔憂。",
+          "career": [
+            "大田科學高中畢業",
+            "天主教大學醫學院榜眼畢業",
+            "天主教大學醫學院研究所碩士",
+            "首爾聖母醫院白內障臨床教授",
+            "大韓眼科學會（KOS）正式會員",
+            "韓國白內障屈光手術學會（KSCRS）正式會員",
+            "大韓眼科醫師會（KOA）正式會員",
+            "美國白內障與屈光手術學會（ASCRS）正式會員",
+            "歐洲白內障與屈光手術學會（ESCRS）正式會員",
+            "美國退伍軍人檢查醫師（Veterans Evaluation Services）"
+          ]
+        }
+      ],
+      "mainCareer": "主要經歷",
+      "medicalPhilosophy": "醫療理念",
+      "viewProfile": "查看完整資料"
+    },
+    "MedicalTeam": {
+      "sectionTitle": "醫療團隊",
+      "headline": "視力",
+      "headlineSubtitle": "的專精。",
+      "positionLabels": {
+        "representativeDirector": "代表院長",
+        "director": "院長"
+      },
+      "careerTitle": "經歷",
+      "doctors": [
+        {
+          "name": "金善英",
+          "position": "代表院長",
+          "title": "眼科專科醫師/臨床教授",
+          "specialty": "微笑・清晰 / 老花白內障 / 乾眼症",
+          "description": "曾擔任醫學中心教授，致力於難治性乾眼症與白內障治療。作為江南唯一獨立開業的女性眼科專科醫師，承諾以細緻的差異打造最佳手術成果。",
+          "career": [
+            "天主教大學醫學院研究所碩士",
+            "2009-2013 天主教大學天主教中央醫療院眼科專科醫師",
+            "2013-2016 議政府聖母醫院角膜、白內障臨床教授",
+            "2009年 首爾聖母醫院最優秀住院醫師表揚",
+            "2008年 保健福祉部長官表揚",
+            "第108屆大韓眼科學會口頭報告獎",
+            "疾病管理本部流行病學調查表揚狀",
+            "大韓眼科學會（KOS）正式會員",
+            "韓國外眼部研究會（KEEDS）正式會員",
+            "韓國隱形眼鏡學會（KCLSS）正式會員",
+            "歐洲白內障與屈光手術學會（ESCRS）正式會員"
+          ]
+        },
+        {
+          "name": "林成雄",
+          "position": "代表院長",
+          "title": "眼科專科醫師",
+          "specialty": "視網膜 / 青光眼 / 視力矯正",
+          "description": "精準的診斷是成功手術的第一步。透過醫學中心級尖端檢查系統與數據分析洞察力，為您的眼睛狀態制定最合適的客製化治療計畫。",
+          "career": [
+            "延世大學醫學院畢業",
+            "世福蘭斯醫院眼科專科醫師",
+            "前）實羅岩眼科醫院診療科長",
+            "韓國視網膜學會正式會員"
+          ]
+        },
+        {
+          "name": "李容恩",
+          "position": "院長",
+          "title": "眼科專科醫師",
+          "specialty": "小兒眼科 / 角膜塑型片",
+          "description": "孩子的視力是一生的資產。從成長期近視控制到角膜塑型片處方，以符合孩子視角的溫暖細心診療，減輕家長的擔憂。",
+          "career": [
+            "大田科學高中畢業",
+            "天主教大學醫學院榜眼畢業",
+            "天主教大學醫學院研究所碩士",
+            "首爾聖母醫院白內障臨床教授",
+            "大韓眼科學會（KOS）正式會員",
+            "韓國白內障屈光手術學會（KSCRS）正式會員",
+            "大韓眼科醫師會（KOA）正式會員",
+            "美國白內障與屈光手術學會（ASCRS）正式會員",
+            "歐洲白內障與屈光手術學會（ESCRS）正式會員",
+            "美國退伍軍人檢查醫師（Veterans Evaluation Services）"
+          ]
+        }
+      ]
+    },
+    "AIPrediction": {
+      "badge": "Healing AI Solutions",
+      "title": "找到最適合",
+      "titleHighlight": "您眼睛的手術",
+      "description": "Healing眼科診所AI學習了超過10萬例臨床數據，\n分析您的角膜數據和生活方式，\n推薦最安全、最有效的視力矯正手術。",
+      "features": [
+        "角膜厚度和形狀3D分析",
+        "基於生活方式的匹配",
+        "術後恢復期預測模擬"
+      ],
+      "ctaButton": "開始AI視力矯正預測",
+      "visualTitle": "AI EYE SCANNING",
+      "visualSubtitle": "Click to Start Analysis"
+    }
+  },
+  "About": {
+    "BrandStory": {
+      "sectionTitle": "我們的使命",
+      "headline": "不僅是視力，",
+      "headlineSubtitle": "更設計您的生活。",
+      "description": "不僅僅是矯正視力，\n而是讓您的生活更加清晰、更加美好。\n治癒眼科在技術與藝術的邊界上\n雕刻最完美的視力。",
+      "stats": [
+        {
+          "label": "成功案例",
+          "value": "50,000+",
+          "suffix": "眼"
+        },
+        {
+          "label": "患者滿意度",
+          "value": "4.9",
+          "suffix": "/5.0"
+        },
+        {
+          "label": "醫療團隊",
+          "value": "醫學中心",
+          "suffix": "教授級"
+        }
+      ]
+    },
+    "DirectorMessage": {
+      "sectionTitle": "院長問候",
+      "headline": "治癒您的雙眼，",
+      "headlineSubtitle": "設計您的生活。",
+      "representativeDirector": "代表院長",
+      "doctorName": "金善英 醫師",
+      "greeting": "您好，我是治癒眼科代表院長金善英。",
+      "paragraphs": [
+        "「看見」不僅僅是認知事物，更是面對所愛之人的面容、記住美麗的風景、完整感受生活每一刻的過程。",
+        "從醫學中心教授時期至今，接觸過數萬位患者後，我所領悟到的是，最好的醫術終究始於「同理心」。傾聽患者的每一個小小不適，以對待家人的心情進行診療。這就是我所認為的「治癒」本質。",
+        "比起江南唯一女性代表院長獨立開業的頭銜，我更希望被記得是終身負責每一位患者眼睛健康的終身主治醫師。為了您最閃耀的時刻，治癒眼科將與您同在。"
+      ]
+    },
+    "HistoryTimeline": {
+      "sectionTitle": "重要里程碑",
+      "headline": "我們的歷史",
+      "timeline": [
+        {
+          "year": "2018",
+          "title": "治癒眼科開業",
+          "description": "驛三洞808大樓高級視力矯正中心開幕"
+        },
+        {
+          "year": "2019",
+          "title": "引進醫學中心級設備",
+          "description": "建置最新視力矯正設備及精密檢查系統"
+        },
+        {
+          "year": "2020",
+          "title": "微笑雷射專科中心",
+          "description": "正式開始微創微笑雷射"
+        },
+        {
+          "year": "2021",
+          "title": "擴大老花/白內障中心",
+          "description": "開始高階多焦點人工水晶體專科診療"
+        },
+        {
+          "year": "2022",
+          "title": "微創清晰雷射",
+          "description": "以差異化診療系統導入清晰雷射"
+        },
+        {
+          "year": "2023",
+          "title": "累積手術達50,000眼",
+          "description": "達成患者滿意度4.9/5.0，成長為地區代表眼科"
+        },
+        {
+          "year": "2024",
+          "title": "AI精密檢查系統",
+          "description": "建構最尖端AI基礎客製化視力矯正系統"
+        }
+      ],
+      "historyLabel": "歷史"
+    },
+    "Location": {
+      "sectionTitle": "位置",
+      "headline": "造訪我們",
+      "address": {
+        "title": "地址",
+        "line1": "首爾特別市江南區江南大路470號808大樓10-11樓",
+        "line2": "（新論峴站6號出口步行1分鐘）"
+      },
+      "contact": {
+        "title": "聯絡方式",
+        "phone": "02-566-1222",
+        "kakao": "kakao @healingeye"
+      },
+      "hours": {
+        "title": "營業時間",
+        "weekday": "平日：09:30 - 18:30（休息時間 13:00 - 14:00）",
+        "friday": "週五：09:30 - 21:00（夜間診療）",
+        "saturday": "週六：09:30 - 16:00",
+        "closed": "週日/國定假日 休診"
+      },
+      "mapLabel": "新論峴站6號出口"
+    },
+    "Philosophy": {
+      "sectionTitle": "理念",
+      "headline": "卓越",
+      "headlineSubtitle": "的標準。",
+      "description": "治癒眼科基於三大核心價值\n承諾最完美的視力矯正。",
+      "values": [
+        {
+          "title": "安全至上",
+          "subtitle": "絕不妥協的安全標準",
+          "description": "術前60階段精密檢查、三重交叉驗證系統，不允許0.01%的誤差。",
+          "stats": [
+            {
+              "label": "精密檢查",
+              "value": "60階段"
+            },
+            {
+              "label": "交叉驗證",
+              "value": "三重"
+            }
+          ]
+        },
+        {
+          "title": "個人化",
+          "subtitle": "專為一個人設計的客製化方案",
+          "description": "拒絕工廠式手術。考量患者的角膜指紋、生活型態、職業環境，設計一對一客製化方案。",
+          "stats": [
+            {
+              "label": "客製化方案",
+              "value": "1:1"
+            },
+            {
+              "label": "分析項目",
+              "value": "20+"
+            }
+          ]
+        },
+        {
+          "title": "終身照護",
+          "subtitle": "終身眼睛健康夥伴",
+          "description": "手術後10年、20年，都能精確追蹤觀察您眼睛狀態的終身管理系統。",
+          "stats": [
+            {
+              "label": "數據保存",
+              "value": "終身"
+            },
+            {
+              "label": "定期檢查",
+              "value": "免費"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "brandName": "治癒眼科",
+    "tagline": "體驗視力矯正的新標準。頂級服務、尖端技術，為您的雙眼開啟全新生活。",
+    "contact": {
+      "title": "聯絡方式",
+      "address": "首爾特別市江南區江南大路470號\n808大樓10-11樓（新論峴站6號出口）",
+      "phone": "02-566-1222",
+      "kakao": "kakao @healingeye"
+    },
+    "hours": {
+      "title": "營業時間",
+      "weekday": "平日",
+      "weekdayTime": "09:30 - 18:30",
+      "lunchBreak": "（休息 13:00-14:00）",
+      "friday": "週五",
+      "fridayTime": "09:30 - 21:00",
+      "saturday": "週六",
+      "saturdayTime": "09:30 - 16:00",
+      "closed": "週日/國定假日",
+      "closedStatus": "休診"
+    },
+    "copyright": "治癒眼科診所 版權所有。",
+    "privacyPolicy": "隱私權政策",
+    "termsOfService": "服務條款"
+  },
+  "Common": {
+    "navigation": {
+      "home": "首頁",
+      "about": "診所介紹",
+      "treatments": "診療指南",
+      "equipment": "設備介紹",
+      "community": "社群",
+      "reservation": "預約掛號"
+    },
+    "buttons": {
+      "book": "預約掛號",
+      "viewMore": "查看詳情",
+      "previous": "上一個",
+      "next": "下一個",
+      "close": "關閉",
+      "submit": "送出",
+      "cancel": "取消"
+    },
+    "labels": {
+      "loading": "載入中...",
+      "error": "發生錯誤",
+      "success": "成功完成"
+    }
+  }
+}

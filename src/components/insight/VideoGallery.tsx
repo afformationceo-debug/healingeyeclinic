@@ -2,63 +2,128 @@
 
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
+import Image from "next/image";
+import { YouTubeVideo } from "@/lib/youtube";
 
-const videos = [
-    {
-        title: "스마일라식 전 이 영상 필수! 실패 없는 병원 고르는 법",
-        category: "닥터 아이시스 (Dr. Eye Sis)",
-        time: "08:24",
-        img: "https://images.pexels.com/photos/5752263/pexels-photo-5752263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    },
-    {
-        title: "노안백내장 수술, 렌즈 선택이 평생을 좌우합니다",
-        category: "닥터 아이시스 (Dr. Eye Sis)",
-        time: "12:15",
-        img: "https://images.pexels.com/photos/4226119/pexels-photo-4226119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    },
-    {
-        title: "안구건조증, 인공눈물만 넣고 계신가요? 근본적인 치료법",
-        category: "닥터 아이시스 (Dr. Eye Sis)",
-        time: "06:30",
-        img: "https://images.pexels.com/photos/7089020/pexels-photo-7089020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-    }
-];
+interface VideoGalleryProps {
+    videos: YouTubeVideo[];
+}
 
-export default function VideoGallery() {
+function formatDate(dateString: string): string {
+    const date = new Date(dateString);
+    const now = new Date();
+    const diffTime = Math.abs(now.getTime() - date.getTime());
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+    if (diffDays === 0) return '오늘';
+    if (diffDays === 1) return '어제';
+    if (diffDays < 7) return `${diffDays}일 전`;
+    if (diffDays < 30) return `${Math.floor(diffDays / 7)}주 전`;
+    if (diffDays < 365) return `${Math.floor(diffDays / 30)}개월 전`;
+    return `${Math.floor(diffDays / 365)}년 전`;
+}
+
+export default function VideoGallery({ videos }: VideoGalleryProps) {
     return (
-        <section className="py-20 border-t border-white/10">
-            <div className="flex justify-between items-end mb-12">
+        <section className="py-32 relative">
+            {/* Decorative border */}
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6"
+            >
                 <div>
-                    <span className="text-primary font-bold tracking-widest uppercase mb-4 block">YouTube Channel</span>
-                    <h2 className="text-4xl font-serif font-bold text-white">닥터 아이시스 @dreyesis</h2>
+                    <div className="flex items-center gap-4 mb-4">
+                        <div className="w-12 h-1 bg-primary rounded-full" />
+                        <span className="text-sm font-bold tracking-[0.3em] uppercase text-primary">YouTube Channel</span>
+                    </div>
+                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-3">안과언니 @dreyesis</h2>
+                    <p className="text-neutral-400 text-base">전문 안과의가 전하는 눈 건강 정보</p>
                 </div>
                 <button
                     onClick={() => window.open('https://www.youtube.com/@dreyesis', '_blank')}
-                    className="hidden md:block text-sm font-bold border-b border-white pb-1 text-white hover:text-primary hover:border-primary transition-colors"
+                    className="group flex items-center gap-2 text-sm font-bold px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-primary hover:border-primary text-white hover:text-black transition-all duration-300 hover:scale-105"
                 >
-                    채널 바로가기 &rarr;
+                    채널 바로가기
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
                 </button>
-            </div>
+            </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {videos.map((vid, i) => (
-                    <div key={i} className="group cursor-pointer" onClick={() => window.open('https://www.youtube.com/@dreyesis', '_blank')}>
-                        <div className="relative aspect-video rounded-2xl overflow-hidden mb-4 bg-neutral-900 border border-white/10">
-                            <img src={vid.img} alt={vid.title} className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" />
-                            <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all">
-                                    <Play fill="currentColor" className="text-white ml-1 group-hover:text-black" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {videos.map((video, index) => (
+                    <motion.div
+                        key={video.id}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: index * 0.1, duration: 0.5 }}
+                        viewport={{ once: true }}
+                        className="group cursor-pointer"
+                        onClick={() => window.open(video.link, '_blank')}
+                    >
+                        <div className="relative">
+                            {/* Hover glow effect */}
+                            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-primary/50 rounded-3xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500" />
+
+                            <div className="relative bg-neutral-900/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/5 group-hover:border-primary/30 transition-all duration-500">
+                                <div className="relative aspect-video bg-neutral-900 overflow-hidden">
+                                    <Image
+                                        src={video.thumbnail}
+                                        alt={video.title}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                        className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/80 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-500" />
+
+                                    {/* Play button */}
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="relative">
+                                            <div className="absolute inset-0 bg-primary rounded-full blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-500" />
+                                            <div className="relative w-16 h-16 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-500 border border-white/20 group-hover:border-primary">
+                                                <Play fill="currentColor" className="text-white ml-0.5 group-hover:text-black transition-colors" size={24} />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Date badge */}
+                                    <div className="absolute bottom-3 right-3">
+                                        <span className="inline-block bg-black/80 backdrop-blur-sm text-white text-xs font-bold px-3 py-1.5 rounded-full border border-white/10">
+                                            {formatDate(video.publishedAt)}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div className="p-5">
+                                    <span className="inline-block text-xs font-bold text-primary uppercase tracking-wider mb-3 opacity-80">
+                                        안과언니
+                                    </span>
+                                    <h3 className="text-lg font-bold leading-snug text-white group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                                        {video.title}
+                                    </h3>
                                 </div>
                             </div>
-                            <span className="absolute bottom-4 right-4 bg-black/80 text-white text-xs font-bold px-2 py-1 rounded">
-                                {vid.time}
-                            </span>
                         </div>
-                        <span className="text-xs font-bold text-primary uppercase tracking-wider mb-2 block">{vid.category}</span>
-                        <h3 className="text-xl font-bold leading-tight text-white group-hover:text-primary transition-colors">{vid.title}</h3>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
+
+            {videos.length === 0 && (
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="text-center py-32"
+                >
+                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/5 border border-white/10 mb-6">
+                        <Play className="w-10 h-10 text-neutral-600" />
+                    </div>
+                    <p className="text-neutral-500 text-lg">현재 표시할 영상이 없습니다.</p>
+                </motion.div>
+            )}
         </section>
     );
 }

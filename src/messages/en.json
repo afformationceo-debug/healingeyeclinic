@@ -1,0 +1,523 @@
+{
+  "Home": {
+    "Hero": {
+      "clinicName": "Healing Eye Clinic",
+      "location": "Gangnam, Seoul",
+      "established": "Est. 2016",
+      "directorName": "Kim Sun-young",
+      "brandName": "HEALING",
+      "brandSubtitle": "EYE",
+      "tagline": "We redefine the standard of vision correction with uncompromising precision and safety.",
+      "ctaButton": "BOOK",
+      "ctaButtonSub": "NOW"
+    },
+    "Philosophy": {
+      "sectionTitle": "Our Philosophy",
+      "mainQuote": "Beyond Treating Your Eyes,",
+      "mainQuoteHighlight": "We Heal Your Life.",
+      "description": "It's not simply about correcting vision.\nFrom the moment you open your eyes in the morning to when you fall asleep,\nwe make every world you encounter clearer and more beautiful.\nThis is the promise of Healing Eye Clinic.",
+      "movingText": {
+        "text1": "BEYOND VISION",
+        "text2": "HEALING LIFE",
+        "text3": "PREMIUM CARE",
+        "text4": "MASTERPIECE"
+      },
+      "values": {
+        "precision": {
+          "title": "Precision",
+          "description": "Through our ultra-precision system challenging 0% surgical error,\nwe craft perfect vision for your eyes."
+        },
+        "safety": {
+          "title": "Safety",
+          "description": "With medical professionals from university hospital faculty and\nstate-of-the-art equipment at university hospital standards,\nyou can trust us with complete confidence."
+        },
+        "empathy": {
+          "title": "Empathy",
+          "description": "Refined through tens of thousands of cases,\nour surgical expertise and warm healing environment\ntruly understand your eyes."
+        }
+      }
+    },
+    "Services": {
+      "sectionTitle": "Medical Centers",
+      "headline": "World Class",
+      "headlineSubtitle": "Healing Centers",
+      "viewAllButton": "View All Services",
+      "visionCorrection": {
+        "badge": "Most Popular",
+        "title": "Vision Correction",
+        "description": "From SMILE LASIK to Custom LASEK and Lens Implantation.\nUltra-precision laser solutions that go beyond the limits of traditional vision correction."
+      },
+      "presbyopiaCataract": {
+        "title": "Presbyopia &",
+        "titleLine2": "Cataract",
+        "subtitle": "Presbyopia/Cataract Center +",
+        "hoverText": "Presbyopia/Cataract Center +"
+      },
+      "eyeDisease": {
+        "badge": "University Hospital Level",
+        "title": "Eye Disease",
+        "titleLine2": "Center",
+        "subtitle": "Eye Disease Center",
+        "description": "Dry Eye Syndrome, Glaucoma, Retinal Diseases"
+      }
+    },
+    "WhyHealingEye": {
+      "sectionTitle": "Why Healing Eye",
+      "headline": "Different Standards,",
+      "headlineSubtitle": "Proven Results.",
+      "stats": {
+        "rating": "4.9/5.0",
+        "ratingLabel": "Patient Review",
+        "cases": "50,000+",
+        "casesLabel": "Successful Cases"
+      },
+      "features": {
+        "faculty": {
+          "title": "University Faculty",
+          "subtitle": "Medical Staff from University Hospital Faculty",
+          "description": "Medical professionals with extensive clinical experience and expertise\nprovide dedicated 1:1 care from consultation through surgery to post-operative management."
+        },
+        "equipment": {
+          "title": "High-End Equipment",
+          "subtitle": "State-of-the-Art Equipment at University Hospital Standards",
+          "description": "Equipped with the latest technology including Ziemer Z8 and ZEISS SUITE,\nfirst to use German Rein Lens, and ranked #1 nationwide in PanOptix quadrifocal usage,\nproving our expertise in cataract surgery."
+        },
+        "guarantee": {
+          "title": "Lifetime Guarantee",
+          "subtitle": "Lifetime Vision Guarantee System",
+          "description": "Taking responsibility for the next 40 years of your second life,\nour lifetime guarantee system ensures your vision for life."
+        }
+      }
+    },
+    "Review": {
+      "title": "Real Stories",
+      "subtitle": "Data-proven results, real stories from our patients.",
+      "ctaSubtitle": "Your Lifetime Vision Starts Now",
+      "ctaButton": "Book Expert Consultation Now",
+      "reviews": [
+        {
+          "name": "Kim Ji*",
+          "age": "20s",
+          "surgery": "SMILE LASIK",
+          "content": "I never knew mornings without glasses could be this amazing. The day of surgery was slightly hazy, but it was a whole new world from the next day. I was especially worried about night halos, but I have no discomfort and drive at night without any issues.",
+          "date": "2024.01.15"
+        },
+        {
+          "name": "Lee Hyung*",
+          "age": "60s",
+          "surgery": "Multifocal IOL (Presbyopia Cataract)",
+          "content": "I couldn't even read my phone without reading glasses, but now I can see golf balls clearly and text my friends comfortably. It feels like I've received the gift of quality of life, beyond just surgery. The clinic facility is as luxurious as a hotel, and the staff were so kind that I felt comfortable throughout the surgery.",
+          "date": "2024.01.12"
+        },
+        {
+          "name": "Park Seo*",
+          "age": "30s",
+          "surgery": "ICL Lens Implantation",
+          "content": "I was devastated when I was told LASIK was impossible due to thin corneas, but Healing Eye Clinic restored my vision with ICL. There's no lens discomfort at all, and dry eyes are actually better than when I wore contact lenses. I regret wasting time hesitating. Highly recommended!",
+          "date": "2024.01.08"
+        },
+        {
+          "name": "Choi Min*",
+          "age": "50s",
+          "surgery": "Presbyopia LASIK",
+          "content": "Work was so difficult due to presbyopia, but after monovision LASIK, near-distance tasks have become much easier. I was told there would be an adaptation period, but I adapted faster than expected, and now I can read meeting materials without glasses.",
+          "date": "2023.12.29"
+        },
+        {
+          "name": "Jung Ha*",
+          "age": "20s",
+          "surgery": "Premium LASEK",
+          "content": "I was very worried about the pain, but I only had eye irritation for about 2 days, and it was comfortable after that. After removing the bandage contact lens, I could feel my vision improving dramatically. I'm maintaining 20/16 vision. Thank you!",
+          "date": "2023.12.20"
+        },
+        {
+          "name": "Ahn Soo*",
+          "age": "40s",
+          "surgery": "Re-operation (LASIK → Presbyopia LASEK)",
+          "content": "I had re-operation due to vision deterioration after LASIK at another clinic. I was anxious, but the director thoroughly checked my corneal condition and proceeded safely. Thank you. Now I'm maintaining 20/16 vision, and my night vision has improved compared to before.",
+          "date": "2023.12.15"
+        },
+        {
+          "name": "Yoon Ji*",
+          "age": "20s",
+          "surgery": "LASEK (Thin Cornea)",
+          "content": "I was worried because of thin corneas, but Healing Eye Clinic safely performed LASEK. Recovery was fast, and now it's been 6 months and I'm completely satisfied with my vision!",
+          "date": "2023.12.10"
+        },
+        {
+          "name": "Cho Hyun*",
+          "age": "60s",
+          "surgery": "Cataract (Premium Lens)",
+          "content": "After cataract surgery, I feel like I've returned to my vision from 30 years ago. I play golf without glasses, read books, and my life has changed. Don't hesitate and get a consultation!",
+          "date": "2023.12.05"
+        }
+      ]
+    },
+    "PremiumFacility": {
+      "sectionTitle": "Premium Lounge",
+      "headline": "Relaxation",
+      "headlineSubtitle": "Before Perfection",
+      "description": "A space where even the pre-surgery tension turns into excitement.\nHealing Eye Clinic's premium lounge embodies the elegance of a 5-star hotel.\nWelcome your new vision in the best condition.",
+      "galleryTitle": "Explore Our Facility",
+      "facilityAlt": "Healing Eye Clinic Facility",
+      "backgroundAlt": "Premium Facility",
+      "floatingText": "Architecture & Interior Design"
+    },
+    "Doctor": {
+      "doctors": [
+        {
+          "name": "김선영",
+          "nameEng": "Kim Sun-young",
+          "position": "대표원장",
+          "positionEng": "Representative Director",
+          "title": "Ophthalmologist / Clinical Professor",
+          "specialty": "SMILE·CLEAR / Presbyopia Cataract / Dry Eye Syndrome",
+          "quote": "Vision is not just seeing, it is experiencing.",
+          "quoteHighlight1": "seeing",
+          "quoteHighlight2": "experiencing",
+          "philosophy": "Perfectionism that allows not even 1% margin of error. Based on extensive clinical experience as a university hospital professor and deep understanding of cutting-edge equipment, we help you find the clearest moments of your life.",
+          "career": [
+            "Master's Degree, Graduate School of Medicine, Catholic University of Korea",
+            "2009-2013 Ophthalmology Specialist, Catholic Medical Center, Catholic University of Korea",
+            "2013-2016 Clinical Professor of Cornea and Cataract, Uijeongbu St. Mary's Hospital",
+            "2009 Outstanding Resident Award, Seoul St. Mary's Hospital",
+            "2008 Minister of Health and Welfare Award",
+            "Oral Presentation Award, 108th Korean Ophthalmological Society Conference",
+            "Commendation for Epidemiological Investigation, Korea Disease Control and Prevention Agency",
+            "Full Member, Korean Ophthalmological Society (KOS)",
+            "Full Member, Korean External Eye Disease Study Group (KEEDS)",
+            "Full Member, Korean Contact Lens Study Society (KCLSS)",
+            "Full Member, European Society of Cataract and Refractive Surgeons (ESCRS)"
+          ]
+        },
+        {
+          "name": "임성웅",
+          "nameEng": "Lim Sung-woong",
+          "position": "대표원장",
+          "positionEng": "Representative Director",
+          "title": "Ophthalmologist",
+          "specialty": "Retina / Glaucoma / Refractive Surgery",
+          "quote": "Precision in diagnosis, excellence in treatment.",
+          "quoteHighlight1": "diagnosis",
+          "quoteHighlight2": "treatment",
+          "philosophy": "Accurate diagnosis is the first step to successful surgery. Through university hospital-grade advanced examination systems and insightful data analysis, we establish personalized treatment plans most suitable for your eye condition.",
+          "career": [
+            "Graduate, College of Medicine, Yonsei University",
+            "Ophthalmology Specialist, Severance Hospital",
+            "Former Head of Department, Siloam Eye Hospital",
+            "Full Member, Korean Retina Society"
+          ]
+        },
+        {
+          "name": "이용은",
+          "nameEng": "Lee Yong-eun",
+          "position": "원장",
+          "positionEng": "Director",
+          "title": "Ophthalmologist",
+          "specialty": "Pediatric Ophthalmology / Orthokeratology",
+          "quote": "Caring for children's vision, securing their future.",
+          "quoteHighlight1": "children's vision",
+          "quoteHighlight2": "future",
+          "philosophy": "A child's vision is a lifelong asset. From myopia progression control during growth to orthokeratology prescriptions, we provide warm and meticulous care tailored to children's eye level, relieving parents' concerns.",
+          "career": [
+            "Graduate, Daejeon Science High School",
+            "Second Place Graduate, College of Medicine, Catholic University of Korea",
+            "Master's Degree, Graduate School of Medicine, Catholic University of Korea",
+            "Clinical Professor of Cataract, Seoul St. Mary's Hospital",
+            "Full Member, Korean Ophthalmological Society (KOS)",
+            "Full Member, Korean Society of Cataract and Refractive Surgery (KSCRS)",
+            "Full Member, Korean Ophthalmology Association (KOA)",
+            "Full Member, American Society of Cataract and Refractive Surgery (ASCRS)",
+            "Full Member, European Society of Cataract and Refractive Surgeons (ESCRS)",
+            "Veterans Evaluation Services Physician"
+          ]
+        }
+      ],
+      "mainCareer": "Main Career",
+      "medicalPhilosophy": "Medical Philosophy",
+      "viewProfile": "View Full Profile"
+    },
+    "MedicalTeam": {
+      "sectionTitle": "Medical Team",
+      "headline": "Mastery",
+      "headlineSubtitle": "of Vision.",
+      "positionLabels": {
+        "representativeDirector": "Representative Director",
+        "director": "Director"
+      },
+      "careerTitle": "Career",
+      "doctors": [
+        {
+          "name": "Kim Sun-young",
+          "position": "Representative Director",
+          "title": "Ophthalmologist / Clinical Professor",
+          "specialty": "SMILE·CLEAR / Presbyopia Cataract / Dry Eye Syndrome",
+          "description": "As a university hospital professor, I have dedicated myself to treating refractory dry eye syndrome and cataracts. As Gangnam's only solo-practicing female ophthalmologist, I promise the best surgical results through the difference of meticulousness.",
+          "career": [
+            "Master's Degree, Graduate School of Medicine, Catholic University of Korea",
+            "2009-2013 Ophthalmology Specialist, Catholic Medical Center, Catholic University of Korea",
+            "2013-2016 Clinical Professor of Cornea and Cataract, Uijeongbu St. Mary's Hospital",
+            "2009 Outstanding Resident Award, Seoul St. Mary's Hospital",
+            "2008 Minister of Health and Welfare Award",
+            "Oral Presentation Award, 108th Korean Ophthalmological Society Conference",
+            "Commendation for Epidemiological Investigation, Korea Disease Control and Prevention Agency",
+            "Full Member, Korean Ophthalmological Society (KOS)",
+            "Full Member, Korean External Eye Disease Study Group (KEEDS)",
+            "Full Member, Korean Contact Lens Study Society (KCLSS)",
+            "Full Member, European Society of Cataract and Refractive Surgeons (ESCRS)"
+          ]
+        },
+        {
+          "name": "Lim Sung-woong",
+          "position": "Representative Director",
+          "title": "Ophthalmologist",
+          "specialty": "Retina / Glaucoma / Refractive Surgery",
+          "description": "Accurate diagnosis is the first step to successful surgery. Through university hospital-grade advanced examination systems and insightful data analysis, we establish personalized treatment plans most suitable for your eye condition.",
+          "career": [
+            "Graduate, College of Medicine, Yonsei University",
+            "Ophthalmology Specialist, Severance Hospital",
+            "Former Head of Department, Siloam Eye Hospital",
+            "Full Member, Korean Retina Society"
+          ]
+        },
+        {
+          "name": "Lee Yong-eun",
+          "position": "Director",
+          "title": "Ophthalmologist",
+          "specialty": "Pediatric Ophthalmology / Orthokeratology",
+          "description": "A child's vision is a lifelong asset. From myopia progression control during growth to orthokeratology prescriptions, we provide warm and meticulous care tailored to children's eye level, relieving parents' concerns.",
+          "career": [
+            "Graduate, Daejeon Science High School",
+            "Second Place Graduate, College of Medicine, Catholic University of Korea",
+            "Master's Degree, Graduate School of Medicine, Catholic University of Korea",
+            "Clinical Professor of Cataract, Seoul St. Mary's Hospital",
+            "Full Member, Korean Ophthalmological Society (KOS)",
+            "Full Member, Korean Society of Cataract and Refractive Surgery (KSCRS)",
+            "Full Member, Korean Ophthalmology Association (KOA)",
+            "Full Member, American Society of Cataract and Refractive Surgery (ASCRS)",
+            "Full Member, European Society of Cataract and Refractive Surgeons (ESCRS)",
+            "Veterans Evaluation Services Physician"
+          ]
+        }
+      ]
+    },
+    "AIPrediction": {
+      "badge": "Healing AI Solutions",
+      "title": "Find the Perfect Surgery",
+      "titleHighlight": "Tailored for Your Eyes",
+      "description": "Healing Eye Clinic AI, trained on over 100,000 clinical cases,\nanalyzes your corneal data and lifestyle\nto recommend the safest and most effective vision correction procedure.",
+      "features": [
+        "3D Analysis of Corneal Thickness and Shape",
+        "Lifestyle-Based Matching",
+        "Post-Surgery Recovery Period Simulation"
+      ],
+      "ctaButton": "Start AI Vision Correction Prediction",
+      "visualTitle": "AI EYE SCANNING",
+      "visualSubtitle": "Click to Start Analysis"
+    }
+  },
+  "About": {
+    "BrandStory": {
+      "sectionTitle": "Our Mission",
+      "headline": "More Than Vision,",
+      "headlineSubtitle": "We Design Your Life.",
+      "description": "Beyond simply correcting vision,\nto make your life clearer and more beautiful.\nHealing Eye Clinic sculpts the most perfect vision\nat the intersection of technology and art.",
+      "stats": [
+        {
+          "label": "Successful Cases",
+          "value": "50,000+",
+          "suffix": "Eyes"
+        },
+        {
+          "label": "Patient Satisfaction",
+          "value": "4.9",
+          "suffix": "/5.0"
+        },
+        {
+          "label": "Medical Staff",
+          "value": "University Hospital",
+          "suffix": "Faculty Background"
+        }
+      ]
+    },
+    "DirectorMessage": {
+      "sectionTitle": "Greeting",
+      "headline": "Healing Your Eyes,",
+      "headlineSubtitle": "Design Your Life.",
+      "representativeDirector": "Representative Director",
+      "doctorName": "Dr. Kim, Sun-young",
+      "greeting": "Hello, I am Dr. Kim Sun-young, Representative Director of Healing Eye Clinic.",
+      "paragraphs": [
+        "'Seeing' is not merely recognizing objects, but a process of facing the faces of loved ones, remembering beautiful scenery, and fully experiencing every moment of life.",
+        "From my time as a university hospital professor until now, having met tens of thousands of patients, what I have realized is that ultimately, the best medical care begins with 'empathy.' Listening carefully to even the smallest discomforts of patients and treating them with the care I would give to family—that is the essence of 'healing' as I understand it.",
+        "More than the title of Gangnam's only solo-practicing female representative director, I want to be remembered as a lifelong primary physician who takes responsibility for each person's eye health to the very end. For your most brilliant moments, Healing Eye Clinic will be with you."
+      ]
+    },
+    "HistoryTimeline": {
+      "sectionTitle": "Milestones",
+      "headline": "Our History",
+      "timeline": [
+        {
+          "year": "2018",
+          "title": "Healing Eye Clinic Opening",
+          "description": "Premium Vision Correction Center opened in Yeoksam-dong 808 Tower"
+        },
+        {
+          "year": "2019",
+          "title": "University Hospital-Grade Equipment Introduction",
+          "description": "Established state-of-the-art vision correction equipment and precision examination system"
+        },
+        {
+          "year": "2020",
+          "title": "SMILE LASIK Specialty Center",
+          "description": "Full-scale launch of minimal-incision SMILE LASIK"
+        },
+        {
+          "year": "2021",
+          "title": "Presbyopia/Cataract Center Expansion",
+          "description": "Launched specialized treatment with premium multifocal IOL"
+        },
+        {
+          "year": "2022",
+          "title": "Minimal-Incision CLEAR LASIK",
+          "description": "Introduced CLEAR LASIK with differentiated treatment system"
+        },
+        {
+          "year": "2023",
+          "title": "Achieved 50,000 Cumulative Surgeries",
+          "description": "Achieved 4.9/5.0 patient satisfaction, established as regional leading ophthalmology clinic"
+        },
+        {
+          "year": "2024",
+          "title": "AI Precision Examination System",
+          "description": "Established cutting-edge AI-based personalized vision correction system"
+        }
+      ],
+      "historyLabel": "HISTORY"
+    },
+    "Location": {
+      "sectionTitle": "Location",
+      "headline": "Visit Us",
+      "address": {
+        "title": "Address",
+        "line1": "808 Tower, 10-11F, 470 Gangnam-daero, Gangnam-gu, Seoul",
+        "line2": "(1 minute walk from Sinnonhyeon Station Exit 6)"
+      },
+      "contact": {
+        "title": "Contact",
+        "phone": "02-566-1222",
+        "kakao": "kakao @healingeye"
+      },
+      "hours": {
+        "title": "Hours",
+        "weekday": "Weekdays: 09:30 - 18:30 (Lunch Break 13:00 - 14:00)",
+        "friday": "Friday: 09:30 - 21:00 (Night Clinic)",
+        "saturday": "Saturday: 09:30 - 16:00",
+        "closed": "Closed Sundays / Public Holidays"
+      },
+      "mapLabel": "Sinnonhyeon Station Exit 6"
+    },
+    "Philosophy": {
+      "sectionTitle": "Philosophy",
+      "headline": "The Standard",
+      "headlineSubtitle": "of Excellence.",
+      "description": "Based on three core values,\nHealing Eye Clinic promises the most perfect vision correction.",
+      "values": [
+        {
+          "title": "Safety First",
+          "subtitle": "Uncompromising Safety Standards",
+          "description": "With 60-step precision pre-operative examination and triple cross-verification system, we do not allow even 0.01% margin of error.",
+          "stats": [
+            {
+              "label": "Precision Examination",
+              "value": "60 Steps"
+            },
+            {
+              "label": "Cross-Verification",
+              "value": "Triple"
+            }
+          ]
+        },
+        {
+          "title": "Personalized",
+          "subtitle": "Customized Plan for One Individual Only",
+          "description": "We reject factory-style surgery. We design 1:1 customized plans considering the patient's corneal fingerprint, lifestyle patterns, and occupational environment.",
+          "stats": [
+            {
+              "label": "Customized Plan",
+              "value": "1:1"
+            },
+            {
+              "label": "Analysis Items",
+              "value": "20+"
+            }
+          ]
+        },
+        {
+          "title": "Lifetime Care",
+          "subtitle": "Lifelong Eye Health Partner",
+          "description": "We operate a lifetime management system that can accurately track and observe your eye condition even after 10 or 20 years post-surgery.",
+          "stats": [
+            {
+              "label": "Data Retention",
+              "value": "Lifetime"
+            },
+            {
+              "label": "Regular Check-ups",
+              "value": "Free"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "brandName": "Healing Eye",
+    "tagline": "Experience the new standard of vision correction. Premium service, state-of-the-art technology, and a brand new life for your eyes.",
+    "contact": {
+      "title": "Contact",
+      "address": "808 Tower, 10-11F, 470 Gangnam-daero,\nGangnam-gu, Seoul (Sinnonhyeon Station Exit 6)",
+      "phone": "02-566-1222",
+      "kakao": "kakao @healingeye"
+    },
+    "hours": {
+      "title": "Hours",
+      "weekday": "Weekdays",
+      "weekdayTime": "09:30 - 18:30",
+      "lunchBreak": "(Lunch Break 13:00-14:00)",
+      "friday": "Friday",
+      "fridayTime": "09:30 - 21:00",
+      "saturday": "Saturday",
+      "saturdayTime": "09:30 - 16:00",
+      "closed": "Sundays / Public Holidays",
+      "closedStatus": "Closed"
+    },
+    "copyright": "Healing Eye Clinic. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "Common": {
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "treatments": "Treatments",
+      "equipment": "Equipment",
+      "community": "Community",
+      "reservation": "Reservation"
+    },
+    "buttons": {
+      "book": "Book Now",
+      "viewMore": "View More",
+      "previous": "Previous",
+      "next": "Next",
+      "close": "Close",
+      "submit": "Submit",
+      "cancel": "Cancel"
+    },
+    "labels": {
+      "loading": "Loading...",
+      "error": "An error has occurred",
+      "success": "Successfully completed"
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "timestamp": "2026-02-05T18:41:55.832Z",
+  "reason": "compaction",
+  "status": {
+    "version": "2.0",
+    "lastUpdated": "2026-02-05T18:38:45.277Z",
+    "activeFeatures": [
+      "about",
+      "vision",
+      "insight",
+      "healingeyeclinic",
+      "center"
+    ],
+    "primaryFeature": "about",
+    "features": {
+      "about": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-04T15:01:53.407Z",
+          "lastUpdated": "2026-02-04T15:40:51.875Z"
+        },
+        "lastFile": "/Users/bangseonjun/Desktop/healingeyeclinic/src/components/about/DirectorMessage.tsx"
+      },
+      "vision": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-04T15:55:54.921Z",
+          "lastUpdated": "2026-02-04T15:57:19.979Z"
+        },
+        "lastFile": "/Users/bangseonjun/Desktop/healingeyeclinic/src/components/vision/VisionProcess.tsx"
+      },
+      "insight": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T18:33:35.220Z",
+          "lastUpdated": "2026-02-05T18:33:54.833Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/components/insight/VideoGallery.tsx"
+      },
+      "healingeyeclinic": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T18:34:07.330Z",
+          "lastUpdated": "2026-02-05T18:38:45.277Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/next.config.ts"
+      },
+      "center": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-02-05T18:36:37.012Z",
+          "lastUpdated": "2026-02-05T18:36:37.012Z"
+        },
+        "lastFile": "/Users/kingone0907/Desktop/healingeyeclinic/src/components/center/EquipmentShowcase.tsx"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-02-04T14:35:12.402Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-02-05T18:38:45.277Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-02-04T15:01:53.407Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:01:54.879Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:01:57.511Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:01:59.426Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:05:01.760Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:05:09.161Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:05:19.445Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:07:05.082Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:37:21.735Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:37:25.693Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:37:38.921Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:37:44.862Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:38:19.470Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:39:05.222Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:40:51.875Z",
+        "feature": "about",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:55:54.921Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:56:05.823Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:56:32.180Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:56:52.426Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:57:08.647Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:57:13.432Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-04T15:57:19.979Z",
+        "feature": "vision",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:33:35.220Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:33:54.833Z",
+        "feature": "insight",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:34:07.330Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:36:37.012Z",
+        "feature": "center",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:36:40.648Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:38:35.939Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-02-05T18:38:45.277Z",
+        "feature": "healingeyeclinic",
+        "phase": "do",
+        "action": "updated"
+      }
+    ]
+  }
+}

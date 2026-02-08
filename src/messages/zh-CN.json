@@ -1,0 +1,523 @@
+{
+  "Home": {
+    "Hero": {
+      "clinicName": "韓國Healing眼科",
+      "location": "首尔江南",
+      "established": "成立于2016年",
+      "directorName": "金善英",
+      "brandName": "治愈",
+      "brandSubtitle": "眼科",
+      "tagline": "以无妥协的精准与安全，重新定义视力矫正的标准。",
+      "ctaButton": "立即",
+      "ctaButtonSub": "预约"
+    },
+    "Philosophy": {
+      "sectionTitle": "我们的理念",
+      "mainQuote": "超越眼睛的治疗，",
+      "mainQuoteHighlight": "治愈您的人生。",
+      "description": "不仅仅是矫正视力。\n从早晨睁眼的瞬间到入睡之前，让您面对的整个世界\n变得更加清晰和美好。这是治愈眼科的承诺。",
+      "movingText": {
+        "text1": "超越视野",
+        "text2": "治愈生活",
+        "text3": "优质护理",
+        "text4": "完美杰作"
+      },
+      "values": {
+        "precision": {
+          "title": "超精准（Precision）",
+          "description": "以挑战手术误差0%的超精密系统，\n为您的眼睛刻画完美视力。"
+        },
+        "safety": {
+          "title": "安全（Safety）",
+          "description": "大学医院教授出身的医疗团队与大学医院级最新设备的结合，\n让您安心托付。"
+        },
+        "empathy": {
+          "title": "共鸣（Empathy）",
+          "description": "以数万例经验完善的手术实力和\n温馨的治愈空间，真诚地关怀您的眼睛。"
+        }
+      }
+    },
+    "Services": {
+      "sectionTitle": "Medical Centers",
+      "headline": "World Class",
+      "headlineSubtitle": "Healing Centers",
+      "viewAllButton": "View All Services",
+      "visionCorrection": {
+        "badge": "Most Popular",
+        "title": "Vision Correction",
+        "description": "从SMILE全飞秒到定制LASEK、晶体植入术。\n超越传统视力矫正的超精密激光解决方案。"
+      },
+      "presbyopiaCataract": {
+        "title": "Presbyopia &",
+        "titleLine2": "Cataract",
+        "subtitle": "老花眼/白内障中心 +",
+        "hoverText": "老花眼/白内障中心 +"
+      },
+      "eyeDisease": {
+        "badge": "University Hospital Level",
+        "title": "Eye Disease",
+        "titleLine2": "Center",
+        "subtitle": "眼疾病中心",
+        "description": "干眼症、青光眼、视网膜疾病"
+      }
+    },
+    "WhyHealingEye": {
+      "sectionTitle": "选择治愈眼科的理由",
+      "headline": "标准不同的眼科，",
+      "headlineSubtitle": "成果为证。",
+      "stats": {
+        "rating": "4.9/5.0",
+        "ratingLabel": "患者评价",
+        "cases": "50,000+",
+        "casesLabel": "成功案例"
+      },
+      "features": {
+        "faculty": {
+          "title": "University Faculty",
+          "subtitle": "大学医院教授出身的医疗团队",
+          "description": "拥有丰富临床经验和专业技术的医疗团队，\n从咨询到手术、术后管理全程1对1专属负责。"
+        },
+        "equipment": {
+          "title": "High-End Equipment",
+          "subtitle": "大学医院级尖端设备",
+          "description": "配备Zimer Z8、ZEISS SUITE等最新设备，\n率先使用德国LaraLens，四焦点PanOptix使用量全国第一，\n证明白内障领域的专业性。"
+        },
+        "guarantee": {
+          "title": "Lifetime Guarantee",
+          "subtitle": "终身视力保障系统",
+          "description": "负责您未来40年的第二人生，\n以终身保障制度永久保证您的视力。"
+        }
+      }
+    },
+    "Review": {
+      "title": "真实故事",
+      "subtitle": "数据验证的成果，患者们的真实体验。",
+      "ctaSubtitle": "终身视力，现在开始",
+      "ctaButton": "立即预约专家咨询",
+      "reviews": [
+        {
+          "name": "金智*",
+          "age": "20多岁",
+          "surgery": "SMILE全飞秒激光",
+          "content": "没想到没有眼镜的早晨会如此感动。手术当天稍微有些模糊，第二天就进入了新世界。特别担心夜间眩光，但完全没有不适感，夜间驾驶也很顺利。",
+          "date": "2024.01.15"
+        },
+        {
+          "name": "李亨*",
+          "age": "60多岁",
+          "surgery": "多焦点人工晶体（老花白内障）",
+          "content": "以前没有老花镜连手机都看不清，现在高尔夫球看得很清楚，和朋友们用微信也很方便。不仅是手术，更像是收到了生活质量的礼物。医院设施像酒店一样高档，工作人员也非常亲切，手术过程很舒适。",
+          "date": "2024.01.12"
+        },
+        {
+          "name": "朴瑞*",
+          "age": "30多岁",
+          "surgery": "ICL晶体植入术",
+          "content": "因为角膜太薄被判定无法做激光手术而沮丧，在治愈眼科通过ICL重见光明。完全没有镜片异物感，干眼症比戴隐形眼镜时还要轻。犹豫的时间太可惜了。强烈推荐！",
+          "date": "2024.01.08"
+        },
+        {
+          "name": "崔敏*",
+          "age": "50多岁",
+          "surgery": "老花激光",
+          "content": "因为老花工作起来太辛苦，单眼视激光术后近距离作业轻松多了。一开始说需要适应期，但比想象中适应得快，现在不戴眼镜也能清楚看会议资料。",
+          "date": "2023.12.29"
+        },
+        {
+          "name": "郑夏*",
+          "age": "20多岁",
+          "surgery": "高级表层手术",
+          "content": "很担心疼痛问题，但只有2天左右眼睛刺痛，之后就很舒服了。摘掉保护镜片后明显感觉到视力提升。目前保持1.2视力。非常感谢！",
+          "date": "2023.12.20"
+        },
+        {
+          "name": "安秀*",
+          "age": "40多岁",
+          "surgery": "二次手术（激光→老花表层手术）",
+          "content": "在其他医院做激光后视力下降，接受了二次手术。虽然很不安，但院长仔细检查角膜状态后安全地进行了手术，非常感谢。现在保持1.2视力，夜间视力也比以前好了。",
+          "date": "2023.12.15"
+        },
+        {
+          "name": "尹智*",
+          "age": "20多岁",
+          "surgery": "表层手术（角膜薄）",
+          "content": "因为角膜薄很苦恼，在治愈眼科通过表层手术安全地完成了。恢复也很快，现在已经6个月了，对视力非常满意！",
+          "date": "2023.12.10"
+        },
+        {
+          "name": "赵贤*",
+          "age": "60多岁",
+          "surgery": "白内障（高级晶体）",
+          "content": "白内障手术后感觉回到了30年前的视力。不戴眼镜也能打高尔夫、看书，人生都不一样了。请不要犹豫，先咨询看看！",
+          "date": "2023.12.05"
+        }
+      ]
+    },
+    "PremiumFacility": {
+      "sectionTitle": "Premium Lounge",
+      "headline": "Relaxation",
+      "headlineSubtitle": "Before Perfection",
+      "description": "连手术前的紧张感也能变成期待感的空间。\n希林眼科的高端休息室拥有五星级酒店的品质。\n以最佳状态迎接您的新视力。",
+      "galleryTitle": "参观设施",
+      "facilityAlt": "希林眼科设施",
+      "backgroundAlt": "Premium Facility",
+      "floatingText": "Architecture & Interior Design"
+    },
+    "Doctor": {
+      "doctors": [
+        {
+          "name": "金善英",
+          "nameEng": "Kim Sun-young",
+          "position": "首席院长",
+          "positionEng": "Representative Director",
+          "title": "眼科专科医师/临床教授",
+          "specialty": "全飞秒激光/老花白内障/干眼症",
+          "quote": "视觉不仅是看见，更是体验。",
+          "quoteHighlight1": "看见",
+          "quoteHighlight2": "体验",
+          "philosophy": "不容许1%误差的完美主义。以大学医院教授出身的丰富临床经验和对尖端设备的深入理解为基础，为您找到人生中最清晰的瞬间。",
+          "career": [
+            "天主教大学医学院研究生院硕士",
+            "2009-2013年 天主教大学天主教中央医疗院眼科专科医师",
+            "2013-2016年 议政府圣母医院角膜、白内障临床教授",
+            "2009年 首尔圣母医院优秀住院医师表彰",
+            "2008年 保健福祉部长官奖",
+            "第108届韩国眼科学会口头报告奖",
+            "疾病管理本部流行病学调查表彰状",
+            "韩国眼科学会(KOS)正式会员",
+            "韩国外眼部研究会(KEEDS)正式会员",
+            "韩国隐形眼镜学会(KCLSS)正式会员",
+            "欧洲白内障屈光手术学会(ESCRS)正式会员"
+          ]
+        },
+        {
+          "name": "林成雄",
+          "nameEng": "Lim Sung-woong",
+          "position": "首席院长",
+          "positionEng": "Representative Director",
+          "title": "眼科专科医师",
+          "specialty": "视网膜/青光眼/视力矫正",
+          "quote": "诊断的精准，治疗的卓越。",
+          "quoteHighlight1": "诊断",
+          "quoteHighlight2": "治疗",
+          "philosophy": "精准的诊断是成功手术的第一步。以大学医院级尖端检查系统和分析数据的洞察力，为您的眼部状况制定最合适的个性化治疗方案。",
+          "career": [
+            "延世大学医学院毕业",
+            "Severance医院眼科专科医师",
+            "前）西罗亚眼科医院诊疗科长",
+            "韩国视网膜学会正式会员"
+          ]
+        },
+        {
+          "name": "李龙恩",
+          "nameEng": "Lee Yong-eun",
+          "position": "院长",
+          "positionEng": "Director",
+          "title": "眼科专科医师",
+          "specialty": "小儿眼科/角膜塑形镜",
+          "quote": "呵护儿童视力，保障他们的未来。",
+          "quoteHighlight1": "儿童视力",
+          "quoteHighlight2": "未来",
+          "philosophy": "儿童的视力是一生的财富。从抑制青春期近视进展到角膜塑形镜处方，以符合儿童视角的温暖细致诊疗，解除家长的担忧。",
+          "career": [
+            "大田科学高中毕业",
+            "天主教大学医学院第二名毕业",
+            "天主教大学医学院研究生院硕士",
+            "首尔圣母医院白内障临床教授",
+            "韩国眼科学会(KOS)正式会员",
+            "韩国白内障屈光手术学会(KSCRS)正式会员",
+            "韩国眼科医师会(KOA)正式会员",
+            "美国白内障屈光手术学会(ASCRS)正式会员",
+            "欧洲白内障屈光手术学会(ESCRS)正式会员",
+            "美国退伍军人体检医师(Veterans Evaluation Services)"
+          ]
+        }
+      ],
+      "mainCareer": "主要经历",
+      "medicalPhilosophy": "医疗理念",
+      "viewProfile": "查看完整简历"
+    },
+    "MedicalTeam": {
+      "sectionTitle": "医疗团队",
+      "headline": "视觉的",
+      "headlineSubtitle": "精湛技艺",
+      "positionLabels": {
+        "representativeDirector": "首席院长",
+        "director": "院长"
+      },
+      "careerTitle": "经历",
+      "doctors": [
+        {
+          "name": "金善英",
+          "position": "首席院长",
+          "title": "眼科专科医师/临床教授",
+          "specialty": "全飞秒激光/老花白内障/干眼症",
+          "description": "作为大学医院教授，致力于难治性干眼症和白内障治疗。作为江南唯一独立开业的女性眼科专科医师，承诺以细致的差异创造最佳手术效果。",
+          "career": [
+            "天主教大学医学院研究生院硕士",
+            "2009-2013年 天主教大学天主教中央医疗院眼科专科医师",
+            "2013-2016年 议政府圣母医院角膜、白内障临床教授",
+            "2009年 首尔圣母医院优秀住院医师表彰",
+            "2008年 保健福祉部长官奖",
+            "第108届韩国眼科学会口头报告奖",
+            "疾病管理本部流行病学调查表彰状",
+            "韩国眼科学会(KOS)正式会员",
+            "韩国外眼部研究会(KEEDS)正式会员",
+            "韩国隐形眼镜学会(KCLSS)正式会员",
+            "欧洲白内障屈光手术学会(ESCRS)正式会员"
+          ]
+        },
+        {
+          "name": "林成雄",
+          "position": "首席院长",
+          "title": "眼科专科医师",
+          "specialty": "视网膜/青光眼/视力矫正",
+          "description": "精准的诊断是成功手术的第一步。以大学医院级尖端检查系统和分析数据的洞察力，为您的眼部状况制定最合适的个性化治疗方案。",
+          "career": [
+            "延世大学医学院毕业",
+            "Severance医院眼科专科医师",
+            "前）西罗亚眼科医院诊疗科长",
+            "韩国视网膜学会正式会员"
+          ]
+        },
+        {
+          "name": "李龙恩",
+          "position": "院长",
+          "title": "眼科专科医师",
+          "specialty": "小儿眼科/角膜塑形镜",
+          "description": "儿童的视力是一生的财富。从抑制青春期近视进展到角膜塑形镜处方，以符合儿童视角的温暖细致诊疗，解除家长的担忧。",
+          "career": [
+            "大田科学高中毕业",
+            "天主教大学医学院第二名毕业",
+            "天主教大学医学院研究生院硕士",
+            "首尔圣母医院白内障临床教授",
+            "韩国眼科学会(KOS)正式会员",
+            "韩国白内障屈光手术学会(KSCRS)正式会员",
+            "韩国眼科医师会(KOA)正式会员",
+            "美国白内障屈光手术学会(ASCRS)正式会员",
+            "欧洲白内障屈光手术学会(ESCRS)正式会员",
+            "美国退伍军人体检医师(Veterans Evaluation Services)"
+          ]
+        }
+      ]
+    },
+    "AIPrediction": {
+      "badge": "Healing AI Solutions",
+      "title": "找到最适合",
+      "titleHighlight": "您眼睛的手术",
+      "description": "Healing眼科诊所AI学习了超过10万例临床数据，\n分析您的角膜数据和生活方式，\n推荐最安全、最有效的视力矫正手术。",
+      "features": [
+        "角膜厚度和形状3D分析",
+        "基于生活方式的匹配",
+        "术后恢复期预测模拟"
+      ],
+      "ctaButton": "开始AI视力矫正预测",
+      "visualTitle": "AI EYE SCANNING",
+      "visualSubtitle": "Click to Start Analysis"
+    }
+  },
+  "About": {
+    "BrandStory": {
+      "sectionTitle": "我们的使命",
+      "headline": "不止于视觉，",
+      "headlineSubtitle": "设计您的人生。",
+      "description": "不仅仅是矫正视力，\n让您的生活变得更加清晰和美好。\n治愈眼科在技术与艺术的边界，\n雕刻最完美的视力。",
+      "stats": [
+        {
+          "label": "成功案例",
+          "value": "50,000+",
+          "suffix": "例"
+        },
+        {
+          "label": "患者满意度",
+          "value": "4.9",
+          "suffix": "/5.0"
+        },
+        {
+          "label": "医疗团队",
+          "value": "大学医院",
+          "suffix": "教授出身"
+        }
+      ]
+    },
+    "DirectorMessage": {
+      "sectionTitle": "院长致辞",
+      "headline": "治愈您的眼睛，",
+      "headlineSubtitle": "设计您的人生。",
+      "representativeDirector": "首席院长",
+      "doctorName": "金善英 医师",
+      "greeting": "您好，我是治愈眼科首席院长金善英。",
+      "paragraphs": [
+        "\"看\"不仅仅是认知事物，更是面对所爱之人的面容、铭记美丽风景、完整感受生命每一刻的过程。",
+        "从大学医院教授时期到现在，接诊数万名患者后我领悟到，最好的医术最终源于\"共鸣\"。倾听患者的细微不适，以对待家人的心态诊疗。这就是我所认为的\"治愈\"的本质。",
+        "比起江南唯一女性首席院长独立开业的头衔，我更希望被铭记为负责每一位患者眼部健康的终身主治医师。为了您最闪耀的时刻，治愈眼科与您同在。"
+      ]
+    },
+    "HistoryTimeline": {
+      "sectionTitle": "重要里程碑",
+      "headline": "我们的历史",
+      "timeline": [
+        {
+          "year": "2018",
+          "title": "治愈眼科开业",
+          "description": "驿三洞808大厦高端视力矫正中心开业"
+        },
+        {
+          "year": "2019",
+          "title": "引进大学医院级设备",
+          "description": "引进最新视力矫正设备及精密检查系统"
+        },
+        {
+          "year": "2020",
+          "title": "全飞秒激光专科中心",
+          "description": "正式开展微创全飞秒激光手术"
+        },
+        {
+          "year": "2021",
+          "title": "老花/白内障中心扩展",
+          "description": "开始高端多焦点人工晶体专科诊疗"
+        },
+        {
+          "year": "2022",
+          "title": "微创Clear激光",
+          "description": "引进差异化诊疗系统的Clear激光"
+        },
+        {
+          "year": "2023",
+          "title": "累计手术达50,000例",
+          "description": "患者满意度达到4.9/5.0，成长为地区代表性眼科"
+        },
+        {
+          "year": "2024",
+          "title": "AI精密检查系统",
+          "description": "构建最尖端AI定制化视力矫正系统"
+        }
+      ],
+      "historyLabel": "历史"
+    },
+    "Location": {
+      "sectionTitle": "位置信息",
+      "headline": "欢迎莅临",
+      "address": {
+        "title": "地址",
+        "line1": "首尔特别市江南区江南大路470号808大厦10-11层",
+        "line2": "（新论岘站6号出口步行1分钟）"
+      },
+      "contact": {
+        "title": "联系方式",
+        "phone": "02-566-1222",
+        "kakao": "kakao @healingeye"
+      },
+      "hours": {
+        "title": "诊疗时间",
+        "weekday": "周一至周四：09:30 - 18:30（午休时间13:00 - 14:00）",
+        "friday": "周五：09:30 - 21:00（夜间诊疗）",
+        "saturday": "周六：09:30 - 16:00",
+        "closed": "周日/节假日休诊"
+      },
+      "mapLabel": "新论岘站6号出口"
+    },
+    "Philosophy": {
+      "sectionTitle": "核心理念",
+      "headline": "卓越的",
+      "headlineSubtitle": "标准",
+      "description": "治愈眼科以三大核心价值，\n承诺最完美的视力矫正。",
+      "values": [
+        {
+          "title": "Safety First",
+          "subtitle": "不妥协的安全标准",
+          "description": "术前60步精密检查、三重交叉验证系统，不容许0.01%的误差。",
+          "stats": [
+            {
+              "label": "精密检查",
+              "value": "60步"
+            },
+            {
+              "label": "交叉验证",
+              "value": "三重"
+            }
+          ]
+        },
+        {
+          "title": "Personalized",
+          "subtitle": "只为一人的定制方案",
+          "description": "拒绝流水线式手术。综合考虑患者的角膜指纹、生活模式、职业环境，设计1对1定制方案。",
+          "stats": [
+            {
+              "label": "定制方案",
+              "value": "1对1"
+            },
+            {
+              "label": "分析项目",
+              "value": "20+"
+            }
+          ]
+        },
+        {
+          "title": "Lifetime Care",
+          "subtitle": "终身眼部健康伙伴",
+          "description": "运营终身管理系统，即使术后10年、20年，也能精准追踪观察您的眼部状态。",
+          "stats": [
+            {
+              "label": "数据保存",
+              "value": "终身"
+            },
+            {
+              "label": "定期检查",
+              "value": "免费"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "brandName": "治愈眼科",
+    "tagline": "体验视力矫正的新标准。高端服务、尖端技术，为您的眼睛开启全新生活。",
+    "contact": {
+      "title": "联系方式",
+      "address": "首尔特别市江南区江南大路470号\n808大厦10-11层（新论岘站6号出口）",
+      "phone": "02-566-1222",
+      "kakao": "kakao @healingeye"
+    },
+    "hours": {
+      "title": "诊疗时间",
+      "weekday": "周一至周四",
+      "weekdayTime": "09:30 - 18:30",
+      "lunchBreak": "（午休13:00-14:00）",
+      "friday": "周五",
+      "fridayTime": "09:30 - 21:00",
+      "saturday": "周六",
+      "saturdayTime": "09:30 - 16:00",
+      "closed": "周日/节假日",
+      "closedStatus": "休诊"
+    },
+    "copyright": "治愈眼科诊所。保留所有权利。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款"
+  },
+  "Common": {
+    "navigation": {
+      "home": "首页",
+      "about": "医院介绍",
+      "treatments": "诊疗指南",
+      "equipment": "设备介绍",
+      "community": "社区",
+      "reservation": "预约"
+    },
+    "buttons": {
+      "book": "预约",
+      "viewMore": "查看详情",
+      "previous": "上一页",
+      "next": "下一页",
+      "close": "关闭",
+      "submit": "提交",
+      "cancel": "取消"
+    },
+    "labels": {
+      "loading": "加载中...",
+      "error": "发生错误",
+      "success": "成功完成"
+    }
+  }
+}

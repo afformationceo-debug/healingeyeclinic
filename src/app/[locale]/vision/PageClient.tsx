@@ -12,45 +12,45 @@ const procedures = [
     {
         id: "01",
         title: "뉴스마일 라식 (New SMILE)",
-        subtitle: "4세대 시력교정의 완성",
-        desc: "ZIEMER Z8 펨토세컨드 레이저로 구현하는 최소절개 렌티큘 제거 방식. 각막 표면을 투과하여 각막 실질에만 레이저를 조사하며, 시야 중심축과 회전축의 정확한 계측으로 정밀한 난시 교정이 가능합니다.",
-        features: ["최소절개 방식", "각막 실질 조사", "정밀 난시 교정", "빠른 회복"],
+        subtitle: "차세대 최소절개 시력교정술",
+        desc: "ZIEMER Z8 펨토세컨드 레이저를 이용한 최소절개 방식으로 각막 손상을 최소화하는 4세대 시력교정술입니다. 각막 표면을 투과하여 실질층에만 정밀하게 레이저를 조사하므로 각막 신경 손상이 적고, 시축 중심의 정확한 계측으로 난시 교정의 정밀도가 높습니다.",
+        features: ["2mm 최소절개", "각막신경 보존", "정밀 난시교정", "빠른 일상복귀"],
         color: "from-blue-600 to-indigo-900",
         bgUser: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Futuristic eye scan
     },
     {
         id: "02",
         title: "프리미엄 라식 (Premium LASIK)",
-        subtitle: "하루 만에 되찾는 선명함",
-        desc: "바쁜 현대인을 위한 원데이 솔루션. 20mm 최소 절개와 강화된 각막 보존 기술로 수술 당일 목표 시력의 90%를 회복합니다. 통증 없이 가장 빠르게 광명을 찾으세요.",
-        features: ["원데이 시력 회복", "통증 제로", "최소 절개", "야간 시력 향상"],
+        subtitle: "빠른 회복의 스마트 시력교정",
+        desc: "각막 절편을 생성한 후 레이저로 각막을 절삭하여 굴절이상을 교정하는 검증된 시력교정술입니다. 수술 당일부터 시력 회복이 가능하며, 통증이 거의 없고 빠른 일상 복귀가 가능합니다. 최신 웨이브프론트 기술로 야간 시력의 질까지 개선합니다.",
+        features: ["당일 시력회복", "최소 통증", "웨이브프론트 맞춤", "야간시력 향상"],
         color: "from-cyan-600 to-blue-900",
         bgUser: "https://images.pexels.com/photos/5752263/pexels-photo-5752263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Clear vision, woman with glasses looking
     },
     {
         id: "03",
         title: "프리미엄 라섹 (Premium LASEK)",
-        subtitle: "가장 보수적이고 안전한 선택",
-        desc: "각막 두께가 얇거나 충격에 민감한 특수 직업군(군인, 소방관, 운동선수)을 위해. 상피 세포를 정교하게 다듬어 외부 충격에 가장 강한 눈을 만듭니다.",
-        features: ["초고도근시 가능", "외부 충격 최강", "각막 절약형", "안구건조 케어"],
+        subtitle: "안전성이 검증된 보수적 시력교정",
+        desc: "각막 상피층만 제거하고 실질에 레이저를 조사하는 보수적 방식으로 각막 두께가 얇거나 외부 충격이 많은 직업군에 적합합니다. 플랩을 생성하지 않아 구조적 안정성이 뛰어나며, 군인, 소방관, 운동선수 등 활동적인 직업군에게 권장됩니다.",
+        features: ["플랩 미생성", "구조적 안정성", "고도근시 가능", "외부충격 강함"],
         color: "from-purple-600 to-fuchsia-900",
         bgUser: "https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Scientific/Medical precision
     },
     {
         id: "04",
         title: "ICL 렌즈삽입술 (EVO+ ICL)",
-        subtitle: "각막 그대로, 시력만 업그레이드",
-        desc: "레이저 교정이 불가능한 초고도근시 환자분들을 위한 최적의 솔루션. 생체 친화적 재료인 Collamer 렌즈로 시력을 디자인하며, 언제든 원상 복구가 가능합니다.",
-        features: ["각막 비절삭", "초고도근시/난시 해결", "자외선 차단", "반영구적 유지"],
+        subtitle: "각막을 보존하는 렌즈삽입 시력교정",
+        desc: "각막을 절삭하지 않고 홍채 뒤편에 특수 렌즈를 삽입하여 시력을 교정하는 안내렌즈삽입술입니다. 생체친화적 Collamer 재질로 부작용이 적으며, 라식/라섹이 불가능한 초고도근시(-6디옵터 이상)나 얇은 각막 환자에게 최적의 대안입니다. 수술 후에도 렌즈 제거가 가능하여 가역성이 보장됩니다.",
+        features: ["각막 비절삭", "초고도근시 교정", "UV 차단기능", "가역적 시술"],
         color: "from-amber-600 to-orange-900",
         bgUser: "https://images.pexels.com/photos/5621937/pexels-photo-5621937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Lens concept
     },
     {
         id: "05",
         title: "라식·라섹 재수술 (Re-Surgery)",
-        subtitle: "마지막 기회, 완벽한 복원",
-        desc: "과거 수술의 부작용(빛 번짐, 시력 저하)으로 고통받는 분들을 위한 고난도 클리닉. 대학병원 교수 출신 의료진의 경험과 노하우로 당신의 마지막 수술을 집도합니다.",
-        features: ["대학병원급 정밀 분석", "부작용 케어", "잔여 각막 보존", "1:1 전담 책임제"],
+        subtitle: "정밀 진단과 경험으로 완성하는 재교정",
+        desc: "이전 시력교정술 후 시력 저하, 잔여 굴절이상, 야간 빛번짐 등의 문제를 개선하는 고난도 재교정술입니다. 대학병원 교수 출신 의료진의 풍부한 임상경험을 바탕으로 잔여 각막 두께를 정밀 분석하여 안전한 범위 내에서 재수술 가능 여부를 판단합니다.",
+        features: ["정밀 각막분석", "부작용 최소화", "안전성 우선", "1:1 맞춤상담"],
         color: "from-red-900 to-rose-950",
         bgUser: "https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" // Detailed eye exam, serious tone
     }
@@ -236,10 +236,10 @@ export default function VisionPageClient() {
                                     <div className="grid grid-cols-2 gap-y-6 gap-x-4 mb-12">
                                         {proc.features.map((feat, f_i) => (
                                             <div key={f_i} className="flex items-center gap-3">
-                                                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-primary shrink-0">
-                                                    <Check size={14} strokeWidth={3} />
+                                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-primary shrink-0">
+                                                    <Check size={18} strokeWidth={3} />
                                                 </div>
-                                                <span className="text-sm font-bold text-white uppercase tracking-wide">{feat}</span>
+                                                <span className="text-base md:text-lg font-bold text-white uppercase tracking-wide leading-tight">{feat}</span>
                                             </div>
                                         ))}
                                     </div>
