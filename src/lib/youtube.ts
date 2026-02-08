@@ -61,7 +61,7 @@ export async function getFeaturedYouTubeVideo(videoId: string): Promise<YouTubeV
     const videoItem = feed.items.find((item: any) => {
       const id = item.id.split(':')[2];
       return id === videoId;
-    });
+    }) as any;
 
     if (videoItem) {
       // RSS 피드에서 찾은 경우
