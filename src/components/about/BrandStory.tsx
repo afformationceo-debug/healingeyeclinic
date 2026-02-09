@@ -19,7 +19,7 @@ export default function BrandStory() {
 
     return (
         <section ref={targetRef} className="h-[200vh] bg-black relative">
-            <div className="sticky top-0 h-screen overflow-hidden flex items-center">
+            <div className="sticky top-0 h-screen overflow-hidden flex items-center pt-16 sm:pt-20 md:pt-24">
 
                 {/* Holographic Eye Scan Background */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">

@@ -11,17 +11,17 @@ export default function VisionProcess() {
     const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
 
     return (
-        <section ref={containerRef} className="py-32 bg-neutral-950 text-white relative overflow-hidden">
-            <div className="container mx-auto px-6 relative z-10">
+        <section ref={containerRef} className="py-16 sm:py-20 md:py-32 bg-neutral-950 text-white relative overflow-hidden">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10">
 
-                <div className="mb-24 text-center">
-                    <span className="text-primary font-bold tracking-[0.2em] uppercase block mb-4">One-Day System</span>
-                    <h2 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                <div className="mb-16 sm:mb-20 md:mb-24 text-center">
+                    <span className="text-primary font-bold tracking-[0.2em] uppercase block mb-3 sm:mb-4 text-sm sm:text-base">One-Day System</span>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 px-4">
                         당일 <span className="text-primary">검사 & 수술</span>,<br />
                         당신의 일상은 멈추지 않습니다.
                     </h2>
-                    <p className="text-neutral-400 text-lg">
-                        힐링안과의 뉴스마일 라식은 각막 손상을 최소화하여<br />
+                    <p className="text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed px-4">
+                        힐링안과의 뉴스마일 라식은 각막 손상을 최소화하여<br className="hidden sm:block" />
                         오전 검사 후 오후 수술, 다음 날부터 세안·샤워·가벼운 운동이 가능합니다.
                     </p>
                 </div>
@@ -29,9 +29,9 @@ export default function VisionProcess() {
                 {/* Timeline Graphic */}
                 <div className="relative max-w-4xl mx-auto">
                     {/* Line */}
-                    <div className="absolute left-[28px] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/0 via-primary/50 to-primary/0" />
+                    <div className="absolute left-[60px] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/0 via-primary/50 to-primary/0" />
 
-                    <div className="space-y-24">
+                    <div className="space-y-16 sm:space-y-20 md:space-y-24">
                         {[
                             { time: "AM 10:00", title: "정밀 검사", desc: "60여가지 정밀 검사 및 상담, 수술 적합도 확인", icon: <ScanEye /> },
                             { time: "PM 02:00", title: "수술 진행", desc: "수술 시간 10분, 각막 최소 절개로 통증 거의 없음", icon: <Clock /> },
@@ -45,18 +45,20 @@ export default function VisionProcess() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.8 }}
-                                className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 ${i % 2 === 0 ? "md:flex-row-reverse" : ""}`}
+                                className={`flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-16 ${i % 2 === 0 ? "md:flex-row-reverse" : ""}`}
                             >
                                 {/* Content */}
-                                <div className={`w-full md:w-1/2 pl-20 md:pl-0 ${i % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
-                                    <span className="text-primary font-mono text-xl mb-2 block">{step.time}</span>
-                                    <h3 className="text-2xl font-bold text-white mb-2">{step.title}</h3>
-                                    <p className="text-neutral-400 leading-relaxed">{step.desc}</p>
+                                <div className={`w-full md:w-1/2 pl-24 md:pl-0 ${i % 2 === 0 ? "md:text-right" : "md:text-left"}`}>
+                                    <span className="text-primary font-mono text-base sm:text-lg md:text-xl mb-2 block">{step.time}</span>
+                                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{step.title}</h3>
+                                    <p className="text-sm sm:text-base text-neutral-400 leading-relaxed">{step.desc}</p>
                                 </div>
 
                                 {/* Icon Point */}
-                                <div className="absolute left-0 md:left-1/2 -translate-x-1/2 flex items-center justify-center w-14 h-14 rounded-full bg-neutral-900 border border-primary text-primary shadow-[0_0_20px_rgba(212,175,55,0.3)] z-10">
-                                    {step.icon}
+                                <div className="absolute left-[45px] md:left-1/2 md:-translate-x-1/2 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-neutral-900 border-2 border-primary text-primary shadow-[0_0_20px_rgba(212,175,55,0.3)] z-10">
+                                    <div className="w-5 h-5 sm:w-6 sm:h-6">
+                                        {step.icon}
+                                    </div>
                                 </div>
 
                                 {/* Empty Space for alignment */}

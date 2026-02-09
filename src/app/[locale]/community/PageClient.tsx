@@ -103,7 +103,7 @@ function FAQSection() {
                     <button
                         key={idx}
                         onClick={() => { setActiveTab(idx); setOpenIndex(0); }}
-                        className={`px-6 py-3 rounded-full font-bold transition-all ${
+                        className={`px-4 py-2.5 sm:px-6 sm:py-3 rounded-full font-bold text-sm sm:text-base transition-all ${
                             activeTab === idx
                                 ? 'bg-primary text-black'
                                 : 'bg-neutral-900/50 text-neutral-400 hover:bg-neutral-800 hover:text-white border border-white/10'
@@ -126,11 +126,11 @@ function FAQSection() {
                     >
                         <div
                             onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                            className="flex justify-between items-start p-8 cursor-pointer group"
+                            className="flex justify-between items-start p-4 sm:p-5 md:p-8 cursor-pointer group"
                         >
                             <div className="flex gap-4 items-start flex-1">
                                 <span className="text-primary font-bold text-xl shrink-0">Q.</span>
-                                <h3 className={`text-lg font-bold leading-relaxed transition-colors ${openIndex === i ? 'text-primary' : 'text-white group-hover:text-primary'}`}>
+                                <h3 className={`text-base sm:text-lg font-bold leading-relaxed transition-colors ${openIndex === i ? 'text-primary' : 'text-white group-hover:text-primary'}`}>
                                     {item.q}
                                 </h3>
                             </div>
@@ -142,10 +142,10 @@ function FAQSection() {
                                 animate={{ height: "auto", opacity: 1 }}
                                 exit={{ height: 0, opacity: 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="px-8 pb-8"
+                                className="px-4 sm:px-5 md:px-8 pb-4 sm:pb-5 md:pb-8"
                             >
                                 <div className="pl-10 pt-4 border-t border-white/5">
-                                    <p className="text-neutral-300 leading-relaxed">
+                                    <p className="text-sm sm:text-base text-neutral-300 leading-relaxed">
                                         {item.a}
                                     </p>
                                 </div>
@@ -161,34 +161,34 @@ function FAQSection() {
 export default function CommunityPageClient() {
     return (
         <div className="min-h-screen pt-32 pb-20 bg-background text-foreground">
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-4 sm:px-6">
 
                 {/* Header */}
-                <div className="flex flex-col md:flex-row justify-between items-end mb-24">
+                <div className="flex flex-col md:flex-row justify-between items-start mb-16 sm:mb-20 md:mb-24">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         animate={{ opacity: 1, x: 0 }}
                     >
-                        <div className="flex items-center gap-2 mb-4">
+                        <div className="flex items-center gap-2 mb-3 sm:mb-4">
                             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                            <span className="text-green-500 text-sm font-bold tracking-widest uppercase">Live Support</span>
+                            <span className="text-green-500 text-xs sm:text-sm font-bold tracking-widest uppercase">Live Support</span>
                         </div>
-                        <h1 className="text-5xl md:text-8xl font-black text-white">
+                        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-black text-white">
                             HEALING <br /> COMMUNITY
                         </h1>
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         animate={{ opacity: 1, x: 0 }}
-                        className="mt-8 md:mt-0 flex gap-4"
+                        className="mt-6 sm:mt-8 md:mt-0 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto"
                     >
-                        <Button size="lg" className="rounded-full px-8 h-14 text-lg bg-neutral-800 hover:bg-neutral-700 text-white">수술 후기 보러가기</Button>
-                        <Button size="lg" className="rounded-full px-8 h-14 text-lg bg-primary text-black hover:bg-white transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)]">실시간 예약하기</Button>
+                        <Button size="lg" className="rounded-full px-6 sm:px-8 h-12 sm:h-14 text-base sm:text-lg bg-neutral-800 hover:bg-neutral-700 text-white">수술 후기 보러가기</Button>
+                        <Button size="lg" className="rounded-full px-6 sm:px-8 h-12 sm:h-14 text-base sm:text-lg bg-primary text-black hover:bg-white transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)]">실시간 예약하기</Button>
                     </motion.div>
                 </div>
 
                 {/* Notices & Events */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 sm:mb-20 md:mb-32">
                     <div className="md:col-span-2">
                         <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
                             <span className="w-8 h-[1px] bg-primary block" /> 공지사항 & 이벤트

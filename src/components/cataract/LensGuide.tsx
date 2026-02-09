@@ -40,7 +40,7 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
     const [hoveredZone, setHoveredZone] = useState<DistanceZone>(null);
 
     return (
-        <div className="aspect-video bg-neutral-900 rounded-2xl mb-8 overflow-hidden relative group">
+        <div className="aspect-video bg-neutral-900 rounded-xl sm:rounded-2xl mb-6 sm:mb-8 overflow-hidden relative group">
             {/* Base Image */}
             <Image
                 src="/images/cataract/lens-simulation.jpeg"
@@ -58,9 +58,11 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
                 return (
                     <motion.div
                         key={zone.id}
-                        className={`absolute top-0 h-full ${zone.position} cursor-pointer`}
+                        className={`absolute top-0 h-full ${zone.position} cursor-pointer touch-manipulation`}
                         onMouseEnter={() => setHoveredZone(zone.id)}
                         onMouseLeave={() => setHoveredZone(null)}
+                        onTouchStart={() => setHoveredZone(zone.id)}
+                        onTouchEnd={() => setHoveredZone(null)}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.7 }}
@@ -89,13 +91,13 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
                                     animate={{ opacity: 1, y: 0 }}
                                     className="text-center"
                                 >
-                                    <div className="text-white text-sm font-bold mb-2">
+                                    <div className="text-white text-xs sm:text-sm font-bold mb-1 sm:mb-2">
                                         {zone.label}
                                     </div>
-                                    <div className="text-amber-300 text-2xl font-bold mb-2">
+                                    <div className="text-amber-300 text-xl sm:text-2xl font-bold mb-1 sm:mb-2">
                                         {zone.distance}
                                     </div>
-                                    <div className={`text-lg ${isClear ? "text-green-400" : "text-red-400"}`}>
+                                    <div className={`text-base sm:text-lg ${isClear ? "text-green-400" : "text-red-400"}`}>
                                         {isClear ? "✓ 선명" : "✗ 흐림"}
                                     </div>
                                 </motion.div>
@@ -108,7 +110,7 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
             {/* ALL CLEAR Badge for Multifocal */}
             {lens.type === "multifocal" && (
                 <motion.div
-                    className="absolute top-4 right-4 bg-gradient-to-r from-amber-400 to-yellow-500 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg flex items-center gap-2"
+                    className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-gradient-to-r from-amber-400 to-yellow-500 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-bold text-xs sm:text-sm shadow-lg flex items-center gap-1 sm:gap-2"
                     initial={{ scale: 0, rotate: -45 }}
                     animate={{ scale: 1, rotate: 0 }}
                     transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
@@ -119,7 +121,7 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
             )}
 
             {/* Distance Markers at Bottom */}
-            <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-black/70 to-transparent flex items-end pb-2 px-4">
+            <div className="absolute bottom-0 left-0 right-0 h-10 sm:h-12 bg-gradient-to-t from-black/70 to-transparent flex items-end pb-1.5 sm:pb-2 px-2 sm:px-4">
                 {distanceZones.map((zone) => {
                     const isClear = lens.clarity[zone.id];
                     const isHovered = hoveredZone === zone.id;
@@ -151,23 +153,23 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
 
 export default function LensGuide() {
     return (
-        <section className="py-24 bg-neutral-50">
-            <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <span className="text-amber-600 font-bold tracking-[0.2em] uppercase block mb-4">Premium Lens</span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 font-serif">
+        <section className="py-16 sm:py-20 md:py-24 bg-neutral-50">
+            <div className="container mx-auto px-4 sm:px-6">
+                <div className="text-center mb-10 sm:mb-12 md:mb-16">
+                    <span className="text-amber-600 font-bold tracking-[0.2em] uppercase block mb-3 sm:mb-4 text-xs sm:text-sm">Premium Lens</span>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 font-serif">
                         나에게 맞는 <span className="text-amber-600">인공수정체</span>는?
                     </h2>
-                    <p className="text-neutral-500 mt-4 max-w-2xl mx-auto">
+                    <p className="text-neutral-500 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base">
                         환자의 라이프스타일, 직업, 취미 등을 고려하여<br />
                         가장 적합한 프리미엄 렌즈를 1:1 맞춤 처방합니다.
                     </p>
-                    <p className="text-amber-600 text-sm font-medium mt-3">
+                    <p className="text-amber-600 text-xs sm:text-sm font-medium mt-2 sm:mt-3">
                         각 거리 구간에 마우스를 올려 시력 차이를 체험해보세요
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                     {lenses.map((lens, i) => (
                         <motion.div
                             key={i}
@@ -175,14 +177,14 @@ export default function LensGuide() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.2 }}
                             viewport={{ once: true }}
-                            className={`rounded-[2.5rem] p-10 border border-black/5 shadow-xl ${lens.bg} hover:shadow-2xl transition-all duration-500`}
+                            className={`rounded-2xl sm:rounded-[2.5rem] p-6 sm:p-8 md:p-10 border border-black/5 shadow-xl ${lens.bg} hover:shadow-2xl transition-all duration-500`}
                         >
-                            <div className="flex justify-between items-start mb-8">
+                            <div className="flex justify-between items-start mb-6 sm:mb-8">
                                 <div>
-                                    <h3 className="text-3xl font-bold text-neutral-900 mb-1">{lens.name}</h3>
-                                    <span className="text-amber-700 font-mono text-sm tracking-wider uppercase">{lens.eng}</span>
+                                    <h3 className="text-2xl sm:text-3xl font-bold text-neutral-900 mb-1">{lens.name}</h3>
+                                    <span className="text-amber-700 font-mono text-xs sm:text-sm tracking-wider uppercase">{lens.eng}</span>
                                 </div>
-                                <div className="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center text-2xl font-bold text-neutral-300">
+                                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white shadow-sm flex items-center justify-center text-xl sm:text-2xl font-bold text-neutral-300">
                                     {i === 0 ? "A" : "B"}
                                 </div>
                             </div>
@@ -190,11 +192,11 @@ export default function LensGuide() {
                             {/* Interactive Vision Simulator */}
                             <VisionSimulator lens={lens} />
 
-                            <p className="text-neutral-700 font-medium text-lg mb-8 leading-relaxed">
+                            <p className="text-neutral-700 font-medium text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                                 {lens.desc}
                             </p>
 
-                            <div className="space-y-4 bg-white/50 backdrop-blur-sm p-6 rounded-2xl">
+                            <div className="space-y-3 sm:space-y-4 bg-white/50 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl">
                                 <h4 className="font-bold text-neutral-900 flex items-center gap-2">
                                     <span className="w-2 h-2 rounded-full bg-amber-500" /> 특징
                                 </h4>

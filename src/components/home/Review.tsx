@@ -102,23 +102,23 @@ export default function Review() {
     }, [emblaApi]);
 
     return (
-        <section className="py-32 bg-white relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-32 bg-white relative overflow-hidden">
             {/* Ambient Background */}
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(218,165,32,0.03),transparent_50%)] pointer-events-none" />
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8"
+                    className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 sm:mb-12 md:mb-16 gap-8"
                 >
                     <div>
-                        <h2 className="text-4xl md:text-6xl font-bold text-black mb-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4">
                             Real Stories
                             <span className="text-primary">.</span>
                         </h2>
-                        <p className="text-gray-600 text-lg">
+                        <p className="text-gray-600 text-base sm:text-lg">
                             데이터로 증명된 결과, 고객님들의 생생한 이야기입니다.
                         </p>
                     </div>
@@ -128,35 +128,35 @@ export default function Review() {
                             onClick={scrollPrev}
                             variant="outline"
                             size="icon"
-                            className="rounded-full w-14 h-14 border-gray-300 bg-white text-gray-900 hover:bg-gray-50 hover:border-primary transition-colors shadow-sm"
+                            className="rounded-full w-10 h-10 sm:w-12 sm:h-12 border-gray-300 bg-white text-gray-900 hover:bg-gray-50 hover:border-primary transition-colors shadow-sm"
                         >
-                            <ChevronLeft size={24} />
+                            <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
                         </Button>
                         <Button
                             onClick={scrollNext}
                             variant="outline"
                             size="icon"
-                            className="rounded-full w-14 h-14 border-gray-300 bg-white text-gray-900 hover:bg-gray-50 hover:border-primary transition-colors shadow-sm"
+                            className="rounded-full w-10 h-10 sm:w-12 sm:h-12 border-gray-300 bg-white text-gray-900 hover:bg-gray-50 hover:border-primary transition-colors shadow-sm"
                         >
-                            <ChevronRight size={24} />
+                            <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
                         </Button>
                     </div>
                 </motion.div>
 
                 <div className="overflow-hidden" ref={emblaRef}>
-                    <div className="flex -ml-6">
+                    <div className="flex -ml-4 sm:-ml-6">
                         {reviews.map((review) => (
-                            <div key={review.id} className="flex-[0_0_100%] md:flex-[0_0_45%] lg:flex-[0_0_35%] min-w-0 pl-6">
+                            <div key={review.id} className="flex-[0_0_100%] md:flex-[0_0_45%] lg:flex-[0_0_35%] min-w-0 pl-4 sm:pl-6">
                                 <motion.div
                                     whileHover={{ y: -10 }}
-                                    className="bg-gray-50 border border-gray-200 p-10 h-full rounded-[2rem] flex flex-col justify-between group hover:border-primary/50 transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
+                                    className="bg-gray-50 border border-gray-200 p-6 sm:p-7 md:p-8 h-full rounded-xl sm:rounded-2xl flex flex-col justify-between group hover:border-primary/50 transition-all hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary/10"
                                 >
                                     <div>
                                         <div className="flex justify-between items-start mb-8">
                                             <Quote className="text-primary/40 w-10 h-10 rotate-180" />
                                             <div className="flex gap-1">
                                                 {[...Array(review.rating)].map((_, i) => (
-                                                    <Star key={i} size={16} fill="#FCD34D" className="text-amber-300" />
+                                                    <Star key={i} className="w-4 h-4 sm:w-[18px] sm:h-[18px] md:w-5 md:h-5" fill="#FCD34D" stroke="#FCD34D" />
                                                 ))}
                                             </div>
                                         </div>
@@ -165,7 +165,7 @@ export default function Review() {
                                             {review.surgery}
                                         </h3>
 
-                                        <p className="text-gray-700 text-lg leading-relaxed mb-8 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
+                                        <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-8 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
                                             "{review.content}"
                                         </p>
                                     </div>
@@ -193,7 +193,7 @@ export default function Review() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <p className="text-gray-600 mb-6 text-lg font-light tracking-wide">
+                        <p className="text-gray-600 mb-6 text-base sm:text-lg font-light tracking-wide">
                             평생 시력, 지금 시작하세요
                         </p>
                         <Button
@@ -201,7 +201,7 @@ export default function Review() {
                                 console.log('CTA clicked - will connect to booking modal/page later');
                                 // TODO: Connect to booking modal or consultation page
                             }}
-                            className="bg-[#FFD700] hover:bg-[#FFC700] text-black font-bold text-lg px-12 py-7 rounded-full shadow-lg hover:shadow-2xl hover:shadow-[#FFD700]/30 transition-all duration-300 hover:scale-105 group"
+                            className="w-full sm:w-auto bg-[#FFD700] hover:bg-[#FFC700] text-black font-bold text-base sm:text-lg px-8 sm:px-10 md:px-12 py-5 sm:py-6 md:py-7 rounded-full shadow-lg hover:shadow-2xl hover:shadow-[#FFD700]/30 transition-all duration-300 hover:scale-105 group"
                         >
                             <Calendar className="mr-3 w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
                             지금 바로 전문가 상담 예약하기

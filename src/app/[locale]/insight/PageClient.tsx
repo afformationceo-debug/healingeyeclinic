@@ -27,23 +27,23 @@ function formatDate(dateString: string): string {
 
 export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: PageClientProps) {
     return (
-        <div className="min-h-screen bg-gradient-to-b from-black via-neutral-950 to-black pt-32 pb-20 selection:bg-primary selection:text-black text-white">
-            <div className="container mx-auto px-6 max-w-7xl">
+        <div className="min-h-screen bg-gradient-to-b from-black via-neutral-950 to-black pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 selection:bg-primary selection:text-black text-white">
+            <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
 
                 {/* Header */}
-                <div className="relative mb-32">
+                <div className="relative mb-16 sm:mb-20 md:mb-32">
                     {/* Background decorative element */}
                     <div className="absolute -top-20 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none" />
 
-                    <div className="relative flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-16">
+                    <div className="relative flex flex-col md:flex-row justify-between items-start md:items-end border-b border-white/10 pb-10 sm:pb-12 md:pb-16">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
-                            className="relative"
+                            className="relative w-full md:w-auto"
                         >
-                            <div className="absolute -left-4 top-0 w-1 h-24 bg-gradient-to-b from-primary to-transparent" />
-                            <span className="text-sm font-bold tracking-[0.3em] uppercase mb-6 block text-primary">Medical Journal</span>
-                            <h1 className="text-6xl md:text-9xl font-serif font-medium leading-[0.85] text-white mb-4">
+                            <div className="hidden md:block absolute -left-4 top-0 w-1 h-24 bg-gradient-to-b from-primary to-transparent" />
+                            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-4 sm:mb-6 block text-primary">Medical Journal</span>
+                            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif font-medium leading-[0.9] sm:leading-[0.85] text-white mb-6 sm:mb-8 md:mb-4">
                                 INSIGHT <br />
                                 <span className="text-white/80">& LOOK</span>
                             </h1>
@@ -52,9 +52,9 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 }}
-                            className="max-w-md mt-12 md:mt-0"
+                            className="w-full md:max-w-md md:mt-0"
                         >
-                            <p className="text-neutral-300 text-lg leading-relaxed text-right md:text-left">
+                            <p className="text-neutral-300 text-sm sm:text-base md:text-lg leading-relaxed">
                                 정확한 의학 정보와 건강한 라이프스타일을 위한<br />
                                 <span className="text-primary font-semibold">힐링안과의 전문 칼럼</span>을 만나보세요.
                             </p>
@@ -68,13 +68,13 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
-                        className="relative mb-32"
+                        className="relative mb-20 sm:mb-24 md:mb-32"
                     >
                         {/* Decorative border */}
-                        <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary/50 to-primary rounded-[2.5rem] opacity-20 blur-xl" />
+                        <div className="absolute -inset-1 bg-gradient-to-r from-primary via-primary/50 to-primary rounded-2xl sm:rounded-3xl md:rounded-[2.5rem] opacity-20 blur-xl" />
 
                         <div
-                            className="relative aspect-[21/9] rounded-[2rem] overflow-hidden group cursor-pointer border border-white/10"
+                            className="relative aspect-video sm:aspect-[16/9] md:aspect-[21/9] rounded-xl sm:rounded-2xl md:rounded-[2rem] overflow-hidden group cursor-pointer border border-white/10"
                             onClick={() => window.open(featuredVideo.link, '_blank')}
                         >
                             <Image
@@ -89,13 +89,14 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className="relative">
                                     <div className="absolute inset-0 bg-primary rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity" />
-                                    <div className="relative w-24 h-24 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-500 border-2 border-white/20 group-hover:border-primary">
-                                        <Play fill="currentColor" className="text-white ml-1 group-hover:text-black transition-colors" size={36} />
+                                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center group-hover:bg-primary group-hover:scale-110 transition-all duration-500 border-2 border-white/20 group-hover:border-primary">
+                                        <Play fill="currentColor" className="text-white ml-0.5 sm:ml-1 group-hover:text-black transition-colors w-6 h-6 sm:w-8 sm:h-8 md:w-9 md:h-9" />
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+                            {/* PC: Content inside video */}
+                            <div className="hidden md:block absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-16">
                                 <div className="max-w-4xl">
                                     <motion.div
                                         initial={{ opacity: 0, y: 20 }}
@@ -111,7 +112,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.5 }}
-                                        className="text-3xl md:text-6xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-2xl"
+                                        className="text-2xl sm:text-3xl md:text-6xl font-serif font-bold mb-6 leading-tight text-white drop-shadow-2xl"
                                     >
                                         {featuredVideo.title}
                                     </motion.h2>
@@ -120,7 +121,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                             initial={{ opacity: 0, y: 20 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             transition={{ delay: 0.6 }}
-                                            className="text-lg md:text-xl text-white/90 mb-8 line-clamp-2 leading-relaxed drop-shadow-lg"
+                                            className="text-base sm:text-lg md:text-xl text-white/90 mb-8 line-clamp-2 leading-relaxed drop-shadow-lg"
                                         >
                                             {featuredVideo.description}
                                         </motion.p>
@@ -140,6 +141,52 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                 </div>
                             </div>
                         </div>
+
+                        {/* Mobile: Content below video */}
+                        <div className="block md:hidden mt-6">
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.4 }}
+                                className="mb-4"
+                            >
+                                <span className="inline-flex items-center gap-2 bg-primary text-black px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-lg shadow-primary/50">
+                                    <Activity className="w-3 h-3" />
+                                    Featured Video
+                                </span>
+                            </motion.div>
+                            <motion.h2
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.5 }}
+                                className="text-xl sm:text-2xl font-serif font-bold mb-3 sm:mb-4 leading-tight text-white"
+                            >
+                                {featuredVideo.title}
+                            </motion.h2>
+                            {featuredVideo.description && (
+                                <motion.p
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.6 }}
+                                    className="text-sm sm:text-base text-neutral-300 mb-6 line-clamp-3 leading-relaxed"
+                                >
+                                    {featuredVideo.description}
+                                </motion.p>
+                            )}
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.7 }}
+                            >
+                                <Button
+                                    variant="outline"
+                                    className="w-full sm:w-auto text-white border-2 border-white/40 hover:bg-white hover:text-black active:bg-white active:text-black rounded-full px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold backdrop-blur-sm transition-all duration-300 shadow-xl"
+                                    onClick={() => window.open(featuredVideo.link, '_blank')}
+                                >
+                                    Watch Now <Play className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                                </Button>
+                            </motion.div>
+                        </div>
                     </motion.div>
                 )}
 
@@ -158,7 +205,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">의료 칼럼</h2>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         {blogPosts.map((post, i) => (
                             <motion.div
                                 key={i}
@@ -202,7 +249,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                             </div>
                                         </div>
 
-                                        <div className="p-6">
+                                        <div className="p-6 sm:p-7 md:p-8">
                                             <div className="flex items-center gap-3 mb-4 text-xs text-neutral-500 font-medium">
                                                 <span className="text-primary">김선영 원장</span>
                                                 <span className="w-1 h-1 rounded-full bg-neutral-700" />

@@ -76,29 +76,29 @@ export default function MedicalTeam() {
     }, [emblaApi]);
 
     return (
-        <section className="bg-neutral-950 relative py-32 overflow-hidden">
+        <section className="bg-neutral-950 relative py-16 sm:py-20 md:py-32 overflow-hidden">
             {/* Background Ambience */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(59,130,246,0.1),transparent_50%)]" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent opacity-30" />
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 {/* Header Section */}
-                <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20">
+                <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 sm:mb-16 md:mb-20">
                     <div>
                         <span className="text-primary font-bold tracking-[0.3em] uppercase block mb-4">Medical Team</span>
-                        <h2 className="text-5xl md:text-7xl font-serif text-white leading-tight">
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-tight">
                             Mastery <br />
                             <span className="text-neutral-500 italic">of Vision.</span>
                         </h2>
                     </div>
 
                     {/* Navigation Buttons */}
-                    <div className="flex gap-4 mt-8 md:mt-0">
+                    <div className="hidden md:flex gap-3 sm:gap-4 mt-8 md:mt-0">
                         <motion.button
                             onClick={scrollPrev}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="w-14 h-14 rounded-full border border-white/20 bg-white/5 hover:bg-primary hover:border-primary transition-all duration-300 flex items-center justify-center group backdrop-blur-sm"
+                            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/20 bg-white/5 hover:bg-primary hover:border-primary transition-all duration-300 flex items-center justify-center group backdrop-blur-sm"
                         >
                             <ChevronLeft className="text-white group-hover:text-black transition-colors" size={24} />
                         </motion.button>
@@ -106,7 +106,7 @@ export default function MedicalTeam() {
                             onClick={scrollNext}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="w-14 h-14 rounded-full border border-white/20 bg-white/5 hover:bg-primary hover:border-primary transition-all duration-300 flex items-center justify-center group backdrop-blur-sm"
+                            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/20 bg-white/5 hover:bg-primary hover:border-primary transition-all duration-300 flex items-center justify-center group backdrop-blur-sm"
                         >
                             <ChevronRight className="text-white group-hover:text-black transition-colors" size={24} />
                         </motion.button>
@@ -114,8 +114,8 @@ export default function MedicalTeam() {
                 </div>
 
                 {/* Embla Carousel */}
-                <div className="overflow-hidden" ref={emblaRef}>
-                    <div className="flex gap-8 md:gap-12">
+                <div className="overflow-hidden hidden md:block" ref={emblaRef}>
+                    <div className="flex gap-6 sm:gap-8 md:gap-12">
                         {doctors.map((doc, i) => (
                             <motion.div
                                 key={i}
@@ -142,18 +142,18 @@ export default function MedicalTeam() {
                                         />
                                         <div className="absolute bottom-8 left-8 z-20">
                                             <div className="flex flex-col gap-2 mb-2">
-                                                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-3">
-                                                    <span className="bg-primary text-black text-xs font-bold px-3 py-1 rounded-full w-fit">{doc.position}</span>
+                                                <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-3">
+                                                    <span className="bg-primary text-black text-xs sm:text-sm font-bold px-3 py-1 rounded-full w-fit">{doc.position}</span>
                                                 </div>
                                                 <span className="text-white/80 text-sm font-medium">{doc.title}</span>
                                             </div>
-                                            <h3 className="text-4xl md:text-5xl font-black text-white">{doc.name}</h3>
+                                            <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">{doc.name}</h3>
                                         </div>
                                     </div>
 
                                     {/* Doctor Info */}
-                                    <div className="p-8 space-y-6">
-                                        <p className="text-lg md:text-xl text-gray-700 font-serif leading-relaxed">
+                                    <div className="p-6 sm:p-7 md:p-8 space-y-6">
+                                        <p className="text-base sm:text-lg md:text-xl text-gray-700 font-serif leading-relaxed">
                                             &ldquo;{doc.desc}&rdquo;
                                         </p>
                                         <div className="border-t border-gray-200 pt-6">

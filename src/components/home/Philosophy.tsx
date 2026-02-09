@@ -14,18 +14,18 @@ export default function Philosophy() {
     const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
 
     return (
-        <section ref={targetRef} className="relative min-h-[50vh] flex items-center justify-center overflow-hidden py-32 bg-black/50">
+        <section ref={targetRef} className="relative min-h-[50vh] flex items-center justify-center overflow-hidden py-16 sm:py-20 md:py-32 bg-black/50">
 
             {/* Background Ambience */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 blur-3xl opacity-30" />
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 <motion.div
                     style={{ opacity }}
                     className="text-center mb-24"
                 >
                     <span className="text-primary text-sm tracking-[0.3em] uppercase block mb-4">우리의 철학</span>
-                    <h2 className="text-4xl md:text-6xl font-serif text-white font-bold leading-relaxed">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-white font-bold leading-relaxed">
                         "눈을 치료하는 것을 넘어 <br /> <span className="text-primary">당신의 삶을 치유합니다.</span>"
                     </h2>
                     <p className="text-neutral-400 mt-6 max-w-2xl mx-auto leading-loose">
@@ -38,18 +38,18 @@ export default function Philosophy() {
                 {/* Moving Text Stream */}
                 <div className="w-full overflow-hidden py-10 border-y border-white/5">
                     <motion.div style={{ x }} className="whitespace-nowrap flex items-center gap-16">
-                        <span className="text-6xl md:text-8xl font-black text-white/5 tracking-tighter">BEYOND VISION</span>
-                        <span className="text-6xl md:text-8xl font-serif text-primary/20 tracking-tighter italic">HEALING LIFE</span>
-                        <span className="text-6xl md:text-8xl font-black text-white/5 tracking-tighter">PREMIUM CARE</span>
-                        <span className="text-6xl md:text-8xl font-serif text-primary/20 tracking-tighter italic">MASTERPIECE</span>
-                        <span className="text-6xl md:text-8xl font-black text-white/5 tracking-tighter">BEYOND VISION</span>
-                        <span className="text-6xl md:text-8xl font-serif text-primary/20 tracking-tighter italic">HEALING LIFE</span>
-                        <span className="text-6xl md:text-8xl font-black text-white/5 tracking-tighter">PREMIUM CARE</span>
-                        <span className="text-6xl md:text-8xl font-serif text-primary/20 tracking-tighter italic">MASTERPIECE</span>
+                        <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white/5 tracking-tighter">BEYOND VISION</span>
+                        <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-primary/20 tracking-tighter italic">HEALING LIFE</span>
+                        <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white/5 tracking-tighter">PREMIUM CARE</span>
+                        <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-primary/20 tracking-tighter italic">MASTERPIECE</span>
+                        <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white/5 tracking-tighter">BEYOND VISION</span>
+                        <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-primary/20 tracking-tighter italic">HEALING LIFE</span>
+                        <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white/5 tracking-tighter">PREMIUM CARE</span>
+                        <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-primary/20 tracking-tighter italic">MASTERPIECE</span>
                     </motion.div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-24 text-center md:text-left">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mt-24 text-center md:text-left">
                     {[
                         {
                             title: "초정밀 (Precision)",
@@ -72,11 +72,11 @@ export default function Philosophy() {
                             viewport={{ once: true }}
                             className="group"
                         >
-                            <div className="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center mb-6 text-primary text-2xl font-bold group-hover:bg-primary group-hover:text-black transition-colors duration-500">
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full border border-white/20 flex items-center justify-center mb-6 text-primary text-2xl font-bold group-hover:bg-primary group-hover:text-black transition-colors duration-500 mx-auto md:mx-0">
                                 {i + 1}
                             </div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">{item.title}</h3>
-                            <p className="text-muted-foreground leading-relaxed">{item.desc}</p>
+                            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-4">{item.title}</h3>
+                            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{item.desc}</p>
                         </motion.div>
                     ))}
                 </div>

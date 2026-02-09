@@ -40,7 +40,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
                         <div className="w-12 h-1 bg-primary rounded-full" />
                         <span className="text-sm font-bold tracking-[0.3em] uppercase text-primary">YouTube Channel</span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-3">안과언니 @dreyesis</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-3">안과언니 @dreyesis</h2>
                     <p className="text-neutral-400 text-base">전문 안과의가 전하는 눈 건강 정보</p>
                 </div>
                 <button
@@ -54,7 +54,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
                 </button>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {videos.map((video, index) => (
                     <motion.div
                         key={video.id}
@@ -98,11 +98,11 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
                                     </div>
                                 </div>
 
-                                <div className="p-5">
+                                <div className="p-4 sm:p-5">
                                     <span className="inline-block text-xs font-bold text-primary uppercase tracking-wider mb-3 opacity-80">
                                         안과언니
                                     </span>
-                                    <h3 className="text-lg font-bold leading-snug text-white group-hover:text-primary transition-colors duration-300 line-clamp-2">
+                                    <h3 className="text-base sm:text-lg font-bold leading-snug text-white group-hover:text-primary transition-colors duration-300 line-clamp-2">
                                         {video.title}
                                     </h3>
                                 </div>

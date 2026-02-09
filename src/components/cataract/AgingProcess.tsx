@@ -25,45 +25,45 @@ export default function AgingProcess() {
                 backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
             }} />
 
-            <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+            <div className="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-16">
                 {/* Left: Text Content */}
                 <div className="w-full md:w-1/2">
-                    <span className="text-primary font-bold tracking-widest uppercase mb-4 block">The Process</span>
-                    <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 leading-tight">
+                    <span className="text-primary font-bold tracking-[0.2em] sm:tracking-widest uppercase mb-3 sm:mb-4 block text-xs sm:text-sm">The Process</span>
+                    <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-bold mb-4 sm:mb-6 md:mb-8 leading-tight">
                         Why does vision <br />
                         <span className="text-neutral-500">fade away?</span>
                     </h2>
-                    <p className="text-lg text-neutral-400 leading-relaxed mb-6">
+                    <p className="text-sm sm:text-base md:text-lg text-neutral-400 leading-relaxed mb-3 sm:mb-4 md:mb-6">
                         우리 눈의 수정체는 카메라의 렌즈와 같습니다. 나이가 들면서 이 수정체가 딱딱해지고 혼탁해지는데,
                         이것이 바로 노안과 백내장입니다.
                     </p>
-                    <p className="text-lg text-neutral-400 leading-relaxed">
+                    <p className="text-sm sm:text-base md:text-lg text-neutral-400 leading-relaxed">
                         힐링안과는 단순히 혼탁해진 수정체를 교체하는 것을 넘어, 환자분의 생활 패턴에 맞는
                         가장 젊고 선명한 시력을 되찾아드리는 것에 집중합니다.
                     </p>
                 </div>
 
                 {/* Right: 3D Eye Cross-Section */}
-                <div className="w-full md:w-1/2 relative h-[520px] rounded-3xl overflow-hidden bg-[#060610] border border-white/[0.06]"
+                <div className="w-full md:w-1/2 relative h-[500px] sm:h-[550px] md:h-[520px] rounded-2xl sm:rounded-3xl overflow-hidden bg-[#060610] border border-white/[0.06]"
                      style={{ boxShadow: '0 0 80px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.04)' }}>
 
                     {/* Ambient glow */}
                     <motion.div
-                        className="absolute top-1/2 left-[45%] -translate-x-1/2 -translate-y-[55%] w-[380px] h-[380px] rounded-full pointer-events-none"
+                        className="absolute top-1/2 left-[45%] -translate-x-1/2 -translate-y-[55%] w-[320px] sm:w-[350px] md:w-[380px] h-[320px] sm:h-[350px] md:h-[380px] rounded-full pointer-events-none"
                         style={{
                             background: 'radial-gradient(circle, rgba(96,165,250,0.06) 0%, transparent 65%)',
                             opacity: lightOpacity,
                         }}
                     />
                     <motion.div
-                        className="absolute top-1/2 left-[45%] -translate-x-1/2 -translate-y-[55%] w-[380px] h-[380px] rounded-full pointer-events-none"
+                        className="absolute top-1/2 left-[45%] -translate-x-1/2 -translate-y-[55%] w-[320px] sm:w-[350px] md:w-[380px] h-[320px] sm:h-[350px] md:h-[380px] rounded-full pointer-events-none"
                         style={{
                             background: 'radial-gradient(circle, rgba(251,191,36,0.1) 0%, transparent 60%)',
                             opacity: healedOpacity,
                         }}
                     />
 
-                    <svg viewBox="0 0 500 460" className="w-full h-full">
+                    <svg viewBox="0 0 500 460" className="w-full h-full scale-110 sm:scale-100 md:scale-100">
                         <defs>
                             {/* ── 3D Gradients ── */}
 
@@ -693,8 +693,8 @@ export default function AgingProcess() {
                     </svg>
 
                     {/* Section label */}
-                    <div className="absolute top-5 right-6 z-20 pointer-events-none">
-                        <span className="text-[10px] tracking-[0.3em] text-white/20 font-mono uppercase">눈 단면도</span>
+                    <div className="absolute top-4 sm:top-5 right-4 sm:right-6 z-20 pointer-events-none">
+                        <span className="text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] text-white/20 font-mono uppercase">눈 단면도</span>
                     </div>
 
                     {/* Ambient heal glow */}

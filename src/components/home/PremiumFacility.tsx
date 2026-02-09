@@ -26,6 +26,19 @@ export default function PremiumFacility() {
     // Embla Carousel
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
     const [selectedIndex, setSelectedIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
+
+    // Detect mobile screen size
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768); // md breakpoint
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev();
@@ -52,7 +65,7 @@ export default function PremiumFacility() {
     }, [emblaApi]);
 
     return (
-        <section ref={containerRef} className="relative py-32 md:py-40 bg-black overflow-hidden">
+        <section ref={containerRef} className="relative py-16 sm:py-20 md:py-32 lg:py-40 bg-black overflow-hidden">
 
             {/* Parallax Background Image */}
             <motion.div
@@ -68,11 +81,11 @@ export default function PremiumFacility() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
             </motion.div>
 
-            <div className="container mx-auto px-6 relative z-10">
+            <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 {/* Header Section */}
                 <motion.div style={{ opacity }} className="text-center mb-16">
-                    <span className="text-primary font-bold tracking-[0.5em] uppercase block mb-8 text-sm md:text-base">Premium Lounge</span>
-                    <h2 className="text-5xl md:text-8xl font-serif text-white font-bold mb-12 leading-tight">
+                    <span className="text-primary font-bold tracking-[0.5em] uppercase block mb-8 text-xs sm:text-sm md:text-base">Premium Lounge</span>
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-serif text-white font-bold mb-12 leading-tight">
                         Relaxation <br />
                         <span className="italic">Before Perfection</span>
                     </h2>
@@ -86,41 +99,43 @@ export default function PremiumFacility() {
                 {/* Facility Gallery Carousel */}
                 <div className="relative mt-20">
                     <div className="flex justify-between items-center mb-8">
-                        <h3 className="text-2xl md:text-3xl font-bold text-white">시설 둘러보기</h3>
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white">시설 둘러보기</h3>
                         <div className="flex gap-4">
                             <Button
                                 onClick={scrollPrev}
                                 variant="outline"
                                 size="icon"
-                                className="rounded-full w-12 h-12 border-white/10 bg-white/5 text-white hover:bg-white hover:text-black transition-colors"
+                                className="rounded-full w-10 h-10 sm:w-12 sm:h-12 border-white/10 bg-white/5 text-white hover:bg-white hover:text-black transition-colors"
                             >
-                                <ChevronLeft size={20} />
+                                <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
                             </Button>
                             <Button
                                 onClick={scrollNext}
                                 variant="outline"
                                 size="icon"
-                                className="rounded-full w-12 h-12 border-white/10 bg-white/5 text-white hover:bg-white hover:text-black transition-colors"
+                                className="rounded-full w-10 h-10 sm:w-12 sm:h-12 border-white/10 bg-white/5 text-white hover:bg-white hover:text-black transition-colors"
                             >
-                                <ChevronRight size={20} />
+                                <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
                             </Button>
                         </div>
                     </div>
 
                     <div className="overflow-hidden" ref={emblaRef}>
-                        <div className="flex -ml-6">
+                        <div className="flex -ml-4 sm:-ml-6">
                             {facilityImages.map((imageSrc, index) => (
-                                <div key={index} className="flex-[0_0_85%] md:flex-[0_0_38%] lg:flex-[0_0_30%] min-w-0 pl-6">
+                                <div key={index} className="flex-[0_0_85%] md:flex-[0_0_38%] lg:flex-[0_0_30%] min-w-0 pl-4 sm:pl-6">
                                     <motion.div
                                         whileHover={{ y: -10 }}
-                                        className="relative aspect-[4/3] rounded-[2rem] overflow-hidden border border-white/10 group"
+                                        className="relative aspect-[4/3] rounded-xl sm:rounded-2xl md:rounded-[2rem] overflow-hidden border border-white/10 group min-h-[300px] sm:min-h-[400px]"
                                     >
                                         <Image
                                             src={imageSrc}
                                             alt={`힐링안과 시설 ${index + 1}`}
                                             fill
                                             className={`object-cover group-hover:scale-105 transition-all duration-700 ${
-                                                index === (selectedIndex + 1) % facilityImages.length ? '' : 'grayscale group-hover:grayscale-0'
+                                                isMobile
+                                                    ? (index === selectedIndex ? '' : 'grayscale group-hover:grayscale-0')
+                                                    : (index === (selectedIndex + 1) % facilityImages.length ? '' : 'grayscale group-hover:grayscale-0')
                                             }`}
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
@@ -133,7 +148,7 @@ export default function PremiumFacility() {
             </div>
 
             {/* Floating Elements */}
-            <div className="absolute bottom-20 left-10 md:left-20 text-white/50 text-xs tracking-widest uppercase rotate-90 origin-left">
+            <div className="absolute bottom-20 left-10 md:left-20 text-white/50 text-[10px] sm:text-xs tracking-widest uppercase rotate-90 origin-left">
                 Architecture & Interior Design
             </div>
         </section>

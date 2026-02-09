@@ -11,24 +11,24 @@ export default function AIPrediction() {
 
     return (
         <>
-            <section className="py-32 relative overflow-hidden bg-neutral-900">
+            <section className="py-16 sm:py-20 md:py-32 relative overflow-hidden bg-neutral-900">
                 {/* Background Matrix/Grid Effect */}
                 <div className="absolute inset-0 opacity-10"
                     style={{ backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px)', backgroundSize: '40px 40px' }}
                 />
 
-                <div className="container mx-auto px-6 relative z-10">
-                    <div className="flex flex-col md:flex-row items-center gap-16">
+                <div className="container mx-auto px-4 sm:px-6 relative z-10">
+                    <div className="flex flex-col md:flex-row items-center gap-8 sm:gap-12 md:gap-16">
 
                         {/* Visual Area */}
                         <div className="w-full md:w-[45%] relative max-w-lg">
                             <motion.div
-                                className="aspect-square bg-black rounded-3xl border border-white/10 overflow-hidden relative flex items-center justify-center cursor-pointer group"
+                                className="aspect-square bg-black rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden relative flex items-center justify-center cursor-pointer group"
                                 whileHover={{ scale: 1.02 }}
                                 onClick={() => setIsModalOpen(true)}
                             >
                                 {/* Holographic Background - Eye Grid */}
-                                <div className="absolute inset-0 opacity-25">
+                                <div className="absolute inset-0 opacity-25 scale-75 sm:scale-90 md:scale-100">
                                     {/* Concentric Circles with Segments */}
                                     {[...Array(8)].map((_, i) => (
                                         <motion.div
@@ -97,7 +97,7 @@ export default function AIPrediction() {
                                         {[0, 90, 180, 270].map((deg) => (
                                             <div
                                                 key={`deg-${deg}`}
-                                                className="absolute text-primary/40 text-xs font-mono"
+                                                className="absolute text-primary/40 text-[10px] sm:text-xs font-mono"
                                                 style={{
                                                     top: deg === 0 ? '8%' : deg === 180 ? '88%' : '48%',
                                                     left: deg === 90 ? '88%' : deg === 270 ? '8%' : '48%',
@@ -121,13 +121,13 @@ export default function AIPrediction() {
                                     {/* Corner Brackets */}
                                     <div className="absolute inset-0">
                                         {/* Top-left */}
-                                        <div className="absolute top-[15%] left-[15%] w-12 h-12 border-l-2 border-t-2 border-primary/30" />
+                                        <div className="absolute top-[15%] left-[15%] w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-l-2 border-t-2 border-primary/30" />
                                         {/* Top-right */}
-                                        <div className="absolute top-[15%] right-[15%] w-12 h-12 border-r-2 border-t-2 border-primary/30" />
+                                        <div className="absolute top-[15%] right-[15%] w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-r-2 border-t-2 border-primary/30" />
                                         {/* Bottom-left */}
-                                        <div className="absolute bottom-[15%] left-[15%] w-12 h-12 border-l-2 border-b-2 border-primary/30" />
+                                        <div className="absolute bottom-[15%] left-[15%] w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-l-2 border-b-2 border-primary/30" />
                                         {/* Bottom-right */}
-                                        <div className="absolute bottom-[15%] right-[15%] w-12 h-12 border-r-2 border-b-2 border-primary/30" />
+                                        <div className="absolute bottom-[15%] right-[15%] w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-r-2 border-b-2 border-primary/30" />
                                     </div>
 
                                     {/* Data Points */}
@@ -200,10 +200,10 @@ export default function AIPrediction() {
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent opacity-50" />
 
                                 <div className="absolute inset-0 flex items-center justify-center z-10">
-                                    <div className="text-center">
-                                        <Scan size={120} className="text-primary mx-auto mb-8 opacity-90 group-hover:scale-110 transition-transform duration-500" />
-                                        <h3 className="text-4xl font-mono font-bold text-white mb-4 tracking-wider">AI EYE SCANNING</h3>
-                                        <p className="text-primary/80 text-base tracking-widest uppercase font-semibold">Click to Start Analysis</p>
+                                    <div className="text-center px-4">
+                                        <Scan size={80} className="sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] text-primary mx-auto mb-4 sm:mb-6 md:mb-8 opacity-90 group-hover:scale-110 transition-transform duration-500" />
+                                        <h3 className="text-2xl sm:text-3xl md:text-4xl font-mono font-bold text-white mb-2 sm:mb-3 md:mb-4 tracking-wider">AI EYE SCANNING</h3>
+                                        <p className="text-primary/80 text-xs sm:text-sm md:text-base tracking-widest uppercase font-semibold">Click to Start Analysis</p>
                                     </div>
                                 </div>
                             </motion.div>
@@ -211,38 +211,38 @@ export default function AIPrediction() {
 
                         {/* Content Area */}
                         <div className="w-full md:w-[55%]">
-                            <div className="flex items-center gap-4 mb-6">
-                                <BrainCircuit className="text-primary" size={32} />
-                                <span className="text-primary font-bold tracking-widest uppercase">Healing AI Solutions</span>
+                            <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5 md:mb-6">
+                                <BrainCircuit className="text-primary" size={24} />
+                                <span className="text-primary font-bold tracking-widest uppercase text-xs sm:text-sm">Healing AI Solutions</span>
                             </div>
 
-                            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight">
                                 내 눈에 딱 맞는 <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-200">최적의 수술 찾기</span>
                             </h2>
 
-                            <p className="text-lg text-neutral-400 mb-8 leading-relaxed">
-                                10만 건 이상의 임상 데이터를 학습한 힐링안과 AI가<br />
-                                고객님의 각막 데이터와 라이프스타일을 분석하여<br />
+                            <p className="text-sm sm:text-base md:text-lg text-neutral-400 mb-6 sm:mb-7 md:mb-8 leading-relaxed">
+                                10만 건 이상의 임상 데이터를 학습한 힐링안과 AI가<br className="hidden sm:block" />
+                                고객님의 각막 데이터와 라이프스타일을 분석하여<br className="hidden sm:block" />
                                 가장 안전하고 효과적인 시력교정술을 제안합니다.
                             </p>
 
-                            <div className="space-y-4 mb-10">
+                            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 md:mb-10">
                                 {[
                                     "각막 두께 및 형태 3D 분석",
                                     "라이프스타일 맞춤형 매칭",
                                     "수술 후 회복 기간 예측 시뮬레이션"
                                 ].map((item, i) => (
-                                    <div key={i} className="flex items-center gap-4 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
-                                        <Activity size={20} className="text-primary" />
-                                        <span className="text-white font-medium">{item}</span>
+                                    <div key={i} className="flex items-center gap-3 sm:gap-4 bg-white/5 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
+                                        <Activity size={18} className="sm:w-5 sm:h-5 text-primary flex-shrink-0" />
+                                        <span className="text-white font-medium text-sm sm:text-base">{item}</span>
                                     </div>
                                 ))}
                             </div>
 
                             <Button
                                 size="lg"
-                                className="bg-primary text-black hover:bg-white w-full md:w-auto h-16 text-lg rounded-full font-bold shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:shadow-[0_0_50px_rgba(255,255,255,0.5)] transition-all"
+                                className="bg-primary text-black hover:bg-white w-full md:w-auto h-12 sm:h-14 md:h-16 text-sm sm:text-base md:text-lg rounded-full font-bold shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:shadow-[0_0_50px_rgba(255,255,255,0.5)] transition-all px-5 py-2.5 sm:px-6 sm:py-3"
                                 onClick={() => setIsModalOpen(true)}
                             >
                                 AI 시력교정 예측 시작하기

@@ -12,22 +12,22 @@ export default function WhyHealingEye() {
         : 'https://maps.app.goo.gl/jny3xdknHpJ2ggnW6';
 
     return (
-        <section className="py-32 bg-white text-black">
-            <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-20">
+        <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white text-black">
+            <div className="container mx-auto px-4 sm:px-6">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 sm:mb-16 md:mb-20">
                     <div>
-                        <span className="text-primary font-bold tracking-widest uppercase block mb-4">Why Healing Eye</span>
-                        <h2 className="text-4xl md:text-6xl font-bold leading-tight">
+                        <span className="text-primary font-bold tracking-widest uppercase block mb-3 sm:mb-4 text-xs sm:text-sm">Why Healing Eye</span>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                             기준이 다른 안과,<br />
                             <span className="text-neutral-400">결과가 증명합니다.</span>
                         </h2>
                     </div>
-                    <div className="flex gap-4 mt-8 md:mt-0">
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 sm:mt-8 md:mt-0 w-full sm:w-auto">
                         <motion.a
                             href={reviewUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-6 py-3 rounded-full border border-neutral-200 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-all duration-300 cursor-pointer"
+                            className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-full border border-neutral-200 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-all duration-300 cursor-pointer text-center"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             animate={{
@@ -43,11 +43,11 @@ export default function WhyHealingEye() {
                                 repeatDelay: 1
                             }}
                         >
-                            <span className="font-bold">4.9/5.0</span> <span className="text-sm opacity-70">Patient Review</span>
+                            <span className="font-bold text-sm sm:text-base">4.9/5.0</span> <span className="text-xs sm:text-sm opacity-70">Patient Review</span>
                         </motion.a>
                         <Link href={`/${locale}/community`} passHref legacyBehavior>
                             <motion.a
-                                className="px-6 py-3 rounded-full border border-neutral-200 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-all duration-300 cursor-pointer"
+                                className="px-4 py-2.5 sm:px-6 sm:py-3 rounded-full border border-neutral-200 hover:bg-neutral-900 hover:text-white hover:border-neutral-900 transition-all duration-300 cursor-pointer text-center"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 animate={{
@@ -63,44 +63,44 @@ export default function WhyHealingEye() {
                                     repeatDelay: 1
                                 }}
                             >
-                                <span className="font-bold">50,000+</span> <span className="text-sm opacity-70">Successful Cases</span>
+                                <span className="font-bold text-sm sm:text-base">50,000+</span> <span className="text-xs sm:text-sm opacity-70">Successful Cases</span>
                             </motion.a>
                         </Link>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
                     {[
                         {
                             title: "University Faculty",
                             sub: "대학병원 교수 출신 의료진",
                             desc: <>풍부한 임상 경험과 노하우를 갖춘 의료진이<br />상담부터 수술, 사후관리까지 1:1 전담합니다.</>,
-                            icon: <Award size={40} className="text-primary" />
+                            icon: <Award className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-primary" />
                         },
                         {
                             title: "High-End Equipment",
                             sub: "대학병원급 최첨단 장비",
                             desc: <>Zimer Z8, ZEISS SUITE 등 최신 장비와<br />독일 라라렌즈 최초 사용, 4중초점 판옵틱스 사용량 전국 1위로<br />백내장 전문성을 입증합니다.</>,
-                            icon: <ShieldCheck size={40} className="text-primary" />
+                            icon: <ShieldCheck className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-primary" />
                         },
                         {
                             title: "Lifetime Guarantee",
                             sub: "평생 시력 보증 시스템",
                             desc: <>앞으로의 40년, 제2의 인생을 책임지는<br />평생 보증 제도로 당신의 시력을 평생 보장합니다.</>,
-                            icon: <HeartHandshake size={40} className="text-primary" />
+                            icon: <HeartHandshake className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-primary" />
                         }
                     ].map((item, i) => (
                         <motion.div
                             key={i}
                             whileHover={{ y: -10 }}
-                            className="p-10 rounded-[2.5rem] bg-neutral-50 hover:bg-neutral-900 hover:text-white transition-all duration-500 group"
+                            className="p-6 sm:p-7 md:p-8 lg:p-10 rounded-[2rem] sm:rounded-[2.5rem] bg-neutral-50 hover:bg-neutral-900 hover:text-white transition-all duration-500 group"
                         >
-                            <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-8 shadow-sm group-hover:bg-white/10 group-hover:text-white">
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white flex items-center justify-center mb-6 sm:mb-7 md:mb-8 shadow-sm group-hover:bg-white/10 group-hover:text-white">
                                 {item.icon}
                             </div>
-                            <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
-                            <p className="text-lg font-bold text-neutral-500 mb-6 group-hover:text-neutral-400">{item.sub}</p>
-                            <p className="text-neutral-600 leading-relaxed group-hover:text-neutral-300 transition-colors">
+                            <h3 className="text-xl sm:text-2xl font-bold mb-2">{item.title}</h3>
+                            <p className="text-base sm:text-lg font-bold text-neutral-500 mb-4 sm:mb-5 md:mb-6 group-hover:text-neutral-400">{item.sub}</p>
+                            <p className="text-sm sm:text-base text-neutral-600 leading-relaxed group-hover:text-neutral-300 transition-colors">
                                 {item.desc}
                             </p>
                         </motion.div>

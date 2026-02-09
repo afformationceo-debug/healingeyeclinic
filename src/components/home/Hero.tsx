@@ -15,7 +15,7 @@ export default function Hero() {
     const videoScale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
 
     return (
-        <section ref={containerRef} className="relative h-screen w-full overflow-hidden bg-black flex flex-col justify-center items-center">
+        <section ref={containerRef} className="relative min-h-[85vh] md:h-screen w-full overflow-hidden bg-black flex flex-col justify-center items-center">
 
             {/* Background Video Layer */}
             <motion.div
@@ -35,15 +35,15 @@ export default function Hero() {
             </motion.div>
 
             {/* Massive Kinetic Typography - Editorial Style */}
-            <div className="relative z-10 w-full h-full flex flex-col justify-between py-20 px-6 md:px-12 pointer-events-none mix-blend-difference text-white">
+            <div className="relative z-10 w-full h-full flex flex-col justify-between py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 pointer-events-none mix-blend-difference text-white">
 
                 {/* Top Bar */}
-                <div className="flex justify-between items-start">
+                <div className="flex justify-between items-start gap-4">
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.5 }}
-                        className="text-xs md:text-sm font-bold tracking-[0.2em] uppercase"
+                        className="text-[10px] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase leading-tight"
                     >
                         ( Healing Eye Clinic )
                         <br />
@@ -53,7 +53,7 @@ export default function Hero() {
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.7 }}
-                        className="text-right text-xs md:text-sm font-bold tracking-[0.2em] uppercase"
+                        className="text-right text-[10px] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase leading-tight"
                     >
                         Est. 2016
                         <br />
@@ -62,12 +62,12 @@ export default function Hero() {
                 </div>
 
                 {/* Center Massive Text */}
-                <div className="flex flex-col items-center justify-center flex-1">
+                <div className="flex flex-col items-center justify-center flex-1 px-2">
                     <motion.h1
                         initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-                        className="text-[12vw] md:text-[14vw] font-black leading-[0.85] tracking-tighter text-center whitespace-nowrap"
+                        className="text-[18vw] sm:text-[16vw] md:text-[14vw] font-black leading-[0.85] tracking-tighter text-center"
                     >
                         HEALING
                         <br />
@@ -76,13 +76,14 @@ export default function Hero() {
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="flex justify-between items-end">
+                <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end gap-6 sm:gap-4">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 1 }}
+                        className="text-center sm:text-left order-2 sm:order-1"
                     >
-                        <p className="max-w-xs text-xs md:text-sm leading-relaxed opacity-80">
+                        <p className="max-w-xs text-xs sm:text-sm md:text-base leading-relaxed opacity-80">
                             We redefine the standard of vision correction with
                             uncompromising precision and safety.
                         </p>
@@ -92,11 +93,11 @@ export default function Hero() {
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 1.2 }}
-                        className="pointer-events-auto"
+                        className="pointer-events-auto order-1 sm:order-2"
                     >
-                        <Button className="rounded-full w-24 h-24 md:w-32 md:h-32 bg-primary text-black font-bold text-lg hover:scale-110 transition-transform duration-300 flex flex-col gap-1 items-center justify-center border-none">
+                        <Button className="rounded-full w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-primary text-black font-bold text-base sm:text-lg hover:scale-110 active:scale-95 transition-transform duration-300 flex flex-col gap-0.5 sm:gap-1 items-center justify-center border-none shadow-lg shadow-primary/20">
                             <span>BOOK</span>
-                            <span className="text-xs font-normal">NOW</span>
+                            <span className="text-[10px] sm:text-xs font-normal">NOW</span>
                         </Button>
                     </motion.div>
                 </div>

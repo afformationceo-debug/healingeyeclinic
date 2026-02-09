@@ -143,15 +143,15 @@ export default function VisionPageClient() {
                         <span className="text-xs font-bold tracking-[0.2em] uppercase">2026년 최소절개술 뉴스마일 라식</span>
                     </div>
 
-                    <h1 className="text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
+                    <h1 className="text-4xl sm:text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
                         NEW SMILE <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-400">LASIK</span>
                     </h1>
-                    <p className="text-neutral-400 max-w-3xl mx-auto text-lg md:text-xl font-light leading-relaxed mb-6">
+                    <p className="text-neutral-400 max-w-3xl mx-auto text-base sm:text-lg md:text-xl font-light leading-relaxed mb-6">
                         ZIEMER Z8 펨토세컨드 레이저로 구현하는 4세대 시력교정술<br />
                         각막 표면을 투과하여 각막 실질에만 레이저를 조사하는 최소절개 렌티큘 제거 방식
                     </p>
-                    <p className="text-neutral-500 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+                    <p className="text-neutral-500 max-w-2xl mx-auto text-xs sm:text-sm md:text-base leading-relaxed">
                         시야 중심축과 회전축의 정확한 계측 및 절삭으로 정밀한 난시 교정이 가능한<br />
                         대학병원 교수 출신 의료진의 차세대 시력교정 시스템
                     </p>
@@ -176,7 +176,7 @@ export default function VisionPageClient() {
             </section>
 
             {/* Deep Process Section (New Rich Content) */}
-            <section className="py-20 container mx-auto px-6">
+            <section className="py-16 sm:py-20 md:py-32 container mx-auto px-4 sm:px-6">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-20">
                     {[
                         { title: "정밀 검사", desc: "60여가지 안구 정밀 측정", icon: <ScanEye /> },
@@ -190,14 +190,14 @@ export default function VisionPageClient() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.1 }}
                             viewport={{ once: true }}
-                            className="bg-white/5 rounded-2xl p-8 border border-white/5 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center group"
+                            className="bg-white/5 rounded-2xl p-6 sm:p-7 md:p-8 border border-white/5 hover:border-primary/30 transition-all duration-300 flex flex-col items-center text-center group"
                         >
-                            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-black transition-all">
+                            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4 group-hover:bg-primary group-hover:text-black transition-all">
                                 {step.icon}
                             </div>
-                            <span className="text-3xl font-black text-primary mb-3 tracking-tighter">0{i + 1}</span>
-                            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{step.title}</h3>
-                            <p className="text-neutral-400 text-base leading-relaxed">{step.desc}</p>
+                            <span className="text-2xl sm:text-3xl font-black text-primary mb-3 tracking-tighter">0{i + 1}</span>
+                            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">{step.title}</h3>
+                            <p className="text-neutral-400 text-sm sm:text-base leading-relaxed">{step.desc}</p>
                         </motion.div>
                     ))}
                 </div>
@@ -214,32 +214,32 @@ export default function VisionPageClient() {
                                     <div className={`absolute inset-0 bg-gradient-to-br ${proc.color} opacity-80 mix-blend-multiply z-10`} />
                                     <img src={proc.bgUser} alt={proc.title} className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110" />
 
-                                    <div className="relative z-20 p-12 h-full flex flex-col justify-between">
-                                        <span className="text-9xl font-black text-white/20 translate-z-20">{proc.id}</span>
+                                    <div className="relative z-20 p-8 sm:p-10 md:p-12 h-full flex flex-col justify-between">
+                                        <span className="text-7xl sm:text-8xl md:text-9xl font-black text-white/20 translate-z-20">{proc.id}</span>
                                         <div className="translate-z-30">
                                             <div className="flex gap-2 mb-4">
                                                 {index === 0 && <span className="bg-white text-black text-xs font-bold px-3 py-1 rounded-full">BEST</span>}
                                                 {index === 2 && <span className="bg-amber-500 text-black text-xs font-bold px-3 py-1 rounded-full">PREMIUM</span>}
                                             </div>
-                                            <h2 className="text-4xl md:text-5xl font-bold text-white mb-2 leading-tight drop-shadow-lg">{proc.title}</h2>
-                                            <p className="text-white/90 font-medium tracking-wide drop-shadow-md">{proc.subtitle}</p>
+                                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight drop-shadow-lg">{proc.title}</h2>
+                                            <p className="text-sm sm:text-base text-white/90 font-medium tracking-wide drop-shadow-md">{proc.subtitle}</p>
                                         </div>
                                     </div>
                                 </div>
 
                                 {/* Content Side */}
-                                <div className="w-full md:w-1/2 p-12 md:p-16 flex flex-col justify-center bg-neutral-900/95 backdrop-blur-xl translate-z-20 border-l border-white/5">
-                                    <p className="text-lg md:text-xl text-neutral-300 leading-relaxed mb-12 font-light">
+                                <div className="w-full md:w-1/2 p-8 sm:p-12 md:p-16 flex flex-col justify-center bg-neutral-900/95 backdrop-blur-xl translate-z-20 border-l border-white/5">
+                                    <p className="text-base sm:text-lg md:text-xl text-neutral-300 leading-relaxed mb-8 sm:mb-12 font-light">
                                         {proc.desc}
                                     </p>
 
-                                    <div className="grid grid-cols-2 gap-y-6 gap-x-4 mb-12">
+                                    <div className="grid grid-cols-2 gap-y-4 sm:gap-y-6 gap-x-3 sm:gap-x-4 mb-8 sm:mb-12">
                                         {proc.features.map((feat, f_i) => (
-                                            <div key={f_i} className="flex items-center gap-3">
-                                                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-primary shrink-0">
-                                                    <Check size={18} strokeWidth={3} />
+                                            <div key={f_i} className="flex items-center gap-2 sm:gap-3">
+                                                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/5 flex items-center justify-center text-primary shrink-0">
+                                                    <Check size={16} className="sm:w-[18px] sm:h-[18px]" strokeWidth={3} />
                                                 </div>
-                                                <span className="text-base md:text-lg font-bold text-white uppercase tracking-wide leading-tight">{feat}</span>
+                                                <span className="text-sm sm:text-base md:text-lg font-bold text-white uppercase tracking-wide leading-tight">{feat}</span>
                                             </div>
                                         ))}
                                     </div>
