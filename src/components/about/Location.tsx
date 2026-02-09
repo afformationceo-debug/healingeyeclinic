@@ -57,17 +57,18 @@ export default function Location() {
                         </div>
                     </div>
 
-                    {/* Map Visual (Abstract/Placeholder) */}
-                    <div className="aspect-square bg-neutral-900 rounded-2xl sm:rounded-3xl md:rounded-[3rem] overflow-hidden relative border border-white/10 group">
-                        {/* Placeholder for real map API or static image */}
-                        <div className="absolute inset-0 bg-[url('https://api.mapbox.com/styles/v1/mapbox/dark-v10/static/127.0276,37.4979,15,0/800x800@2x?access_token=YOUR_TOKEN')] bg-cover bg-center opacity-50 group-hover:opacity-100 transition-opacity bg-neutral-800" />
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <div className="w-3 h-3 sm:w-4 sm:h-4 bg-primary rounded-full animate-ping absolute" />
-                            <div className="w-3 h-3 sm:w-4 sm:h-4 bg-primary rounded-full relative z-10 box-content border-2 sm:border-4 border-black" />
-                        </div>
-                        <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-black/80 backdrop-blur px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl border border-white/10">
-                            <span className="text-white font-bold text-sm sm:text-base">신논현역 6번 출구</span>
-                        </div>
+                    {/* Google Maps Embed */}
+                    <div className="aspect-square bg-neutral-900 rounded-2xl sm:rounded-3xl md:rounded-[3rem] overflow-hidden relative border border-white/10">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.151229073344!2d127.0250471!3d37.504351199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e215e52105%3A0x899f64deccd60c27!2z7Z6Q66eB7JWI6rO8IEhFQUxJTkfnnLznp5Eg6Z-T5ZyL55y856eRIOmfk-Wci-i_keimlumbt-WwhCBzbWlsZSDpm7flsIQg44OS44O844Oq44Oz44Kw55y856eR!5e0!3m2!1sko!2skr!4v1770650017736!5m2!1sko!2skr"
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            className="absolute inset-0"
+                        />
                     </div>
 
                 </div>
