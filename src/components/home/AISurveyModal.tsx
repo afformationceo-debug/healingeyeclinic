@@ -4,51 +4,80 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronRight, Check } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
-const questions = [
+// Question data with keys for comparison logic
+const questionsData = [
     {
         id: "age",
-        question: "연령대가 어떻게 되시나요?",
-        options: ["20대 이하", "30대", "40대", "50대 이상"]
+        questionKey: "questions.age.question",
+        options: [
+            { key: "under30", labelKey: "questions.age.options.under30" },
+            { key: "30s", labelKey: "questions.age.options.30s" },
+            { key: "40s", labelKey: "questions.age.options.40s" },
+            { key: "50plus", labelKey: "questions.age.options.50plus" }
+        ]
     },
     {
         id: "symptom",
-        question: "가장 불편한 점은 무엇인가요?",
-        options: ["안경/렌즈 불편", "눈 건조/피로", "가까운 글씨 안 보임", "빛 번짐 심함"]
+        questionKey: "questions.symptom.question",
+        options: [
+            { key: "glassesDiscomfort", labelKey: "questions.symptom.options.glassesDiscomfort" },
+            { key: "dryFatigue", labelKey: "questions.symptom.options.dryFatigue" },
+            { key: "nearVision", labelKey: "questions.symptom.options.nearVision" },
+            { key: "lightGlare", labelKey: "questions.symptom.options.lightGlare" }
+        ]
     },
     {
         id: "lifestyle",
-        question: "평소 라이프스타일은?",
-        options: ["컴퓨터/스마트폰 사용 많음", "야외 활동/운동 즐김", "운전 많이 함", "독서/세밀한 작업"]
+        questionKey: "questions.lifestyle.question",
+        options: [
+            { key: "digitalDevice", labelKey: "questions.lifestyle.options.digitalDevice" },
+            { key: "outdoor", labelKey: "questions.lifestyle.options.outdoor" },
+            { key: "driving", labelKey: "questions.lifestyle.options.driving" },
+            { key: "reading", labelKey: "questions.lifestyle.options.reading" }
+        ]
     }
 ];
 
+// Result keys for translation
+type ResultKey = "cataract" | "smileLasik" | "customLasek";
+
 export default function AISurveyModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+    const t = useTranslations("Home.AISurvey");
     const [step, setStep] = useState(0);
     const [answers, setAnswers] = useState<Record<string, string>>({});
-    const [result, setResult] = useState<string | null>(null);
+    const [result, setResult] = useState<ResultKey | null>(null);
 
-    const handleSelect = (option: string) => {
-        setAnswers({ ...answers, [questions[step].id]: option });
-        if (step < questions.length - 1) {
+    const handleSelect = (optionKey: string) => {
+        setAnswers({ ...answers, [questionsData[step].id]: optionKey });
+        if (step < questionsData.length - 1) {
             setStep(step + 1);
         } else {
-            calculateResult();
+            calculateResult({ ...answers, [questionsData[step].id]: optionKey });
         }
     };
 
-    const calculateResult = () => {
-        // Simple mock logic for demo
+    const calculateResult = (finalAnswers: Record<string, string>) => {
+        // Set to loading state
+        setStep(questionsData.length);
+
+        // Simple mock logic for demo - now using option keys instead of Korean text
         setTimeout(() => {
-            if (answers.age === "50대 이상" || answers.symptom === "가까운 글씨 안 보임") {
-                setResult("노안/백내장 프리미엄 센터");
-            } else if (answers.lifestyle === "야외 활동/운동 즐김") {
-                setResult("스마일 라식 (SMILE PRO)");
+            if (finalAnswers.age === "50plus" || finalAnswers.symptom === "nearVision") {
+                setResult("cataract");
+            } else if (finalAnswers.lifestyle === "outdoor") {
+                setResult("smileLasik");
             } else {
-                setResult("커스텀 라섹 (Custom LASEK)");
+                setResult("customLasek");
             }
         }, 1000);
-        setStep(questions.length); // Loading state
+    };
+
+    const handleReset = () => {
+        setStep(0);
+        setAnswers({});
+        setResult(null);
     };
 
     return (
@@ -77,29 +106,31 @@ export default function AISurveyModal({ isOpen, onClose }: { isOpen: boolean; on
                         <div className="absolute top-0 left-0 h-1 bg-white/10 w-full">
                             <motion.div
                                 initial={{ width: 0 }}
-                                animate={{ width: `${((step + 1) / (questions.length + 1)) * 100}%` }}
+                                animate={{ width: `${((step + 1) / (questionsData.length + 1)) * 100}%` }}
                                 className="h-full bg-primary"
                             />
                         </div>
 
-                        {step < questions.length ? (
+                        {step < questionsData.length ? (
                             // Question Step
                             <div key={step}>
-                                <span className="text-primary text-sm font-bold tracking-widest uppercase mb-4 block">AI Analysis Step {step + 1}</span>
+                                <span className="text-primary text-sm font-bold tracking-widest uppercase mb-4 block">
+                                    {t("stepLabel", { step: step + 1 })}
+                                </span>
                                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-8 leading-snug">
-                                    {questions[step].question}
+                                    {t(questionsData[step].questionKey)}
                                 </h2>
                                 <div className="space-y-3">
-                                    {questions[step].options.map((opt, i) => (
+                                    {questionsData[step].options.map((opt, i) => (
                                         <motion.button
-                                            key={i}
+                                            key={opt.key}
                                             initial={{ opacity: 0, x: -20 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ delay: i * 0.1 }}
-                                            onClick={() => handleSelect(opt)}
+                                            onClick={() => handleSelect(opt.key)}
                                             className="w-full text-left p-4 rounded-xl border border-white/10 bg-white/5 hover:bg-primary hover:text-black hover:border-primary transition-all flex justify-between items-center group"
                                         >
-                                            <span className="font-medium">{opt}</span>
+                                            <span className="font-medium">{t(opt.labelKey)}</span>
                                             <ChevronRight size={18} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                                         </motion.button>
                                     ))}
@@ -113,8 +144,8 @@ export default function AISurveyModal({ isOpen, onClose }: { isOpen: boolean; on
                                     transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                                     className="w-16 h-16 border-4 border-white/10 border-t-primary rounded-full mx-auto mb-6"
                                 />
-                                <h3 className="text-xl font-bold text-white mb-2">AI가 눈 상태를 분석 중입니다...</h3>
-                                <p className="text-white/50 text-sm">10만 건의 임상 데이터를 대조하고 있습니다.</p>
+                                <h3 className="text-xl font-bold text-white mb-2">{t("loading.title")}</h3>
+                                <p className="text-white/50 text-sm">{t("loading.subtitle")}</p>
                             </div>
                         ) : (
                             // Result Step
@@ -126,17 +157,30 @@ export default function AISurveyModal({ isOpen, onClose }: { isOpen: boolean; on
                                 >
                                     <Check size={40} />
                                 </motion.div>
-                                <span className="text-neutral-400 text-sm uppercase tracking-widest mb-2 block">Recommendation</span>
+                                <span className="text-neutral-400 text-sm uppercase tracking-widest mb-2 block">
+                                    {t("result.badge")}
+                                </span>
                                 <h2 className="text-3xl font-bold text-white mb-6">
-                                    <span className="text-primary">{result}</span><br />이(가) 가장 적합합니다.
+                                    <span className="text-primary">{t(`results.${result}.name`)}</span>
+                                    <br />
+                                    {t("result.suitable")}
                                 </h2>
                                 <p className="text-white/60 mb-8 leading-relaxed">
-                                    선택하신 라이프스타일과 증상을 토대로 한 1차 분석 결과입니다.<br />
-                                    더 정확한 검사를 위해 정밀 검진 예약을 도와드릴까요?
+                                    {t("result.description")}
+                                    <br />
+                                    {t("result.callToAction")}
                                 </p>
                                 <div className="flex gap-4 justify-center">
-                                    <Button variant="outline" onClick={onClose} className="border-white/10 hover:bg-white/10 text-white">다시하기</Button>
-                                    <Button className="bg-primary text-black hover:bg-white">검사 예약하기</Button>
+                                    <Button
+                                        variant="outline"
+                                        onClick={handleReset}
+                                        className="border-white/10 hover:bg-white/10 text-white"
+                                    >
+                                        {t("buttons.retry")}
+                                    </Button>
+                                    <Button className="bg-primary text-black hover:bg-white">
+                                        {t("buttons.book")}
+                                    </Button>
                                 </div>
                             </div>
                         )}

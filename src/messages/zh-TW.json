@@ -1,39 +1,103 @@
 {
+  "Metadata": {
+    "title": "韓國Healing眼科 | 頂級視力矯正",
+    "description": "開創視力矯正新標準，韓國Healing眼科。",
+    "vision": {
+      "title": "視力矯正中心 | 韓國Healing眼科",
+      "description": "全飛秒雷射、LASEK、人工水晶體植入術專業。大學醫院教授級醫療團隊的頂級視力矯正。"
+    },
+    "cataract": {
+      "title": "老花眼/白內障中心 | 韓國Healing眼科",
+      "description": "多焦點人工水晶體專業。以客製化頂級鏡片重拾年輕視力。"
+    },
+    "center": {
+      "title": "眼疾中心 | 韓國Healing眼科",
+      "description": "乾眼症、青光眼、視網膜疾病專業。大學醫院等級最先進設備精密診斷。"
+    },
+    "about": {
+      "title": "醫院介紹 | 韓國Healing眼科",
+      "description": "位於首爾江南新論峴站，大學醫院教授級醫療團隊的頂級眼科。"
+    },
+    "insight": {
+      "title": "專業資訊 | 韓國Healing眼科",
+      "description": "眼科專科醫師親自解答視力矯正、白內障Q&A。"
+    },
+    "community": {
+      "title": "社群 | 韓國Healing眼科",
+      "description": "韓國Healing眼科公告事項、常見問題、活動資訊。"
+    }
+  },
+  "Common": {
+    "loading": "載入中...",
+    "error": "發生錯誤。",
+    "navigation": {
+      "home": "首頁",
+      "about": "醫院介紹",
+      "treatments": "診療說明",
+      "equipment": "設備介紹",
+      "community": "社群",
+      "reservation": "預約"
+    },
+    "buttons": {
+      "book": "預約",
+      "viewMore": "了解更多",
+      "previous": "上一頁",
+      "next": "下一頁",
+      "close": "關閉",
+      "submit": "提交",
+      "cancel": "取消"
+    },
+    "labels": {
+      "loading": "載入中...",
+      "error": "發生錯誤",
+      "success": "已成功完成",
+      "language": "語言"
+    }
+  },
+  "Navigation": {
+    "about": "醫院介紹",
+    "vision": "視力矯正術",
+    "cataract": "老花眼/白內障",
+    "dryeye": "乾眼症門診",
+    "center": "眼疾中心",
+    "community": "社群",
+    "insight": "專業資訊"
+  },
   "Home": {
     "Hero": {
-      "clinicName": "韓國Healing眼科",
-      "location": "首爾江南",
-      "established": "創立於 2016",
-      "directorName": "金善英",
-      "brandName": "治癒",
-      "brandSubtitle": "眼科",
-      "tagline": "以無妥協的精準度與安全性，重新定義視力矯正的標準。",
-      "ctaButton": "立即",
-      "ctaButtonSub": "預約"
+      "clinicName": "( Healing Eye Clinic )",
+      "location": "Gangnam, Seoul",
+      "established": "Est. 2016",
+      "directorName": "Kim Sun-young",
+      "brandName": "HEALING",
+      "brandSubtitle": "EYE",
+      "tagline": "We redefine the standard of vision correction with\nuncompromising precision and safety.",
+      "ctaButton": "BOOK",
+      "ctaButtonSub": "NOW"
     },
     "Philosophy": {
       "sectionTitle": "我們的理念",
-      "mainQuote": "不僅是治療眼睛",
-      "mainQuoteHighlight": "更要治癒您的生活。",
-      "description": "不僅僅是矯正視力。\n從早晨睜開眼睛到入睡前，讓您所面對的世界\n更加清晰、更加美好。這是治癒眼科的承諾。",
+      "mainQuote": "\"不只是治療眼睛",
+      "mainQuoteHighlight": "而是療癒您的人生。\"",
+      "description": "這不僅僅是矯正視力。\n從清晨睜眼的那一刻到入睡前，讓您面對的每一個世界\n更加清晰美麗。這是韓國Healing眼科的承諾。",
       "movingText": {
-        "text1": "超越視力",
-        "text2": "治癒生活",
-        "text3": "頂級照護",
-        "text4": "完美傑作"
+        "text1": "BEYOND VISION",
+        "text2": "HEALING LIFE",
+        "text3": "PREMIUM CARE",
+        "text4": "MASTERPIECE"
       },
       "values": {
         "precision": {
-          "title": "超精準（Precision）",
-          "description": "以挑戰手術誤差 0% 的超精準系統\n為您的雙眼刻劃完美視力。"
+          "title": "超精密 (Precision)",
+          "description": "以挑戰0%手術誤差的超精密系統\n在您的眼中銘刻完美的視力。"
         },
         "safety": {
-          "title": "安全性（Safety）",
-          "description": "醫學中心教授級醫療團隊配備醫學中心等級的最新設備\n讓您能夠安心託付。"
+          "title": "安全 (Safety)",
+          "description": "由大學醫院教授級醫療團隊與大學醫院等級最新設備共同守護\n讓您安心託付。"
         },
         "empathy": {
-          "title": "同理心（Empathy）",
-          "description": "透過數萬例手術案例累積的專業技術\n在溫馨的治癒空間中，真誠地同理您的需求。"
+          "title": "共感 (Empathy)",
+          "description": "以數萬案例淬煉的手術實力\n在溫暖的療癒空間中真誠關懷您的眼睛。"
         }
       }
     },
@@ -45,7 +109,7 @@
       "visionCorrection": {
         "badge": "Most Popular",
         "title": "Vision Correction",
-        "description": "從微笑雷射、客製化雷射到晶體植入術。\n超越傳統視力矯正極限的超精密雷射解決方案。"
+        "description": "全飛秒雷射、客製化LASEK、人工水晶體植入術。\n超越傳統視力矯正術極限的超精密雷射解決方案。"
       },
       "presbyopiaCataract": {
         "title": "Presbyopia &",
@@ -57,98 +121,101 @@
         "badge": "University Hospital Level",
         "title": "Eye Disease",
         "titleLine2": "Center",
-        "subtitle": "眼部疾病中心",
+        "subtitle": "眼疾中心",
         "description": "乾眼症、青光眼、視網膜疾病"
       }
     },
     "WhyHealingEye": {
-      "sectionTitle": "為何選擇治癒眼科",
-      "headline": "不同等級的眼科，",
-      "headlineSubtitle": "結果就是證明。",
+      "sectionTitle": "為何選擇Healing眼科",
+      "headline": "標準不同的眼科，",
+      "headlineSubtitle": "成果證明一切。",
       "stats": {
         "rating": "4.9/5.0",
-        "ratingLabel": "患者評價",
+        "ratingLabel": "患者滿意度",
         "cases": "50,000+",
-        "casesLabel": "成功案例"
+        "casesLabel": "成功手術案例"
       },
       "features": {
         "faculty": {
-          "title": "醫學中心教授",
-          "subtitle": "醫學中心教授級醫療團隊",
-          "description": "擁有豐富臨床經驗與專業的醫療團隊\n從諮詢到手術、術後管理，提供一對一專屬服務。"
+          "title": "大學醫院教授級",
+          "titleEng": "University Faculty",
+          "subtitle": "大學醫院教授級醫療團隊",
+          "description": "擁有豐富臨床經驗和專業技術的醫療團隊\n從諮詢到手術、術後管理全程1對1專責照護。"
         },
         "equipment": {
-          "title": "頂級設備",
-          "subtitle": "醫學中心等級尖端設備",
-          "description": "配備 Zimer Z8、ZEISS SUITE 等最新設備\n首家使用德國 Rara 鏡片，四焦點 PanOptix 使用量全國第一\n證明白內障專業實力。"
+          "title": "最先進設備",
+          "titleEng": "High-End Equipment",
+          "subtitle": "大學醫院等級最先進設備",
+          "description": "配備Zimer Z8、ZEISS SUITE等最新設備\n德國LARA鏡片首度使用、四焦點PanOptix使用量全國第一\n彰顯白內障專業實力。"
         },
         "guarantee": {
           "title": "終身保證",
+          "titleEng": "Lifetime Guarantee",
           "subtitle": "終身視力保證系統",
-          "description": "為您未來的 40 年、第二人生負責\n終身保證制度，永久保障您的視力。"
+          "description": "為您未來40年的第二人生負責\n以終身保證制度守護您的視力。"
         }
       }
     },
     "Review": {
-      "title": "真實故事",
-      "subtitle": "經數據證實的成果，患者們的真實體驗。",
+      "title": "Real Stories",
+      "subtitle": "數據證明的成果，患者們的真實故事。",
       "ctaSubtitle": "終身視力，從現在開始",
       "ctaButton": "立即預約專家諮詢",
       "reviews": [
         {
           "name": "金○○",
           "age": "20多歲",
-          "surgery": "微笑雷射",
-          "content": "沒想到不戴眼鏡的早晨會如此令人感動。手術當天只是稍微模糊，隔天就是全新世界了。特別是我很擔心夜間眩光，但完全沒有不適感，夜間開車也很順利。",
+          "surgery": "全飛秒雷射 (SMILE PRO)",
+          "content": "沒想到不戴眼鏡的早晨如此感動。手術當天稍微有點模糊，隔天就是全新的世界。特別是擔心的夜間眩光問題，完全沒有不適，夜間開車也很順利。院長親自從驗光到手術全程照顧，更加令人放心。",
           "date": "2024.01.15"
         },
         {
           "name": "李○○",
-          "age": "60多歲",
+          "age": "40多歲",
           "surgery": "多焦點人工水晶體（老花白內障）",
-          "content": "沒有放大鏡連手機都很難看清楚，現在連高爾夫球都能看得清清楚楚，和朋友聊天也很方便。不僅僅是手術，更像是獲得了生活品質的提升。診所設施像飯店一樣高級，工作人員也非常親切，讓我能夠放心接受手術。",
+          "content": "以前沒有老花眼鏡連手機都看不清楚，現在高爾夫球也看得很清楚，和朋友用LINE聊天也很輕鬆。不只是單純的手術，感覺是獲得了生活品質的禮物。醫院設施像五星級飯店一樣高級，工作人員也非常親切，讓我很安心地接受手術。",
           "date": "2024.01.12"
         },
         {
           "name": "朴○○",
           "age": "30多歲",
-          "surgery": "ICL 晶體植入術",
-          "content": "因為角膜太薄被判定不能做雷射手術而感到挫折，在治癒眼科透過 ICL 重見光明。完全沒有鏡片異物感，乾眼症甚至比戴隱形眼鏡時還要輕。猶豫的時間真是太可惜了。強力推薦！",
+          "surgery": "ICL人工水晶體植入術",
+          "content": "因為角膜太薄被判定無法做LASIK，曾經很沮喪，在Healing眼科透過ICL重見光明。完全沒有鏡片異物感，乾眼症反而比戴隱形眼鏡時還輕。後悔沒有早點來，強力推薦！",
           "date": "2024.01.08"
         },
         {
           "name": "崔○○",
           "age": "50多歲",
-          "surgery": "老花雷射",
-          "content": "因為老花眼導致工作很辛苦，單眼視覺雷射手術後近距離作業輕鬆多了。一開始說需要適應期，但比預期更快適應，現在不戴眼鏡也能清楚看會議資料。",
+          "surgery": "老花LASIK (Monovision)",
+          "content": "因為老花眼工作很吃力，做了單眼視LASIK後近距離作業輕鬆多了。一開始說需要適應期，但比想像中快就適應了，現在不戴眼鏡也能看會議資料。",
           "date": "2023.12.29"
         },
         {
           "name": "鄭○○",
           "age": "20多歲",
-          "surgery": "高階準分子雷射",
-          "content": "因為疼痛而很擔心，但只有前兩天眼睛刺痛，之後就很舒服了。取下保護鏡片後明顯感受到視力提升。目前維持 1.2 視力。非常感謝！",
+          "surgery": "Today LASEK",
+          "content": "本來很擔心疼痛，只有2天左右眼睛刺痛，之後就很舒適了。拿掉保護鏡片後明顯感覺視力提升。維持1.5的視力，謝謝！",
           "date": "2023.12.20"
         },
         {
           "name": "安○○",
-          "age": "40多歲",
-          "surgery": "二次手術（雷射 → 老花準分子雷射）",
-          "content": "在其他醫院做完雷射後視力下降而接受二次手術。雖然不安，但院長仔細檢查角膜狀態並安全地進行手術，非常感謝。現在維持 1.2 視力，夜間視力也比以前好了。",
+          "age": "30多歲",
+          "surgery": "再手術（LASIK → 老花LASEK）",
+          "content": "在其他醫院做LASIK後視力下降，來做再手術。雖然很不安，但院長仔細檢查角膜狀態並安全地進行手術，非常感謝。現在維持1.2視力，夜間視力也比以前好了。",
           "date": "2023.12.15"
         },
         {
           "name": "尹○○",
           "age": "20多歲",
-          "surgery": "準分子雷射（角膜薄）",
-          "content": "因為角膜薄而煩惱很久，在治癒眼科安全地接受準分子雷射手術。恢復也很快，現在已經六個月了，視力非常滿意！",
+          "surgery": "LASEK（角膜較薄）",
+          "content": "因為角膜薄煩惱很多，在Healing眼科安全地做了LASEK。恢復很快，現在6個月了，視力非常滿意！",
           "date": "2023.12.10"
         },
         {
           "name": "趙○○",
-          "age": "60多歲",
-          "surgery": "白內障（高階鏡片）",
-          "content": "白內障手術後感覺回到了 30 年前的視力。不戴眼鏡就能打高爾夫、看書，人生完全改變了。不要猶豫，趕快預約諮詢吧！",
+          "age": "40多歲",
+          "surgery": "白內障（頂級鏡片）",
+          "content": "白內障手術後感覺回到30年前的視力。不戴眼鏡也能打高爾夫、看書，人生都不一樣了。不要猶豫，趕快來諮詢吧！",
           "date": "2023.12.05"
         }
       ]
@@ -157,9 +224,9 @@
       "sectionTitle": "Premium Lounge",
       "headline": "Relaxation",
       "headlineSubtitle": "Before Perfection",
-      "description": "連手術前的緊張感都能變成期待感的空間。\n希林眼科的高級貴賓廳擁有五星級飯店的品質。\n以最佳狀態迎接您的新視力。",
-      "galleryTitle": "參觀設施",
-      "facilityAlt": "希林眼科設施",
+      "description": "讓手術前的緊張也轉化為期待的空間。\nHealing眼科的頂級休息室蘊含五星級飯店的格調。\n以最佳狀態迎接嶄新的視力。",
+      "galleryTitle": "設施導覽",
+      "facilityAlt": "Healing眼科設施",
       "backgroundAlt": "Premium Facility",
       "floatingText": "Architecture & Interior Design"
     },
@@ -169,102 +236,108 @@
           "name": "金善英",
           "nameEng": "Kim Sun-young",
           "position": "代表院長",
-          "positionEng": "代表院長",
+          "positionEng": "Representative Director",
           "title": "眼科專科醫師/臨床教授",
-          "specialty": "微笑・清晰 / 老花白內障 / 乾眼症",
-          "quote": "視力不僅僅是看見，更是體驗。",
-          "quoteHighlight1": "看見",
-          "quoteHighlight2": "體驗",
-          "philosophy": "不允許 1% 誤差的完美主義。基於醫學中心教授級的豐富臨床經驗，以及對尖端設備的深入理解，為您找到人生中最清晰的時刻。",
+          "specialty": "全飛秒·Clear / 老花白內障 / 乾眼症",
+          "quote": "以不懈的探索與研究將既有理論推向更高境界",
+          "quoteEng": "\"Vision is not just seeing, it is experiencing.\"",
+          "quoteHighlight1": "seeing",
+          "quoteHighlight2": "experiencing.",
+          "philosophy": "不容許1%誤差的完美主義。以大學醫院教授的豐富臨床經驗和對最先進設備的深刻理解為基礎，為您找到人生中最清澈的時刻。",
           "career": [
-            "天主教大學醫學院研究所碩士",
+            "天主教大學醫學院碩士",
             "2009-2013 天主教大學天主教中央醫療院眼科專科醫師",
             "2013-2016 議政府聖母醫院角膜、白內障臨床教授",
-            "2009年 首爾聖母醫院最優秀住院醫師表揚",
-            "2008年 保健福祉部長官表揚",
+            "2009年首爾聖母醫院最優秀住院醫師表彰",
+            "2008年保健福祉部長官獎",
             "第108屆大韓眼科學會口頭報告獎",
-            "疾病管理本部流行病學調查表揚狀",
-            "大韓眼科學會（KOS）正式會員",
-            "韓國外眼部研究會（KEEDS）正式會員",
-            "韓國隱形眼鏡學會（KCLSS）正式會員",
-            "歐洲白內障與屈光手術學會（ESCRS）正式會員"
-          ]
+            "疾病管理本部流行病學調查表彰狀",
+            "大韓眼科學會(KOS)正式會員",
+            "韓國外眼部研究會(KEEDS)正式會員",
+            "韓國隱形眼鏡學會(KCLSS)正式會員",
+            "歐洲白內障屈光手術學會(ESCRS)正式會員"
+          ],
+          "img": "/images/doctors/1.png"
         },
         {
           "name": "林成雄",
           "nameEng": "Lim Sung-woong",
           "position": "代表院長",
-          "positionEng": "代表院長",
+          "positionEng": "Representative Director",
           "title": "眼科專科醫師",
           "specialty": "視網膜 / 青光眼 / 視力矯正",
-          "quote": "精準的診斷，卓越的治療。",
-          "quoteHighlight1": "診斷",
-          "quoteHighlight2": "治療",
-          "philosophy": "精準的診斷是成功手術的第一步。透過醫學中心級尖端檢查系統與數據分析洞察力，為您的眼睛狀態制定最合適的客製化治療計畫。",
+          "quote": "以患者的心盡全力",
+          "quoteEng": "\"Precision in diagnosis, excellence in treatment.\"",
+          "quoteHighlight1": "diagnosis",
+          "quoteHighlight2": "treatment.",
+          "philosophy": "精確的診斷是成功手術的第一步。以大學醫院等級的先進檢查系統和分析數據的洞察力，為您制定最適合眼睛狀態的客製化治療計畫。",
           "career": [
             "延世大學醫學院畢業",
             "世福蘭斯醫院眼科專科醫師",
-            "前）實羅岩眼科醫院診療科長",
+            "前) 實羅岩眼科醫院診療科長",
             "韓國視網膜學會正式會員"
-          ]
+          ],
+          "img": "/images/doctors/2.png"
         },
         {
-          "name": "李容恩",
+          "name": "李龍恩",
           "nameEng": "Lee Yong-eun",
           "position": "院長",
-          "positionEng": "院長",
+          "positionEng": "Director",
           "title": "眼科專科醫師",
           "specialty": "小兒眼科 / 角膜塑型片",
-          "quote": "守護兒童視力，確保他們的未來。",
-          "quoteHighlight1": "兒童視力",
-          "quoteHighlight2": "未來",
-          "philosophy": "孩子的視力是一生的資產。從成長期近視控制到角膜塑型片處方，以符合孩子視角的溫暖細心診療，減輕家長的擔憂。",
+          "quote": "以不懈的研究和豐富的經驗建立信賴",
+          "quoteEng": "\"Caring for children's vision, securing their future.\"",
+          "quoteHighlight1": "children's vision",
+          "quoteHighlight2": "future.",
+          "philosophy": "孩子的視力是一生的資產。從成長期近視控制到角膜塑型片處方，以符合孩子視角的溫暖細心診療，減輕父母的擔憂。",
           "career": [
             "大田科學高中畢業",
-            "天主教大學醫學院榜眼畢業",
-            "天主教大學醫學院研究所碩士",
+            "天主教大學醫學院以第二名畢業",
+            "天主教大學醫學院碩士",
             "首爾聖母醫院白內障臨床教授",
-            "大韓眼科學會（KOS）正式會員",
-            "韓國白內障屈光手術學會（KSCRS）正式會員",
-            "大韓眼科醫師會（KOA）正式會員",
-            "美國白內障與屈光手術學會（ASCRS）正式會員",
-            "歐洲白內障與屈光手術學會（ESCRS）正式會員",
-            "美國退伍軍人檢查醫師（Veterans Evaluation Services）"
-          ]
+            "大韓眼科學會(KOS)正式會員",
+            "韓國白內障屈光手術學會(KSCRS)正式會員",
+            "大韓眼科醫師會(KOA)正式會員",
+            "美國白內障屈光手術學會(ASCRS)正式會員",
+            "歐洲白內障屈光手術學會(ESCRS)正式會員",
+            "美國退伍軍人健康檢查醫師(Veterans Evaluation Services)"
+          ],
+          "img": "/images/doctors/3.png"
         }
       ],
-      "mainCareer": "主要經歷",
-      "medicalPhilosophy": "醫療理念",
-      "viewProfile": "查看完整資料"
+      "mainCareer": "Main Career",
+      "medicalPhilosophy": "Medical Philosophy",
+      "viewProfile": "View Full Profile"
     },
     "MedicalTeam": {
-      "sectionTitle": "醫療團隊",
-      "headline": "視力",
-      "headlineSubtitle": "的專精。",
+      "sectionTitle": "Medical Team",
+      "headline": "Mastery",
+      "headlineSubtitle": "of Vision.",
       "positionLabels": {
         "representativeDirector": "代表院長",
         "director": "院長"
       },
-      "careerTitle": "經歷",
+      "careerTitle": "Career",
       "doctors": [
         {
           "name": "金善英",
           "position": "代表院長",
           "title": "眼科專科醫師/臨床教授",
-          "specialty": "微笑・清晰 / 老花白內障 / 乾眼症",
-          "description": "曾擔任醫學中心教授，致力於難治性乾眼症與白內障治療。作為江南唯一獨立開業的女性眼科專科醫師，承諾以細緻的差異打造最佳手術成果。",
+          "specialty": "全飛秒·Clear / 老花白內障 / 乾眼症",
+          "description": "曾任大學醫院教授，專注於難治性乾眼症和白內障治療。作為江南唯一獨立開業的女性眼科專科醫師，承諾以細膩的差異帶來最佳的手術結果。",
           "career": [
-            "天主教大學醫學院研究所碩士",
+            "天主教大學醫學院碩士",
             "2009-2013 天主教大學天主教中央醫療院眼科專科醫師",
             "2013-2016 議政府聖母醫院角膜、白內障臨床教授",
-            "2009年 首爾聖母醫院最優秀住院醫師表揚",
-            "2008年 保健福祉部長官表揚",
+            "2009年首爾聖母醫院最優秀住院醫師表彰",
+            "2008年保健福祉部長官獎",
             "第108屆大韓眼科學會口頭報告獎",
-            "疾病管理本部流行病學調查表揚狀",
-            "大韓眼科學會（KOS）正式會員",
-            "韓國外眼部研究會（KEEDS）正式會員",
-            "韓國隱形眼鏡學會（KCLSS）正式會員",
-            "歐洲白內障與屈光手術學會（ESCRS）正式會員"
+            "疾病管理本部流行病學調查表彰狀",
+            "大韓眼科學會(KOS)正式會員",
+            "韓國外眼部研究會(KEEDS)正式會員",
+            "韓國隱形眼鏡學會(KCLSS)正式會員",
+            "歐洲白內障屈光手術學會(ESCRS)正式會員"
           ]
         },
         {
@@ -272,56 +345,761 @@
           "position": "代表院長",
           "title": "眼科專科醫師",
           "specialty": "視網膜 / 青光眼 / 視力矯正",
-          "description": "精準的診斷是成功手術的第一步。透過醫學中心級尖端檢查系統與數據分析洞察力，為您的眼睛狀態制定最合適的客製化治療計畫。",
+          "description": "精確的診斷是成功手術的第一步。以大學醫院等級的先進檢查系統和分析數據的洞察力，為您制定最適合眼睛狀態的客製化治療計畫。",
           "career": [
             "延世大學醫學院畢業",
             "世福蘭斯醫院眼科專科醫師",
-            "前）實羅岩眼科醫院診療科長",
+            "前) 實羅岩眼科醫院診療科長",
             "韓國視網膜學會正式會員"
           ]
         },
         {
-          "name": "李容恩",
+          "name": "李龍恩",
           "position": "院長",
           "title": "眼科專科醫師",
           "specialty": "小兒眼科 / 角膜塑型片",
-          "description": "孩子的視力是一生的資產。從成長期近視控制到角膜塑型片處方，以符合孩子視角的溫暖細心診療，減輕家長的擔憂。",
+          "description": "孩子的視力是一生的資產。從成長期近視控制到角膜塑型片處方，以符合孩子視角的溫暖細心診療，減輕父母的擔憂。",
           "career": [
             "大田科學高中畢業",
-            "天主教大學醫學院榜眼畢業",
-            "天主教大學醫學院研究所碩士",
+            "天主教大學醫學院以第二名畢業",
+            "天主教大學醫學院碩士",
             "首爾聖母醫院白內障臨床教授",
-            "大韓眼科學會（KOS）正式會員",
-            "韓國白內障屈光手術學會（KSCRS）正式會員",
-            "大韓眼科醫師會（KOA）正式會員",
-            "美國白內障與屈光手術學會（ASCRS）正式會員",
-            "歐洲白內障與屈光手術學會（ESCRS）正式會員",
-            "美國退伍軍人檢查醫師（Veterans Evaluation Services）"
+            "大韓眼科學會(KOS)正式會員",
+            "韓國白內障屈光手術學會(KSCRS)正式會員",
+            "大韓眼科醫師會(KOA)正式會員",
+            "美國白內障屈光手術學會(ASCRS)正式會員",
+            "歐洲白內障屈光手術學會(ESCRS)正式會員",
+            "美國退伍軍人健康檢查醫師(Veterans Evaluation Services)"
           ]
         }
       ]
     },
     "AIPrediction": {
       "badge": "Healing AI Solutions",
-      "title": "找到最適合",
-      "titleHighlight": "您眼睛的手術",
-      "description": "Healing眼科診所AI學習了超過10萬例臨床數據，\n分析您的角膜數據和生活方式，\n推薦最安全、最有效的視力矯正手術。",
+      "title": "為我的眼睛量身打造",
+      "titleHighlight": "最佳手術方案",
+      "description": "學習超過10萬件臨床數據的Healing眼科AI\n分析您的角膜數據和生活方式\n推薦最安全有效的視力矯正術。",
       "features": [
-        "角膜厚度和形狀3D分析",
-        "基於生活方式的匹配",
+        "角膜厚度及形態3D分析",
+        "生活方式客製化匹配",
         "術後恢復期預測模擬"
       ],
       "ctaButton": "開始AI視力矯正預測",
       "visualTitle": "AI EYE SCANNING",
       "visualSubtitle": "Click to Start Analysis"
+    },
+    "AISurvey": {
+      "stepLabel": "AI Analysis Step {step}",
+      "questions": {
+        "age": {
+          "question": "請問您的年齡層是？",
+          "options": {
+            "under30": "20多歲以下",
+            "30s": "30多歲",
+            "40s": "40多歲",
+            "50plus": "50歲以上"
+          }
+        },
+        "symptom": {
+          "question": "最困擾您的問題是什麼？",
+          "options": {
+            "glassesDiscomfort": "眼鏡/隱形眼鏡不適",
+            "dryFatigue": "眼睛乾澀/疲勞",
+            "nearVision": "看不清近處文字",
+            "lightGlare": "嚴重眩光"
+          }
+        },
+        "lifestyle": {
+          "question": "您平常的生活方式是？",
+          "options": {
+            "digitalDevice": "大量使用電腦/手機",
+            "outdoor": "喜歡戶外活動/運動",
+            "driving": "經常開車",
+            "reading": "閱讀/精細工作"
+          }
+        }
+      },
+      "loading": {
+        "title": "AI正在分析您的眼睛狀況...",
+        "subtitle": "正在比對10萬件臨床數據。"
+      },
+      "result": {
+        "badge": "Recommendation",
+        "suitable": "最適合您。",
+        "description": "這是根據您選擇的生活方式和症狀進行的初步分析結果。",
+        "callToAction": "需要我們協助您預約精密檢查嗎？"
+      },
+      "results": {
+        "cataract": {
+          "name": "老花眼/白內障頂級中心"
+        },
+        "smileLasik": {
+          "name": "全飛秒雷射 (SMILE PRO)"
+        },
+        "customLasek": {
+          "name": "客製化LASEK"
+        }
+      },
+      "buttons": {
+        "retry": "重新開始",
+        "book": "預約檢查"
+      }
+    }
+  },
+  "Vision": {
+    "Hero": {
+      "sectionTitle": "Vision Correction",
+      "headline": "不同層次的",
+      "headlineHighlight": "視力矯正",
+      "description": "全飛秒雷射、LASEK、人工水晶體植入術\n大學醫院教授級醫療團隊的頂級視力矯正"
+    },
+    "Comparison": {
+      "title": "為何選擇「Healing SMILE」？",
+      "subtitle": "結合傳統LASIK/LASEK優點並彌補缺點的第三代手術方式",
+      "tableHeaders": {
+        "category": "項目",
+        "smileLasik": "全飛秒雷射",
+        "smileLasikBadge": "Best Choice",
+        "regularLasik": "一般LASIK",
+        "regularLasek": "一般LASEK"
+      },
+      "items": [
+        {
+          "label": "手術方式",
+          "healing": "角膜最小切口 (2mm)",
+          "lasik": "角膜瓣製作 (24mm)",
+          "lasek": "上皮去除"
+        },
+        {
+          "label": "疼痛",
+          "healing": "幾乎沒有",
+          "lasik": "些許",
+          "lasek": "2~3天疼痛"
+        },
+        {
+          "label": "恢復期",
+          "healing": "手術隔天",
+          "lasik": "3~4天",
+          "lasek": "5~7天"
+        },
+        {
+          "label": "角膜損傷",
+          "healing": "最小化（安全）",
+          "lasik": "較多",
+          "lasek": "較多"
+        },
+        {
+          "label": "外力衝擊",
+          "healing": "強",
+          "lasik": "弱",
+          "lasek": "強"
+        },
+        {
+          "label": "乾眼症",
+          "healing": "幾乎沒有",
+          "lasik": "可能發生",
+          "lasek": "可能發生"
+        }
+      ]
+    },
+    "Process": {
+      "sectionTitle": "One-Day System",
+      "headline": "當天檢查&手術，",
+      "headlineHighlight": "您的日常不會中斷。",
+      "description": "Healing眼科的新型全飛秒雷射將角膜損傷降到最低\n上午檢查、下午手術，隔天即可洗臉、洗澡、輕度運動。",
+      "steps": [
+        {
+          "time": "AM 10:00",
+          "title": "精密檢查",
+          "desc": "60多項精密檢查及諮詢，確認手術適合度"
+        },
+        {
+          "time": "PM 02:00",
+          "title": "進行手術",
+          "desc": "手術時間10分鐘，角膜最小切口幾乎無痛"
+        },
+        {
+          "time": "PM 03:00",
+          "title": "回家休息",
+          "desc": "恢復室休息1小時後即可回家，麻醉後幾乎無異物感"
+        },
+        {
+          "time": "Next Day",
+          "title": "手術隔天",
+          "desc": "目標視力恢復90%，可洗臉及基礎化妝，可上班"
+        },
+        {
+          "time": "1 Week",
+          "title": "一週後",
+          "desc": "可進行輕度運動及幾乎所有日常活動（飲酒/吸菸除外）"
+        }
+      ]
+    },
+    "SafetySystem": {
+      "sectionTitle": "Safety First",
+      "headline": "絕不妥協的",
+      "headlineHighlight": "安全標準",
+      "items": [
+        {
+          "title": "1:1 Responsible Care",
+          "desc": "從諮詢到手術、術後管理全由一位代表院長專責。實施100%實名制系統，無需擔心代理手術。"
+        },
+        {
+          "title": "DB & Backup",
+          "desc": "終身保存的手術數據。即使手術後10年、20年，也能精確追蹤觀察您的眼睛狀態。"
+        },
+        {
+          "title": "Emergency Power",
+          "desc": "配備不斷電系統(UPS)。即使遇到天災或停電，雷射設備也不會中斷，安全完成手術。"
+        },
+        {
+          "title": "Clean Room System",
+          "desc": "大學醫院等級正壓手術室。透過HEPA濾網和空氣淋浴系統阻隔99.9%的微塵和細菌，預防感染。"
+        },
+        {
+          "title": "Triple Check",
+          "desc": "驗光師、驗光院長、執刀院長的三重交叉驗證。不容許任何數據錯誤的徹底檢查系統。"
+        }
+      ]
+    },
+    "HeroPage": {
+      "badge": "2026年最小切口術 新型全飛秒雷射",
+      "title1": "NEW SMILE",
+      "title2": "LASIK",
+      "description1": "ZIEMER Z8飛秒雷射實現的第四代視力矯正術\n穿透角膜表面，僅對角膜實質層進行雷射照射的最小切口微透鏡取出方式",
+      "description2": "精確量測視野中心軸與旋轉軸並進行切削，實現精密散光矯正的\n大學醫院教授出身醫療團隊的次世代視力矯正系統"
+    },
+    "Procedures": {
+      "items": [
+        {
+          "id": "01",
+          "title": "新型全飛秒雷射 (New SMILE)",
+          "subtitle": "次世代最小切口視力矯正術",
+          "desc": "使用ZIEMER Z8飛秒雷射的最小切口方式，將角膜損傷降到最低的第四代視力矯正術。穿透角膜表面僅對實質層進行精密雷射照射，角膜神經損傷少，以視軸中心精確計測提高散光矯正的精密度。",
+          "features": [
+            "2mm最小切口",
+            "保留角膜神經",
+            "精密散光矯正",
+            "快速恢復日常"
+          ]
+        },
+        {
+          "id": "02",
+          "title": "頂級雷射近視矯正 (Premium LASIK)",
+          "subtitle": "快速恢復的智慧視力矯正",
+          "desc": "在形成角膜瓣膜後，用雷射切削角膜以矯正屈光不正的經過驗證的視力矯正術。手術當天即可恢復視力，幾乎無痛且能快速恢復日常生活。採用最新波前技術，連夜間視力品質都能改善。",
+          "features": [
+            "當天恢復視力",
+            "最小疼痛",
+            "波前客製化",
+            "改善夜間視力"
+          ]
+        },
+        {
+          "id": "03",
+          "title": "頂級雷射角膜切削術 (Premium LASEK)",
+          "subtitle": "經安全性驗證的保守視力矯正",
+          "desc": "只去除角膜上皮層並對實質進行雷射照射的保守方式，適合角膜厚度較薄或經常受外力衝擊的職業。不製作瓣膜，結構穩定性優異，建議軍人、消防員、運動員等活動性職業的人士選擇。",
+          "features": [
+            "不製作瓣膜",
+            "結構穩定性",
+            "可矯正高度近視",
+            "抗外力衝擊"
+          ]
+        },
+        {
+          "id": "04",
+          "title": "ICL人工水晶體植入術 (EVO+ ICL)",
+          "subtitle": "保留角膜的晶體植入視力矯正",
+          "desc": "不切削角膜，在虹膜後方植入特殊晶體以矯正視力的眼內晶體植入術。採用生物相容性的Collamer材質，副作用少，是雷射近視/角膜切削術無法施作的超高度近視（-6屈光度以上）或角膜過薄患者的最佳選擇。手術後也可以取出晶體，具可逆性保證。",
+          "features": [
+            "不切削角膜",
+            "矯正超高度近視",
+            "UV阻隔功能",
+            "可逆性手術"
+          ]
+        },
+        {
+          "id": "05",
+          "title": "雷射近視再手術 (Re-Surgery)",
+          "subtitle": "以精密診斷和經驗完成的再矯正",
+          "desc": "改善先前視力矯正手術後視力下降、殘餘屈光不正、夜間眩光等問題的高難度再矯正術。基於大學醫院教授出身醫療團隊豐富的臨床經驗，精密分析殘餘角膜厚度，在安全範圍內判斷是否可進行再手術。",
+          "features": [
+            "精密角膜分析",
+            "最小化副作用",
+            "安全性優先",
+            "1對1客製諮詢"
+          ]
+        }
+      ]
+    },
+    "ProcessSteps": {
+      "items": [
+        {
+          "title": "精密檢查",
+          "desc": "60多項眼睛精密測量"
+        },
+        {
+          "title": "1對1諮詢",
+          "desc": "生活型態深度分析"
+        },
+        {
+          "title": "客製化手術",
+          "desc": "代表院長親自執刀"
+        },
+        {
+          "title": "術後管理",
+          "desc": "終身眼睛照護保證"
+        }
+      ]
+    },
+    "Button": {
+      "details": "查看詳情 & 預約諮詢"
+    }
+  },
+  "Cataract": {
+    "Hero": {
+      "sectionTitle": "Presbyopia & Cataract",
+      "headline": "重拾",
+      "headlineHighlight": "年輕視力",
+      "description": "老花眼與白內障，以客製化頂級鏡片\n開啟人生第二幕的清晰新篇章"
+    },
+    "HeroPage": {
+      "badge": "Premium Aging Care",
+      "title1": "TIMELESS",
+      "title2": "SIGHT",
+      "description1": "老化是自然現象，但視線模糊並非理所當然。",
+      "description2": "以頂級多焦點人工水晶體，讓您的視力回到最年輕的時刻。",
+      "subtitle": "準備好再次迎接清晰的世界了嗎？",
+      "ctaButton": "申請老花眼精密檢查"
+    },
+    "AgingProcess": {
+      "sectionTitle": "The Process",
+      "headline": "Why does vision",
+      "headlineHighlight": "fade away?",
+      "description1": "我們眼睛的水晶體就像相機的鏡頭。隨著年齡增長，這個水晶體會變硬變混濁，這就是老花眼和白內障。",
+      "description2": "Healing眼科不僅僅是更換混濁的水晶體，更專注於根據患者的生活模式恢復最年輕清晰的視力。",
+      "labels": {
+        "cornea": "角膜",
+        "iris": "虹膜",
+        "lens": "水晶體",
+        "retina": "視網膜",
+        "opticNerve": "視神經",
+        "normal": "正常",
+        "cataract": "白內障",
+        "afterSurgery": "術後"
+      },
+      "sectionLabel": "眼球剖面圖"
+    },
+    "Check": {
+      "sectionTitle": "Self Check",
+      "headline": "我是否也有",
+      "headlineHighlight": "白內障？",
+      "description": "白內障初期症狀與老花眼相似，容易被忽略。\n若符合3項以上，建議進行精密檢查。",
+      "healthTip": {
+        "title": "Health Tip",
+        "content": "40歲以上建議每年進行一次眼科定期檢查。"
+      },
+      "items": [
+        "小字看起來模糊或無法對焦。",
+        "在暗處比亮處看得更清楚（晝盲現象）。",
+        "物體看起來重疊成兩個、三個（複視）。",
+        "眩光嚴重，夜間駕駛困難。",
+        "眼睛經常覺得昏沉疲勞。",
+        "即使戴老花眼鏡，近處字還是看不清楚。"
+      ]
+    },
+    "LensGuide": {
+      "sectionTitle": "Premium Lens",
+      "headline": "適合我的",
+      "headlineHighlight": "人工水晶體是？",
+      "description": "考量患者的生活方式、職業、興趣等因素\n1對1客製化處方最適合的頂級鏡片。",
+      "interactionHint": "將滑鼠移至各距離區段體驗視力差異",
+      "distanceZones": [
+        {
+          "id": "near",
+          "label": "近距離",
+          "distance": "30cm"
+        },
+        {
+          "id": "mid",
+          "label": "中距離",
+          "distance": "1m"
+        },
+        {
+          "id": "far",
+          "label": "遠距離",
+          "distance": "5m"
+        }
+      ],
+      "visionStatus": {
+        "clear": "清晰",
+        "blurry": "模糊"
+      },
+      "allClear": "ALL CLEAR",
+      "features": "特點",
+      "recommendFor": "推薦對象",
+      "lenses": [
+        {
+          "name": "多焦點人工水晶體",
+          "eng": "Multifocal IOL",
+          "desc": "近距離、中距離、遠距離都能看得清楚，術後不需要老花眼鏡。",
+          "pros": [
+            "全距離視力確保",
+            "不需眼鏡/老花鏡",
+            "白內障+老花同時解決"
+          ],
+          "recommend": "社交活動頻繁的中高年族群"
+        },
+        {
+          "name": "單焦點人工水晶體",
+          "eng": "Monofocal IOL",
+          "desc": "聚焦於遠距離或近距離其中之一，眩光較少，適應較快。",
+          "pros": [
+            "清晰的遠距離視力",
+            "夜間眩光較少",
+            "費用經濟實惠"
+          ],
+          "recommend": "經常夜間駕駛的人"
+        }
+      ]
+    },
+    "LifestyleMatch": {
+      "sectionTitle": "Find Your Lens",
+      "headline": "Find Your Lens",
+      "description": "白內障手術的關鍵在於「選擇什麼鏡片」。\n選擇您的生活方式，確認最適合的鏡片。",
+      "recommendationBadge": "RECOMMENDATION",
+      "recommendationTitle": "推薦方案",
+      "ctaButton": "申請1對1精密檢查",
+      "lifestyles": [
+        {
+          "id": "active",
+          "title": "喜歡戶外活動的人",
+          "desc": "高爾夫、登山、旅行等需要看遠的活動較多嗎？",
+          "recommendation": "重視遠距離視力的人，推薦「PanOptix」或「VIVITY」鏡片。清晰寬廣的視野讓您更享受戶外活動的樂趣。"
+        },
+        {
+          "id": "digital",
+          "title": "常使用電腦・手機的人",
+          "desc": "經常看電視、使用電腦、滑手機嗎？",
+          "recommendation": "重視中距離視力的人，「Synergy」或「eyehance」鏡片較適合。已針對舒適觀看螢幕進行優化。"
+        },
+        {
+          "id": "daily",
+          "title": "經常開車的人",
+          "desc": "白天和夜間都會開車，或是日常生活很重要嗎？",
+          "recommendation": "經常夜間駕駛的人，推薦「VIVITY」鏡片。將眩光降到最低，以清晰的對比度協助安全駕駛。"
+        },
+        {
+          "id": "reading",
+          "title": "從事閱讀・精密工作的人",
+          "desc": "經常閱讀書報或需要看近處嗎？",
+          "recommendation": "重視近距離視力的人，推薦「Synergy」或「PanOptix」鏡片。在30~40cm距離能看得最清楚。"
+        }
+      ]
+    }
+  },
+  "Center": {
+    "Hero": {
+      "sectionTitle": "Specialized Medical Center",
+      "headline": "EYE DISEASE",
+      "headlineHighlight": "CLINIC",
+      "description": "大學醫院等級精密診斷設備與各領域專業醫療團隊\n終身守護您的眼睛健康。"
+    },
+    "Clinics": {
+      "items": [
+        {
+          "title": "乾眼症門診",
+          "eng": "Dry Eye Clinic",
+          "desc": "引進M22 IPL最新設備恢復瞼板腺功能，從根本治療乾眼症原因。",
+          "stats": "IPL治療"
+        },
+        {
+          "title": "視網膜中心",
+          "eng": "Retina Center",
+          "desc": "以大學醫院等級廣角OCT設備早期發現並治療黃斑部病變、糖尿病視網膜病變等致盲疾病。",
+          "stats": "超精密OCT"
+        },
+        {
+          "title": "青光眼中心",
+          "eng": "Glaucoma Care",
+          "desc": "透過視神經分析儀預防無聲的視力小偷青光眼，精密管理眼壓。",
+          "stats": "終身管理"
+        },
+        {
+          "title": "一般門診",
+          "eng": "General Eye Care",
+          "desc": "從結膜炎、針眼、過敏等日常眼疾到兒童眼科檢查都細心診療。",
+          "stats": "家庭醫師"
+        }
+      ]
+    },
+    "Programs": {
+      "sectionTitle": "Treatment Programs",
+      "headline": "大學醫院水準",
+      "headlineHighlight": "專業治療系統",
+      "description": "各領域專責醫療團隊\n為您的眼睛健康提供深入的診療服務。",
+      "items": [
+        {
+          "title": "乾眼症集中護理 (Dry Eye IPL)",
+          "desc": "我們不只是開立人工淚液。透過恢復瞼板腺功能的IPL雷射治療和熱敷按摩，從根本解決乾眼症的問題。",
+          "details": [
+            "M22 IPL雷射治療",
+            "瞼板腺擠壓",
+            "自體血清眼藥水處方"
+          ]
+        },
+        {
+          "title": "青光眼精密早期診斷",
+          "desc": "視神經一旦受損就無法恢復。透過大學醫院等級的OCT及視野檢查設備，及早發現初期青光眼並開立客製化藥物。",
+          "details": [
+            "視神經乳頭分析",
+            "視網膜神經纖維層攝影",
+            "24小時眼壓測量"
+          ]
+        },
+        {
+          "title": "黃斑部病變抗體注射門診",
+          "desc": "黃斑部病變是失明原因第一名。透過Lucentis、Eylea等經驗證的抗體注射治療，預防視力下降並保護視網膜功能。",
+          "details": [
+            "光學相干斷層掃描(OCT)",
+            "螢光眼底血管攝影",
+            "當天抗體注射治療"
+          ]
+        },
+        {
+          "title": "角膜塑型片／兒童近視門診",
+          "desc": "睡眠時矯正視力的角膜塑型片。抑制成長期兒童的近視進展，給予孩子白天不戴眼鏡的自由時光。",
+          "details": [
+            "角膜地形圖檢查",
+            "正品鏡片試戴",
+            "定期視力管理"
+          ]
+        }
+      ]
+    },
+    "SymptomChecklist": {
+      "sectionTitle": "Self Check",
+      "headline": "眼睛的警訊，",
+      "headlineHighlight": "請勿忽視。",
+      "description": "若符合2項以上，可能是眼疾的初期症狀。\n放任不管可能導致視力受損，請立即接受精密檢查。",
+      "checkedLabel": "CHECKED SYMPTOMS",
+      "items": [
+        "眼睛經常乾澀有異物感。",
+        "早上起床時眼睛很難睜開。",
+        "看到光線時眼睛刺痛流淚。",
+        "在室內也想戴太陽眼鏡程度的畏光。",
+        "視野模糊不清。",
+        "直線看起來彎曲或視野中心發黑。"
+      ]
+    },
+    "TreatmentProcess": {
+      "sectionTitle": "Our Process",
+      "headline": "Healing Therapy Process",
+      "description": "透過系統化的5階段治療流程提供最佳結果",
+      "steps": [
+        {
+          "title": "One-Stop檢查",
+          "desc": "一天完成50多項精密檢查"
+        },
+        {
+          "title": "1對1主治醫師諮詢",
+          "desc": "基於檢查數據的精密分析"
+        },
+        {
+          "title": "客製化雷射治療",
+          "desc": "M22、IPL等最新設備治療"
+        },
+        {
+          "title": "專責護理師照護",
+          "desc": "手術/治療後恢復室集中管理"
+        },
+        {
+          "title": "終身安心保證",
+          "desc": "定期檢查及防止復發計畫"
+        }
+      ]
+    },
+    "Equipment": {
+      "sectionTitle": "Technology",
+      "headline": "World Class",
+      "headlineSubtitle": "High-End Equipment",
+      "items": [
+        {
+          "name": "AMARIS SPT",
+          "tag": "視力矯正雷射",
+          "desc": "頂級雷射設備AMARIS。透過3D立體矯正和角膜打磨系統實現精密的視力矯正。",
+          "specs": [
+            "3D立體矯正",
+            "0.54mm精密雷射光束",
+            "7維眼球追蹤",
+            "智能脈衝"
+          ]
+        },
+        {
+          "name": "Galilei G4",
+          "tag": "角膜斷層掃描",
+          "desc": "3D角膜分析最先進檢查設備。以最快1秒的檢查測量122,000個數據點。",
+          "specs": [
+            "1秒超快速檢查",
+            "122,000個數據",
+            "3D角膜分析",
+            "前眼部CT精密設備"
+          ]
+        },
+        {
+          "name": "Pentacam HR",
+          "tag": "角膜地形圖",
+          "desc": "透過精密角膜分析判定手術可行性，並能快速應對副作用。也能進行精密準確的白內障檢查。",
+          "specs": [
+            "精密角膜分析",
+            "副作用應對",
+            "準確的地形圖數據",
+            "白內障檢查"
+          ]
+        },
+        {
+          "name": "3D OCT-1",
+          "tag": "眼部光學斷層",
+          "desc": "視神經及視網膜CT掃描儀。縮短拍攝時間減少不適，可診斷青光眼、糖尿病視網膜病變、黃斑部病變等。",
+          "specs": [
+            "視神經·視網膜CT",
+            "短時間拍攝",
+            "青光眼診斷",
+            "視網膜疾病診斷"
+          ]
+        },
+        {
+          "name": "Optos Daytona P200T",
+          "tag": "光學眼底攝影",
+          "desc": "無需散瞳即可在短時間(0.25秒)內拍攝。以200˚廣角影像一次拍攝周邊視網膜，可及早發現和預防視網膜疾病。",
+          "specs": [
+            "0.25秒超高速",
+            "200˚廣角影像",
+            "無需散瞳",
+            "早期發現·預防"
+          ]
+        },
+        {
+          "name": "FEMTO LDV Z8",
+          "tag": "白內障雷射",
+          "desc": "現存最精密的雷射設備。精密去除水晶體縮短手術時間，實現快速恢復。",
+          "specs": [
+            "精密水晶體去除",
+            "縮短手術時間",
+            "氣泡現象最小化",
+            "7維眼球追蹤"
+          ]
+        },
+        {
+          "name": "IOL MASTER 700",
+          "tag": "眼球狀態測量",
+          "desc": "超精密眼球狀態雷射測量儀。可精密檢查眼球所有部位的非接觸式最先進超精密眼球雷射測量儀。",
+          "specs": [
+            "非接觸式測量",
+            "全部位精密檢查",
+            "高檢查準確度",
+            "快速安全的手術"
+          ]
+        },
+        {
+          "name": "CALLISTO EYE",
+          "tag": "散光追蹤導航",
+          "desc": "挑戰散光誤差率0%的手術導航。將精密的手術指引視覺化，準確顯示切口位置、大小、人工水晶體位置、散光軸。",
+          "specs": [
+            "散光誤差率0%",
+            "手術指引視覺化",
+            "精確切口位置",
+            "散光軸顯示"
+          ]
+        },
+        {
+          "name": "LUMERA 700",
+          "tag": "超精密顯微鏡",
+          "desc": "以卓越的視野確保功能提供高品質視力改善。自動調節最佳手術視野並自動調整患者的散光軸。",
+          "specs": [
+            "卓越的視野確保",
+            "自動視野調節",
+            "散光軸自動調節",
+            "快速精密的手術"
+          ]
+        }
+      ]
+    }
+  },
+  "Insight": {
+    "Hero": {
+      "sectionTitle": "Insight",
+      "headline": "與專家一起的",
+      "headlineHighlight": "眼睛健康故事"
+    },
+    "VideoGallery": {
+      "channelLabel": "YouTube Channel",
+      "channelName": "眼科姐姐 @dreyesis",
+      "channelDescription": "專業眼科醫師帶來的眼睛健康資訊",
+      "visitChannel": "前往頻道",
+      "badge": "眼科姐姐",
+      "emptyState": "目前沒有可顯示的影片。",
+      "dates": {
+        "today": "今天",
+        "yesterday": "昨天",
+        "daysAgo": "{count}天前",
+        "weeksAgo": "{count}週前",
+        "monthsAgo": "{count}個月前",
+        "yearsAgo": "{count}年前"
+      }
+    },
+    "ExpertQnA": {
+      "sectionTitle": "Medical Q&A",
+      "headline": "有任何問題",
+      "headlineHighlight": "請儘管問",
+      "description": "診間裡患者們最常詢問的問題。\n由眼科專科醫師親自為您清楚解答。",
+      "answeredBy": "Answered by",
+      "items": [
+        {
+          "q": "LASIK手術後視力會再次變差嗎？",
+          "a": "近視回退在高度近視患者中可能偶爾發生。但Healing眼科的「SMILE PRO」角膜切削量少，結構穩定性優異，大幅降低了近視回退的機率。即使視力下降，根據剩餘角膜量可以進行再矯正，並可透過終身管理計畫持續接受照護。",
+          "doc": "金善英 代表院長"
+        },
+        {
+          "q": "沒有白內障也可以做老花眼手術嗎？",
+          "a": "是的，可以。當水晶體調節力下降導致近距離不適時，可以透過「老花矯正人工水晶體植入術」或「單眼視LASIK」進行矯正。但如果是40多歲後半到50多歲初期，考慮到未來白內障發生的可能性，建議與醫療團隊充分諮詢後決定手術時機。",
+          "doc": "李俊浩 院長"
+        },
+        {
+          "q": "乾眼症嚴重還能做視力矯正術嗎？",
+          "a": "乾眼症嚴重的情況下，比起一般LASIK，推薦角膜表面損傷較少的「全飛秒雷射」或「人工水晶體植入術(ICL)」。術前透過「IPL雷射」治療先改善乾眼症，術後配合集中管理計畫，就能重拾健康的視力。",
+          "doc": "朴智敏 院長"
+        }
+      ]
+    },
+    "Page": {
+      "sectionTitle": "醫學期刊",
+      "heroDescription1": "提供精準的醫學資訊與健康生活方式",
+      "heroDescription2": "請瀏覽韓國Healing眼科的專業專欄。",
+      "featuredVideoBadge": "精選影片",
+      "watchNow": "立即觀看",
+      "recentColumns": "最新專欄",
+      "medicalColumnTitle": "醫療專欄",
+      "authorName": "金善英院長",
+      "stayInformed": "掌握最新資訊",
+      "newsletter": {
+        "description": "每週獲取眼睛健康的有益資訊。",
+        "noSpam": "絕對不會發送垃圾郵件。",
+        "emailPlaceholder": "請輸入您的電子郵件地址",
+        "subscribe": "訂閱",
+        "weeklyUpdates": "每週更新",
+        "noSpamBadge": "無垃圾郵件",
+        "unsubscribeAnytime": "隨時可取消訂閱"
+      }
     }
   },
   "About": {
     "BrandStory": {
       "sectionTitle": "我們的使命",
-      "headline": "不僅是視力，",
-      "headlineSubtitle": "更設計您的生活。",
-      "description": "不僅僅是矯正視力，\n而是讓您的生活更加清晰、更加美好。\n治癒眼科在技術與藝術的邊界上\n雕刻最完美的視力。",
+      "headline": "超越視力，",
+      "headlineSubtitle": "設計您的人生。",
+      "description": "不僅僅是矯正視力，\n而是讓您的人生更加清晰美麗。\nHealing眼科在技術與藝術的交界處\n雕琢最完美的視力。",
       "stats": [
         {
           "label": "成功案例",
@@ -335,72 +1113,114 @@
         },
         {
           "label": "醫療團隊",
-          "value": "醫學中心",
+          "value": "大學醫院",
           "suffix": "教授級"
         }
       ]
     },
     "DirectorMessage": {
-      "sectionTitle": "院長問候",
-      "headline": "治癒您的雙眼，",
-      "headlineSubtitle": "設計您的生活。",
+      "sectionTitle": "院長的話",
+      "headline": "療癒您的眼睛，",
+      "headlineSubtitle": "設計您的人生。",
       "representativeDirector": "代表院長",
-      "doctorName": "金善英 醫師",
-      "greeting": "您好，我是治癒眼科代表院長金善英。",
+      "doctorName": "金善英 院長",
+      "greeting": "您好，我是Healing眼科代表院長金善英。",
       "paragraphs": [
-        "「看見」不僅僅是認知事物，更是面對所愛之人的面容、記住美麗的風景、完整感受生活每一刻的過程。",
-        "從醫學中心教授時期至今，接觸過數萬位患者後，我所領悟到的是，最好的醫術終究始於「同理心」。傾聽患者的每一個小小不適，以對待家人的心情進行診療。這就是我所認為的「治癒」本質。",
-        "比起江南唯一女性代表院長獨立開業的頭銜，我更希望被記得是終身負責每一位患者眼睛健康的終身主治醫師。為了您最閃耀的時刻，治癒眼科將與您同在。"
+        "「看見」不僅僅是認知事物，而是面對所愛之人的臉龐、記住美麗的風景、完整感受人生每一刻的過程。",
+        "從擔任大學醫院教授到現在，我在診治數萬位患者的過程中領悟到，最好的醫術始於「共感」。傾聽患者微小的不適，以對待家人的心進行診療。這就是我所認為「療癒」的本質。",
+        "比起江南唯一女性代表院長獨立開業的頭銜，我更希望被記住為對每一位患者的眼睛健康負責到底的終身主治醫師。為了您最閃耀的時刻，Healing眼科與您同在。"
       ]
     },
     "HistoryTimeline": {
-      "sectionTitle": "重要里程碑",
+      "sectionTitle": "沿革",
       "headline": "我們的歷史",
+      "historyLabel": "沿革",
       "timeline": [
         {
           "year": "2018",
-          "title": "治癒眼科開業",
-          "description": "驛三洞808大樓高級視力矯正中心開幕"
+          "title": "Healing眼科開業",
+          "description": "於驛三洞808大樓開設頂級視力矯正中心"
         },
         {
           "year": "2019",
-          "title": "引進醫學中心級設備",
+          "title": "引進大學醫院等級設備",
           "description": "建置最新視力矯正設備及精密檢查系統"
         },
         {
           "year": "2020",
-          "title": "微笑雷射專科中心",
-          "description": "正式開始微創微笑雷射"
+          "title": "全飛秒雷射專門中心",
+          "description": "正式開始最小切口全飛秒雷射"
         },
         {
           "year": "2021",
-          "title": "擴大老花/白內障中心",
-          "description": "開始高階多焦點人工水晶體專科診療"
+          "title": "老花眼/白內障中心擴大",
+          "description": "開始頂級多焦點人工水晶體專門診療"
         },
         {
           "year": "2022",
-          "title": "微創清晰雷射",
-          "description": "以差異化診療系統導入清晰雷射"
+          "title": "最小切口術Clear LASIK",
+          "description": "以差異化診療系統引進Clear LASIK"
         },
         {
           "year": "2023",
-          "title": "累積手術達50,000眼",
-          "description": "達成患者滿意度4.9/5.0，成長為地區代表眼科"
+          "title": "累計手術50,000眼達成",
+          "description": "患者滿意度達4.9/5.0，成長為地區代表眼科"
         },
         {
           "year": "2024",
           "title": "AI精密檢查系統",
-          "description": "建構最尖端AI基礎客製化視力矯正系統"
+          "description": "建置最先進AI客製化視力矯正系統"
         }
-      ],
-      "historyLabel": "歷史"
+      ]
+    },
+    "History": {
+      "sectionLabel": "Milestones",
+      "headline": "Our History",
+      "historyLabel": "HISTORY",
+      "items": [
+        {
+          "year": "2018",
+          "title": "Healing眼科開業",
+          "desc": "於驛三洞808大樓開設頂級視力矯正中心"
+        },
+        {
+          "year": "2019",
+          "title": "引進大學醫院等級設備",
+          "desc": "建置最新視力矯正設備及精密檢查系統"
+        },
+        {
+          "year": "2020",
+          "title": "全飛秒雷射專門中心",
+          "desc": "正式開始最小切口全飛秒雷射"
+        },
+        {
+          "year": "2021",
+          "title": "老花眼/白內障中心擴大",
+          "desc": "開始頂級多焦點人工水晶體專門診療"
+        },
+        {
+          "year": "2022",
+          "title": "最小切口術Clear LASIK",
+          "desc": "以差異化診療系統引進Clear LASIK"
+        },
+        {
+          "year": "2023",
+          "title": "累計手術50,000眼達成",
+          "desc": "患者滿意度達4.9/5.0，成長為地區代表眼科"
+        },
+        {
+          "year": "2024",
+          "title": "AI精密檢查系統",
+          "desc": "建置最先進AI客製化視力矯正系統"
+        }
+      ]
     },
     "Location": {
-      "sectionTitle": "位置",
-      "headline": "造訪我們",
+      "sectionTitle": "交通指南",
+      "headline": "來訪方式",
       "address": {
         "title": "地址",
-        "line1": "首爾特別市江南區江南大路470號808大樓10-11樓",
+        "line1": "首爾特別市江南區江南大路470 808大樓10-11樓",
         "line2": "（新論峴站6號出口步行1分鐘）"
       },
       "contact": {
@@ -409,24 +1229,24 @@
         "kakao": "kakao @healingeye"
       },
       "hours": {
-        "title": "營業時間",
-        "weekday": "平日：09:30 - 18:30（休息時間 13:00 - 14:00）",
-        "friday": "週五：09:30 - 21:00（夜間診療）",
-        "saturday": "週六：09:30 - 16:00",
-        "closed": "週日/國定假日 休診"
+        "title": "門診時間",
+        "weekday": "平日: 09:30 - 18:30 (午休時間 13:00 - 14:00)",
+        "friday": "週五: 09:30 - 21:00 (夜間門診)",
+        "saturday": "週六: 09:30 - 16:00",
+        "closed": "週日/國定假日休診"
       },
       "mapLabel": "新論峴站6號出口"
     },
     "Philosophy": {
       "sectionTitle": "理念",
-      "headline": "卓越",
-      "headlineSubtitle": "的標準。",
-      "description": "治癒眼科基於三大核心價值\n承諾最完美的視力矯正。",
+      "headline": "卓越的",
+      "headlineSubtitle": "標準。",
+      "description": "Healing眼科以三大核心價值為基礎\n承諾最完美的視力矯正。",
       "values": [
         {
           "title": "安全至上",
           "subtitle": "絕不妥協的安全標準",
-          "description": "術前60階段精密檢查、三重交叉驗證系統，不允許0.01%的誤差。",
+          "description": "術前60階段精密檢查、3重交叉驗證系統，不容許0.01%的誤差。",
           "stats": [
             {
               "label": "精密檢查",
@@ -434,18 +1254,18 @@
             },
             {
               "label": "交叉驗證",
-              "value": "三重"
+              "value": "3重"
             }
           ]
         },
         {
-          "title": "個人化",
-          "subtitle": "專為一個人設計的客製化方案",
-          "description": "拒絕工廠式手術。考量患者的角膜指紋、生活型態、職業環境，設計一對一客製化方案。",
+          "title": "客製化診療",
+          "subtitle": "只為一個人打造的客製方案",
+          "description": "拒絕工廠式手術。考量患者的角膜特徵、生活模式、職業環境，設計1對1客製方案。",
           "stats": [
             {
-              "label": "客製化方案",
-              "value": "1:1"
+              "label": "客製方案",
+              "value": "1對1"
             },
             {
               "label": "分析項目",
@@ -456,7 +1276,7 @@
         {
           "title": "終身照護",
           "subtitle": "終身眼睛健康夥伴",
-          "description": "手術後10年、20年，都能精確追蹤觀察您眼睛狀態的終身管理系統。",
+          "description": "即使手術後10年、20年，也能精確追蹤觀察您的眼睛狀態的終身管理系統。",
           "stats": [
             {
               "label": "數據保存",
@@ -472,52 +1292,289 @@
     }
   },
   "Footer": {
-    "brandName": "治癒眼科",
-    "tagline": "體驗視力矯正的新標準。頂級服務、尖端技術，為您的雙眼開啟全新生活。",
+    "brandName": "Healing Eye",
+    "tagline": "Experience the new standard of vision correction.\nPremium service, state-of-the-art technology, and a brand new life for your eyes.",
     "contact": {
-      "title": "聯絡方式",
-      "address": "首爾特別市江南區江南大路470號\n808大樓10-11樓（新論峴站6號出口）",
+      "title": "Contact",
+      "address": "首爾特別市江南區江南大路470 808大樓10-11樓",
+      "addressSub": "（新論峴站6號出口步行1分鐘）",
       "phone": "02-566-1222",
       "kakao": "kakao @healingeye"
     },
     "hours": {
-      "title": "營業時間",
-      "weekday": "平日",
+      "title": "Hours",
+      "weekday": "Mon - Thu",
       "weekdayTime": "09:30 - 18:30",
-      "lunchBreak": "（休息 13:00-14:00）",
-      "friday": "週五",
+      "lunchBreak": "午休時間 13:00 - 14:00",
+      "friday": "Fri",
+      "fridayLabel": "(夜間門診)",
       "fridayTime": "09:30 - 21:00",
-      "saturday": "週六",
+      "saturday": "Sat",
       "saturdayTime": "09:30 - 16:00",
-      "closed": "週日/國定假日",
-      "closedStatus": "休診"
+      "closed": "Sun / Holiday",
+      "closedStatus": "Closed"
     },
-    "copyright": "治癒眼科診所 版權所有。",
-    "privacyPolicy": "隱私權政策",
-    "termsOfService": "服務條款"
+    "copyright": "Healing Eye Clinic. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   },
-  "Common": {
-    "navigation": {
-      "home": "首頁",
-      "about": "診所介紹",
-      "treatments": "診療指南",
-      "equipment": "設備介紹",
-      "community": "社群",
-      "reservation": "預約掛號"
-    },
-    "buttons": {
-      "book": "預約掛號",
-      "viewMore": "查看詳情",
-      "previous": "上一個",
-      "next": "下一個",
-      "close": "關閉",
-      "submit": "送出",
-      "cancel": "取消"
-    },
-    "labels": {
-      "loading": "載入中...",
-      "error": "發生錯誤",
-      "success": "成功完成"
+  "Community": {
+    "Page": {
+      "buttons": {
+        "viewReviews": "查看手術後記",
+        "realTimeReservation": "即時預約",
+        "visitLink": "前往"
+      },
+      "notices": {
+        "title": "公告 & 活動",
+        "items": [
+          {
+            "title": "2024年春節假期診療公告",
+            "date": "2024.01.15",
+            "tag": "公告"
+          },
+          {
+            "title": "考生專屬SMILE雷射最高49%優惠活動",
+            "date": "2024.01.01",
+            "tag": "活動"
+          },
+          {
+            "title": "韓國Healing眼科累積手術5萬例紀念",
+            "date": "2023.12.10",
+            "tag": "消息"
+          }
+        ]
+      },
+      "social": {
+        "instagram": {
+          "name": "@healingeyeclinic",
+          "description": "韓國Healing眼科日常與手術後記"
+        },
+        "youtube": {
+          "name": "眼科姐姐",
+          "description": "@dreyesis 眼睛健康資訊"
+        },
+        "blog": {
+          "name": "韓國Healing眼科",
+          "description": "專業專欄與醫療資訊"
+        }
+      },
+      "faq": {
+        "title": "常見問題 (FAQ)",
+        "categories": [
+          "Clear LASIK",
+          "LASIK",
+          "LASEK",
+          "晶體植入術",
+          "白內障",
+          "翼狀贅片",
+          "視網膜"
+        ],
+        "items": {
+          "clearLasik": [
+            {
+              "q": "手術後7天了還是看得模糊，這是正常現象嗎？",
+              "a": "手術後視線模糊大多是角膜腫脹引起的暫時性現象。雖有個人差異，但角膜腫脹完全消退需要約一個月時間。因此目前視線模糊是恢復過程的一部分，無需擔心。隨著時間推移視線會逐漸清晰，一個月後會看得更清楚。"
+            },
+            {
+              "q": "手術後洗臉、洗澡、使用澡堂、汗蒸房從什麼時候開始可以？",
+              "a": "手術後洗臉和洗澡從第二天開始就可以。但要注意不要讓水進入眼睛。澡堂和汗蒸房建議手術後1個月以後再使用。"
+            },
+            {
+              "q": "瑜伽或健身這類運動什麼時候可以開始？",
+              "a": "瑜伽和健身等輕度運動手術第二天就可以開始。但必須在不勉強的範圍內進行。激烈運動或接觸性較多的運動（球類運動等）建議手術後1個月以後再進行。"
+            },
+            {
+              "q": "自體血清眼藥水裡有白色漂浮物，沒問題嗎？",
+              "a": "是的，自體血清眼藥水中出現白色漂浮物是正常現象。自體血清眼藥水含有我們身體製造血栓的成分，血栓以塊狀形態出現，看起來像白色漂浮物。"
+            },
+            {
+              "q": "自體血清眼藥水要使用到什麼時候？",
+              "a": "血清眼藥水不僅用於快速恢復，也作為乾眼症治療劑使用，可以使用到眼藥水用完為止。如果需要追加處方，請聯繫醫院。"
+            },
+            {
+              "q": "手術後視力模糊不清，什麼時候能恢復正常？",
+              "a": "手術後視力模糊是角膜水腫引起的正常現象。通常1~2週後水腫減輕，視力會逐漸改善。"
+            },
+            {
+              "q": "手術後近距離視力還沒完全恢復，什麼時候會好轉？",
+              "a": "手術後近距離視力完全恢復需要約2週的適應期。這段期間眼睛會適應手術後的變化，近距離視力會逐漸改善。"
+            }
+          ],
+          "lasik": [
+            {
+              "q": "LASIK手術後眼睛刺痛有疼痛感，該怎麼辦？",
+              "a": "LASIK手術後眼睛刺痛有疼痛感是正常現象。通常手術後6小時會流很多眼淚並感到刺痛，1~2天後症狀會逐漸緩解。請注意不要揉眼睛。"
+            },
+            {
+              "q": "LASIK手術後回到家發現保護鏡片掉了，該怎麼辦？",
+              "a": "LASIK手術後保護鏡片掉了也不用擔心。LASIK手術中，保護鏡片主要用於緩解疼痛和預防眼睛乾燥，對視力恢復影響不大。"
+            },
+            {
+              "q": "自體血清眼藥水裡有白色漂浮物，沒問題嗎？",
+              "a": "是的，自體血清眼藥水中出現白色漂浮物是正常現象。自體血清眼藥水含有我們身體製造血栓的成分，血栓以塊狀形態出現，看起來像白色漂浮物。"
+            },
+            {
+              "q": "自體血清眼藥水要使用到什麼時候？",
+              "a": "血清眼藥水不僅用於快速恢復，也作為乾眼症治療劑使用，可以使用到眼藥水用完為止。如果需要追加處方，請聯繫醫院。"
+            },
+            {
+              "q": "手術後要看著螢幕工作，但眩光嚴重很困擾，該怎麼辦？",
+              "a": "LASIK手術後眩光是正常現象。視力穩定期約為1個月，近距離視力恢復最慢。因此手術後1個月內可能會出現嚴重眩光。"
+            },
+            {
+              "q": "LASIK手術後還需要防紫外線嗎？",
+              "a": "與過去相比，防紫外線的重要性有所降低。特別是形成瓣膜的LASIK手術方法，角膜上皮恢復快且防紫外線效果高，不是必須要防紫外線。"
+            },
+            {
+              "q": "LASIK手術後視力模糊不清，什麼時候能恢復正常？",
+              "a": "手術後視力模糊是角膜水腫引起的正常現象。通常1~2週後水腫減輕，視力會逐漸改善。"
+            },
+            {
+              "q": "LASIK手術後早上起床時視線模糊，過一段時間就好了，這是為什麼？",
+              "a": "LASIK手術後早上視線模糊很可能是因為乾眼症。手術後角膜上皮恢復過程中淚液分泌減少可能導致乾眼症，早上症狀最嚴重。"
+            },
+            {
+              "q": "LASIK手術後第二天開始可以盡情使用電腦和智慧型手機嗎？",
+              "a": "LASIK手術後第二天開始在日常生活中使用電腦和智慧型手機是可以的。但要注意不要讓眼睛過度疲勞，中間要休息，並點人工淚液避免乾燥。"
+            }
+          ],
+          "lasek": [
+            {
+              "q": "LASEK手術後第4天還有疼痛很擔心，這是正常現象嗎？",
+              "a": "LASEK手術後第2~3天疼痛最嚴重，第4天開始疼痛會逐漸減輕。但根據個人健康狀態、手術方法、恢復速度等，疼痛持續時間可能不同。"
+            },
+            {
+              "q": "LASEK手術後第4天視力比剛手術時還差很擔心。",
+              "a": "LASEK手術後第4天視力變差是角膜上皮恢復過程中的暫時性現象。手術後3~7天內角膜上皮向中央聚集過程中視力可能模糊。"
+            },
+            {
+              "q": "LASEK手術後一個月了視力還是模糊，是什麼原因？",
+              "a": "LASEK手術後視力完全穩定有個人差異，通常需要3個月。高度近視或高度散光的情況視力恢復期可能更長，可持續到6個月。"
+            },
+            {
+              "q": "LASEK手術後Fluorometholone眼藥水什麼時候開始使用？一天使用幾次？使用期間多久？",
+              "a": "Fluorometholone眼藥水應在LASEK手術後摘除鏡片時立即開始使用。一天4次，早、午、晚、睡前各點一滴。眼藥水需點約3個月，根據眼科專科醫師指示使用期間可能不同。"
+            },
+            {
+              "q": "自體血清眼藥水裡有白色漂浮物，沒問題嗎？",
+              "a": "是的，自體血清眼藥水中出現白色漂浮物是正常現象。自體血清眼藥水含有我們身體製造血栓的成分，血栓以塊狀形態出現，看起來像白色漂浮物。"
+            },
+            {
+              "q": "自體血清眼藥水要使用到什麼時候？",
+              "a": "血清眼藥水不僅用於快速恢復，也作為乾眼症治療劑使用，可以使用到眼藥水用完為止。如果需要追加處方，請聯繫醫院。"
+            },
+            {
+              "q": "LASEK後在室內也要戴防UV眼鏡或太陽眼鏡嗎？",
+              "a": "LASEK後在室內不需要為了阻隔LED而戴防UV眼鏡或太陽眼鏡。外出時戴有防UV功能的太陽眼鏡。建議選擇UV阻隔率99%以上的太陽眼鏡。"
+            },
+            {
+              "q": "LASEK手術後晚上要開車，什麼時候可以？現在因為眩光很難開車。",
+              "a": "LASEK手術後夜間駕駛有個人差異，但通常1~3個月後才可以。初期因有眩光建議避免夜間駕駛，從白天駕駛開始慢慢適應，1~3個月後再進行夜間駕駛。"
+            }
+          ],
+          "icl": [
+            {
+              "q": "晶體植入術後約6個月了，還需要定期檢查嗎？",
+              "a": "是的，晶體植入術後即使過了6個月，定期檢查也是必須的。因為眼內植入了晶體，角膜內皮細胞數可能減少，需要通過定期檢查確認角膜內皮細胞數，判斷是否有減少。"
+            },
+            {
+              "q": "晶體植入術後澡堂或汗蒸房什麼時候可以使用？",
+              "a": "晶體植入術後澡堂或汗蒸房通常1個月後才能使用。但根據個人眼睛健康狀態或手術結果，可使用時間可能不同。"
+            },
+            {
+              "q": "洗臉或洗澡什麼時候可以開始？",
+              "a": "洗臉和洗澡通常3天後才能開始。3天內要注意不要讓水進入眼睛。洗臉時要避開眼睛只清洗其他部位。"
+            },
+            {
+              "q": "晶體植入術後趴著睡可以嗎？",
+              "a": "晶體植入術後至少一個月內最好避免趴著睡。趴著睡可能導致眼壓上升，對晶體植入術後恢復產生不良影響。"
+            },
+            {
+              "q": "眼罩要戴多久？",
+              "a": "睡覺時不小心揉眼睛可能妨礙晶體在眼內定位，為了預防手術部位損傷，通常建議戴眼罩約2週。"
+            }
+          ],
+          "cataract": [
+            {
+              "q": "白內障手術後視線模糊的症狀什麼時候會好轉？",
+              "a": "白內障手術後視線模糊症狀有個人差異，但通常3~6個月內會好轉。手術後1~2個月內會適應人工水晶體，視力開始逐漸好轉。"
+            },
+            {
+              "q": "朋友手術後馬上就看得很清楚，為什麼我看不清楚？",
+              "a": "白內障手術後視力恢復速度每個人都不同。與其和朋友比較，不如專注於自己的眼睛狀態並遵循眼科專科醫師的指示更重要。"
+            },
+            {
+              "q": "白內障手術後眼睛不舒服很擔心。",
+              "a": "白內障手術後眼睛不適大多是正常現象。麻醉消退和眼睛恢復過程中會出現，隨著時間推移會逐漸緩解。"
+            },
+            {
+              "q": "白內障手術沒有復發可能嗎？",
+              "a": "白內障手術本身復發可能性非常低。但有後發性白內障的概念。後發性白內障是指手術後殘留的後囊部分形成膜，可以用雷射治療簡單去除。"
+            },
+            {
+              "q": "昨天做了白內障手術充血嚴重很擔心。",
+              "a": "手術時緊張眼睛用力可能導致充血。白內障手術後充血大多是暫時性現象，隨著時間推移會改善。大多數情況手術後2週到1個月充血會自然消失。"
+            },
+            {
+              "q": "白內障手術後出現眼睛顫動症狀。",
+              "a": "手術後眼睛顫動症狀是乾眼症及眩光現象，也是晶體定位的適應症狀。大多數情況眼睛顫動症狀會隨時間改善。"
+            }
+          ],
+          "pterygium": [
+            {
+              "q": "翼狀贅片手術後充血嚴重很擔心，什麼時候會好轉？",
+              "a": "手術後恢復過程中可能出現異物感和充血，大多2個月內會自然好轉。這是暫時性現象，隨著時間推移充血會緩解，眼睛健康會恢復。"
+            },
+            {
+              "q": "翼狀贅片手術當天可以開車嗎？",
+              "a": "不建議翼狀贅片手術當天開車。為了安全，手術後2~3天最好避免開車。2~3天後眼睛狀態舒服且感覺視力恢復了就可以開車。"
+            },
+            {
+              "q": "翼狀贅片手術當天眼睛刺痛嚴重很擔心，沒問題嗎？",
+              "a": "翼狀贅片手術後眼睛刺痛大多是正常現象。手術過程中眼睛受到刺激可能感到刺痛、視線模糊、異物感等不適。大多數情況眼睛刺痛一天左右就會改善。"
+            },
+            {
+              "q": "翼狀贅片手術後手術部位凹凸不平好像還留有翼狀贅片很擔心。",
+              "a": "翼狀贅片所在位置時間越久混濁越深，手術後也可能略微泛白沉澱。大多數情況凹凸不平和翼狀贅片2個月左右會改善。"
+            },
+            {
+              "q": "翼狀贅片手術後洗臉或洗澡什麼時候可以開始？",
+              "a": "洗臉和洗澡通常3天後才能開始。3天內要注意不要讓水進入眼睛。洗臉時要避開眼睛只清洗其他部位。"
+            },
+            {
+              "q": "翼狀贅片手術後什麼時候可以運動？",
+              "a": "翼狀贅片手術後可運動時間根據運動類型不同。輕度有氧運動手術後1週後就可以。接觸較多或激烈運動手術後1個月後才能進行。"
+            }
+          ],
+          "retina": [
+            {
+              "q": "視網膜手術當天眼睛睜不開且看到重影，沒問題嗎？",
+              "a": "手術後恢復過程中當天因麻醉眼睛可能睜不開且看到重影。這是暫時性現象，24小時內會開始改善。"
+            },
+            {
+              "q": "視網膜手術後恢復期需要多久？",
+              "a": "視網膜手術後恢復期有個人差異，但通常手術後1個月視野會模糊不清。1年到1年半左右視野可能完全恢復。"
+            },
+            {
+              "q": "視網膜手術後摘掉眼罩後眼藥水要怎麼使用？",
+              "a": "手術第二天早上自行摘除眼罩即可。按照說明每隔5分鐘點眼藥水後務必到醫院接受手術經過觀察。抗生素、消炎眼藥水一天4次使用一個月，Bromfenac眼藥水一天2次使用。"
+            },
+            {
+              "q": "視網膜手術後什麼時候要回診？",
+              "a": "手術第二天需要到醫院觀察手術經過。1週後確認手術部位狀態需要回診。1個月後、2個月後需要回診。之後每年為了健康檢查需要回診觀察眼睛經過。"
+            },
+            {
+              "q": "視網膜手術後什麼時候可以開車？",
+              "a": "白天駕駛1週後就可以，夜間駕駛1個月後才能進行。手術後根據情況在不危險的範圍內開車是可以的。"
+            },
+            {
+              "q": "視網膜手術後使用眼藥水眼睛很刺痛，沒問題嗎？",
+              "a": "視網膜手術後為了預防發炎處方的眼藥水成分較強，眼睛可能有點刺痛。刺痛是正常反應，隨著時間推移會逐漸緩解。"
+            }
+          ]
+        }
+      }
     }
   }
 }

@@ -3,26 +3,35 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Clock, Shield, Eye, CheckCircle2, ScanEye } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function VisionProcess() {
+    const t = useTranslations('Vision.Process');
     const containerRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: containerRef });
 
     const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
+
+    const steps = t.raw('steps') as Array<{
+        time: string;
+        title: string;
+        desc: string;
+    }>;
+
+    const icons = [<ScanEye key="scan" />, <Clock key="clock" />, <Eye key="eye" />, <CheckCircle2 key="check" />, <Shield key="shield" />];
 
     return (
         <section ref={containerRef} className="py-16 sm:py-20 md:py-32 bg-neutral-950 text-white relative overflow-hidden">
             <div className="container mx-auto px-4 sm:px-6 relative z-10">
 
                 <div className="mb-16 sm:mb-20 md:mb-24 text-center">
-                    <span className="text-primary font-bold tracking-[0.2em] uppercase block mb-3 sm:mb-4 text-sm sm:text-base">One-Day System</span>
+                    <span className="text-primary font-bold tracking-[0.2em] uppercase block mb-3 sm:mb-4 text-sm sm:text-base">{t('sectionTitle')}</span>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6 px-4">
-                        당일 <span className="text-primary">검사 & 수술</span>,<br />
-                        당신의 일상은 멈추지 않습니다.
+                        {t('headline').split(',')[0]}, <span className="text-primary">{t('headline').split(',')[1]?.trim()}</span><br />
+                        {t('headlineHighlight')}
                     </h2>
-                    <p className="text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed px-4">
-                        힐링안과의 뉴스마일 라식은 각막 손상을 최소화하여<br className="hidden sm:block" />
-                        오전 검사 후 오후 수술, 다음 날부터 세안·샤워·가벼운 운동이 가능합니다.
+                    <p className="text-neutral-400 text-sm sm:text-base md:text-lg leading-relaxed px-4 whitespace-pre-line">
+                        {t('description')}
                     </p>
                 </div>
 
@@ -32,13 +41,7 @@ export default function VisionProcess() {
                     <div className="absolute left-[60px] md:left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/0 via-primary/50 to-primary/0" />
 
                     <div className="space-y-16 sm:space-y-20 md:space-y-24">
-                        {[
-                            { time: "AM 10:00", title: "정밀 검사", desc: "60여가지 정밀 검사 및 상담, 수술 적합도 확인", icon: <ScanEye /> },
-                            { time: "PM 02:00", title: "수술 진행", desc: "수술 시간 10분, 각막 최소 절개로 통증 거의 없음", icon: <Clock /> },
-                            { time: "PM 03:00", title: "귀가 후 휴식", desc: "회복실 1시간 휴식 후 즉시 귀가, 마취 후에도 이물감 거의 없음", icon: <Eye /> },
-                            { time: "Next Day", title: "수술 다음 날", desc: "목표 시력 90% 회복, 세안 및 기초 화장, 출근 가능", icon: <CheckCircle2 /> },
-                            { time: "1 Week", title: "일주일 후", desc: "가벼운 운동 및 거의 모든 일상생활 가능 (음주/흡연 제외)", icon: <Shield /> }
-                        ].map((step, i) => (
+                        {steps.map((step, i) => (
                             <motion.div
                                 key={i}
                                 initial={{ opacity: 0, y: 50 }}
@@ -57,7 +60,7 @@ export default function VisionProcess() {
                                 {/* Icon Point */}
                                 <div className="absolute left-[45px] md:left-1/2 md:-translate-x-1/2 flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-neutral-900 border-2 border-primary text-primary shadow-[0_0_20px_rgba(212,175,55,0.3)] z-10">
                                     <div className="w-5 h-5 sm:w-6 sm:h-6">
-                                        {step.icon}
+                                        {icons[i]}
                                     </div>
                                 </div>
 

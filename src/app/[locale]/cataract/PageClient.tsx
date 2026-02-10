@@ -6,8 +6,11 @@ import CataractCheck from "@/components/cataract/CataractCheck";
 import LensGuide from "@/components/cataract/LensGuide";
 import LifestyleMatch from "@/components/cataract/LifestyleMatch";
 import AgingProcess from "@/components/cataract/AgingProcess";
+import { useTranslations } from "next-intl";
 
 export default function CataractPageClient() {
+    const t = useTranslations('Cataract.HeroPage');
+
     return (
         <div className="min-h-screen bg-[#f5f5f0] text-[#1a1a1a] selection:bg-[#1a1a1a] selection:text-[#f5f5f0]">
             {/* Header - Magazine Style with Video */}
@@ -34,19 +37,19 @@ export default function CataractPageClient() {
                         transition={{ duration: 1 }}
                         className="border-b border-white/20 pb-8 sm:pb-10 md:pb-12"
                     >
-                        <span className="text-xs sm:text-sm font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4 block text-primary shadow-black drop-shadow-lg">Premium Aging Care</span>
+                        <span className="text-xs sm:text-sm font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-3 sm:mb-4 block text-primary shadow-black drop-shadow-lg">{t('badge')}</span>
                         <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif font-medium leading-[0.9] text-white mb-4 sm:mb-6 md:mb-8 drop-shadow-xl">
-                            TIMELESS <br /> SIGHT
+                            {t('title1')} <br /> {t('title2')}
                         </h1>
                         <div className="flex flex-col md:flex-row justify-between items-end gap-6 sm:gap-8">
                             <div>
                                 <p className="max-w-xl text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed font-light mb-4 sm:mb-6 md:mb-8 drop-shadow-md">
-                                    노화는 자연스러운 현상이지만, 흐릿한 시야까지 당연한 것은 아닙니다.<br className="hidden sm:block" />
-                                    <strong className="font-bold bg-gradient-to-r from-amber-300 via-primary to-amber-400 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">프리미엄 다초점 인공수정체</strong>로 당신의 시력을 가장 젊었던 순간으로 되돌려드립니다.
+                                    {t('description1')}<br className="hidden sm:block" />
+                                    <strong className="font-bold bg-gradient-to-r from-amber-300 via-primary to-amber-400 bg-clip-text text-transparent drop-shadow-[0_0_20px_rgba(212,175,55,0.5)]">{t('description2')}</strong>
                                 </p>
-                                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif mb-4 sm:mb-6 md:mb-8 text-white">다시, 선명한 세상을 만날 준비가 되셨나요?</h2>
+                                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif mb-4 sm:mb-6 md:mb-8 text-white">{t('subtitle')}</h2>
                                 <Button size="lg" className="rounded-full px-6 sm:px-8 md:px-12 h-12 sm:h-14 md:h-16 text-sm sm:text-base md:text-lg bg-white text-black hover:bg-primary transition-colors font-bold">
-                                    노안 정밀검사 신청하기 &rarr;
+                                    {t('ctaButton')} &rarr;
                                 </Button>
                             </div>
                         </div>

@@ -5,61 +5,11 @@ import { motion } from "framer-motion";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-
-const doctors = [
-    {
-        name: "김선영",
-        position: "대표원장",
-        title: "안과전문의/임상교수",
-        specialty: "스마일·클리어 / 노안백내장 / 안구건조증",
-        desc: "대학병원 교수로 재직하며 난치성 안구건조증과 백내장 치료에 매진해왔습니다. 강남 유일의 단독 개원 여성 안과 전문의로서, 섬세함의 차이가 만드는 최상의 수술 결과를 약속드립니다.",
-        career: [
-            "가톨릭대학교 의과대학 대학원 석사",
-            "2009-2013 가톨릭대학교 가톨릭중앙의료원 안과 전문의",
-            "2013-2016 의정부 성모병원 각막,백내장 임상교수",
-            "2009년 서울성모병원 최우수 전공의 표창",
-            "2008년 보건복지부장관상",
-            "제 108회 대한안과학회 구연상 수상",
-            "질병관리본부 역학조사 표창장 수상",
-            "대한안과학회(KOS) 정회원",
-            "한국외안부연구회(KEEDS) 정회원",
-            "한국콘택트렌즈(KCLSS) 정회원",
-            "유럽백내장굴절수술학회(ESCRS) 정회원"
-        ],
-        img: "/images/doctors/1.png"
-    },
-    {
-        name: "임성웅",
-        position: "대표원장",
-        title: "안과전문의",
-        specialty: "망막 / 녹내장 / 시력교정",
-        desc: "정확한 진단은 성공적인 수술의 첫걸음입니다. 대학병원급 첨단 검사 시스템과 데이터를 분석하는 통찰력으로, 당신의 눈 상태에 가장 적합한 맞춤형 치료 계획을 수립합니다.",
-        career: ["연세대학교 의과대학 졸업", "세브란스병원 안과 전문의", "전) 실로암안과병원 진료과장", "한국망막학회 정회원"],
-        img: "/images/doctors/2.png"
-    },
-    {
-        name: "이용은",
-        position: "원장",
-        title: "안과전문의",
-        specialty: "소아안과 / 드림렌즈",
-        desc: "아이의 시력은 평생의 자산입니다. 성장기 근시 진행 억제부터 드림렌즈 처방까지, 아이들의 눈높이에 맞춘 따뜻하고 세심한 진료로 부모님의 걱정까지 덜어드리겠습니다.",
-        career: [
-            "대전과학고등학교 졸업",
-            "가톨릭대학교 의과대학 차석 졸업",
-            "가톨릭대학교 의과대학 대학원 석사",
-            "서울성모병원 백내장 임상교수",
-            "대한안과학회(KOS)정회원",
-            "한국백내장굴절수술학회(KSCRS) 정회원",
-            "대한안과의사회(KOA)정회원",
-            "미국 백내장굴절수술학회(ASCRS) 정회원",
-            "유럽 백내장굴절수술학회(ESCRS) 정회원",
-            "미국재향군인 검진의사(Veterans Evaluation Services)"
-        ],
-        img: "/images/doctors/3.png"
-    }
-];
+import { useTranslations } from "next-intl";
 
 export default function MedicalTeam() {
+    const t = useTranslations("Home.MedicalTeam");
+
     const [emblaRef, emblaApi] = useEmblaCarousel({
         loop: false,
         align: "start",
@@ -75,6 +25,59 @@ export default function MedicalTeam() {
         if (emblaApi) emblaApi.scrollNext();
     }, [emblaApi]);
 
+    const doctors = [
+        {
+            name: t("doctors.0.name"),
+            position: t("doctors.0.position"),
+            title: t("doctors.0.title"),
+            specialty: t("doctors.0.specialty"),
+            desc: t("doctors.0.description"),
+            career: [
+                t("doctors.0.career.0"),
+                t("doctors.0.career.1"),
+                t("doctors.0.career.2"),
+                t("doctors.0.career.3"),
+                t("doctors.0.career.4"),
+                t("doctors.0.career.5"),
+                t("doctors.0.career.6"),
+                t("doctors.0.career.7"),
+                t("doctors.0.career.8"),
+                t("doctors.0.career.9"),
+                t("doctors.0.career.10")
+            ],
+            img: "/images/doctors/1.png"
+        },
+        {
+            name: t("doctors.1.name"),
+            position: t("doctors.1.position"),
+            title: t("doctors.1.title"),
+            specialty: t("doctors.1.specialty"),
+            desc: t("doctors.1.description"),
+            career: [t("doctors.1.career.0"), t("doctors.1.career.1"), t("doctors.1.career.2"), t("doctors.1.career.3")],
+            img: "/images/doctors/2.png"
+        },
+        {
+            name: t("doctors.2.name"),
+            position: t("doctors.2.position"),
+            title: t("doctors.2.title"),
+            specialty: t("doctors.2.specialty"),
+            desc: t("doctors.2.description"),
+            career: [
+                t("doctors.2.career.0"),
+                t("doctors.2.career.1"),
+                t("doctors.2.career.2"),
+                t("doctors.2.career.3"),
+                t("doctors.2.career.4"),
+                t("doctors.2.career.5"),
+                t("doctors.2.career.6"),
+                t("doctors.2.career.7"),
+                t("doctors.2.career.8"),
+                t("doctors.2.career.9")
+            ],
+            img: "/images/doctors/3.png"
+        }
+    ];
+
     return (
         <section className="bg-neutral-950 relative py-16 sm:py-20 md:py-32 overflow-hidden">
             {/* Background Ambience */}
@@ -85,10 +88,10 @@ export default function MedicalTeam() {
                 {/* Header Section */}
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 sm:mb-16 md:mb-20">
                     <div>
-                        <span className="text-primary font-bold tracking-[0.3em] uppercase block mb-4">Medical Team</span>
+                        <span className="text-primary font-bold tracking-[0.3em] uppercase block mb-4">{t("sectionTitle")}</span>
                         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-white leading-tight">
-                            Mastery <br />
-                            <span className="text-neutral-500 italic">of Vision.</span>
+                            {t("headline")} <br />
+                            <span className="text-neutral-500 italic">{t("headlineSubtitle")}</span>
                         </h2>
                     </div>
 
@@ -114,7 +117,7 @@ export default function MedicalTeam() {
                 </div>
 
                 {/* Embla Carousel */}
-                <div className="overflow-hidden hidden md:block" ref={emblaRef}>
+                <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex gap-6 sm:gap-8 md:gap-12">
                         {doctors.map((doc, i) => (
                             <motion.div
@@ -157,7 +160,7 @@ export default function MedicalTeam() {
                                             &ldquo;{doc.desc}&rdquo;
                                         </p>
                                         <div className="border-t border-gray-200 pt-6">
-                                            <h4 className="text-sm text-primary font-bold tracking-wider uppercase mb-4">Career</h4>
+                                            <h4 className="text-sm text-primary font-bold tracking-wider uppercase mb-4">{t("careerTitle")}</h4>
                                             <ul className="space-y-3">
                                                 {doc.career.map((c, idx) => (
                                                     <li key={idx} className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">

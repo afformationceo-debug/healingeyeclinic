@@ -1,502 +1,35 @@
 {
-  "Home": {
-    "Hero": {
-      "clinicName": "韓國Healing眼科",
-      "location": "首尔江南",
-      "established": "成立于2016年",
-      "directorName": "金善英",
-      "brandName": "治愈",
-      "brandSubtitle": "眼科",
-      "tagline": "以无妥协的精准与安全，重新定义视力矫正的标准。",
-      "ctaButton": "立即",
-      "ctaButtonSub": "预约"
+  "Metadata": {
+    "title": "韓國Healing眼科 | 高端视力矫正",
+    "description": "与众不同的视力矫正标准，韓國Healing眼科。",
+    "vision": {
+      "title": "视力矫正中心 | 韓國Healing眼科",
+      "description": "全飞秒激光、准分子激光、ICL晶体植入专业。大学附属医院教授出身医疗团队的高端视力矫正。"
     },
-    "Philosophy": {
-      "sectionTitle": "我们的理念",
-      "mainQuote": "超越眼睛的治疗，",
-      "mainQuoteHighlight": "治愈您的人生。",
-      "description": "不仅仅是矫正视力。\n从早晨睁眼的瞬间到入睡之前，让您面对的整个世界\n变得更加清晰和美好。这是治愈眼科的承诺。",
-      "movingText": {
-        "text1": "超越视野",
-        "text2": "治愈生活",
-        "text3": "优质护理",
-        "text4": "完美杰作"
-      },
-      "values": {
-        "precision": {
-          "title": "超精准（Precision）",
-          "description": "以挑战手术误差0%的超精密系统，\n为您的眼睛刻画完美视力。"
-        },
-        "safety": {
-          "title": "安全（Safety）",
-          "description": "大学医院教授出身的医疗团队与大学医院级最新设备的结合，\n让您安心托付。"
-        },
-        "empathy": {
-          "title": "共鸣（Empathy）",
-          "description": "以数万例经验完善的手术实力和\n温馨的治愈空间，真诚地关怀您的眼睛。"
-        }
-      }
+    "cataract": {
+      "title": "老花眼/白内障中心 | 韓國Healing眼科",
+      "description": "多焦点人工晶体专业。定制化高端晶体，重拾年轻视力。"
     },
-    "Services": {
-      "sectionTitle": "Medical Centers",
-      "headline": "World Class",
-      "headlineSubtitle": "Healing Centers",
-      "viewAllButton": "View All Services",
-      "visionCorrection": {
-        "badge": "Most Popular",
-        "title": "Vision Correction",
-        "description": "从SMILE全飞秒到定制LASEK、晶体植入术。\n超越传统视力矫正的超精密激光解决方案。"
-      },
-      "presbyopiaCataract": {
-        "title": "Presbyopia &",
-        "titleLine2": "Cataract",
-        "subtitle": "老花眼/白内障中心 +",
-        "hoverText": "老花眼/白内障中心 +"
-      },
-      "eyeDisease": {
-        "badge": "University Hospital Level",
-        "title": "Eye Disease",
-        "titleLine2": "Center",
-        "subtitle": "眼疾病中心",
-        "description": "干眼症、青光眼、视网膜疾病"
-      }
+    "center": {
+      "title": "眼病中心 | 韓國Healing眼科",
+      "description": "干眼症、青光眼、视网膜疾病专业。大学附属医院级尖端设备精密诊断。"
     },
-    "WhyHealingEye": {
-      "sectionTitle": "选择治愈眼科的理由",
-      "headline": "标准不同的眼科，",
-      "headlineSubtitle": "成果为证。",
-      "stats": {
-        "rating": "4.9/5.0",
-        "ratingLabel": "患者评价",
-        "cases": "50,000+",
-        "casesLabel": "成功案例"
-      },
-      "features": {
-        "faculty": {
-          "title": "University Faculty",
-          "subtitle": "大学医院教授出身的医疗团队",
-          "description": "拥有丰富临床经验和专业技术的医疗团队，\n从咨询到手术、术后管理全程1对1专属负责。"
-        },
-        "equipment": {
-          "title": "High-End Equipment",
-          "subtitle": "大学医院级尖端设备",
-          "description": "配备Zimer Z8、ZEISS SUITE等最新设备，\n率先使用德国LaraLens，四焦点PanOptix使用量全国第一，\n证明白内障领域的专业性。"
-        },
-        "guarantee": {
-          "title": "Lifetime Guarantee",
-          "subtitle": "终身视力保障系统",
-          "description": "负责您未来40年的第二人生，\n以终身保障制度永久保证您的视力。"
-        }
-      }
+    "about": {
+      "title": "医院介绍 | 韓國Healing眼科",
+      "description": "位于首尔江南新论岘站，大学附属医院教授出身医疗团队的高端眼科。"
     },
-    "Review": {
-      "title": "真实故事",
-      "subtitle": "数据验证的成果，患者们的真实体验。",
-      "ctaSubtitle": "终身视力，现在开始",
-      "ctaButton": "立即预约专家咨询",
-      "reviews": [
-        {
-          "name": "金智*",
-          "age": "20多岁",
-          "surgery": "SMILE全飞秒激光",
-          "content": "没想到没有眼镜的早晨会如此感动。手术当天稍微有些模糊，第二天就进入了新世界。特别担心夜间眩光，但完全没有不适感，夜间驾驶也很顺利。",
-          "date": "2024.01.15"
-        },
-        {
-          "name": "李亨*",
-          "age": "60多岁",
-          "surgery": "多焦点人工晶体（老花白内障）",
-          "content": "以前没有老花镜连手机都看不清，现在高尔夫球看得很清楚，和朋友们用微信也很方便。不仅是手术，更像是收到了生活质量的礼物。医院设施像酒店一样高档，工作人员也非常亲切，手术过程很舒适。",
-          "date": "2024.01.12"
-        },
-        {
-          "name": "朴瑞*",
-          "age": "30多岁",
-          "surgery": "ICL晶体植入术",
-          "content": "因为角膜太薄被判定无法做激光手术而沮丧，在治愈眼科通过ICL重见光明。完全没有镜片异物感，干眼症比戴隐形眼镜时还要轻。犹豫的时间太可惜了。强烈推荐！",
-          "date": "2024.01.08"
-        },
-        {
-          "name": "崔敏*",
-          "age": "50多岁",
-          "surgery": "老花激光",
-          "content": "因为老花工作起来太辛苦，单眼视激光术后近距离作业轻松多了。一开始说需要适应期，但比想象中适应得快，现在不戴眼镜也能清楚看会议资料。",
-          "date": "2023.12.29"
-        },
-        {
-          "name": "郑夏*",
-          "age": "20多岁",
-          "surgery": "高级表层手术",
-          "content": "很担心疼痛问题，但只有2天左右眼睛刺痛，之后就很舒服了。摘掉保护镜片后明显感觉到视力提升。目前保持1.2视力。非常感谢！",
-          "date": "2023.12.20"
-        },
-        {
-          "name": "安秀*",
-          "age": "40多岁",
-          "surgery": "二次手术（激光→老花表层手术）",
-          "content": "在其他医院做激光后视力下降，接受了二次手术。虽然很不安，但院长仔细检查角膜状态后安全地进行了手术，非常感谢。现在保持1.2视力，夜间视力也比以前好了。",
-          "date": "2023.12.15"
-        },
-        {
-          "name": "尹智*",
-          "age": "20多岁",
-          "surgery": "表层手术（角膜薄）",
-          "content": "因为角膜薄很苦恼，在治愈眼科通过表层手术安全地完成了。恢复也很快，现在已经6个月了，对视力非常满意！",
-          "date": "2023.12.10"
-        },
-        {
-          "name": "赵贤*",
-          "age": "60多岁",
-          "surgery": "白内障（高级晶体）",
-          "content": "白内障手术后感觉回到了30年前的视力。不戴眼镜也能打高尔夫、看书，人生都不一样了。请不要犹豫，先咨询看看！",
-          "date": "2023.12.05"
-        }
-      ]
+    "insight": {
+      "title": "专家解答 | 韓國Healing眼科",
+      "description": "眼科专家亲自解答视力矫正、白内障Q&A。"
     },
-    "PremiumFacility": {
-      "sectionTitle": "Premium Lounge",
-      "headline": "Relaxation",
-      "headlineSubtitle": "Before Perfection",
-      "description": "连手术前的紧张感也能变成期待感的空间。\n希林眼科的高端休息室拥有五星级酒店的品质。\n以最佳状态迎接您的新视力。",
-      "galleryTitle": "参观设施",
-      "facilityAlt": "希林眼科设施",
-      "backgroundAlt": "Premium Facility",
-      "floatingText": "Architecture & Interior Design"
-    },
-    "Doctor": {
-      "doctors": [
-        {
-          "name": "金善英",
-          "nameEng": "Kim Sun-young",
-          "position": "首席院长",
-          "positionEng": "Representative Director",
-          "title": "眼科专科医师/临床教授",
-          "specialty": "全飞秒激光/老花白内障/干眼症",
-          "quote": "视觉不仅是看见，更是体验。",
-          "quoteHighlight1": "看见",
-          "quoteHighlight2": "体验",
-          "philosophy": "不容许1%误差的完美主义。以大学医院教授出身的丰富临床经验和对尖端设备的深入理解为基础，为您找到人生中最清晰的瞬间。",
-          "career": [
-            "天主教大学医学院研究生院硕士",
-            "2009-2013年 天主教大学天主教中央医疗院眼科专科医师",
-            "2013-2016年 议政府圣母医院角膜、白内障临床教授",
-            "2009年 首尔圣母医院优秀住院医师表彰",
-            "2008年 保健福祉部长官奖",
-            "第108届韩国眼科学会口头报告奖",
-            "疾病管理本部流行病学调查表彰状",
-            "韩国眼科学会(KOS)正式会员",
-            "韩国外眼部研究会(KEEDS)正式会员",
-            "韩国隐形眼镜学会(KCLSS)正式会员",
-            "欧洲白内障屈光手术学会(ESCRS)正式会员"
-          ]
-        },
-        {
-          "name": "林成雄",
-          "nameEng": "Lim Sung-woong",
-          "position": "首席院长",
-          "positionEng": "Representative Director",
-          "title": "眼科专科医师",
-          "specialty": "视网膜/青光眼/视力矫正",
-          "quote": "诊断的精准，治疗的卓越。",
-          "quoteHighlight1": "诊断",
-          "quoteHighlight2": "治疗",
-          "philosophy": "精准的诊断是成功手术的第一步。以大学医院级尖端检查系统和分析数据的洞察力，为您的眼部状况制定最合适的个性化治疗方案。",
-          "career": [
-            "延世大学医学院毕业",
-            "Severance医院眼科专科医师",
-            "前）西罗亚眼科医院诊疗科长",
-            "韩国视网膜学会正式会员"
-          ]
-        },
-        {
-          "name": "李龙恩",
-          "nameEng": "Lee Yong-eun",
-          "position": "院长",
-          "positionEng": "Director",
-          "title": "眼科专科医师",
-          "specialty": "小儿眼科/角膜塑形镜",
-          "quote": "呵护儿童视力，保障他们的未来。",
-          "quoteHighlight1": "儿童视力",
-          "quoteHighlight2": "未来",
-          "philosophy": "儿童的视力是一生的财富。从抑制青春期近视进展到角膜塑形镜处方，以符合儿童视角的温暖细致诊疗，解除家长的担忧。",
-          "career": [
-            "大田科学高中毕业",
-            "天主教大学医学院第二名毕业",
-            "天主教大学医学院研究生院硕士",
-            "首尔圣母医院白内障临床教授",
-            "韩国眼科学会(KOS)正式会员",
-            "韩国白内障屈光手术学会(KSCRS)正式会员",
-            "韩国眼科医师会(KOA)正式会员",
-            "美国白内障屈光手术学会(ASCRS)正式会员",
-            "欧洲白内障屈光手术学会(ESCRS)正式会员",
-            "美国退伍军人体检医师(Veterans Evaluation Services)"
-          ]
-        }
-      ],
-      "mainCareer": "主要经历",
-      "medicalPhilosophy": "医疗理念",
-      "viewProfile": "查看完整简历"
-    },
-    "MedicalTeam": {
-      "sectionTitle": "医疗团队",
-      "headline": "视觉的",
-      "headlineSubtitle": "精湛技艺",
-      "positionLabels": {
-        "representativeDirector": "首席院长",
-        "director": "院长"
-      },
-      "careerTitle": "经历",
-      "doctors": [
-        {
-          "name": "金善英",
-          "position": "首席院长",
-          "title": "眼科专科医师/临床教授",
-          "specialty": "全飞秒激光/老花白内障/干眼症",
-          "description": "作为大学医院教授，致力于难治性干眼症和白内障治疗。作为江南唯一独立开业的女性眼科专科医师，承诺以细致的差异创造最佳手术效果。",
-          "career": [
-            "天主教大学医学院研究生院硕士",
-            "2009-2013年 天主教大学天主教中央医疗院眼科专科医师",
-            "2013-2016年 议政府圣母医院角膜、白内障临床教授",
-            "2009年 首尔圣母医院优秀住院医师表彰",
-            "2008年 保健福祉部长官奖",
-            "第108届韩国眼科学会口头报告奖",
-            "疾病管理本部流行病学调查表彰状",
-            "韩国眼科学会(KOS)正式会员",
-            "韩国外眼部研究会(KEEDS)正式会员",
-            "韩国隐形眼镜学会(KCLSS)正式会员",
-            "欧洲白内障屈光手术学会(ESCRS)正式会员"
-          ]
-        },
-        {
-          "name": "林成雄",
-          "position": "首席院长",
-          "title": "眼科专科医师",
-          "specialty": "视网膜/青光眼/视力矫正",
-          "description": "精准的诊断是成功手术的第一步。以大学医院级尖端检查系统和分析数据的洞察力，为您的眼部状况制定最合适的个性化治疗方案。",
-          "career": [
-            "延世大学医学院毕业",
-            "Severance医院眼科专科医师",
-            "前）西罗亚眼科医院诊疗科长",
-            "韩国视网膜学会正式会员"
-          ]
-        },
-        {
-          "name": "李龙恩",
-          "position": "院长",
-          "title": "眼科专科医师",
-          "specialty": "小儿眼科/角膜塑形镜",
-          "description": "儿童的视力是一生的财富。从抑制青春期近视进展到角膜塑形镜处方，以符合儿童视角的温暖细致诊疗，解除家长的担忧。",
-          "career": [
-            "大田科学高中毕业",
-            "天主教大学医学院第二名毕业",
-            "天主教大学医学院研究生院硕士",
-            "首尔圣母医院白内障临床教授",
-            "韩国眼科学会(KOS)正式会员",
-            "韩国白内障屈光手术学会(KSCRS)正式会员",
-            "韩国眼科医师会(KOA)正式会员",
-            "美国白内障屈光手术学会(ASCRS)正式会员",
-            "欧洲白内障屈光手术学会(ESCRS)正式会员",
-            "美国退伍军人体检医师(Veterans Evaluation Services)"
-          ]
-        }
-      ]
-    },
-    "AIPrediction": {
-      "badge": "Healing AI Solutions",
-      "title": "找到最适合",
-      "titleHighlight": "您眼睛的手术",
-      "description": "Healing眼科诊所AI学习了超过10万例临床数据，\n分析您的角膜数据和生活方式，\n推荐最安全、最有效的视力矫正手术。",
-      "features": [
-        "角膜厚度和形状3D分析",
-        "基于生活方式的匹配",
-        "术后恢复期预测模拟"
-      ],
-      "ctaButton": "开始AI视力矫正预测",
-      "visualTitle": "AI EYE SCANNING",
-      "visualSubtitle": "Click to Start Analysis"
+    "community": {
+      "title": "社区 | 韓國Healing眼科",
+      "description": "韓國Healing眼科公告、常见问题、活动信息。"
     }
-  },
-  "About": {
-    "BrandStory": {
-      "sectionTitle": "我们的使命",
-      "headline": "不止于视觉，",
-      "headlineSubtitle": "设计您的人生。",
-      "description": "不仅仅是矫正视力，\n让您的生活变得更加清晰和美好。\n治愈眼科在技术与艺术的边界，\n雕刻最完美的视力。",
-      "stats": [
-        {
-          "label": "成功案例",
-          "value": "50,000+",
-          "suffix": "例"
-        },
-        {
-          "label": "患者满意度",
-          "value": "4.9",
-          "suffix": "/5.0"
-        },
-        {
-          "label": "医疗团队",
-          "value": "大学医院",
-          "suffix": "教授出身"
-        }
-      ]
-    },
-    "DirectorMessage": {
-      "sectionTitle": "院长致辞",
-      "headline": "治愈您的眼睛，",
-      "headlineSubtitle": "设计您的人生。",
-      "representativeDirector": "首席院长",
-      "doctorName": "金善英 医师",
-      "greeting": "您好，我是治愈眼科首席院长金善英。",
-      "paragraphs": [
-        "\"看\"不仅仅是认知事物，更是面对所爱之人的面容、铭记美丽风景、完整感受生命每一刻的过程。",
-        "从大学医院教授时期到现在，接诊数万名患者后我领悟到，最好的医术最终源于\"共鸣\"。倾听患者的细微不适，以对待家人的心态诊疗。这就是我所认为的\"治愈\"的本质。",
-        "比起江南唯一女性首席院长独立开业的头衔，我更希望被铭记为负责每一位患者眼部健康的终身主治医师。为了您最闪耀的时刻，治愈眼科与您同在。"
-      ]
-    },
-    "HistoryTimeline": {
-      "sectionTitle": "重要里程碑",
-      "headline": "我们的历史",
-      "timeline": [
-        {
-          "year": "2018",
-          "title": "治愈眼科开业",
-          "description": "驿三洞808大厦高端视力矫正中心开业"
-        },
-        {
-          "year": "2019",
-          "title": "引进大学医院级设备",
-          "description": "引进最新视力矫正设备及精密检查系统"
-        },
-        {
-          "year": "2020",
-          "title": "全飞秒激光专科中心",
-          "description": "正式开展微创全飞秒激光手术"
-        },
-        {
-          "year": "2021",
-          "title": "老花/白内障中心扩展",
-          "description": "开始高端多焦点人工晶体专科诊疗"
-        },
-        {
-          "year": "2022",
-          "title": "微创Clear激光",
-          "description": "引进差异化诊疗系统的Clear激光"
-        },
-        {
-          "year": "2023",
-          "title": "累计手术达50,000例",
-          "description": "患者满意度达到4.9/5.0，成长为地区代表性眼科"
-        },
-        {
-          "year": "2024",
-          "title": "AI精密检查系统",
-          "description": "构建最尖端AI定制化视力矫正系统"
-        }
-      ],
-      "historyLabel": "历史"
-    },
-    "Location": {
-      "sectionTitle": "位置信息",
-      "headline": "欢迎莅临",
-      "address": {
-        "title": "地址",
-        "line1": "首尔特别市江南区江南大路470号808大厦10-11层",
-        "line2": "（新论岘站6号出口步行1分钟）"
-      },
-      "contact": {
-        "title": "联系方式",
-        "phone": "02-566-1222",
-        "kakao": "kakao @healingeye"
-      },
-      "hours": {
-        "title": "诊疗时间",
-        "weekday": "周一至周四：09:30 - 18:30（午休时间13:00 - 14:00）",
-        "friday": "周五：09:30 - 21:00（夜间诊疗）",
-        "saturday": "周六：09:30 - 16:00",
-        "closed": "周日/节假日休诊"
-      },
-      "mapLabel": "新论岘站6号出口"
-    },
-    "Philosophy": {
-      "sectionTitle": "核心理念",
-      "headline": "卓越的",
-      "headlineSubtitle": "标准",
-      "description": "治愈眼科以三大核心价值，\n承诺最完美的视力矫正。",
-      "values": [
-        {
-          "title": "Safety First",
-          "subtitle": "不妥协的安全标准",
-          "description": "术前60步精密检查、三重交叉验证系统，不容许0.01%的误差。",
-          "stats": [
-            {
-              "label": "精密检查",
-              "value": "60步"
-            },
-            {
-              "label": "交叉验证",
-              "value": "三重"
-            }
-          ]
-        },
-        {
-          "title": "Personalized",
-          "subtitle": "只为一人的定制方案",
-          "description": "拒绝流水线式手术。综合考虑患者的角膜指纹、生活模式、职业环境，设计1对1定制方案。",
-          "stats": [
-            {
-              "label": "定制方案",
-              "value": "1对1"
-            },
-            {
-              "label": "分析项目",
-              "value": "20+"
-            }
-          ]
-        },
-        {
-          "title": "Lifetime Care",
-          "subtitle": "终身眼部健康伙伴",
-          "description": "运营终身管理系统，即使术后10年、20年，也能精准追踪观察您的眼部状态。",
-          "stats": [
-            {
-              "label": "数据保存",
-              "value": "终身"
-            },
-            {
-              "label": "定期检查",
-              "value": "免费"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "Footer": {
-    "brandName": "治愈眼科",
-    "tagline": "体验视力矫正的新标准。高端服务、尖端技术，为您的眼睛开启全新生活。",
-    "contact": {
-      "title": "联系方式",
-      "address": "首尔特别市江南区江南大路470号\n808大厦10-11层（新论岘站6号出口）",
-      "phone": "02-566-1222",
-      "kakao": "kakao @healingeye"
-    },
-    "hours": {
-      "title": "诊疗时间",
-      "weekday": "周一至周四",
-      "weekdayTime": "09:30 - 18:30",
-      "lunchBreak": "（午休13:00-14:00）",
-      "friday": "周五",
-      "fridayTime": "09:30 - 21:00",
-      "saturday": "周六",
-      "saturdayTime": "09:30 - 16:00",
-      "closed": "周日/节假日",
-      "closedStatus": "休诊"
-    },
-    "copyright": "治愈眼科诊所。保留所有权利。",
-    "privacyPolicy": "隐私政策",
-    "termsOfService": "服务条款"
   },
   "Common": {
+    "loading": "加载中...",
+    "error": "发生错误。",
     "navigation": {
       "home": "首页",
       "about": "医院介绍",
@@ -517,7 +50,1521 @@
     "labels": {
       "loading": "加载中...",
       "error": "发生错误",
-      "success": "成功完成"
+      "success": "操作成功",
+      "language": "语言"
+    }
+  },
+  "Navigation": {
+    "about": "医院介绍",
+    "vision": "视力矫正术",
+    "cataract": "老花眼/白内障",
+    "dryeye": "干眼症诊所",
+    "center": "眼病中心",
+    "community": "社区",
+    "insight": "专家解答"
+  },
+  "Home": {
+    "Hero": {
+      "clinicName": "( Healing Eye Clinic )",
+      "location": "Gangnam, Seoul",
+      "established": "Est. 2016",
+      "directorName": "Kim Sun-young",
+      "brandName": "HEALING",
+      "brandSubtitle": "EYE",
+      "tagline": "We redefine the standard of vision correction with\nuncompromising precision and safety.",
+      "ctaButton": "BOOK",
+      "ctaButtonSub": "NOW"
+    },
+    "Philosophy": {
+      "sectionTitle": "我们的理念",
+      "mainQuote": "\"超越治疗眼睛",
+      "mainQuoteHighlight": "治愈您的生活。\"",
+      "description": "不仅仅是矫正视力。\n从清晨睁开眼睛到入睡，让您将要面对的整个世界\n变得更加清晰和美丽。这是韓國Healing眼科的承诺。",
+      "movingText": {
+        "text1": "BEYOND VISION",
+        "text2": "HEALING LIFE",
+        "text3": "PREMIUM CARE",
+        "text4": "MASTERPIECE"
+      },
+      "values": {
+        "precision": {
+          "title": "超精准 (Precision)",
+          "description": "通过挑战0%手术误差的超精密系统\n为您的眼睛铸就完美视力。"
+        },
+        "safety": {
+          "title": "安全 (Safety)",
+          "description": "拥有大学附属医院教授出身的医疗团队和大学附属医院级尖端设备\n让您可以放心托付。"
+        },
+        "empathy": {
+          "title": "共情 (Empathy)",
+          "description": "凭借数万例手术积累的经验和\n温馨的康复空间，真诚地关怀您的眼睛。"
+        }
+      }
+    },
+    "Services": {
+      "sectionTitle": "Medical Centers",
+      "headline": "World Class",
+      "headlineSubtitle": "Healing Centers",
+      "viewAllButton": "View All Services",
+      "visionCorrection": {
+        "badge": "Most Popular",
+        "title": "Vision Correction",
+        "description": "全飞秒激光、定制准分子激光、ICL晶体植入。\n突破传统视力矫正限制的超精密激光解决方案。"
+      },
+      "presbyopiaCataract": {
+        "title": "Presbyopia &",
+        "titleLine2": "Cataract",
+        "subtitle": "老花眼/白内障中心 +",
+        "hoverText": "老花眼/白内障中心 +"
+      },
+      "eyeDisease": {
+        "badge": "University Hospital Level",
+        "title": "Eye Disease",
+        "titleLine2": "Center",
+        "subtitle": "眼病中心",
+        "description": "干眼症、青光眼、视网膜疾病"
+      }
+    },
+    "WhyHealingEye": {
+      "sectionTitle": "为何选择韓國Healing眼科",
+      "headline": "标准不同的眼科，",
+      "headlineSubtitle": "用结果证明。",
+      "stats": {
+        "rating": "4.9/5.0",
+        "ratingLabel": "患者满意度",
+        "cases": "50,000+",
+        "casesLabel": "成功手术案例"
+      },
+      "features": {
+        "faculty": {
+          "title": "大学附属医院教授出身",
+          "titleEng": "University Faculty",
+          "subtitle": "大学附属医院教授出身医疗团队",
+          "description": "拥有丰富临床经验和专业知识的医疗团队\n从咨询到手术、术后管理全程1:1专属服务。"
+        },
+        "equipment": {
+          "title": "尖端设备",
+          "titleEng": "High-End Equipment",
+          "subtitle": "大学附属医院级尖端设备",
+          "description": "配备Zimer Z8、ZEISS SUITE等尖端设备\n率先引进德国LARA晶体，四焦点PanOptix使用量全国第一\n彰显白内障专业实力。"
+        },
+        "guarantee": {
+          "title": "终身保障",
+          "titleEng": "Lifetime Guarantee",
+          "subtitle": "终身视力保障系统",
+          "description": "承担您未来40年第二人生的\n终身保障制度，守护您一生的视力。"
+        }
+      }
+    },
+    "Review": {
+      "title": "Real Stories",
+      "subtitle": "用数据证明的效果，来自患者的真实故事。",
+      "ctaSubtitle": "终身视力，从现在开始",
+      "ctaButton": "立即预约专家咨询",
+      "reviews": [
+        {
+          "name": "金*",
+          "age": "20多岁",
+          "surgery": "全飞秒激光 (SMILE PRO)",
+          "content": "没想到没有眼镜的早晨会如此感动。手术当天只有一点模糊，第二天就像新世界一样。特别担心的夜间眩光问题，完全没有不便，夜间开车也很顺利。院长亲自从验光到手术全程负责，让我更加信任。",
+          "date": "2024.01.15"
+        },
+        {
+          "name": "李*",
+          "age": "40多岁",
+          "surgery": "多焦点人工晶体（老花眼白内障）",
+          "content": "以前没有老花镜连手机都看不清，现在高尔夫球也能看得很清楚，和朋友发微信也很方便。不仅仅是手术，感觉获得了生活质量的馈赠。医院设施像酒店一样高档，工作人员也非常友善，让我很舒适地完成了手术。",
+          "date": "2024.01.12"
+        },
+        {
+          "name": "朴*",
+          "age": "30多岁",
+          "surgery": "ICL晶体植入术",
+          "content": "因为角膜太薄被判定不能做激光手术，很沮丧。在韓國Healing眼科通过ICL重见光明。完全没有异物感，干眼症反而比戴隐形眼镜时还好。真后悔犹豫了那么久。强烈推荐！",
+          "date": "2024.01.08"
+        },
+        {
+          "name": "崔*",
+          "age": "50多岁",
+          "surgery": "老花眼激光 (Monovision)",
+          "content": "因为老花眼工作非常吃力，做了单眼视激光后近距离工作轻松多了。医生说一开始需要适应期，但比想象中适应得快，现在不戴眼镜也能看会议资料了。",
+          "date": "2023.12.29"
+        },
+        {
+          "name": "郑*",
+          "age": "20多岁",
+          "surgery": "当日准分子激光",
+          "content": "很担心疼痛，但只有2天左右眼睛刺痛，之后就很舒服了。取下保护镜片后明显感觉视力提升了。现在保持1.5的视力。谢谢！",
+          "date": "2023.12.20"
+        },
+        {
+          "name": "安*",
+          "age": "30多岁",
+          "surgery": "二次手术（激光 → 老花眼准分子）",
+          "content": "在其他医院做激光后视力下降，进行了二次手术。虽然很担心，但院长仔细检查角膜状态并安全进行了手术，非常感谢。现在视力保持1.2，夜间视力也比以前好了。",
+          "date": "2023.12.15"
+        },
+        {
+          "name": "尹*",
+          "age": "20多岁",
+          "surgery": "准分子激光（角膜较薄）",
+          "content": "因为角膜薄很担心，在韓國Healing眼科安全地做了准分子激光。恢复也很快，现在已经6个月了，对视力非常满意！",
+          "date": "2023.12.10"
+        },
+        {
+          "name": "赵*",
+          "age": "40多岁",
+          "surgery": "白内障（高端晶体）",
+          "content": "白内障手术后感觉回到了30年前的视力。不戴眼镜也能打高尔夫、看书，人生都变了。不要犹豫，快去咨询吧！",
+          "date": "2023.12.05"
+        }
+      ]
+    },
+    "PremiumFacility": {
+      "sectionTitle": "Premium Lounge",
+      "headline": "Relaxation",
+      "headlineSubtitle": "Before Perfection",
+      "description": "让术前的紧张也变成期待的空间。\n韓國Healing眼科的尊贵休息室融入了五星级酒店的品质。\n以最佳状态迎接全新视力。",
+      "galleryTitle": "设施参观",
+      "facilityAlt": "韓國Healing眼科设施",
+      "backgroundAlt": "Premium Facility",
+      "floatingText": "Architecture & Interior Design"
+    },
+    "Doctor": {
+      "doctors": [
+        {
+          "name": "金善英",
+          "nameEng": "Kim Sun-young",
+          "position": "代表院长",
+          "positionEng": "Representative Director",
+          "title": "眼科专家/临床教授",
+          "specialty": "SMILE·CLEAR / 老花眼白内障 / 干眼症",
+          "quote": "以不断探索和研究推动现有理论进步",
+          "quoteEng": "\"Vision is not just seeing, it is experiencing.\"",
+          "quoteHighlight1": "seeing",
+          "quoteHighlight2": "experiencing.",
+          "philosophy": "不容许1%误差的完美主义。凭借大学附属医院教授出身的丰富临床经验和对尖端设备的深刻理解，为您找到人生中最清晰的时刻。",
+          "career": [
+            "韩国天主教大学医学院研究生院硕士",
+            "2009-2013 天主教大学天主教中央医疗院眼科专科医师",
+            "2013-2016 议政府圣母医院角膜、白内障临床教授",
+            "2009年首尔圣母医院最优秀住院医师表彰",
+            "2008年保健福祉部长官奖",
+            "第108届韩国眼科学会口头发表奖",
+            "疾病管理本部流行病学调查表彰",
+            "韩国眼科学会(KOS)正会员",
+            "韩国眼表疾病研究会(KEEDS)正会员",
+            "韩国角膜接触镜学会(KCLSS)正会员",
+            "欧洲白内障屈光手术学会(ESCRS)正会员"
+          ],
+          "img": "/images/doctors/1.png"
+        },
+        {
+          "name": "林成雄",
+          "nameEng": "Lim Sung-woong",
+          "position": "代表院长",
+          "positionEng": "Representative Director",
+          "title": "眼科专家",
+          "specialty": "视网膜 / 青光眼 / 视力矫正",
+          "quote": "以患者之心尽全力诊治",
+          "quoteEng": "\"Precision in diagnosis, excellence in treatment.\"",
+          "quoteHighlight1": "diagnosis",
+          "quoteHighlight2": "treatment.",
+          "philosophy": "精确的诊断是成功手术的第一步。凭借大学附属医院级尖端检查系统和分析数据的洞察力，为您制定最适合眼部状况的个性化治疗方案。",
+          "career": [
+            "延世大学医学院毕业",
+            "Severance医院眼科专科医师",
+            "前）实老庵眼科医院诊疗科长",
+            "韩国视网膜学会正会员"
+          ],
+          "img": "/images/doctors/2.png"
+        },
+        {
+          "name": "李龙恩",
+          "nameEng": "Lee Yong-eun",
+          "position": "院长",
+          "positionEng": "Director",
+          "title": "眼科专家",
+          "specialty": "儿童眼科 / 角膜塑形镜",
+          "quote": "以不断研究和丰富经验赢得信赖",
+          "quoteEng": "\"Caring for children's vision, securing their future.\"",
+          "quoteHighlight1": "children's vision",
+          "quoteHighlight2": "future.",
+          "philosophy": "孩子的视力是一生的财富。从控制成长期近视进展到角膜塑形镜处方，以贴合孩子视角的温暖细致诊疗，解除家长的担忧。",
+          "career": [
+            "大田科学高中毕业",
+            "韩国天主教大学医学院第二名毕业",
+            "韩国天主教大学医学院研究生院硕士",
+            "首尔圣母医院白内障临床教授",
+            "韩国眼科学会(KOS)正会员",
+            "韩国白内障屈光手术学会(KSCRS)正会员",
+            "韩国眼科医师会(KOA)正会员",
+            "美国白内障屈光手术学会(ASCRS)正会员",
+            "欧洲白内障屈光手术学会(ESCRS)正会员",
+            "美国退伍军人检查医师(Veterans Evaluation Services)"
+          ],
+          "img": "/images/doctors/3.png"
+        }
+      ],
+      "mainCareer": "Main Career",
+      "medicalPhilosophy": "Medical Philosophy",
+      "viewProfile": "View Full Profile"
+    },
+    "MedicalTeam": {
+      "sectionTitle": "Medical Team",
+      "headline": "Mastery",
+      "headlineSubtitle": "of Vision.",
+      "positionLabels": {
+        "representativeDirector": "代表院长",
+        "director": "院长"
+      },
+      "careerTitle": "Career",
+      "doctors": [
+        {
+          "name": "金善英",
+          "position": "代表院长",
+          "title": "眼科专家/临床教授",
+          "specialty": "SMILE·CLEAR / 老花眼白内障 / 干眼症",
+          "description": "曾任大学附属医院教授，专注于顽固性干眼症和白内障治疗。作为江南唯一独立开业的女性眼科专家，以细腻的差异保证最佳手术效果。",
+          "career": [
+            "韩国天主教大学医学院研究生院硕士",
+            "2009-2013 天主教大学天主教中央医疗院眼科专科医师",
+            "2013-2016 议政府圣母医院角膜、白内障临床教授",
+            "2009年首尔圣母医院最优秀住院医师表彰",
+            "2008年保健福祉部长官奖",
+            "第108届韩国眼科学会口头发表奖",
+            "疾病管理本部流行病学调查表彰",
+            "韩国眼科学会(KOS)正会员",
+            "韩国眼表疾病研究会(KEEDS)正会员",
+            "韩国角膜接触镜学会(KCLSS)正会员",
+            "欧洲白内障屈光手术学会(ESCRS)正会员"
+          ]
+        },
+        {
+          "name": "林成雄",
+          "position": "代表院长",
+          "title": "眼科专家",
+          "specialty": "视网膜 / 青光眼 / 视力矫正",
+          "description": "精确的诊断是成功手术的第一步。凭借大学附属医院级尖端检查系统和分析数据的洞察力，为您制定最适合眼部状况的个性化治疗方案。",
+          "career": [
+            "延世大学医学院毕业",
+            "Severance医院眼科专科医师",
+            "前）实老庵眼科医院诊疗科长",
+            "韩国视网膜学会正会员"
+          ]
+        },
+        {
+          "name": "李龙恩",
+          "position": "院长",
+          "title": "眼科专家",
+          "specialty": "儿童眼科 / 角膜塑形镜",
+          "description": "孩子的视力是一生的财富。从控制成长期近视进展到角膜塑形镜处方，以贴合孩子视角的温暖细致诊疗，解除家长的担忧。",
+          "career": [
+            "大田科学高中毕业",
+            "韩国天主教大学医学院第二名毕业",
+            "韩国天主教大学医学院研究生院硕士",
+            "首尔圣母医院白内障临床教授",
+            "韩国眼科学会(KOS)正会员",
+            "韩国白内障屈光手术学会(KSCRS)正会员",
+            "韩国眼科医师会(KOA)正会员",
+            "美国白内障屈光手术学会(ASCRS)正会员",
+            "欧洲白内障屈光手术学会(ESCRS)正会员",
+            "美国退伍军人检查医师(Veterans Evaluation Services)"
+          ]
+        }
+      ]
+    },
+    "AIPrediction": {
+      "badge": "Healing AI Solutions",
+      "title": "为我的眼睛找到",
+      "titleHighlight": "最佳手术方案",
+      "description": "学习了10万例以上临床数据的韓國Healing眼科AI\n分析您的角膜数据和生活方式\n为您推荐最安全有效的视力矫正术。",
+      "features": [
+        "角膜厚度及形态3D分析",
+        "生活方式个性化匹配",
+        "术后恢复期预测模拟"
+      ],
+      "ctaButton": "开始AI视力矫正预测",
+      "visualTitle": "AI EYE SCANNING",
+      "visualSubtitle": "Click to Start Analysis"
+    },
+    "AISurvey": {
+      "stepLabel": "AI Analysis Step {step}",
+      "questions": {
+        "age": {
+          "question": "请问您的年龄段是？",
+          "options": {
+            "under30": "20多岁以下",
+            "30s": "30多岁",
+            "40s": "40多岁",
+            "50plus": "50岁以上"
+          }
+        },
+        "symptom": {
+          "question": "最困扰您的问题是什么？",
+          "options": {
+            "glassesDiscomfort": "眼镜/隐形眼镜不适",
+            "dryFatigue": "眼睛干涩/疲劳",
+            "nearVision": "看不清近处文字",
+            "lightGlare": "严重眩光"
+          }
+        },
+        "lifestyle": {
+          "question": "您平常的生活方式是？",
+          "options": {
+            "digitalDevice": "大量使用电脑/手机",
+            "outdoor": "喜欢户外活动/运动",
+            "driving": "经常开车",
+            "reading": "阅读/精细工作"
+          }
+        }
+      },
+      "loading": {
+        "title": "AI正在分析您的眼睛状况...",
+        "subtitle": "正在比对10万件临床数据。"
+      },
+      "result": {
+        "badge": "Recommendation",
+        "suitable": "最适合您。",
+        "description": "这是根据您选择的生活方式和症状进行的初步分析结果。",
+        "callToAction": "需要我们帮您预约精密检查吗？"
+      },
+      "results": {
+        "cataract": {
+          "name": "老花眼/白内障高端中心"
+        },
+        "smileLasik": {
+          "name": "全飞秒激光 (SMILE PRO)"
+        },
+        "customLasek": {
+          "name": "定制准分子激光"
+        }
+      },
+      "buttons": {
+        "retry": "重新开始",
+        "book": "预约检查"
+      }
+    }
+  },
+  "Vision": {
+    "Hero": {
+      "sectionTitle": "Vision Correction",
+      "headline": "与众不同的",
+      "headlineHighlight": "视力矫正",
+      "description": "全飞秒激光、准分子激光、ICL晶体植入\n大学附属医院教授出身医疗团队的高端视力矫正"
+    },
+    "Comparison": {
+      "title": "为何选择'Healing全飞秒'？",
+      "subtitle": "融合传统激光手术优点、弥补缺点的第三代手术方式",
+      "tableHeaders": {
+        "category": "类别",
+        "smileLasik": "全飞秒激光",
+        "smileLasikBadge": "Best Choice",
+        "regularLasik": "普通LASIK",
+        "regularLasek": "普通准分子"
+      },
+      "items": [
+        {
+          "label": "手术方式",
+          "healing": "角膜微创切口 (2mm)",
+          "lasik": "制作角膜瓣 (24mm)",
+          "lasek": "去除上皮"
+        },
+        {
+          "label": "疼痛",
+          "healing": "几乎没有",
+          "lasik": "轻微",
+          "lasek": "2~3天疼痛"
+        },
+        {
+          "label": "恢复期",
+          "healing": "手术次日",
+          "lasik": "3~4天",
+          "lasek": "5~7天"
+        },
+        {
+          "label": "角膜损伤",
+          "healing": "最小化（安全）",
+          "lasik": "较多",
+          "lasek": "较多"
+        },
+        {
+          "label": "抗外力",
+          "healing": "强",
+          "lasik": "弱",
+          "lasek": "强"
+        },
+        {
+          "label": "干眼症",
+          "healing": "几乎没有",
+          "lasik": "可能发生",
+          "lasek": "可能发生"
+        }
+      ]
+    },
+    "Process": {
+      "sectionTitle": "One-Day System",
+      "headline": "当日检查&手术，",
+      "headlineHighlight": "您的日常不会停歇。",
+      "description": "韓國Healing眼科的全飞秒激光将角膜损伤降至最低\n上午检查下午手术，次日即可洗脸、洗澡、轻度运动。",
+      "steps": [
+        {
+          "time": "AM 10:00",
+          "title": "精密检查",
+          "desc": "60余项精密检查及咨询，确认手术适合度"
+        },
+        {
+          "time": "PM 02:00",
+          "title": "进行手术",
+          "desc": "手术时间10分钟，角膜微创切口几乎无痛"
+        },
+        {
+          "time": "PM 03:00",
+          "title": "休息后回家",
+          "desc": "在恢复室休息1小时后即可回家，麻醉后几乎无异物感"
+        },
+        {
+          "time": "Next Day",
+          "title": "手术次日",
+          "desc": "目标视力恢复90%，可洗脸及基础化妆，可上班"
+        },
+        {
+          "time": "1 Week",
+          "title": "一周后",
+          "desc": "可进行轻度运动及几乎所有日常活动（饮酒/吸烟除外）"
+        }
+      ]
+    },
+    "SafetySystem": {
+      "sectionTitle": "Safety First",
+      "headline": "绝不妥协的",
+      "headlineHighlight": "安全标准",
+      "items": [
+        {
+          "title": "1:1 Responsible Care",
+          "desc": "从咨询到手术、术后管理，由一位代表院长全程负责。采用100%实名制系统，无需担心代理手术。"
+        },
+        {
+          "title": "DB & Backup",
+          "desc": "终身保存手术数据。术后10年、20年也能精确追踪观察您的眼部状况。"
+        },
+        {
+          "title": "Emergency Power",
+          "desc": "配备不间断电源(UPS)。即使发生自然灾害或停电，激光设备也不会中断，确保安全完成手术。"
+        },
+        {
+          "title": "Clean Room System",
+          "desc": "大学附属医院级正压手术室。HEPA过滤器和空气淋浴系统阻隔99.9%的微尘和细菌，预防感染。"
+        },
+        {
+          "title": "Triple Check",
+          "desc": "验光师、验光院长、手术执刀院长三重交叉验证。不允许任何细微数据误差的严格检查系统。"
+        }
+      ]
+    },
+    "HeroPage": {
+      "badge": "2026年最小切口术 新型全飞秒激光",
+      "title1": "NEW SMILE",
+      "title2": "LASIK",
+      "description1": "ZIEMER Z8飞秒激光实现的第四代视力矫正术\n穿透角膜表面，仅对角膜基质层进行激光照射的最小切口微透镜取出方式",
+      "description2": "精确测量视野中心轴与旋转轴并进行切削，实现精密散光矫正的\n大学附属医院教授出身医疗团队的次世代视力矫正系统"
+    },
+    "Procedures": {
+      "items": [
+        {
+          "id": "01",
+          "title": "新型全飞秒激光 (New SMILE)",
+          "subtitle": "次世代最小切口视力矫正术",
+          "desc": "使用ZIEMER Z8飞秒激光的最小切口方式，将角膜损伤降到最低的第四代视力矫正术。穿透角膜表面仅对基质层进行精密激光照射，角膜神经损伤少，以视轴中心精确计测提高散光矫正的精密度。",
+          "features": [
+            "2mm最小切口",
+            "保留角膜神经",
+            "精密散光矫正",
+            "快速恢复日常"
+          ]
+        },
+        {
+          "id": "02",
+          "title": "顶级激光近视矫正 (Premium LASIK)",
+          "subtitle": "快速恢复的智能视力矫正",
+          "desc": "在形成角膜瓣后，用激光切削角膜以矫正屈光不正的经过验证的视力矫正术。手术当天即可恢复视力，几乎无痛且能快速恢复日常生活。采用最新波前技术，连夜间视力质量都能改善。",
+          "features": [
+            "当天恢复视力",
+            "最小疼痛",
+            "波前定制化",
+            "改善夜间视力"
+          ]
+        },
+        {
+          "id": "03",
+          "title": "顶级激光角膜切削术 (Premium LASEK)",
+          "subtitle": "经安全性验证的保守视力矫正",
+          "desc": "只去除角膜上皮层并对基质进行激光照射的保守方式，适合角膜厚度较薄或经常受外力冲击的职业。不制作瓣膜，结构稳定性优异，建议军人、消防员、运动员等活动性职业的人士选择。",
+          "features": [
+            "不制作瓣膜",
+            "结构稳定性",
+            "可矫正高度近视",
+            "抗外力冲击"
+          ]
+        },
+        {
+          "id": "04",
+          "title": "ICL人工晶状体植入术 (EVO+ ICL)",
+          "subtitle": "保留角膜的晶体植入视力矫正",
+          "desc": "不切削角膜，在虹膜后方植入特殊晶体以矫正视力的眼内晶体植入术。采用生物相容性的Collamer材质，副作用少，是激光近视/角膜切削术无法施作的超高度近视（-6屈光度以上）或角膜过薄患者的最佳选择。手术后也可以取出晶体，具可逆性保证。",
+          "features": [
+            "不切削角膜",
+            "矫正超高度近视",
+            "UV阻隔功能",
+            "可逆性手术"
+          ]
+        },
+        {
+          "id": "05",
+          "title": "激光近视再手术 (Re-Surgery)",
+          "subtitle": "以精密诊断和经验完成的再矫正",
+          "desc": "改善先前视力矫正手术后视力下降、残余屈光不正、夜间眩光等问题的高难度再矫正术。基于大学附属医院教授出身医疗团队丰富的临床经验，精密分析残余角膜厚度，在安全范围内判断是否可进行再手术。",
+          "features": [
+            "精密角膜分析",
+            "最小化副作用",
+            "安全性优先",
+            "1对1定制咨询"
+          ]
+        }
+      ]
+    },
+    "ProcessSteps": {
+      "items": [
+        {
+          "title": "精密检查",
+          "desc": "60多项眼睛精密测量"
+        },
+        {
+          "title": "1对1咨询",
+          "desc": "生活型态深度分析"
+        },
+        {
+          "title": "定制化手术",
+          "desc": "代表院长亲自执刀"
+        },
+        {
+          "title": "术后管理",
+          "desc": "终身眼睛照护保证"
+        }
+      ]
+    },
+    "Button": {
+      "details": "查看详情 & 预约咨询"
+    }
+  },
+  "Cataract": {
+    "Hero": {
+      "sectionTitle": "Presbyopia & Cataract",
+      "headline": "重拾",
+      "headlineHighlight": "年轻视力",
+      "description": "老花眼和白内障，定制化高端晶体\n开启人生第二幕的清晰篇章"
+    },
+    "HeroPage": {
+      "badge": "Premium Aging Care",
+      "title1": "TIMELESS",
+      "title2": "SIGHT",
+      "description1": "衰老是自然现象，但视线模糊并非理所当然。",
+      "description2": "采用顶级多焦点人工晶状体，让您的视力回到最年轻的时刻。",
+      "subtitle": "准备好再次迎接清晰的世界了吗？",
+      "ctaButton": "申请老花眼精密检查"
+    },
+    "AgingProcess": {
+      "sectionTitle": "The Process",
+      "headline": "Why does vision",
+      "headlineHighlight": "fade away?",
+      "description1": "我们眼睛的晶状体就像相机镜头一样。随着年龄增长，晶状体变硬变浑浊，这就是老花眼和白内障。",
+      "description2": "韓國Healing眼科不仅仅是更换浑浊的晶状体，更专注于根据患者的生活模式，帮助您恢复最年轻清晰的视力。",
+      "labels": {
+        "cornea": "角膜",
+        "iris": "虹膜",
+        "lens": "晶状体",
+        "retina": "视网膜",
+        "opticNerve": "视神经",
+        "normal": "正常",
+        "cataract": "白内障",
+        "afterSurgery": "术后"
+      },
+      "sectionLabel": "眼球剖面图"
+    },
+    "Check": {
+      "sectionTitle": "Self Check",
+      "headline": "我是否也有",
+      "headlineHighlight": "白内障？",
+      "description": "白内障初期症状与老花眼相似，容易被忽视。\n如果符合3项以上，建议进行精密检查。",
+      "healthTip": {
+        "title": "Health Tip",
+        "content": "40岁以上建议每年进行一次眼科定期检查。"
+      },
+      "items": [
+        "小字模糊或对焦困难。",
+        "在暗处比亮处看得更清楚（昼盲现象）。",
+        "物体出现重影、三重影（复视）。",
+        "眩光严重，夜间驾驶困难。",
+        "眼睛经常模糊，容易感到疲劳。",
+        "即使戴老花镜也看不清近处的字。"
+      ]
+    },
+    "LensGuide": {
+      "sectionTitle": "Premium Lens",
+      "headline": "适合我的",
+      "headlineHighlight": "人工晶体是？",
+      "description": "根据患者的生活方式、职业、爱好等\n1:1定制处方最适合的高端晶体。",
+      "interactionHint": "将鼠标移至各距离区域体验视力差异",
+      "distanceZones": [
+        {
+          "id": "near",
+          "label": "近距离",
+          "distance": "30cm"
+        },
+        {
+          "id": "mid",
+          "label": "中距离",
+          "distance": "1m"
+        },
+        {
+          "id": "far",
+          "label": "远距离",
+          "distance": "5m"
+        }
+      ],
+      "visionStatus": {
+        "clear": "清晰",
+        "blurry": "模糊"
+      },
+      "allClear": "ALL CLEAR",
+      "features": "特点",
+      "recommendFor": "推荐对象",
+      "lenses": [
+        {
+          "name": "多焦点人工晶体",
+          "eng": "Multifocal IOL",
+          "desc": "近距离、中距离、远距离都能看得清晰，术后无需老花镜。",
+          "pros": [
+            "全距离视力覆盖",
+            "无需眼镜/老花镜",
+            "白内障+老花眼同时解决"
+          ],
+          "recommend": "社交活动活跃的中老年人"
+        },
+        {
+          "name": "单焦点人工晶体",
+          "eng": "Monofocal IOL",
+          "desc": "聚焦于远距离或近距离其中之一，眩光少且适应快。",
+          "pros": [
+            "清晰的远距离视力",
+            "夜间眩光少",
+            "经济实惠"
+          ],
+          "recommend": "经常夜间驾驶的人士"
+        }
+      ]
+    },
+    "LifestyleMatch": {
+      "sectionTitle": "Find Your Lens",
+      "headline": "Find Your Lens",
+      "description": "白内障手术的关键在于'选择什么晶体'。\n选择您的生活方式，查看最适合的晶体。",
+      "recommendationBadge": "RECOMMENDATION",
+      "recommendationTitle": "推荐方案",
+      "ctaButton": "申请1:1精密检查",
+      "lifestyles": [
+        {
+          "id": "active",
+          "title": "热爱户外活动的人士",
+          "desc": "您是否经常进行高尔夫、登山、旅行等需要远视的活动？",
+          "recommendation": "对于注重远距离视力的人士，推荐'PanOptix'或'Vivity'晶体。清晰宽广的视野让户外活动更加愉快。"
+        },
+        {
+          "id": "digital",
+          "title": "频繁使用电脑/手机的人士",
+          "desc": "您是否经常看电视、使用电脑、查看手机？",
+          "recommendation": "对于注重中距离视力的人士，'Synergy'或'Eyhance'晶体更适合。经过优化，让您舒适地查看屏幕。"
+        },
+        {
+          "id": "daily",
+          "title": "经常驾驶的人士",
+          "desc": "您是否白天和夜间都需要驾驶，或日常生活很重要？",
+          "recommendation": "对于夜间驾驶较多的人士，推荐'Vivity'晶体。最大限度减少眩光，以清晰的对比度助您安全驾驶。"
+        },
+        {
+          "id": "reading",
+          "title": "阅读/精细工作人士",
+          "desc": "您是否经常读书看报或需要近距离工作？",
+          "recommendation": "对于注重近距离视力的人士，推荐'Synergy'或'PanOptix'晶体。在30~40cm距离看得最清晰。"
+        }
+      ]
+    }
+  },
+  "Center": {
+    "Hero": {
+      "sectionTitle": "Specialized Medical Center",
+      "headline": "EYE DISEASE",
+      "headlineHighlight": "CLINIC",
+      "description": "大学附属医院级精密诊断设备和各领域专业医疗团队\n终身守护您的眼睛健康。"
+    },
+    "Clinics": {
+      "items": [
+        {
+          "title": "干眼症门诊",
+          "eng": "Dry Eye Clinic",
+          "desc": "引进M22 IPL最新设备恢复睑板腺功能，从根本治疗干眼症原因。",
+          "stats": "IPL治疗"
+        },
+        {
+          "title": "视网膜中心",
+          "eng": "Retina Center",
+          "desc": "以大学附属医院级广角OCT设备早期发现并治疗黄斑病变、糖尿病视网膜病变等致盲疾病。",
+          "stats": "超精密OCT"
+        },
+        {
+          "title": "青光眼中心",
+          "eng": "Glaucoma Care",
+          "desc": "通过视神经分析仪预防无声的视力小偷青光眼，精密管理眼压。",
+          "stats": "终身管理"
+        },
+        {
+          "title": "一般门诊",
+          "eng": "General Eye Care",
+          "desc": "从结膜炎、麦粒肿、过敏等日常眼疾到儿童眼科检查都细心诊疗。",
+          "stats": "家庭医生"
+        }
+      ]
+    },
+    "Programs": {
+      "sectionTitle": "Treatment Programs",
+      "headline": "大学附属医院水准",
+      "headlineHighlight": "专业治疗系统",
+      "description": "各领域专属医疗团队\n为您的眼睛健康提供深入的诊疗服务。",
+      "items": [
+        {
+          "title": "干眼症集中护理 (Dry Eye IPL)",
+          "desc": "我们不仅仅开具人工泪液。通过恢复睑板腺功能的IPL激光治疗和热敷按摩，从根本上解决干眼症问题。",
+          "details": [
+            "M22 IPL激光治疗",
+            "睑板腺挤压",
+            "自体血清眼药水处方"
+          ]
+        },
+        {
+          "title": "青光眼精密早期诊断",
+          "desc": "视神经一旦受损就无法恢复。通过大学附属医院级OCT及视野检查设备，及早发现初期青光眼并开具定制化药物。",
+          "details": [
+            "视神经乳头分析",
+            "视网膜神经纤维层成像",
+            "24小时眼压监测"
+          ]
+        },
+        {
+          "title": "黄斑变性抗体注射门诊",
+          "desc": "黄斑变性是失明原因第一位。通过Lucentis、Eylea等经验证的抗体注射治疗，预防视力下降并保护视网膜功能。",
+          "details": [
+            "光学相干断层扫描(OCT)",
+            "荧光眼底血管造影",
+            "当天抗体注射治疗"
+          ]
+        },
+        {
+          "title": "角膜塑形镜/儿童近视门诊",
+          "desc": "睡眠时矫正视力的角膜塑形镜。抑制成长期儿童的近视进展，给予孩子白天不戴眼镜的自由时光。",
+          "details": [
+            "角膜地形图检查",
+            "正品镜片试戴",
+            "定期视力管理"
+          ]
+        }
+      ]
+    },
+    "SymptomChecklist": {
+      "sectionTitle": "Self Check",
+      "headline": "眼睛的异常信号，",
+      "headlineHighlight": "不要忽视。",
+      "description": "如果符合2项以上，可能是眼病初期症状。\n放任不管可能导致视力损伤，建议立即进行精密检查。",
+      "checkedLabel": "CHECKED SYMPTOMS",
+      "items": [
+        "眼睛经常干涩有异物感。",
+        "早晨起床时睁眼困难。",
+        "看光时眼睛刺痛流泪。",
+        "室内也想戴墨镜般眼睛畏光。",
+        "视野模糊不清。",
+        "直线看起来弯曲或视野中心发黑。"
+      ]
+    },
+    "TreatmentProcess": {
+      "sectionTitle": "Our Process",
+      "headline": "Healing Therapy Process",
+      "description": "系统化的5步治疗流程为您提供最佳效果",
+      "steps": [
+        {
+          "title": "一站式检查",
+          "desc": "50余项精密检查一天完成"
+        },
+        {
+          "title": "1:1主治医生咨询",
+          "desc": "基于检查数据的精密分析"
+        },
+        {
+          "title": "定制化激光治疗",
+          "desc": "M22、IPL等尖端设备治疗"
+        },
+        {
+          "title": "专属护士护理",
+          "desc": "手术/治疗后恢复室集中管理"
+        },
+        {
+          "title": "终身安心保障",
+          "desc": "定期检查及复发预防项目"
+        }
+      ]
+    },
+    "Equipment": {
+      "sectionTitle": "Technology",
+      "headline": "World Class",
+      "headlineSubtitle": "High-End Equipment",
+      "items": [
+        {
+          "name": "AMARIS SPT",
+          "tag": "视力矫正激光",
+          "desc": "高端激光设备AMARIS。通过3D三维立体矫正和角膜抛光系统实现精密视力矫正。",
+          "specs": [
+            "3D三维立体矫正",
+            "0.54mm精密激光光斑",
+            "7维眼球追踪",
+            "智能脉冲"
+          ]
+        },
+        {
+          "name": "Galilei G4",
+          "tag": "角膜断层扫描",
+          "desc": "三维角膜分析尖端检查设备。仅需1秒即可测量122,000个数据点。",
+          "specs": [
+            "1秒超高速检查",
+            "122,000个数据点",
+            "三维角膜分析",
+            "前节CT精密设备"
+          ]
+        },
+        {
+          "name": "Pentacam HR",
+          "tag": "角膜地形图",
+          "desc": "通过精密角膜分析确定手术可行性并快速应对并发症。可进行精准的白内障检查。",
+          "specs": [
+            "精密角膜分析",
+            "并发症应对",
+            "精确地形图数据",
+            "白内障检查"
+          ]
+        },
+        {
+          "name": "3D OCT-1",
+          "tag": "眼球光学断层",
+          "desc": "视神经及视网膜CT扫描仪。短时间扫描减少不适感，可诊断青光眼、糖尿病视网膜病变、黄斑变性等。",
+          "specs": [
+            "视神经·视网膜CT",
+            "扫描时间短",
+            "青光眼诊断",
+            "视网膜疾病诊断"
+          ]
+        },
+        {
+          "name": "Optos Daytona P200T",
+          "tag": "光学眼底成像",
+          "desc": "无需散瞳，仅需0.25秒即可完成拍摄。200°广角成像一次性拍摄周边视网膜，早期发现和预防视网膜疾病。",
+          "specs": [
+            "0.25秒超高速",
+            "200°广角成像",
+            "无需散瞳",
+            "早期发现·预防"
+          ]
+        },
+        {
+          "name": "FEMTO LDV Z8",
+          "tag": "白内障激光",
+          "desc": "目前最精密的激光设备。精密去除晶状体，缩短手术时间，加速恢复。",
+          "specs": [
+            "精密晶状体去除",
+            "缩短手术时间",
+            "气泡现象最小化",
+            "7维眼球追踪"
+          ]
+        },
+        {
+          "name": "IOL MASTER 700",
+          "tag": "眼部测量",
+          "desc": "超精密眼部激光测量仪。可精密检查眼球各部位的非接触式尖端超精密眼球激光测量仪。",
+          "specs": [
+            "非接触式测量",
+            "全部位精密检查",
+            "高检查精度",
+            "快速安全手术"
+          ]
+        },
+        {
+          "name": "CALLISTO EYE",
+          "tag": "散光追踪导航",
+          "desc": "挑战散光误差率0%的手术导航。可视化精密手术引导，精确标示切口位置、大小、人工晶体位置、散光轴。",
+          "specs": [
+            "散光误差率0%",
+            "手术引导可视化",
+            "精确切口位置",
+            "散光轴标示"
+          ]
+        },
+        {
+          "name": "LUMERA 700",
+          "tag": "超精密显微镜",
+          "desc": "卓越的视野确保功能提供高质量视力改善。自动调节最佳手术视野，自动调整患者散光轴。",
+          "specs": [
+            "卓越视野确保",
+            "自动视野调节",
+            "散光轴自动调整",
+            "快速精密手术"
+          ]
+        }
+      ]
+    }
+  },
+  "Insight": {
+    "Hero": {
+      "sectionTitle": "Insight",
+      "headline": "与专家一起的",
+      "headlineHighlight": "眼健康故事"
+    },
+    "VideoGallery": {
+      "channelLabel": "YouTube Channel",
+      "channelName": "眼科姐姐 @dreyesis",
+      "channelDescription": "专业眼科医生带来的眼健康信息",
+      "visitChannel": "前往频道",
+      "badge": "眼科姐姐",
+      "emptyState": "目前没有可显示的视频。",
+      "dates": {
+        "today": "今天",
+        "yesterday": "昨天",
+        "daysAgo": "{count}天前",
+        "weeksAgo": "{count}周前",
+        "monthsAgo": "{count}个月前",
+        "yearsAgo": "{count}年前"
+      }
+    },
+    "ExpertQnA": {
+      "sectionTitle": "Medical Q&A",
+      "headline": "有任何问题",
+      "headlineHighlight": "请尽管问",
+      "description": "诊室里患者最常问的问题。\n眼科专家亲自为您清晰解答。",
+      "answeredBy": "Answered by",
+      "items": [
+        {
+          "q": "激光手术后视力会再次下降吗？",
+          "a": "近视回退在高度近视患者中可能偶尔发生。但韓國Healing眼科的'SMILE PRO'角膜切削量少，结构稳定性好，大大降低了近视回退的概率。即使视力下降，根据剩余角膜量也可进行二次矫正，并通过终身管理项目持续护理。",
+          "doc": "金善英 代表院长"
+        },
+        {
+          "q": "没有白内障也能做老花眼手术吗？",
+          "a": "可以的。如果晶状体调节力下降导致近距离不便，可通过'老花眼晶体植入术'或'单眼视激光'进行矫正。但如果是40岁后半到50岁初期，需要考虑未来白内障发生的可能性，建议与医疗团队充分咨询后决定手术时机。",
+          "doc": "李俊浩 院长"
+        },
+        {
+          "q": "干眼症严重还能做视力矫正手术吗？",
+          "a": "干眼症严重时，比起普通激光，推荐角膜表面损伤较小的'全飞秒激光'或'ICL晶体植入术'。术前通过'IPL激光'治疗先改善干眼症，术后配合集中护理项目，可以恢复健康视力。",
+          "doc": "朴智敏 院长"
+        }
+      ]
+    },
+    "Page": {
+      "heroDescription1": "为您带来准确的医学资讯与健康生活方式",
+      "heroDescription2": "请阅读韩国Healing眼科的专业专栏。",
+      "medicalColumnTitle": "医疗专栏",
+      "authorName": "金善英院长",
+      "newsletter": {
+        "description": "每周获取眼睛健康的有益信息。",
+        "noSpam": "绝对不会发送垃圾邮件。"
+      }
+    }
+  },
+  "About": {
+    "BrandStory": {
+      "sectionTitle": "我们的使命",
+      "headline": "超越视力，",
+      "headlineSubtitle": "设计您的生活。",
+      "description": "不仅仅是矫正视力，\n让您的生活变得更清晰、更美好。\n韓國Healing眼科在技术与艺术的边界\n雕琢最完美的视力。",
+      "stats": [
+        {
+          "label": "成功案例",
+          "value": "50,000+",
+          "suffix": "眼"
+        },
+        {
+          "label": "患者满意度",
+          "value": "4.9",
+          "suffix": "/5.0"
+        },
+        {
+          "label": "医疗团队",
+          "value": "大学附属医院",
+          "suffix": "教授出身"
+        }
+      ]
+    },
+    "DirectorMessage": {
+      "sectionTitle": "致辞",
+      "headline": "治愈您的眼睛，",
+      "headlineSubtitle": "设计您的生活。",
+      "representativeDirector": "代表院长",
+      "doctorName": "金善英 院长",
+      "greeting": "您好，我是韓國Healing眼科代表院长金善英。",
+      "paragraphs": [
+        "'看见'不仅仅是感知物体，更是凝视所爱之人的面庞、铭记美丽的风景、完整感受生命中每一刻的过程。",
+        "从大学附属医院教授时期至今，接诊了数万名患者后，我领悟到最好的医术始于'共情'。倾听患者最细微的不适，以对待家人的心诊疗。这是我认为'Healing'的本质。",
+        "比起江南唯一女性代表院长独立开业的头衔，我更希望被记住为对每一位患者眼健康负责到底的终身主治医生。为了您最闪耀的时刻，韓國Healing眼科与您同在。"
+      ]
+    },
+    "HistoryTimeline": {
+      "sectionTitle": "发展历程",
+      "headline": "我们的历史",
+      "historyLabel": "发展历程",
+      "timeline": [
+        {
+          "year": "2018",
+          "title": "韓國Healing眼科开业",
+          "description": "驿三洞808大厦高端视力矫正中心开业"
+        },
+        {
+          "year": "2019",
+          "title": "引进大学附属医院级设备",
+          "description": "构建尖端视力矫正设备及精密检查系统"
+        },
+        {
+          "year": "2020",
+          "title": "全飞秒激光专门中心",
+          "description": "正式开展微创全飞秒激光手术"
+        },
+        {
+          "year": "2021",
+          "title": "老花眼/白内障中心扩展",
+          "description": "开始高端多焦点人工晶体专业诊疗"
+        },
+        {
+          "year": "2022",
+          "title": "微创CLEAR激光",
+          "description": "以差异化诊疗系统引进CLEAR激光"
+        },
+        {
+          "year": "2023",
+          "title": "累计手术50,000眼达成",
+          "description": "患者满意度4.9/5.0，成长为地区代表性眼科"
+        },
+        {
+          "year": "2024",
+          "title": "AI精密检查系统",
+          "description": "构建基于尖端AI的个性化视力矫正系统"
+        }
+      ]
+    },
+    "History": {
+      "sectionLabel": "Milestones",
+      "headline": "Our History",
+      "historyLabel": "HISTORY",
+      "items": [
+        {
+          "year": "2018",
+          "title": "韓國Healing眼科开业",
+          "desc": "驿三洞808大厦高端视力矫正中心开业"
+        },
+        {
+          "year": "2019",
+          "title": "引进大学附属医院级设备",
+          "desc": "构建尖端视力矫正设备及精密检查系统"
+        },
+        {
+          "year": "2020",
+          "title": "全飞秒激光专门中心",
+          "desc": "正式开展微创全飞秒激光手术"
+        },
+        {
+          "year": "2021",
+          "title": "老花眼/白内障中心扩展",
+          "desc": "开始高端多焦点人工晶体专业诊疗"
+        },
+        {
+          "year": "2022",
+          "title": "微创CLEAR激光",
+          "desc": "以差异化诊疗系统引进CLEAR激光"
+        },
+        {
+          "year": "2023",
+          "title": "累计手术50,000眼达成",
+          "desc": "患者满意度4.9/5.0，成长为地区代表性眼科"
+        },
+        {
+          "year": "2024",
+          "title": "AI精密检查系统",
+          "desc": "构建基于尖端AI的个性化视力矫正系统"
+        }
+      ]
+    },
+    "Location": {
+      "sectionTitle": "交通指南",
+      "headline": "来访",
+      "address": {
+        "title": "地址",
+        "line1": "首尔特别市江南区江南大路470 808大厦10-11层",
+        "line2": "（新论岘站6号出口步行1分钟）"
+      },
+      "contact": {
+        "title": "联系方式",
+        "phone": "02-566-1222",
+        "kakao": "kakao @healingeye"
+      },
+      "hours": {
+        "title": "诊疗时间",
+        "weekday": "工作日：09:30 - 18:30（午休 13:00 - 14:00）",
+        "friday": "周五：09:30 - 21:00（夜间诊疗）",
+        "saturday": "周六：09:30 - 16:00",
+        "closed": "周日 / 节假日休诊"
+      },
+      "mapLabel": "新论岘站6号出口"
+    },
+    "Philosophy": {
+      "sectionTitle": "理念",
+      "headline": "卓越的",
+      "headlineSubtitle": "标准。",
+      "description": "韓國Healing眼科基于三大核心价值\n承诺最完美的视力矫正。",
+      "values": [
+        {
+          "title": "安全至上",
+          "subtitle": "绝不妥协的安全标准",
+          "description": "术前60步精密检查、三重交叉验证系统，不允许0.01%的误差。",
+          "stats": [
+            {
+              "label": "精密检查",
+              "value": "60步"
+            },
+            {
+              "label": "交叉验证",
+              "value": "三重"
+            }
+          ]
+        },
+        {
+          "title": "个性化诊疗",
+          "subtitle": "只为一人的定制方案",
+          "description": "拒绝流水线手术。设计考虑患者角膜指纹、生活模式、职业环境的1:1定制方案。",
+          "stats": [
+            {
+              "label": "定制方案",
+              "value": "1:1"
+            },
+            {
+              "label": "分析项目",
+              "value": "20+"
+            }
+          ]
+        },
+        {
+          "title": "终身护理",
+          "subtitle": "终身眼健康伙伴",
+          "description": "术后10年、20年也能精确追踪观察您眼部状况的终身管理系统。",
+          "stats": [
+            {
+              "label": "数据保存",
+              "value": "终身"
+            },
+            {
+              "label": "定期检查",
+              "value": "免费"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "Footer": {
+    "brandName": "Healing Eye",
+    "tagline": "Experience the new standard of vision correction.\nPremium service, state-of-the-art technology, and a brand new life for your eyes.",
+    "contact": {
+      "title": "Contact",
+      "address": "首尔特别市江南区江南大路470 808大厦10-11层",
+      "addressSub": "（新论岘站6号出口步行1分钟）",
+      "phone": "02-566-1222",
+      "kakao": "kakao @healingeye"
+    },
+    "hours": {
+      "title": "Hours",
+      "weekday": "Mon - Thu",
+      "weekdayTime": "09:30 - 18:30",
+      "lunchBreak": "午休 13:00 - 14:00",
+      "friday": "Fri",
+      "fridayLabel": "（夜间诊疗）",
+      "fridayTime": "09:30 - 21:00",
+      "saturday": "Sat",
+      "saturdayTime": "09:30 - 16:00",
+      "closed": "Sun / Holiday",
+      "closedStatus": "Closed"
+    },
+    "copyright": "Healing Eye Clinic. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "Community": {
+    "Page": {
+      "buttons": {
+        "viewReviews": "查看手术后记",
+        "realTimeReservation": "实时预约",
+        "visitLink": "前往"
+      },
+      "notices": {
+        "title": "公告 & 活动",
+        "items": [
+          {
+            "title": "2024年春节假期诊疗公告",
+            "date": "2024.01.15",
+            "tag": "公告"
+          },
+          {
+            "title": "考生专属SMILE激光最高49%优惠活动",
+            "date": "2024.01.01",
+            "tag": "活动"
+          },
+          {
+            "title": "韩国Healing眼科累积手术5万例纪念",
+            "date": "2023.12.10",
+            "tag": "消息"
+          }
+        ]
+      },
+      "social": {
+        "instagram": {
+          "name": "@healingeyeclinic",
+          "description": "韩国Healing眼科日常与手术后记"
+        },
+        "youtube": {
+          "name": "眼科姐姐",
+          "description": "@dreyesis 眼睛健康信息"
+        },
+        "blog": {
+          "name": "韩国Healing眼科",
+          "description": "专业专栏与医疗信息"
+        }
+      },
+      "faq": {
+        "title": "常见问题 (FAQ)",
+        "categories": [
+          "Clear LASIK",
+          "LASIK",
+          "LASEK",
+          "晶体植入术",
+          "白内障",
+          "翼状胬肉",
+          "视网膜"
+        ],
+        "items": {
+          "clearLasik": [
+            {
+              "q": "术后7天了还是看东西模糊，这是正常现象吗？",
+              "a": "术后视力模糊大多是由角膜水肿引起的暂时性现象。虽然存在个体差异，但角膜水肿完全消退大约需要一个月左右的时间。因此，目前看东西模糊是恢复过程的一部分，无需担心。随着时间推移，视力会逐渐清晰，一个月后您会看得更清楚。"
+            },
+            {
+              "q": "术后什么时候可以洗脸、洗澡、去浴室、汗蒸房？",
+              "a": "术后第二天即可洗脸和洗澡。但需要注意不要让水进入眼睛。浴室和汗蒸房建议术后1个月后再使用。"
+            },
+            {
+              "q": "什么时候可以做瑜伽或健身等运动？",
+              "a": "瑜伽和健身等轻度运动术后第二天即可进行。但需要在不勉强的范围内进行。剧烈运动或接触性运动（球类运动等）建议术后1个月后再进行。"
+            },
+            {
+              "q": "自体血清眼药水里有白色悬浮物，没问题吗？",
+              "a": "是的，自体血清眼药水中出现白色悬浮物是正常现象。自体血清眼药水含有我们身体中形成血栓的成分，因此血栓会以块状形式出现，看起来像白色悬浮物。"
+            },
+            {
+              "q": "自体血清眼药水要使用到什么时候？",
+              "a": "血清眼药水不仅用于快速恢复，还可作为治疗干眼症的药物，使用到眼药水用完为止。如果需要追加处方，请咨询医院。"
+            },
+            {
+              "q": "术后视力模糊不清，什么时候能恢复正常？",
+              "a": "术后视力模糊是由角膜水肿引起的正常现象。一般1~2周后水肿消退，视力会逐渐改善。"
+            },
+            {
+              "q": "术后近距离视力还不太好，什么时候会改善？",
+              "a": "术后近距离视力完全恢复需要约2周的适应期。在此期间，眼睛会适应术后变化，近距离视力会逐渐改善。"
+            }
+          ],
+          "lasik": [
+            {
+              "q": "准分子激光术后眼睛刺痛有疼痛感，该怎么办？",
+              "a": "准分子激光术后眼睛刺痛有疼痛感是正常现象。一般术后6小时内会流很多眼泪并感到刺痛，1~2天后症状会逐渐缓解。请注意不要揉眼睛。"
+            },
+            {
+              "q": "准分子激光术后回家发现保护镜片脱落了，该怎么办？",
+              "a": "准分子激光术后保护镜片脱落也无需担心。准分子激光手术中，保护镜片主要用于缓解疼痛和预防眼睛干燥，对视力恢复影响不大。"
+            },
+            {
+              "q": "自体血清眼药水里有白色悬浮物，没问题吗？",
+              "a": "是的，自体血清眼药水中出现白色悬浮物是正常现象。自体血清眼药水含有我们身体中形成血栓的成分，因此血栓会以块状形式出现，看起来像白色悬浮物。"
+            },
+            {
+              "q": "自体血清眼药水要使用到什么时候？",
+              "a": "血清眼药水不仅用于快速恢复，还可作为治疗干眼症的药物，使用到眼药水用完为止。如果需要追加处方，请咨询医院。"
+            },
+            {
+              "q": "术后需要看着显示器工作，但光晕严重很困扰，该怎么办？",
+              "a": "准分子激光术后出现光晕是正常现象。视力稳定期约为1个月，其中近距离视力恢复最慢。因此，术后1个月内可能会出现严重的光晕现象。"
+            },
+            {
+              "q": "准分子激光术后还需要防紫外线吗？",
+              "a": "与过去相比，防紫外线的重要性有所降低。特别是采用角膜瓣覆盖的准分子激光手术方法，角膜上皮恢复快，防紫外线效果也好，因此不是必须防紫外线。"
+            },
+            {
+              "q": "准分子激光术后视力模糊不清，什么时候能恢复正常？",
+              "a": "术后视力模糊是由角膜水肿引起的正常现象。一般1~2周后水肿消退，视力会逐渐改善。"
+            },
+            {
+              "q": "准分子激光术后早上起床时视野模糊，过一段时间就好了，这是为什么？",
+              "a": "准分子激光术后早上视野模糊很可能是干眼症引起的。术后角膜上皮恢复过程中泪液分泌减少可能引发干眼症，这种现象在早上最为严重。"
+            },
+            {
+              "q": "准分子激光术后第二天开始可以随意使用电脑和智能手机吗？",
+              "a": "准分子激光术后第二天可以在日常生活中使用电脑和智能手机。但需要注意不要让眼睛过度疲劳，中间要休息，并滴人工泪液保持眼睛湿润。"
+            }
+          ],
+          "lasek": [
+            {
+              "q": "准分子激光角膜切削术后第4天还有疼痛，很担心。这是正常现象吗？",
+              "a": "准分子激光角膜切削术后第2~3天疼痛最严重，第4天开始疼痛会逐渐减轻。但根据个人健康状况、手术方法、恢复速度等，疼痛持续时间可能有所不同。"
+            },
+            {
+              "q": "准分子激光角膜切削术后第4天视力比刚手术完还差，很担心。",
+              "a": "准分子激光角膜切削术后第4天视力变差是角膜上皮恢复过程引起的暂时现象。术后3~7天内角膜上皮向中央聚集的过程中，视力可能会看起来模糊。"
+            },
+            {
+              "q": "准分子激光角膜切削术后一个月了视力还是模糊，这是为什么？",
+              "a": "准分子激光角膜切削术后视力完全稳定存在个体差异，一般需要3个月。高度近视或高度散光的情况下视力恢复期可能更长，可能持续到6个月。"
+            },
+            {
+              "q": "准分子激光角膜切削术后氟米龙眼药水什么时候开始使用？每天用几次？使用多长时间？",
+              "a": "氟米龙眼药水应在准分子激光角膜切削术后摘除镜片后立即使用。每天4次，早、中、晚、睡前各滴一滴。眼药水约需滴3个月，具体使用期限可能根据眼科专家的指示有所不同。"
+            },
+            {
+              "q": "自体血清眼药水里有白色悬浮物，没问题吗？",
+              "a": "是的，自体血清眼药水中出现白色悬浮物是正常现象。自体血清眼药水含有我们身体中形成血栓的成分，因此血栓会以块状形式出现，看起来像白色悬浮物。"
+            },
+            {
+              "q": "自体血清眼药水要使用到什么时候？",
+              "a": "血清眼药水不仅用于快速恢复，还可作为治疗干眼症的药物，使用到眼药水用完为止。如果需要追加处方，请咨询医院。"
+            },
+            {
+              "q": "准分子激光角膜切削术后在室内也需要戴防UV眼镜或墨镜吗？",
+              "a": "准分子激光角膜切削术后在室内不需要为了阻挡LED而戴防UV眼镜或墨镜。外出时应佩戴具有UV防护功能的墨镜。建议选择UV阻隔率99%以上的墨镜。"
+            },
+            {
+              "q": "准分子激光角膜切削术后需要晚上开车，什么时候可以？现在因为眩光很难开车。",
+              "a": "准分子激光角膜切削术后夜间驾驶存在个体差异，但一般1~3个月后可以。初期有光晕现象建议避免夜间驾驶，先从白天驾驶开始慢慢适应，1~3个月后再进行夜间驾驶。"
+            }
+          ],
+          "icl": [
+            {
+              "q": "ICL晶体植入术后6个月左右了，还需要定期检查吗？",
+              "a": "是的，ICL晶体植入术后即使过了6个月，定期检查也是必须的。由于眼内植入了晶体，角膜内皮细胞数可能会减少，需要通过定期检查确认角膜内皮细胞数，了解是否有减少。"
+            },
+            {
+              "q": "ICL晶体植入术后什么时候可以去浴室或汗蒸房？",
+              "a": "ICL晶体植入术后一般1个月后可以使用浴室或汗蒸房。但根据个人眼部健康状况或手术结果，可使用时间可能有所不同。"
+            },
+            {
+              "q": "什么时候可以洗脸或洗澡？",
+              "a": "洗脸和洗澡一般3天后可以。3天内需要注意不要让水进入眼睛。洗脸时应避开眼睛只清洁其他部位。"
+            },
+            {
+              "q": "ICL晶体植入术后趴着睡可以吗？",
+              "a": "ICL晶体植入术后至少一个月内最好避免趴着睡。趴着睡可能导致眼压升高，这可能对ICL晶体植入术后恢复产生不良影响。"
+            },
+            {
+              "q": "眼罩要戴多久？",
+              "a": "睡眠中不小心揉眼睛可能会妨碍晶体在眼内固定位置，为了预防手术部位损伤，一般建议佩戴眼罩约2周。"
+            }
+          ],
+          "cataract": [
+            {
+              "q": "白内障手术后视力模糊的症状什么时候会好转？",
+              "a": "白内障手术后视力模糊症状存在个体差异，但一般3~6个月内会好转。术后1~2个月内会适应人工晶体，视力开始逐渐改善。"
+            },
+            {
+              "q": "朋友术后马上就看得很清楚，为什么我看不清？",
+              "a": "白内障手术后视力恢复速度因人而异。与其和朋友比较，不如专注于自己的眼部状况，遵循眼科专家的指示更为重要。"
+            },
+            {
+              "q": "白内障手术后眼睛不舒服，很担心。",
+              "a": "白内障手术后眼部不适大多是正常现象。麻醉消退和眼睛恢复过程中会出现这种情况，随着时间推移会逐渐缓解。"
+            },
+            {
+              "q": "白内障手术没有复发的可能吗？",
+              "a": "白内障手术本身复发可能性非常低。但是，存在后发性白内障的概念。后发性白内障是指手术后残留的后囊部分形成膜，可以通过激光治疗简单去除。"
+            },
+            {
+              "q": "昨天做了白内障手术，充血严重很担心。",
+              "a": "手术时紧张会使眼睛用力导致充血。白内障手术后充血大多是暂时现象，随着时间推移会改善。大多数情况下术后2周到1个月左右充血会自然消失。"
+            },
+            {
+              "q": "白内障手术后出现了眼睛颤动的症状。",
+              "a": "术后眼睛颤动症状是干眼症及光晕现象，也是晶体固定位置的适应症状。大多数情况下眼睛颤动症状会随时间推移而改善。"
+            }
+          ],
+          "pterygium": [
+            {
+              "q": "翼状胬肉手术后充血严重很担心。什么时候会好转？",
+              "a": "术后恢复过程中可能出现异物感和充血，大多数在2个月内会自然好转。这是暂时现象，随着时间推移充血会缓解，眼睛健康会恢复。"
+            },
+            {
+              "q": "翼状胬肉手术当天可以开车吗？",
+              "a": "不建议翼状胬肉手术当天开车。为了安全，术后2~3天左右最好避免开车。2~3天后眼部状态舒适且感觉视力恢复后可以开车。"
+            },
+            {
+              "q": "翼状胬肉手术当天眼睛刺痛严重很担心。没问题吗？",
+              "a": "翼状胬肉手术后眼睛刺痛大多是正常现象。手术过程中眼睛受到刺激可能感到刺痛、视野模糊、异物感等不适。大多数情况下眼睛刺痛一天左右会改善。"
+            },
+            {
+              "q": "翼状胬肉手术后手术部位凹凸不平，好像还残留胬肉很担心。",
+              "a": "翼状胬肉原有位置时间越久混浊越深，术后可能会略微呈白色沉着。大多数情况下凹凸不平和胬肉残留2个月左右会改善。"
+            },
+            {
+              "q": "翼状胬肉手术后什么时候可以洗脸或洗澡？",
+              "a": "洗脸和洗澡一般3天后可以。3天内需要注意不要让水进入眼睛。洗脸时应避开眼睛只清洁其他部位。"
+            },
+            {
+              "q": "翼状胬肉手术后什么时候可以运动？",
+              "a": "翼状胬肉手术后可运动时间根据运动类型而异。轻度有氧运动术后1周后可以。接触较多或剧烈运动术后1个月后可以。"
+            }
+          ],
+          "retina": [
+            {
+              "q": "视网膜手术当天眼睛睁不开还有重影，没问题吗？",
+              "a": "术后恢复过程中当天因为麻醉眼睛可能睁不开并出现重影。这是暂时现象，24小时内会开始改善。"
+            },
+            {
+              "q": "视网膜手术后恢复期需要多长时间？",
+              "a": "视网膜手术后恢复期存在个体差异，但一般术后1个月视野可能模糊不清。1年到1年半左右视野可以完全恢复。"
+            },
+            {
+              "q": "视网膜手术后摘下眼罩应该如何使用眼药水？",
+              "a": "术后第二天早上可以自行摘除眼罩。按说明间隔5分钟滴眼药水后务必到医院接受手术后的观察。抗生素、消炎眼药水每天4次使用一个月，溴芬酸眼药水每天使用2次。"
+            },
+            {
+              "q": "视网膜手术后什么时候到院复诊？",
+              "a": "术后第二天需要到医院进行术后观察。1周后到院确认手术部位状态。1个月后、2个月后需要到院。此后每年作为健康检查到院进行眼部观察。"
+            },
+            {
+              "q": "视网膜手术后什么时候可以开车？",
+              "a": "白天驾驶1周后可以，夜间驾驶1个月后可以。术后根据情况在不危险的范围内开车也没问题。"
+            },
+            {
+              "q": "视网膜手术后使用了眼药水，眼睛很刺痛。没问题吗？",
+              "a": "视网膜手术后为预防炎症处方的眼药水成分较强，因此眼睛可能会有些刺痛。刺痛是正常反应，随着时间推移会逐渐缓解。"
+            }
+          ]
+        }
+      }
     }
   }
 }

@@ -2,41 +2,12 @@
 
 import { motion } from "framer-motion";
 import { Shield, User, HeartPulse } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const values = [
-    {
-        icon: Shield,
-        title: "Safety First",
-        subtitle: "타협하지 않는 안전 기준",
-        desc: "수술 전 60단계 정밀 검사, 3중 교차 검증 시스템으로 0.01%의 오차도 허용하지 않습니다.",
-        stats: [
-            { label: "정밀 검사", value: "60단계" },
-            { label: "교차 검증", value: "3중" }
-        ]
-    },
-    {
-        icon: User,
-        title: "Personalized",
-        subtitle: "오직 한 사람을 위한 맞춤 플랜",
-        desc: "공장형 수술을 거부합니다. 환자의 각막 지문, 생활 패턴, 직업 환경까지 고려한 1:1 맞춤 플랜을 설계합니다.",
-        stats: [
-            { label: "맞춤 플랜", value: "1:1" },
-            { label: "분석 항목", value: "20+" }
-        ]
-    },
-    {
-        icon: HeartPulse,
-        title: "Lifetime Care",
-        subtitle: "평생 눈 건강 파트너",
-        desc: "수술 후 10년, 20년이 지나도 고객님의 눈 상태를 정확히 추적 관찰할 수 있는 평생 관리 시스템을 운영합니다.",
-        stats: [
-            { label: "데이터 보관", value: "평생" },
-            { label: "정기 검진", value: "무료" }
-        ]
-    }
-];
+const icons = [Shield, User, HeartPulse];
 
 export default function Philosophy() {
+    const t = useTranslations('About.Philosophy');
     return (
         <section className="py-16 sm:py-20 md:py-32 bg-neutral-950 text-white relative overflow-hidden">
             {/* Background Grid Pattern */}
@@ -45,21 +16,20 @@ export default function Philosophy() {
             <div className="container mx-auto px-4 sm:px-6 relative z-10">
                 <div className="flex flex-col md:flex-row gap-12 sm:gap-16 md:gap-20">
                     <div className="md:w-1/2 md:sticky md:top-32 h-fit">
-                        <span className="text-primary font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase block mb-3 sm:mb-4 text-sm sm:text-base">Philosophy</span>
+                        <span className="text-primary font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase block mb-3 sm:mb-4 text-sm sm:text-base">{t('sectionTitle')}</span>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-bold leading-tight mb-6 sm:mb-8">
-                            The Standard<br />
-                            of Excellence.
+                            {t('headline')}<br />
+                            {t('headlineSubtitle')}
                         </h2>
                         <div className="w-16 sm:w-20 h-1 bg-primary mb-6 sm:mb-8" />
-                        <p className="text-neutral-400 text-base sm:text-lg leading-relaxed">
-                            힐링안과는 세 가지 핵심 가치를 바탕으로<br />
-                            가장 완벽한 시력교정을 약속합니다.
+                        <p className="text-neutral-400 text-base sm:text-lg leading-relaxed whitespace-pre-line">
+                            {t('description')}
                         </p>
                     </div>
 
                     <div className="md:w-1/2 space-y-8 sm:space-y-10 md:space-y-12">
-                        {values.map((item, i) => {
-                            const IconComponent = item.icon;
+                        {icons.map((IconComponent, i) => {
+                            const stats = t.raw(`values.${i}.stats`) as Array<{ label: string; value: string }>;
                             return (
                                 <motion.div
                                     key={i}
@@ -82,20 +52,20 @@ export default function Philosophy() {
 
                                     {/* Title */}
                                     <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-2 group-hover:text-primary transition-colors duration-300">
-                                        {item.title}
+                                        {t(`values.${i}.title`)}
                                     </h3>
                                     <p className="text-neutral-500 text-xs sm:text-sm font-bold mb-3 sm:mb-4 uppercase tracking-wider">
-                                        {item.subtitle}
+                                        {t(`values.${i}.subtitle`)}
                                     </p>
 
                                     {/* Description */}
                                     <p className="text-base sm:text-lg text-neutral-400 leading-relaxed font-light mb-6 sm:mb-8">
-                                        {item.desc}
+                                        {t(`values.${i}.description`)}
                                     </p>
 
                                     {/* Stats */}
                                     <div className="grid grid-cols-2 gap-3 sm:gap-4 pt-5 sm:pt-6 border-t border-white/5">
-                                        {item.stats.map((stat, idx) => (
+                                        {stats.map((stat, idx) => (
                                             <div key={idx} className="text-center">
                                                 <div className="text-xl sm:text-2xl font-bold text-primary mb-1">
                                                     {stat.value}

@@ -3,40 +3,36 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 type DistanceZone = "near" | "mid" | "far" | null;
 
-const lenses = [
+const lensConfig = [
     {
-        name: "다초점 인공수정체",
-        eng: "Multifocal IOL",
-        desc: "근거리, 중간거리, 원거리를 모두 선명하게 볼 수 있어 수술 후 돋보기가 필요 없습니다.",
-        pros: ["모든 거리 시력 확보", "안경/돋보기 불필요", "백내장+노안 동시 해결"],
-        recommend: "사회 활동이 활발한 중장년층",
         bg: "bg-gradient-to-br from-amber-100 to-orange-50",
         type: "multifocal" as const,
         clarity: { near: true, mid: true, far: true }
     },
     {
-        name: "단초점 인공수정체",
-        eng: "Monofocal IOL",
-        desc: "원거리나 근거리 중 하나에 초점을 맞추며, 빛 번짐이 적고 적응이 빠릅니다.",
-        pros: ["선명한 원거리 시력", "적은 야간 빛 번짐", "경제적인 비용"],
-        recommend: "야간 운전을 많이 하시는 분",
         bg: "bg-gradient-to-br from-neutral-100 to-neutral-50",
         type: "monofocal" as const,
         clarity: { near: false, mid: false, far: true }
     }
 ];
 
-const distanceZones = [
-    { id: "near" as const, label: "근거리", distance: "30cm", position: "left-0 w-1/3" },
-    { id: "mid" as const, label: "중간거리", distance: "1m", position: "left-1/3 w-1/3" },
-    { id: "far" as const, label: "원거리", distance: "5m", position: "right-0 w-1/3" }
+const distanceZonesConfig = [
+    { id: "near" as const, position: "left-0 w-1/3" },
+    { id: "mid" as const, position: "left-1/3 w-1/3" },
+    { id: "far" as const, position: "right-0 w-1/3" }
 ];
 
 // Interactive Vision Simulator Component
-function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
+function VisionSimulator({ lens, distanceZones, visionStatus, allClearText }: {
+    lens: { type: string; clarity: { near: boolean; mid: boolean; far: boolean } };
+    distanceZones: Array<{ id: "near" | "mid" | "far"; label: string; distance: string }>;
+    visionStatus: { clear: string; blurry: string };
+    allClearText: string;
+}) {
     const [hoveredZone, setHoveredZone] = useState<DistanceZone>(null);
 
     return (
@@ -50,7 +46,7 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
             />
 
             {/* Distance Zone Overlays */}
-            {distanceZones.map((zone) => {
+            {distanceZones.map((zone, idx) => {
                 const isClear = lens.clarity[zone.id];
                 const isHovered = hoveredZone === zone.id;
                 const showBlur = !isClear && (hoveredZone === null || isHovered);
@@ -58,7 +54,7 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
                 return (
                     <motion.div
                         key={zone.id}
-                        className={`absolute top-0 h-full ${zone.position} cursor-pointer touch-manipulation`}
+                        className={`absolute top-0 h-full ${distanceZonesConfig[idx].position} cursor-pointer touch-manipulation`}
                         onMouseEnter={() => setHoveredZone(zone.id)}
                         onMouseLeave={() => setHoveredZone(null)}
                         onTouchStart={() => setHoveredZone(zone.id)}
@@ -98,7 +94,7 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
                                         {zone.distance}
                                     </div>
                                     <div className={`text-base sm:text-lg ${isClear ? "text-green-400" : "text-red-400"}`}>
-                                        {isClear ? "✓ 선명" : "✗ 흐림"}
+                                        {isClear ? `✓ ${visionStatus.clear}` : `✗ ${visionStatus.blurry}`}
                                     </div>
                                 </motion.div>
                             )}
@@ -116,7 +112,7 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
                     transition={{ delay: 0.5, type: "spring", stiffness: 200 }}
                 >
                     <span>✓</span>
-                    <span>ALL CLEAR</span>
+                    <span>{allClearText}</span>
                 </motion.div>
             )}
 
@@ -152,20 +148,34 @@ function VisionSimulator({ lens }: { lens: typeof lenses[0] }) {
 }
 
 export default function LensGuide() {
+    const t = useTranslations('Cataract.LensGuide');
+    const lenses = t.raw('lenses') as Array<{
+        name: string;
+        eng: string;
+        desc: string;
+        pros: string[];
+        recommend: string;
+    }>;
+    const distanceZones = t.raw('distanceZones') as Array<{
+        id: "near" | "mid" | "far";
+        label: string;
+        distance: string;
+    }>;
+    const visionStatus = t.raw('visionStatus') as { clear: string; blurry: string };
+
     return (
         <section className="py-16 sm:py-20 md:py-24 bg-neutral-50">
             <div className="container mx-auto px-4 sm:px-6">
                 <div className="text-center mb-10 sm:mb-12 md:mb-16">
-                    <span className="text-amber-600 font-bold tracking-[0.2em] uppercase block mb-3 sm:mb-4 text-xs sm:text-sm">Premium Lens</span>
+                    <span className="text-amber-600 font-bold tracking-[0.2em] uppercase block mb-3 sm:mb-4 text-xs sm:text-sm">{t('sectionTitle')}</span>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 font-serif">
-                        나에게 맞는 <span className="text-amber-600">인공수정체</span>는?
+                        {t('headline')} <span className="text-amber-600">{t('headlineHighlight')}</span>
                     </h2>
-                    <p className="text-neutral-500 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base">
-                        환자의 라이프스타일, 직업, 취미 등을 고려하여<br />
-                        가장 적합한 프리미엄 렌즈를 1:1 맞춤 처방합니다.
+                    <p className="text-neutral-500 mt-3 sm:mt-4 max-w-2xl mx-auto text-sm sm:text-base whitespace-pre-line">
+                        {t('description')}
                     </p>
                     <p className="text-amber-600 text-xs sm:text-sm font-medium mt-2 sm:mt-3">
-                        각 거리 구간에 마우스를 올려 시력 차이를 체험해보세요
+                        {t('interactionHint')}
                     </p>
                 </div>
 
@@ -177,7 +187,7 @@ export default function LensGuide() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.2 }}
                             viewport={{ once: true }}
-                            className={`rounded-2xl sm:rounded-[2.5rem] p-6 sm:p-8 md:p-10 border border-black/5 shadow-xl ${lens.bg} hover:shadow-2xl transition-all duration-500`}
+                            className={`rounded-2xl sm:rounded-[2.5rem] p-6 sm:p-8 md:p-10 border border-black/5 shadow-xl ${lensConfig[i].bg} hover:shadow-2xl transition-all duration-500`}
                         >
                             <div className="flex justify-between items-start mb-6 sm:mb-8">
                                 <div>
@@ -190,7 +200,12 @@ export default function LensGuide() {
                             </div>
 
                             {/* Interactive Vision Simulator */}
-                            <VisionSimulator lens={lens} />
+                            <VisionSimulator
+                                lens={lensConfig[i]}
+                                distanceZones={distanceZones}
+                                visionStatus={visionStatus}
+                                allClearText={t('allClear')}
+                            />
 
                             <p className="text-neutral-700 font-medium text-base sm:text-lg mb-6 sm:mb-8 leading-relaxed">
                                 {lens.desc}
@@ -198,7 +213,7 @@ export default function LensGuide() {
 
                             <div className="space-y-3 sm:space-y-4 bg-white/50 backdrop-blur-sm p-4 sm:p-6 rounded-xl sm:rounded-2xl">
                                 <h4 className="font-bold text-neutral-900 flex items-center gap-2">
-                                    <span className="w-2 h-2 rounded-full bg-amber-500" /> 특징
+                                    <span className="w-2 h-2 rounded-full bg-amber-500" /> {t('features')}
                                 </h4>
                                 <ul className="space-y-2">
                                     {lens.pros.map((pro, idx) => (
@@ -208,7 +223,7 @@ export default function LensGuide() {
                                     ))}
                                 </ul>
                                 <div className="pt-4 border-t border-black/5 mt-4">
-                                    <h4 className="font-bold text-neutral-900 text-sm mb-1">추천 대상</h4>
+                                    <h4 className="font-bold text-neutral-900 text-sm mb-1">{t('recommendFor')}</h4>
                                     <p className="text-amber-700 text-sm">{lens.recommend}</p>
                                 </div>
                             </div>

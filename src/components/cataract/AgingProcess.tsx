@@ -2,8 +2,10 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 
 export default function AgingProcess() {
+    const t = useTranslations('Cataract.AgingProcess');
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
@@ -28,18 +30,16 @@ export default function AgingProcess() {
             <div className="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-16">
                 {/* Left: Text Content */}
                 <div className="w-full md:w-1/2">
-                    <span className="text-primary font-bold tracking-[0.2em] sm:tracking-widest uppercase mb-3 sm:mb-4 block text-xs sm:text-sm">The Process</span>
+                    <span className="text-primary font-bold tracking-[0.2em] sm:tracking-widest uppercase mb-3 sm:mb-4 block text-xs sm:text-sm">{t('sectionTitle')}</span>
                     <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-bold mb-4 sm:mb-6 md:mb-8 leading-tight">
-                        Why does vision <br />
-                        <span className="text-neutral-500">fade away?</span>
+                        {t('headline')} <br />
+                        <span className="text-neutral-500">{t('headlineHighlight')}</span>
                     </h2>
                     <p className="text-sm sm:text-base md:text-lg text-neutral-400 leading-relaxed mb-3 sm:mb-4 md:mb-6">
-                        우리 눈의 수정체는 카메라의 렌즈와 같습니다. 나이가 들면서 이 수정체가 딱딱해지고 혼탁해지는데,
-                        이것이 바로 노안과 백내장입니다.
+                        {t('description1')}
                     </p>
                     <p className="text-sm sm:text-base md:text-lg text-neutral-400 leading-relaxed">
-                        힐링안과는 단순히 혼탁해진 수정체를 교체하는 것을 넘어, 환자분의 생활 패턴에 맞는
-                        가장 젊고 선명한 시력을 되찾아드리는 것에 집중합니다.
+                        {t('description2')}
                     </p>
                 </div>
 
@@ -651,25 +651,25 @@ export default function AgingProcess() {
                             <g opacity="0.55">
                                 <line x1="108" y1="133" x2="78" y2="98" stroke="#64748b" strokeWidth="0.5" />
                                 <circle cx="78" cy="98" r="1.5" fill="#64748b" opacity="0.5" />
-                                <text x="78" y="92" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="monospace">각막</text>
+                                <text x="78" y="92" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="monospace">{t('labels.cornea')}</text>
                             </g>
                             <g opacity="0.55">
                                 <line x1="155" y1="128" x2="155" y2="95" stroke="#64748b" strokeWidth="0.5" />
                                 <circle cx="155" cy="95" r="1.5" fill="#64748b" opacity="0.5" />
-                                <text x="155" y="89" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="monospace">홍채</text>
+                                <text x="155" y="89" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="monospace">{t('labels.iris')}</text>
                             </g>
                             <g opacity="0.55">
                                 <line x1="200" y1="142" x2="200" y2="75" stroke="#64748b" strokeWidth="0.5" />
                                 <circle cx="200" cy="75" r="1.5" fill="#64748b" opacity="0.5" />
-                                <text x="200" y="69" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="monospace">수정체</text>
+                                <text x="200" y="69" textAnchor="middle" fill="#94a3b8" fontSize="9" fontFamily="monospace">{t('labels.lens')}</text>
                             </g>
                             <g opacity="0.55">
                                 <line x1="398" y1="152" x2="425" y2="118" stroke="#64748b" strokeWidth="0.5" />
                                 <circle cx="425" cy="118" r="1.5" fill="#64748b" opacity="0.5" />
-                                <text x="425" y="112" textAnchor="start" fill="#94a3b8" fontSize="9" fontFamily="monospace">망막</text>
+                                <text x="425" y="112" textAnchor="start" fill="#94a3b8" fontSize="9" fontFamily="monospace">{t('labels.retina')}</text>
                             </g>
                             <g opacity="0.4">
-                                <text x="458" y="200" textAnchor="middle" fill="#64748b" fontSize="7" fontFamily="monospace">시신경</text>
+                                <text x="458" y="200" textAnchor="middle" fill="#64748b" fontSize="7" fontFamily="monospace">{t('labels.opticNerve')}</text>
                             </g>
                         </g>
 
@@ -686,15 +686,15 @@ export default function AgingProcess() {
                             <circle cx="340" cy="440" r="6" fill="#111827" />
                             <motion.circle cx="340" cy="440" r="5" fill="#fbbf24" style={{ opacity: healedOpacity }} />
 
-                            <text x="160" y="456" textAnchor="middle" fill="#334155" fontSize="7" fontFamily="monospace">정상</text>
-                            <text x="250" y="456" textAnchor="middle" fill="#334155" fontSize="7" fontFamily="monospace">백내장</text>
-                            <text x="340" y="456" textAnchor="middle" fill="#334155" fontSize="7" fontFamily="monospace">수술 후</text>
+                            <text x="160" y="456" textAnchor="middle" fill="#334155" fontSize="7" fontFamily="monospace">{t('labels.normal')}</text>
+                            <text x="250" y="456" textAnchor="middle" fill="#334155" fontSize="7" fontFamily="monospace">{t('labels.cataract')}</text>
+                            <text x="340" y="456" textAnchor="middle" fill="#334155" fontSize="7" fontFamily="monospace">{t('labels.afterSurgery')}</text>
                         </g>
                     </svg>
 
                     {/* Section label */}
                     <div className="absolute top-4 sm:top-5 right-4 sm:right-6 z-20 pointer-events-none">
-                        <span className="text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] text-white/20 font-mono uppercase">눈 단면도</span>
+                        <span className="text-[9px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] text-white/20 font-mono uppercase">{t('sectionLabel')}</span>
                     </div>
 
                     {/* Ambient heal glow */}

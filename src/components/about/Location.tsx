@@ -1,8 +1,11 @@
 "use client";
 
 import { MapPin, Phone, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Location() {
+    const t = useTranslations('About.Location');
+
     return (
         <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-black text-white border-t border-white/10">
             <div className="container mx-auto px-4 sm:px-6">
@@ -10,8 +13,8 @@ export default function Location() {
 
                     {/* Info */}
                     <div>
-                        <span className="text-primary font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase block mb-4 sm:mb-6 text-sm sm:text-base">Location</span>
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 sm:mb-10 md:mb-12">Visit Us</h2>
+                        <span className="text-primary font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase block mb-4 sm:mb-6 text-sm sm:text-base">{t('sectionTitle')}</span>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 sm:mb-10 md:mb-12">{t('headline')}</h2>
 
                         <div className="space-y-6 sm:space-y-8">
                             <div className="flex items-start gap-4 sm:gap-6 group">
@@ -19,10 +22,10 @@ export default function Location() {
                                     <MapPin size={20} className="sm:w-6 sm:h-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Address</h3>
+                                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">{t('address.title')}</h3>
                                     <p className="text-neutral-400 leading-relaxed text-sm sm:text-base">
-                                        서울특별시 강남구 강남대로 470 808타워 10-11층<br />
-                                        (신논현역 6번 출구 도보 1분)
+                                        {t('address.line1')}<br />
+                                        {t('address.line2')}
                                     </p>
                                 </div>
                             </div>
@@ -32,10 +35,10 @@ export default function Location() {
                                     <Phone size={20} className="sm:w-6 sm:h-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Contact</h3>
+                                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">{t('contact.title')}</h3>
                                     <p className="text-neutral-400 leading-relaxed text-sm sm:text-base">
-                                        02-566-1222<br />
-                                        kakao @healingeye
+                                        {t('contact.phone')}<br />
+                                        {t('contact.kakao')}
                                     </p>
                                 </div>
                             </div>
@@ -45,12 +48,12 @@ export default function Location() {
                                     <Clock size={20} className="sm:w-6 sm:h-6" />
                                 </div>
                                 <div>
-                                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Hours</h3>
+                                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">{t('hours.title')}</h3>
                                     <p className="text-neutral-400 leading-relaxed text-sm sm:text-base">
-                                        평일: 09:30 - 18:30 (휴게시간 13:00 - 14:00)<br />
-                                        금요일: 09:30 - 21:00 (야간진료)<br />
-                                        토요일: 09:30 - 16:00<br />
-                                        <span className="text-primary/70 text-xs sm:text-sm">일요일 / 공휴일 휴진</span>
+                                        {t('hours.weekday')}<br />
+                                        {t('hours.friday')}<br />
+                                        {t('hours.saturday')}<br />
+                                        <span className="text-primary/70 text-xs sm:text-sm">{t('hours.closed')}</span>
                                     </p>
                                 </div>
                             </div>

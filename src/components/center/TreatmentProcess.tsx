@@ -1,21 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const steps = [
-    { title: "One-Stop 검사", desc: "50여 가지 정밀 검사를 하루에" },
-    { title: "1:1 주치의 상담", desc: "검사 데이터를 바탕으로 한 정밀 분석" },
-    { title: "맞춤형 레이저 치료", desc: "M22, IPL 등 최신 장비 치료" },
-    { title: "전담 간호사 케어", desc: "수술/시술 후 회복실 집중 관리" },
-    { title: "평생 안심 보증", desc: "정기 검진 및 재발 방지 프로그램" }
-];
+import { useTranslations } from "next-intl";
 
 export default function TreatmentProcess() {
+    const t = useTranslations('Center.TreatmentProcess');
+    const steps = t.raw('steps') as Array<{ title: string; desc: string }>;
     return (
         <section className="py-16 sm:py-20 border-t border-white/10">
             {/* Desktop: Original Layout (unchanged) */}
             <div className="hidden md:block">
-                <h2 className="text-3xl font-bold text-white mb-16 text-center">Healing Therapy Process</h2>
+                <h2 className="text-3xl font-bold text-white mb-16 text-center">{t('headline')}</h2>
 
                 <div className="flex flex-col md:flex-row justify-between items-center relative gap-8 md:gap-0">
                     {/* Connecting Line */}
@@ -41,10 +36,10 @@ export default function TreatmentProcess() {
                     viewport={{ once: true }}
                     className="text-center mb-12"
                 >
-                    <span className="text-primary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">Our Process</span>
-                    <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-4">Healing Therapy Process</h2>
+                    <span className="text-primary font-bold tracking-[0.2em] uppercase mb-3 block text-xs">{t('sectionTitle')}</span>
+                    <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white mb-4">{t('headline')}</h2>
                     <p className="text-neutral-400 text-sm max-w-2xl mx-auto">
-                        체계적인 5단계 치료 프로세스로 최상의 결과를 제공합니다
+                        {t('description')}
                     </p>
                 </motion.div>
 

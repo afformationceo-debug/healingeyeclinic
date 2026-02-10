@@ -3,14 +3,16 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Eye, Users, Award } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const stats = [
-    { icon: Eye, label: "성공 사례", value: "50,000+", suffix: "안" },
-    { icon: Users, label: "환자 만족도", value: "4.9", suffix: "/5.0" },
-    { icon: Award, label: "의료진", value: "대학병원", suffix: "교수 출신" }
+    { icon: Eye, index: 0 },
+    { icon: Users, index: 1 },
+    { icon: Award, index: 2 }
 ];
 
 export default function BrandStory() {
+    const t = useTranslations("About.BrandStory");
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: targetRef });
     const x = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
@@ -106,16 +108,13 @@ export default function BrandStory() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1 }}
                     >
-                        <span className="text-primary font-bold tracking-[0.5em] text-sm md:text-xl uppercase mb-8 block">Our Mission</span>
+                        <span className="text-primary font-bold tracking-[0.5em] text-sm md:text-xl uppercase mb-8 block">{t("sectionTitle")}</span>
                         <h2 className="text-4xl md:text-7xl font-serif font-bold text-white mb-8 leading-tight">
-                            More Than Vision,<br />
-                            <span className="text-neutral-500 italic">We Design Your Life.</span>
+                            {t("headline")}<br />
+                            <span className="text-neutral-500 italic">{t("headlineSubtitle")}</span>
                         </h2>
                         <p className="text-neutral-400 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed mb-16">
-                            단순히 시력을 교정하는 것을 넘어,<br />
-                            당신의 삶이 더 선명하고 아름다워질 수 있도록.<br />
-                            힐링안과는 기술과 예술의 경계에서<br />
-                            가장 완벽한 시력을 조각합니다.
+                            {t("description")}
                         </p>
 
                         {/* Stats Cards */}
@@ -127,6 +126,7 @@ export default function BrandStory() {
                         >
                             {stats.map((stat, i) => {
                                 const IconComponent = stat.icon;
+                                const statData = t.raw(`stats.${stat.index}`);
                                 return (
                                     <motion.div
                                         key={i}
@@ -137,11 +137,11 @@ export default function BrandStory() {
                                             <IconComponent size={24} />
                                         </div>
                                         <div className="text-3xl font-black text-white mb-1">
-                                            {stat.value}
-                                            <span className="text-xl text-primary ml-1">{stat.suffix}</span>
+                                            {statData.value}
+                                            <span className="text-xl text-primary ml-1">{statData.suffix}</span>
                                         </div>
                                         <div className="text-sm text-neutral-400 uppercase tracking-wider">
-                                            {stat.label}
+                                            {statData.label}
                                         </div>
                                     </motion.div>
                                 );

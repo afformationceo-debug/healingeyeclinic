@@ -5,8 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Scan, BrainCircuit, Activity } from "lucide-react";
 import { useState } from "react";
 import AISurveyModal from "@/components/home/AISurveyModal";
+import { useTranslations } from "next-intl";
 
 export default function AIPrediction() {
+    const t = useTranslations("Home.AIPrediction");
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
@@ -202,8 +204,8 @@ export default function AIPrediction() {
                                 <div className="absolute inset-0 flex items-center justify-center z-10">
                                     <div className="text-center px-4">
                                         <Scan size={80} className="sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] text-primary mx-auto mb-4 sm:mb-6 md:mb-8 opacity-90 group-hover:scale-110 transition-transform duration-500" />
-                                        <h3 className="text-2xl sm:text-3xl md:text-4xl font-mono font-bold text-white mb-2 sm:mb-3 md:mb-4 tracking-wider">AI EYE SCANNING</h3>
-                                        <p className="text-primary/80 text-xs sm:text-sm md:text-base tracking-widest uppercase font-semibold">Click to Start Analysis</p>
+                                        <h3 className="text-2xl sm:text-3xl md:text-4xl font-mono font-bold text-white mb-2 sm:mb-3 md:mb-4 tracking-wider">{t('visualTitle')}</h3>
+                                        <p className="text-primary/80 text-xs sm:text-sm md:text-base tracking-widest uppercase font-semibold">{t('visualSubtitle')}</p>
                                     </div>
                                 </div>
                             </motion.div>
@@ -213,26 +215,25 @@ export default function AIPrediction() {
                         <div className="w-full md:w-[55%]">
                             <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-5 md:mb-6">
                                 <BrainCircuit className="text-primary" size={24} />
-                                <span className="text-primary font-bold tracking-widest uppercase text-xs sm:text-sm">Healing AI Solutions</span>
+                                <span className="text-primary font-bold tracking-widest uppercase text-xs sm:text-sm">{t('badge')}</span>
                             </div>
 
                             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight">
-                                내 눈에 딱 맞는 <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-200">최적의 수술 찾기</span>
+                                {t('title')} <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-amber-200">{t('titleHighlight')}</span>
                             </h2>
 
                             <p className="text-sm sm:text-base md:text-lg text-neutral-400 mb-6 sm:mb-7 md:mb-8 leading-relaxed">
-                                10만 건 이상의 임상 데이터를 학습한 힐링안과 AI가<br className="hidden sm:block" />
-                                고객님의 각막 데이터와 라이프스타일을 분석하여<br className="hidden sm:block" />
-                                가장 안전하고 효과적인 시력교정술을 제안합니다.
+                                {t('description').split('\n').map((line, i) => (
+                                    <span key={i}>
+                                        {line}
+                                        {i < t('description').split('\n').length - 1 && <br className="hidden sm:block" />}
+                                    </span>
+                                ))}
                             </p>
 
                             <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 md:mb-10">
-                                {[
-                                    "각막 두께 및 형태 3D 분석",
-                                    "라이프스타일 맞춤형 매칭",
-                                    "수술 후 회복 기간 예측 시뮬레이션"
-                                ].map((item, i) => (
+                                {(t.raw('features') as string[]).map((item, i) => (
                                     <div key={i} className="flex items-center gap-3 sm:gap-4 bg-white/5 p-3 sm:p-4 rounded-lg sm:rounded-xl border border-white/5 hover:border-primary/50 transition-colors">
                                         <Activity size={18} className="sm:w-5 sm:h-5 text-primary flex-shrink-0" />
                                         <span className="text-white font-medium text-sm sm:text-base">{item}</span>
@@ -245,7 +246,7 @@ export default function AIPrediction() {
                                 className="bg-primary text-black hover:bg-white w-full md:w-auto h-12 sm:h-14 md:h-16 text-sm sm:text-base md:text-lg rounded-full font-bold shadow-[0_0_30px_rgba(212,175,55,0.3)] hover:shadow-[0_0_50px_rgba(255,255,255,0.5)] transition-all px-5 py-2.5 sm:px-6 sm:py-3"
                                 onClick={() => setIsModalOpen(true)}
                             >
-                                AI 시력교정 예측 시작하기
+                                {t('ctaButton')}
                             </Button>
                         </div>
 

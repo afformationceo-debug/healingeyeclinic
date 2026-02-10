@@ -1,12 +1,14 @@
 import PageClient from './PageClient';
+import { getMessages } from 'next-intl/server';
 
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
     const params = await props.params;
     const { locale } = params;
+    const messages = await getMessages({ locale }) as { Metadata: { cataract: { title: string; description: string } } };
 
     return {
-        title: `백내장/노안 센터 | Healing Eye`,
-        description: `힐링안과 백내장/노안 센터. 대학병원급 검사 장비와 1:1 맞춤형 프리미엄 인공수정체 수술. 노안 교정과 백내장 치료를 동시에.`,
+        title: messages.Metadata.cataract.title,
+        description: messages.Metadata.cataract.description,
     };
 }
 

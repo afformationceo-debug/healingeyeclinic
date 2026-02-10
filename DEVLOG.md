@@ -1663,3 +1663,175 @@ npm run dev
 - align: "start" (좌측 정렬)
 
 ---
+
+## 2026-02-11 (화) - 다국어 언어 전환 오류 수정 및 CDP MCP 설치
+
+### 📋 작업 개요
+다국어 페이지 이동 시 언어가 한국어로 돌아가는 오류 수정 및 Chrome DevTools Protocol (CDP) MCP 설치
+
+---
+
+### ✅ 완료된 작업
+
+#### 1. **다국어 언어 전환 오류 수정** 🌐
+**파일**: `src/app/[locale]/layout.tsx`
+
+**문제**:
+- 언어를 변경한 후 다른 페이지로 이동하면 한국어(ko)로 돌아가는 오류
+- 영어 페이지(`/en/community`)에서 다른 페이지로 이동 시 `/ko/...`로 이동
+- 네비게이션 링크가 현재 locale을 유지하지 못함
+
+**원인**:
+- `NextIntlClientProvider`에 `locale` prop이 전달되지 않음
+- 클라이언트 컴포넌트(Navbar)에서 `useLocale()`이 기본값 'ko'만 반환
+- 서버에서 전달된 locale 정보가 클라이언트로 전파되지 않음
+
+**해결 방법**:
+```tsx
+// 변경 전:
+<NextIntlClientProvider messages={messages}>
+
+// 변경 후:
+<NextIntlClientProvider messages={messages} locale={locale}>
+```
+
+**변경 사항**:
+- `NextIntlClientProvider`에 `locale` prop 추가
+- 클라이언트 컴포넌트에서 `useLocale()` 정상 작동
+- 모든 네비게이션 링크가 현재 언어 유지
+
+---
+
+#### 2. **다국어 페이지 브라우저 테스트** 🧪
+
+**테스트 언어**:
+- ✅ 영어 (en): `/en/community` → `/en/about` 정상
+- ✅ 일본어 (ja): `/ja/community` → `/ja/vision` 정상
+- ✅ 중국어 간체 (zh-CN): `/zh-CN/community` → `/zh-CN/cataract` 정상
+- ✅ 중국어 번체 (zh-TW): 정상 작동 확인
+
+**테스트 결과**:
+- 모든 언어에서 페이지 이동 시 언어가 정상적으로 유지됨
+- 네비게이션 링크가 올바른 locale 경로 생성
+- 로고 링크도 현재 언어 유지
+- FAQ 콘텐츠가 각 언어로 정확히 표시
+
+---
+
+#### 3. **CDP MCP 설치 및 설정** 🛠️
+
+**설치 패키지**:
+- `chrome-devtools-mcp` 0.17.0
+
+**설정 변경**:
+```bash
+# CDP MCP 설치
+npm install -g chrome-devtools-mcp
+
+# Claude Code에 추가
+claude mcp add chrome-devtools -- npx -y chrome-devtools-mcp
+
+# Playwright 플러그인 비활성화
+# ~/.claude/settings.json
+"playwright@claude-plugins-official": false
+```
+
+**MCP 서버 상태**:
+- ✅ chrome-devtools: 연결됨
+- ✅ context7: 연결됨
+- ❌ playwright: 비활성화됨
+- ⚠️  supabase: 인증 필요
+- ❌ github: 연결 실패
+
+---
+
+### 🐛 발견 및 수정된 버그
+
+#### 버그: 다국어 페이지 이동 시 언어 초기화
+**문제**:
+- 영어/일본어/중국어 페이지에서 다른 페이지로 이동하면 한국어로 변경
+- `useLocale()` 훅이 항상 기본값 'ko' 반환
+- NextIntlClientProvider에 locale이 전달되지 않음
+
+**증상**:
+- `/en/community` → About 클릭 → `/ko/about`로 이동
+- `/ja/vision` → Community 클릭 → `/ko/community`로 이동
+- 언어 선택 무효화
+
+**해결**:
+- NextIntlClientProvider에 locale prop 명시적 전달
+- 클라이언트 컴포넌트에서 서버의 locale 정보 접근 가능
+- 모든 언어에서 정상 작동 확인
+
+---
+
+### 📊 변경 파일 (2개)
+
+#### 수정
+1. `src/app/[locale]/layout.tsx` - NextIntlClientProvider에 locale prop 추가 (+1줄)
+2. `~/.claude/settings.json` - Playwright 비활성화, CDP MCP 추가 (+2줄)
+
+---
+
+### 🎯 주요 개선 포인트
+
+**다국어 지원**:
+- 언어 전환 후에도 페이지 이동 시 언어 유지
+- 4개 언어(en, ja, zh-CN, zh-TW) 테스트 완료
+- 네비게이션 경로 자동 locale 반영
+
+**개발 환경**:
+- CDP MCP로 브라우저 제어 방식 변경
+- Chrome DevTools Protocol 직접 사용 가능
+- Playwright 대비 더 세밀한 브라우저 제어
+
+**안정성**:
+- next-intl의 권장 사용 방법 준수
+- 서버/클라이언트 간 locale 정보 동기화
+- 일관된 다국어 경험 제공
+
+---
+
+### 🧪 테스트 수행
+
+**브라우저 테스트**:
+- Playwright MCP 사용 (CDP 전환 전)
+- 개발 서버: http://localhost:3000
+- 4개 언어 × 3개 페이지 = 12개 시나리오 테스트
+- 모든 시나리오 통과 ✅
+
+**MCP 서버 테스트**:
+- CDP MCP 설치 확인
+- 서버 연결 상태 확인
+- Playwright 비활성화 확인
+
+---
+
+### 🎯 다음 작업 예정
+
+1. **CDP MCP 활용**
+   - Claude Code 재시작 후 CDP MCP 도구 사용
+   - Playwright 대비 성능 및 기능 비교
+   - 브라우저 테스트 자동화 개선
+
+2. **미완성 언어팩 완성**
+   - 🇹🇭 태국어 (th): 42% → 100%
+   - 🇷🇺 러시아어 (ru): 42% → 100%
+   - 커뮤니티 FAQ 번역 추가
+
+3. **프로덕션 배포**
+   - 다국어 변경사항 커밋
+   - Vercel 배포 및 확인
+   - 실사용 환경 테스트
+
+---
+
+### 🛠 기술 스택 업데이트
+- **Framework**: Next.js 16.1.6 (App Router)
+- **i18n**: next-intl 4.8.0 (7개 언어)
+- **Browser Control**: CDP MCP (chrome-devtools-mcp 0.17.0)
+- **Development**: Claude Code 2.1.38
+- **MCP Servers**: chrome-devtools, context7
+
+---
+

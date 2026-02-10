@@ -1,21 +1,85 @@
 {
+  "Metadata": {
+    "title": "江南ヒーリング眼科 | プレミアム視力矯正",
+    "description": "次元の異なる視力矯正の基準、江南ヒーリング眼科。",
+    "vision": {
+      "title": "視力矯正センター | 江南ヒーリング眼科",
+      "description": "スマイルレーシック、ラセック、レンズ挿入術専門。大学病院教授出身医療陣によるプレミアム視力矯正。"
+    },
+    "cataract": {
+      "title": "老眼/白内障センター | 江南ヒーリング眼科",
+      "description": "多焦点眼内レンズ専門。オーダーメイドプレミアムレンズで若々しい視力を取り戻しましょう。"
+    },
+    "center": {
+      "title": "眼疾患センター | 江南ヒーリング眼科",
+      "description": "ドライアイ、緑内障、網膜疾患専門。大学病院級最先端設備で精密診断。"
+    },
+    "about": {
+      "title": "病院紹介 | 江南ヒーリング眼科",
+      "description": "江南新論峴駅位置、大学病院教授出身医療陣によるプレミアム眼科。"
+    },
+    "insight": {
+      "title": "インサイト | 江南ヒーリング眼科",
+      "description": "眼科専門医が直接お答えする視力矯正、白内障Q&A。"
+    },
+    "community": {
+      "title": "コミュニティ | 江南ヒーリング眼科",
+      "description": "江南ヒーリング眼科お知らせ、FAQ、イベント案内。"
+    }
+  },
+  "Common": {
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました。",
+    "navigation": {
+      "home": "ホーム",
+      "about": "病院紹介",
+      "treatments": "診療案内",
+      "equipment": "設備紹介",
+      "community": "コミュニティ",
+      "reservation": "ご予約"
+    },
+    "buttons": {
+      "book": "ご予約",
+      "viewMore": "詳しく見る",
+      "previous": "前へ",
+      "next": "次へ",
+      "close": "閉じる",
+      "submit": "送信する",
+      "cancel": "キャンセル"
+    },
+    "labels": {
+      "loading": "読み込み中...",
+      "error": "エラーが発生しました",
+      "success": "正常に完了いたしました",
+      "language": "言語"
+    }
+  },
+  "Navigation": {
+    "about": "病院紹介",
+    "vision": "視力矯正術",
+    "cataract": "老眼/白内障",
+    "dryeye": "ドライアイ外来",
+    "center": "眼疾患センター",
+    "community": "コミュニティ",
+    "insight": "インサイト"
+  },
   "Home": {
     "Hero": {
-      "clinicName": "Healing Eye Clinic",
+      "clinicName": "( Healing Eye Clinic )",
       "location": "Gangnam, Seoul",
       "established": "Est. 2016",
       "directorName": "Kim Sun-young",
       "brandName": "HEALING",
       "brandSubtitle": "EYE",
-      "tagline": "We redefine the standard of vision correction with uncompromising precision and safety.",
+      "tagline": "We redefine the standard of vision correction with\nuncompromising precision and safety.",
       "ctaButton": "BOOK",
       "ctaButtonSub": "NOW"
     },
     "Philosophy": {
       "sectionTitle": "私たちの理念",
-      "mainQuote": "目を治療することを超えて",
-      "mainQuoteHighlight": "あなたの人生を癒します。",
-      "description": "単に視力を矯正するだけではありません。\n朝目を覚ました瞬間から眠りにつくまで、あなたが向き合うすべての世界を\nより鮮明で美しくすること。それがヒーリングアイクリニックのお約束です。",
+      "mainQuote": "「目を治療することを超えて",
+      "mainQuoteHighlight": "あなたの人生を癒します。」",
+      "description": "単に視力を矯正するだけではありません。\n朝目を覚ました瞬間から眠りにつくまで、あなたが向き合うすべての世界を\nより鮮明で美しくすること。それが江南ヒーリング眼科のお約束です。",
       "movingText": {
         "text1": "BEYOND VISION",
         "text2": "HEALING LIFE",
@@ -29,7 +93,7 @@
         },
         "safety": {
           "title": "安全 (Safety)",
-          "description": "大学病院教授出身の医療陣と大学病院級最新設備が共にありますので\n安心してお任せいただけます。"
+          "description": "大学病院教授出身の医療陣と大学病院級最新設備が共にございますので\n安心してお任せいただけます。"
         },
         "empathy": {
           "title": "共感 (Empathy)",
@@ -62,93 +126,96 @@
       }
     },
     "WhyHealingEye": {
-      "sectionTitle": "Why Healing Eye",
+      "sectionTitle": "なぜ江南ヒーリング眼科なのか",
       "headline": "基準が違う眼科、",
       "headlineSubtitle": "結果が証明します。",
       "stats": {
         "rating": "4.9/5.0",
-        "ratingLabel": "Patient Review",
+        "ratingLabel": "患者満足度",
         "cases": "50,000+",
-        "casesLabel": "Successful Cases"
+        "casesLabel": "成功手術症例"
       },
       "features": {
         "faculty": {
-          "title": "University Faculty",
+          "title": "大学病院教授出身",
+          "titleEng": "University Faculty",
           "subtitle": "大学病院教授出身の医療陣",
-          "description": "豊富な臨床経験とノウハウを備えた医療陣が\n相談から手術、アフターケアまで1:1で担当いたします。"
+          "description": "豊富な臨床経験とノウハウを備えた医療陣が\nカウンセリングから手術、アフターケアまで1:1で専任いたします。"
         },
         "equipment": {
-          "title": "High-End Equipment",
+          "title": "最先端設備",
+          "titleEng": "High-End Equipment",
           "subtitle": "大学病院級最先端設備",
-          "description": "Zimer Z8、ZEISS SUITEなど最新設備と\nドイツ製ララレンズ初使用、4重焦点パンオプティクス使用量全国1位で\n白内障専門性を証明しています。"
+          "description": "Zimer Z8、ZEISS SUITEなど最新設備と\nドイツ製ララレンズ初使用、4重焦点パンオプティクス使用量全国1位で\n白内障の専門性を証明しております。"
         },
         "guarantee": {
-          "title": "Lifetime Guarantee",
+          "title": "生涯保証",
+          "titleEng": "Lifetime Guarantee",
           "subtitle": "生涯視力保証システム",
-          "description": "これからの40年、第2の人生を責任持つ\n生涯保証制度であなたの視力を生涯保障します。"
+          "description": "これからの40年、第二の人生を責任持つ\n生涯保証制度であなたの視力を生涯保障いたします。"
         }
       }
     },
     "Review": {
       "title": "Real Stories",
-      "subtitle": "データで証明された結果、患者様の生々しい体験談です。",
+      "subtitle": "データで証明された結果、患者様の生の声をお届けいたします。",
       "ctaSubtitle": "生涯視力、今すぐ始めましょう",
-      "ctaButton": "今すぐ専門家相談を予約する",
+      "ctaButton": "今すぐ専門家カウンセリングを予約する",
       "reviews": [
         {
           "name": "金智*",
           "age": "20代",
-          "surgery": "スマイルレーシック",
-          "content": "眼鏡のない朝がこんなに感動的だとは思いませんでした。手術当日は少しぼやけましたが、翌日から新世界でした。特に夜間のハロー現象を心配していましたが、全く不便なく夜間運転もできています。",
+          "surgery": "スマイルレーシック (SMILE PRO)",
+          "content": "眼鏡のない朝がこんなに感動的だとは思いませんでした。手術当日は少しぼやけましたが、翌日から新世界でした。特に夜間のハロー現象を心配しておりましたが、全く不便なく夜間運転もできております。院長先生が直接検眼から手術まで担当してくださったので、より信頼できました。",
           "date": "2024.01.15"
         },
         {
           "name": "李炯*",
-          "age": "60代",
+          "age": "40代",
           "surgery": "多焦点眼内レンズ (老眼白内障)",
-          "content": "老眼鏡なしではスマホも見づらかったのですが、今ではゴルフボールもはっきり見え、友達とのチャットも楽にできます。単なる手術を超えて、生活の質をプレゼントされた気分です。病院の施設もホテルのように高級で、スタッフの方々もとても親切で安心して手術を受けられました。",
+          "content": "老眼鏡なしではスマートフォンも見づらかったのですが、今ではゴルフボールもはっきり見え、友人とのメッセージも楽にできます。単なる手術を超えて、生活の質をプレゼントされた気分です。病院の施設もホテルのように高級で、スタッフの方々もとても親切で安心して手術を受けられました。",
           "date": "2024.01.12"
         },
         {
           "name": "朴瑞*",
           "age": "30代",
           "surgery": "ICLレンズ挿入術",
-          "content": "角膜が薄くてレーシック不可の診断を受けて挫折していましたが、ヒーリングアイクリニックでICLで光を取り戻しました。レンズの違和感も全くなく、ドライアイもコンタクトレンズ使用時よりも軽減されました。悩んでいた時間がもったいないほどです。おすすめします!",
+          "content": "角膜が薄くてレーシック不可の診断を受けて挫折しておりましたが、江南ヒーリング眼科でICLにより光を取り戻しました。レンズの違和感も全くなく、ドライアイもコンタクトレンズ装用時よりも軽減されました。悩んでいた時間がもったいないほどです。強くお勧めいたします！",
           "date": "2024.01.08"
         },
         {
           "name": "崔珉*",
           "age": "50代",
-          "surgery": "老眼レーシック",
+          "surgery": "老眼レーシック (Monovision)",
           "content": "老眼のため業務が非常に辛かったのですが、モノビジョンレーシック後、近距離作業がずっと楽になりました。最初は適応期間が必要だと言われましたが、思ったより早く適応し、今では眼鏡なしで会議資料もよく見えます。",
           "date": "2023.12.29"
         },
         {
           "name": "鄭夏*",
           "age": "20代",
-          "surgery": "プレミアムラセック",
-          "content": "痛みについて心配していましたが、2日程度だけ目の刺激があり、その後は快適でした。保護レンズを外してから視力がぐんと上がるのが感じられました。1.2の視力を維持しています。ありがとうございます!",
+          "surgery": "トゥデイラセック",
+          "content": "痛みについて心配しておりましたが、2日程度だけ目の刺激があり、その後は快適でした。保護レンズを外してから視力がぐんと上がるのが感じられました。1.5の視力を維持しております。ありがとうございます！",
           "date": "2023.12.20"
         },
         {
           "name": "安受*",
-          "age": "40代",
+          "age": "30代",
           "surgery": "再手術 (レーシック → 老眼ラセック)",
-          "content": "他院でのレーシック後、視力低下で再手術を受けました。不安でしたが、院長先生が角膜の状態を綿密にチェックし、安全に進めてくださり感謝しています。今では1.2の視力を維持しており、夜間視力も以前より良くなりました。",
+          "content": "他院でのレーシック後、視力低下で再手術を受けました。不安でしたが、院長先生が角膜の状態を綿密にチェックし、安全に進めてくださり感謝しております。今では1.2の視力を維持しており、夜間視力も以前より良くなりました。",
           "date": "2023.12.15"
         },
         {
           "name": "尹智*",
           "age": "20代",
           "surgery": "ラセック (角膜が薄い)",
-          "content": "角膜が薄くて悩んでいましたが、ヒーリングアイクリニックでラセックを安全に受けました。回復も早く、現在6ヶ月経ちましたが視力に完全に満足しています!",
+          "content": "角膜が薄くて悩んでおりましたが、江南ヒーリング眼科でラセックを安全に受けました。回復も早く、現在6ヶ月経ちましたが視力に完全に満足しております！",
           "date": "2023.12.10"
         },
         {
           "name": "趙賢*",
-          "age": "60代",
+          "age": "40代",
           "surgery": "白内障 (プレミアムレンズ)",
-          "content": "白内障手術後、30年前の視力に戻った気分です。眼鏡なしでゴルフもして、本も読んで、人生が変わりました。ためらわずに相談を受けてみてください!",
+          "content": "白内障手術後、30年前の視力に戻った気分です。眼鏡なしでゴルフもして、本も読んで、人生が変わりました。ためらわずにカウンセリングを受けてみてください！",
           "date": "2023.12.05"
         }
       ]
@@ -157,9 +224,9 @@
       "sectionTitle": "Premium Lounge",
       "headline": "Relaxation",
       "headlineSubtitle": "Before Perfection",
-      "description": "手術前の緊張感さえ期待感に変わる空間。\nヒーリングアイクリニックのプレミアムラウンジは5つ星ホテルの品格を込めました。\n最高のコンディションで新しい視力をお迎えください。",
+      "description": "手術前の緊張感さえ期待感に変わる空間。\n江南ヒーリング眼科のプレミアムラウンジは5つ星ホテルの品格を込めました。\n最高のコンディションで新しい視力をお迎えください。",
       "galleryTitle": "施設をご覧ください",
-      "facilityAlt": "ヒーリングアイクリニック施設",
+      "facilityAlt": "江南ヒーリング眼科施設",
       "backgroundAlt": "Premium Facility",
       "floatingText": "Architecture & Interior Design"
     },
@@ -172,23 +239,25 @@
           "positionEng": "Representative Director",
           "title": "眼科専門医/臨床教授",
           "specialty": "スマイル・クリア / 老眼白内障 / ドライアイ",
-          "quote": "Vision is not just seeing, it is experiencing.",
+          "quote": "絶え間ない探求と研究で既存の理論を進歩させる",
+          "quoteEng": "\"Vision is not just seeing, it is experiencing.\"",
           "quoteHighlight1": "seeing",
-          "quoteHighlight2": "experiencing",
+          "quoteHighlight2": "experiencing.",
           "philosophy": "1%の誤差も許さない完璧主義。大学病院教授出身の豊富な臨床経験と最先端設備への深い理解をもとに、あなたの生涯で最も澄んだ瞬間をお届けいたします。",
           "career": [
             "カトリック大学校医科大学大学院修士課程修了",
             "2009-2013 カトリック大学校カトリック中央医療院 眼科専門医",
-            "2013-2016 ソウル聖母病院 角膜・白内障臨床教授",
+            "2013-2016 議政府聖母病院 角膜・白内障臨床教授",
             "2009年 ソウル聖母病院 最優秀レジデント表彰",
             "2008年 保健福祉部長官賞",
             "第108回大韓眼科学会 口演賞受賞",
             "疾病管理本部 疫学調査表彰状受賞",
             "大韓眼科学会(KOS) 正会員",
             "韓国外眼部研究会(KEEDS) 正会員",
-            "韓国コンタクトレンズ(KCLSS) 正会員",
+            "韓国コンタクトレンズ学会(KCLSS) 正会員",
             "欧州白内障屈折矯正手術学会(ESCRS) 正会員"
-          ]
+          ],
+          "img": "/images/doctors/1.png"
         },
         {
           "name": "林成雄",
@@ -197,16 +266,18 @@
           "positionEng": "Representative Director",
           "title": "眼科専門医",
           "specialty": "網膜 / 緑内障 / 視力矯正",
-          "quote": "Precision in diagnosis, excellence in treatment.",
+          "quote": "患者様の立場で最善を尽くす",
+          "quoteEng": "\"Precision in diagnosis, excellence in treatment.\"",
           "quoteHighlight1": "diagnosis",
-          "quoteHighlight2": "treatment",
+          "quoteHighlight2": "treatment.",
           "philosophy": "正確な診断は成功的な手術の第一歩です。大学病院級先端検査システムとデータを分析する洞察力で、あなたの目の状態に最も適したオーダーメイド治療計画を立てます。",
           "career": [
             "延世大学校医科大学卒業",
             "セブランス病院 眼科専門医",
             "前) シロアム眼科病院 診療科長",
             "韓国網膜学会 正会員"
-          ]
+          ],
+          "img": "/images/doctors/2.png"
         },
         {
           "name": "李龍恩",
@@ -215,9 +286,10 @@
           "positionEng": "Director",
           "title": "眼科専門医",
           "specialty": "小児眼科 / ドリームレンズ",
-          "quote": "Caring for children's vision, securing their future.",
+          "quote": "絶え間ない研究と多様な経験で信頼できる",
+          "quoteEng": "\"Caring for children's vision, securing their future.\"",
           "quoteHighlight1": "children's vision",
-          "quoteHighlight2": "future",
+          "quoteHighlight2": "future.",
           "philosophy": "お子様の視力は生涯の資産です。成長期近視進行抑制からドリームレンズ処方まで、お子様の目線に合わせた温かく細やかな診療で保護者様のご心配まで解消いたします。",
           "career": [
             "大田科学高等学校卒業",
@@ -230,7 +302,8 @@
             "米国白内障屈折矯正手術学会(ASCRS) 正会員",
             "欧州白内障屈折矯正手術学会(ESCRS) 正会員",
             "米国退役軍人検診医師(Veterans Evaluation Services)"
-          ]
+          ],
+          "img": "/images/doctors/3.png"
         }
       ],
       "mainCareer": "Main Career",
@@ -252,18 +325,18 @@
           "position": "代表院長",
           "title": "眼科専門医/臨床教授",
           "specialty": "スマイル・クリア / 老眼白内障 / ドライアイ",
-          "description": "大学病院教授として難治性ドライアイと白内障治療に専念してまいりました。江南唯一の単独開院女性眼科専門医として、繊細さの違いが作り出す最高の手術結果をお約束いたします。",
+          "description": "大学病院教授として難治性ドライアイと白内障治療に専念してまいりました。江南唯一の単独開院女性眼科専門医として、繊細さの違いが生み出す最高の手術結果をお約束いたします。",
           "career": [
             "カトリック大学校医科大学大学院修士課程修了",
             "2009-2013 カトリック大学校カトリック中央医療院 眼科専門医",
-            "2013-2016 ソウル聖母病院 角膜・白内障臨床教授",
+            "2013-2016 議政府聖母病院 角膜・白内障臨床教授",
             "2009年 ソウル聖母病院 最優秀レジデント表彰",
             "2008年 保健福祉部長官賞",
             "第108回大韓眼科学会 口演賞受賞",
             "疾病管理本部 疫学調査表彰状受賞",
             "大韓眼科学会(KOS) 正会員",
             "韓国外眼部研究会(KEEDS) 正会員",
-            "韓国コンタクトレンズ(KCLSS) 正会員",
+            "韓国コンタクトレンズ学会(KCLSS) 正会員",
             "欧州白内障屈折矯正手術学会(ESCRS) 正会員"
           ]
         },
@@ -305,23 +378,718 @@
       "badge": "Healing AI Solutions",
       "title": "あなたの目にぴったりの",
       "titleHighlight": "最適な手術を見つける",
-      "description": "10万件以上の臨床データを学習したヒーリングアイクリニックAIが\nお客様の角膜データとライフスタイルを分析し、\n最も安全で効果的な視力矯正術を提案いたします。",
+      "description": "10万件以上の臨床データを学習した江南ヒーリング眼科AIが\nお客様の角膜データとライフスタイルを分析し、\n最も安全で効果的な視力矯正術をご提案いたします。",
       "features": [
         "角膜厚さと形状の3D分析",
         "ライフスタイルに基づくマッチング",
         "術後回復期間予測シミュレーション"
       ],
-      "ctaButton": "AI視力矯正予測を開始",
+      "ctaButton": "AI視力矯正予測を開始する",
       "visualTitle": "AI EYE SCANNING",
       "visualSubtitle": "Click to Start Analysis"
+    },
+    "AISurvey": {
+      "stepLabel": "AI Analysis Step {step}",
+      "questions": {
+        "age": {
+          "question": "年齢層を教えてください。",
+          "options": {
+            "under30": "20代以下",
+            "30s": "30代",
+            "40s": "40代",
+            "50plus": "50代以上"
+          }
+        },
+        "symptom": {
+          "question": "最も不便な点は何ですか？",
+          "options": {
+            "glassesDiscomfort": "眼鏡/コンタクトの不便さ",
+            "dryFatigue": "目の乾燥/疲労",
+            "nearVision": "近くの文字が見えにくい",
+            "lightGlare": "光のにじみがひどい"
+          }
+        },
+        "lifestyle": {
+          "question": "普段のライフスタイルは？",
+          "options": {
+            "digitalDevice": "パソコン/スマートフォンの使用が多い",
+            "outdoor": "アウトドア活動/運動を楽しむ",
+            "driving": "運転が多い",
+            "reading": "読書/細かい作業"
+          }
+        }
+      },
+      "loading": {
+        "title": "AIが目の状態を分析中です...",
+        "subtitle": "10万件の臨床データと照合しております。"
+      },
+      "result": {
+        "badge": "Recommendation",
+        "suitable": "が最適です。",
+        "description": "ご選択いただいたライフスタイルと症状に基づく一次分析結果です。",
+        "callToAction": "より正確な検査のために精密検診の予約をお手伝いいたしましょうか？"
+      },
+      "results": {
+        "cataract": {
+          "name": "老眼/白内障プレミアムセンター"
+        },
+        "smileLasik": {
+          "name": "スマイルレーシック (SMILE PRO)"
+        },
+        "customLasek": {
+          "name": "カスタムラセック"
+        }
+      },
+      "buttons": {
+        "retry": "やり直す",
+        "book": "検査を予約する"
+      }
+    }
+  },
+  "Vision": {
+    "Hero": {
+      "sectionTitle": "Vision Correction",
+      "headline": "次元の異なる",
+      "headlineHighlight": "視力矯正",
+      "description": "スマイルレーシック、ラセック、レンズ挿入術まで\n大学病院教授出身医療陣によるプレミアム視力矯正"
+    },
+    "Comparison": {
+      "title": "なぜ「ヒーリングスマイル」なのか？",
+      "subtitle": "従来のレーシック/ラセックの長所を合わせ、短所を補完した第3世代手術法",
+      "tableHeaders": {
+        "category": "区分",
+        "smileLasik": "スマイルレーシック",
+        "smileLasikBadge": "Best Choice",
+        "regularLasik": "一般レーシック",
+        "regularLasek": "一般ラセック"
+      },
+      "items": [
+        {
+          "label": "手術方法",
+          "healing": "角膜最小切開 (2mm)",
+          "lasik": "角膜フラップ作成 (24mm)",
+          "lasek": "上皮除去"
+        },
+        {
+          "label": "痛み",
+          "healing": "ほとんどなし",
+          "lasik": "少しあり",
+          "lasek": "2〜3日痛み"
+        },
+        {
+          "label": "回復期間",
+          "healing": "手術翌日",
+          "lasik": "3〜4日",
+          "lasek": "5〜7日"
+        },
+        {
+          "label": "角膜損傷",
+          "healing": "最小化 (安全)",
+          "lasik": "多い",
+          "lasek": "多い"
+        },
+        {
+          "label": "外部衝撃",
+          "healing": "強い",
+          "lasik": "弱い",
+          "lasek": "強い"
+        },
+        {
+          "label": "ドライアイ",
+          "healing": "ほとんどなし",
+          "lasik": "発生可能",
+          "lasek": "発生可能"
+        }
+      ]
+    },
+    "Process": {
+      "sectionTitle": "One-Day System",
+      "headline": "当日検査&手術、",
+      "headlineHighlight": "あなたの日常は止まりません。",
+      "description": "江南ヒーリング眼科のニュースマイルレーシックは角膜損傷を最小化し、\n午前検査後午後手術、翌日から洗顔・シャワー・軽い運動が可能です。",
+      "steps": [
+        {
+          "time": "AM 10:00",
+          "title": "精密検査",
+          "desc": "60種類以上の精密検査およびカウンセリング、手術適合度確認"
+        },
+        {
+          "time": "PM 02:00",
+          "title": "手術実施",
+          "desc": "手術時間10分、角膜最小切開で痛みほとんどなし"
+        },
+        {
+          "time": "PM 03:00",
+          "title": "帰宅後休息",
+          "desc": "回復室1時間休息後すぐに帰宅、麻酔後も違和感ほとんどなし"
+        },
+        {
+          "time": "Next Day",
+          "title": "手術翌日",
+          "desc": "目標視力90%回復、洗顔および基礎化粧、出勤可能"
+        },
+        {
+          "time": "1 Week",
+          "title": "1週間後",
+          "desc": "軽い運動およびほぼすべての日常生活可能（飲酒/喫煙除く）"
+        }
+      ]
+    },
+    "SafetySystem": {
+      "sectionTitle": "Safety First",
+      "headline": "妥協しない",
+      "headlineHighlight": "安全基準",
+      "items": [
+        {
+          "title": "1:1 Responsible Care",
+          "desc": "カウンセリングから手術、アフターケアまで1名の代表院長が専任いたします。代理手術の心配がない100%実名制システムを運営しております。"
+        },
+        {
+          "title": "DB & Backup",
+          "desc": "生涯保管される手術データ。手術後10年、20年が経ってもお客様の目の状態を正確に追跡観察できます。"
+        },
+        {
+          "title": "Emergency Power",
+          "desc": "無停電電源装置(UPS)稼働。天災や停電状況でもレーザー装置は止まることなく安全に手術を完了いたします。"
+        },
+        {
+          "title": "Clean Room System",
+          "desc": "大学病院級陽圧手術室。HEPAフィルターとエアシャワーシステムで微細粉塵と細菌を99.9%遮断し感染を予防いたします。"
+        },
+        {
+          "title": "Triple Check",
+          "desc": "検眼士、検眼院長、手術執刀院長の3重クロス検証。些細なデータエラーも許さない徹底した検査システム。"
+        }
+      ]
+    },
+    "HeroPage": {
+      "badge": "2026年最小切開術 ニュースマイルレーシック",
+      "title1": "NEW SMILE",
+      "title2": "LASIK",
+      "description1": "ZIEMER Z8 フェムトセカンドレーザーで実現する第4世代視力矯正手術\n角膜表面を透過し角膜実質層のみにレーザーを照射する最小切開レンチクル除去方式",
+      "description2": "視野中心軸と回転軸の正確な計測及び切削により精密な乱視矯正が可能な\n大学病院教授出身医療陣の次世代視力矯正システム"
+    },
+    "Procedures": {
+      "items": [
+        {
+          "id": "01",
+          "title": "ニュースマイルレーシック (New SMILE)",
+          "subtitle": "次世代最小切開視力矯正手術",
+          "desc": "ZIEMER Z8 フェムトセカンドレーザーを用いた最小切開方式で角膜損傷を最小化する第4世代視力矯正手術です。角膜表面を透過し実質層のみに精密にレーザーを照射するため角膜神経損傷が少なく、視軸中心の正確な計測により乱視矯正の精密度が高いです。",
+          "features": [
+            "2mm最小切開",
+            "角膜神経保存",
+            "精密乱視矯正",
+            "迅速な日常復帰"
+          ]
+        },
+        {
+          "id": "02",
+          "title": "プレミアムレーシック (Premium LASIK)",
+          "subtitle": "迅速な回復のスマート視力矯正",
+          "desc": "角膜フラップを作成後、レーザーで角膜を切削し屈折異常を矯正する検証済みの視力矯正手術です。手術当日から視力回復が可能で、痛みがほとんどなく迅速な日常復帰が可能です。最新のウェーブフロント技術により夜間視力の質まで改善いたします。",
+          "features": [
+            "当日視力回復",
+            "最小限の痛み",
+            "ウェーブフロントカスタマイズ",
+            "夜間視力向上"
+          ]
+        },
+        {
+          "id": "03",
+          "title": "プレミアムレーゼック (Premium LASEK)",
+          "subtitle": "安全性が検証された保守的視力矯正",
+          "desc": "角膜上皮層のみを除去し実質層にレーザーを照射する保守的方式で、角膜の厚さが薄い方や外部衝撃が多い職業の方に適しています。フラップを作成しないため構造的安定性に優れており、軍人、消防士、運動選手など活動的な職業の方に推奨されます。",
+          "features": [
+            "フラップ非作成",
+            "構造的安定性",
+            "強度近視矯正可能",
+            "外部衝撃に強い"
+          ]
+        },
+        {
+          "id": "04",
+          "title": "ICLレンズ挿入術 (EVO+ ICL)",
+          "subtitle": "角膜を保存するレンズ挿入視力矯正",
+          "desc": "角膜を切削せずに虹彩後方に特殊レンズを挿入し視力を矯正する眼内レンズ挿入術です。生体親和性Collamer素材で副作用が少なく、レーシック/レーゼックが不可能な超強度近視(-6ディオプター以上)や薄い角膜の患者様に最適な代替案です。手術後もレンズの除去が可能で可逆性が保証されます。",
+          "features": [
+            "角膜非切削",
+            "超強度近視矯正",
+            "UV遮断機能",
+            "可逆的施術"
+          ]
+        },
+        {
+          "id": "05",
+          "title": "レーシック・レーゼック再手術 (Re-Surgery)",
+          "subtitle": "精密診断と経験で完成する再矯正",
+          "desc": "以前の視力矯正手術後の視力低下、残余屈折異常、夜間ハロー現象などの問題を改善する高難度再矯正術です。大学病院教授出身医療陣の豊富な臨床経験に基づき、残余角膜厚を精密分析し安全な範囲内で再手術可能かどうかを判断いたします。",
+          "features": [
+            "精密角膜分析",
+            "副作用最小化",
+            "安全性優先",
+            "1:1カスタム相談"
+          ]
+        }
+      ]
+    },
+    "ProcessSteps": {
+      "items": [
+        {
+          "title": "精密検査",
+          "desc": "60種類以上の眼球精密測定"
+        },
+        {
+          "title": "1:1カウンセリング",
+          "desc": "ライフスタイル深層分析"
+        },
+        {
+          "title": "カスタマイズ手術",
+          "desc": "代表院長直接執刀"
+        },
+        {
+          "title": "術後管理",
+          "desc": "生涯眼球管理保証"
+        }
+      ]
+    },
+    "Button": {
+      "details": "詳細を見る & 相談申請"
+    }
+  },
+  "Cataract": {
+    "Hero": {
+      "sectionTitle": "Presbyopia & Cataract",
+      "headline": "若々しい視力を",
+      "headlineHighlight": "取り戻す",
+      "description": "老眼と白内障、オーダーメイドプレミアムレンズで\n人生第二幕の鮮明なスタート"
+    },
+    "HeroPage": {
+      "badge": "Premium Aging Care",
+      "title1": "TIMELESS",
+      "title2": "SIGHT",
+      "description1": "加齢は自然な現象ですが、視界がぼやけることは当然ではありません。",
+      "description2": "プレミアム多焦点人工水晶体で、あなたの視力を最も若かった頃の鮮明さに戻します。",
+      "subtitle": "もう一度、鮮明な世界を迎える準備はできていますか？",
+      "ctaButton": "老眼精密検査を予約する"
+    },
+    "AgingProcess": {
+      "sectionTitle": "The Process",
+      "headline": "Why does vision",
+      "headlineHighlight": "fade away?",
+      "description1": "私たちの目の水晶体はカメラのレンズのようなものです。年齢とともにこの水晶体が硬くなり濁ってきますが、これがまさに老眼と白内障です。",
+      "description2": "江南ヒーリング眼科は単に濁った水晶体を交換することを超えて、患者様の生活パターンに合った最も若く鮮明な視力を取り戻すことに注力いたします。",
+      "labels": {
+        "cornea": "角膜",
+        "iris": "虹彩",
+        "lens": "水晶体",
+        "retina": "網膜",
+        "opticNerve": "視神経",
+        "normal": "正常",
+        "cataract": "白内障",
+        "afterSurgery": "手術後"
+      },
+      "sectionLabel": "眼球断面図"
+    },
+    "Check": {
+      "sectionTitle": "Self Check",
+      "headline": "もしかして私も",
+      "headlineHighlight": "白内障でしょうか？",
+      "description": "白内障は初期症状が老眼と似ているため放置しやすいです。\n3つ以上該当する場合は精密検診が必要です。",
+      "healthTip": {
+        "title": "Health Tip",
+        "content": "40代以上の方は年に1回の眼科定期検診をお勧めいたします。"
+      },
+      "items": [
+        "小さな文字がぼやけて見えたり、ピントが合いにくい。",
+        "明るい場所より暗い場所でよく見える（昼盲現象）。",
+        "物が二重、三重に重なって見える（複視）。",
+        "光のにじみがひどく夜間運転が難しい。",
+        "目がぼんやりして疲労感を頻繁に感じる。",
+        "老眼鏡をかけても近くの文字がよく見えない。"
+      ]
+    },
+    "LensGuide": {
+      "sectionTitle": "Premium Lens",
+      "headline": "私に合った",
+      "headlineHighlight": "眼内レンズは？",
+      "description": "患者様のライフスタイル、職業、趣味などを考慮し、\n最も適したプレミアムレンズを1:1でオーダーメイド処方いたします。",
+      "interactionHint": "各距離区間にマウスを置いて視力の違いを体験してください",
+      "distanceZones": [
+        {
+          "id": "near",
+          "label": "近距離",
+          "distance": "30cm"
+        },
+        {
+          "id": "mid",
+          "label": "中間距離",
+          "distance": "1m"
+        },
+        {
+          "id": "far",
+          "label": "遠距離",
+          "distance": "5m"
+        }
+      ],
+      "visionStatus": {
+        "clear": "鮮明",
+        "blurry": "ぼやけ"
+      },
+      "allClear": "ALL CLEAR",
+      "features": "特徴",
+      "recommendFor": "推奨対象",
+      "lenses": [
+        {
+          "name": "多焦点眼内レンズ",
+          "eng": "Multifocal IOL",
+          "desc": "近距離、中間距離、遠距離すべてを鮮明に見ることができ、手術後老眼鏡が不要です。",
+          "pros": [
+            "すべての距離の視力確保",
+            "眼鏡/老眼鏡不要",
+            "白内障+老眼同時解決"
+          ],
+          "recommend": "社会活動が活発な中高年層"
+        },
+        {
+          "name": "単焦点眼内レンズ",
+          "eng": "Monofocal IOL",
+          "desc": "遠距離か近距離のどちらかにピントを合わせ、光のにじみが少なく適応が早いです。",
+          "pros": [
+            "鮮明な遠距離視力",
+            "少ない夜間光のにじみ",
+            "経済的な費用"
+          ],
+          "recommend": "夜間運転を多くされる方"
+        }
+      ]
+    },
+    "LifestyleMatch": {
+      "sectionTitle": "Find Your Lens",
+      "headline": "Find Your Lens",
+      "description": "白内障手術の核心は「どのレンズを選択するか」です。\nあなたのライフスタイルを選択し、最適なレンズをご確認ください。",
+      "recommendationBadge": "RECOMMENDATION",
+      "recommendationTitle": "推奨ソリューション",
+      "ctaButton": "1:1精密検査を申し込む",
+      "lifestyles": [
+        {
+          "id": "active",
+          "title": "アウトドア活動を楽しむ方",
+          "desc": "ゴルフ、登山、旅行のように遠くを見る活動が多いですか？",
+          "recommendation": "遠距離視力が重要な方には「パンオプティクス」または「ビビティ」レンズをお勧めいたします。鮮明で広い視野でアウトドア活動の楽しさを高めます。"
+        },
+        {
+          "id": "digital",
+          "title": "パソコン・スマートフォンの使用が多い方",
+          "desc": "テレビ視聴、パソコン作業、スマートフォンを頻繁にご覧になりますか？",
+          "recommendation": "中間距離視力が重要な方には「シナジー」または「アイハンス」レンズが適しています。画面を快適にご覧いただけるよう最適化されております。"
+        },
+        {
+          "id": "daily",
+          "title": "運転を頻繁にされる方",
+          "desc": "昼と夜に運転をされたり、日常生活が重要ですか？",
+          "recommendation": "夜間運転が多い方には「ビビティ」レンズをお勧めいたします。光のにじみを最小化し、鮮明なコントラストで安全な運転をサポートいたします。"
+        },
+        {
+          "id": "reading",
+          "title": "読書・精密作業をされる方",
+          "desc": "本や新聞を読んだり、近くを頻繁にご覧になりますか？",
+          "recommendation": "近距離視力が重要な方には「シナジー」または「パンオプティクス」レンズをお勧めいたします。30〜40cmの距離で最も鮮明にご覧いただけます。"
+        }
+      ]
+    }
+  },
+  "Center": {
+    "Hero": {
+      "sectionTitle": "Specialized Medical Center",
+      "headline": "EYE DISEASE",
+      "headlineHighlight": "CLINIC",
+      "description": "大学病院級精密診断設備と各分野の専門医療陣が\nあなたの目の健康を生涯守ります。"
+    },
+    "Clinics": {
+      "items": [
+        {
+          "title": "ドライアイ外来",
+          "eng": "Dry Eye Clinic",
+          "desc": "最新のM22 IPL設備を導入し、マイボーム腺機能を回復させ、ドライアイの根本原因を治療します。",
+          "stats": "IPL治療"
+        },
+        {
+          "title": "網膜センター",
+          "eng": "Retina Center",
+          "desc": "黄斑変性、糖尿病網膜症などの失明を引き起こす疾患を大学病院級広角OCT設備で早期発見し治療します。",
+          "stats": "超精密OCT"
+        },
+        {
+          "title": "緑内障センター",
+          "eng": "Glaucoma Care",
+          "desc": "視神経分析装置により音のない視力泥棒である緑内障を予防し、眼圧を精密に管理します。",
+          "stats": "生涯管理"
+        },
+        {
+          "title": "一般診療",
+          "eng": "General Eye Care",
+          "desc": "結膜炎、ものもらい、アレルギーなどの日常的な眼疾患から小児眼科検診まで丁寧に診療します。",
+          "stats": "家庭医"
+        }
+      ]
+    },
+    "Programs": {
+      "sectionTitle": "Treatment Programs",
+      "headline": "大学病院レベルの",
+      "headlineHighlight": "専門治療システム",
+      "description": "各分野の専任医療陣が\nあなたの目の健康のために深い診療をお約束いたします。",
+      "items": [
+        {
+          "title": "ドライアイ集中ケア (Dry Eye IPL)",
+          "desc": "単に人工涙液を処方するだけではありません。マイボーム腺機能を回復させるIPLレーザー治療と温熱マッサージを通じて、ドライアイの根本原因を解決いたします。",
+          "details": [
+            "M22 IPLレーザー施術",
+            "マイボーム腺スクイージング",
+            "自己血清点眼薬処方"
+          ]
+        },
+        {
+          "title": "緑内障精密早期診断",
+          "desc": "視神経は一度損傷すると回復しません。大学病院級OCTおよび視野検査装置を通じて初期緑内障を発見し、オーダーメイドの薬物を処方いたします。",
+          "details": [
+            "視神経乳頭分析",
+            "網膜神経繊維層撮影",
+            "24時間眼圧測定"
+          ]
+        },
+        {
+          "title": "黄斑変性抗体注射クリニック",
+          "desc": "失明原因第1位の黄斑変性。ルセンティス、アイリーアなど実証された抗体注射治療を通じて視力低下を防ぎ、網膜機能を保存いたします。",
+          "details": [
+            "光干渉断層撮影(OCT)",
+            "蛍光眼底血管造影",
+            "当日抗体注射施術"
+          ]
+        },
+        {
+          "title": "ドリームレンズ / 小児近視クリニック",
+          "desc": "寝ている間に視力を矯正するドリームレンズ。成長期のお子様の近視進行を抑制し、眼鏡なしの自由な昼間をプレゼントいたします。",
+          "details": [
+            "角膜形状解析検査",
+            "正規品レンズ試着",
+            "定期的な視力管理"
+          ]
+        }
+      ]
+    },
+    "SymptomChecklist": {
+      "sectionTitle": "Self Check",
+      "headline": "目の異常サイン、",
+      "headlineHighlight": "見逃さないでください。",
+      "description": "この中で2つ以上該当する場合は眼疾患の初期症状の可能性があります。\n放置すると視力損傷につながる可能性がありますので、今すぐ精密検査をお受けください。",
+      "checkedLabel": "CHECKED SYMPTOMS",
+      "items": [
+        "目が頻繁にゴロゴロして異物感がある。",
+        "朝起きた時に目を開けづらい。",
+        "光を見ると目がしみて涙が出る。",
+        "室内でもサングラスをかけたくなるほど眩しい。",
+        "視界がぼやけて息苦しい。",
+        "直線が歪んで見えたり、視野の中心が黒く見える。"
+      ]
+    },
+    "TreatmentProcess": {
+      "sectionTitle": "Our Process",
+      "headline": "Healing Therapy Process",
+      "description": "体系的な5段階治療プロセスで最高の結果をご提供いたします",
+      "steps": [
+        {
+          "title": "One-Stop検査",
+          "desc": "50種類以上の精密検査を1日で"
+        },
+        {
+          "title": "1:1主治医カウンセリング",
+          "desc": "検査データに基づいた精密分析"
+        },
+        {
+          "title": "オーダーメイドレーザー治療",
+          "desc": "M22、IPLなど最新設備治療"
+        },
+        {
+          "title": "専任看護師ケア",
+          "desc": "手術/施術後の回復室集中管理"
+        },
+        {
+          "title": "生涯安心保証",
+          "desc": "定期検診および再発防止プログラム"
+        }
+      ]
+    },
+    "Equipment": {
+      "sectionTitle": "Technology",
+      "headline": "World Class",
+      "headlineSubtitle": "High-End Equipment",
+      "items": [
+        {
+          "name": "AMARIS SPT",
+          "tag": "視力矯正レーザー",
+          "desc": "プレミアムレーザー装置アマリス。3D三次元立体矯正と角膜研磨システムで精密な視力矯正を実現します。",
+          "specs": [
+            "3D三次元立体矯正",
+            "0.54mm精密レーザービーム",
+            "7次元眼球追跡",
+            "スマートパルス"
+          ]
+        },
+        {
+          "name": "Galilei G4",
+          "tag": "角膜断層撮影",
+          "desc": "三次元角膜分析最先端検査装置。最速1秒の検査で122,000個のデータポイントを測定します。",
+          "specs": [
+            "1秒超高速検査",
+            "122,000個データ",
+            "三次元角膜分析",
+            "前眼部CT精密装置"
+          ]
+        },
+        {
+          "name": "Pentacam HR",
+          "tag": "角膜形状解析",
+          "desc": "精密角膜分析により手術可否を判定し、副作用への迅速な対処が可能です。精密で正確な白内障検査も可能です。",
+          "specs": [
+            "精密角膜分析",
+            "副作用対処",
+            "正確な地形図データ",
+            "白内障検査"
+          ]
+        },
+        {
+          "name": "3D OCT-1",
+          "tag": "眼球光学断層",
+          "desc": "視神経および網膜のCT撮影機。短い撮影時間で不便さを軽減し、緑内障、糖尿病網膜症、黄斑変性などを診断できます。",
+          "specs": [
+            "視神経・網膜CT",
+            "短い撮影時間",
+            "緑内障診断",
+            "網膜疾患診断"
+          ]
+        },
+        {
+          "name": "Optos Daytona P200T",
+          "tag": "光学眼底撮影",
+          "desc": "散瞳なしで短時間(0.25秒)で撮影可能。200度ワイド映像で一度に周辺網膜を撮影し、網膜疾患を早期発見・予防できます。",
+          "specs": [
+            "0.25秒超高速",
+            "200度ワイド映像",
+            "散瞳不要",
+            "早期発見・予防"
+          ]
+        },
+        {
+          "name": "FEMTO LDV Z8",
+          "tag": "白内障レーザー",
+          "desc": "現存する最も精密なレーザー装置。精密な水晶体除去で手術時間を短縮し、早い回復を可能にします。",
+          "specs": [
+            "精密水晶体除去",
+            "手術時間短縮",
+            "バブル現象最小化",
+            "7次元眼球追跡"
+          ]
+        },
+        {
+          "name": "IOL MASTER 700",
+          "tag": "眼球計測",
+          "desc": "超精密眼球レーザー計測器。眼球のすべての部位を精密検査できる非接触式最先端超精密眼球レーザー計測器です。",
+          "specs": [
+            "非接触式計測",
+            "全部位精密検査",
+            "高い検査精度",
+            "迅速で安全な手術"
+          ]
+        },
+        {
+          "name": "CALLISTO EYE",
+          "tag": "乱視追跡ナビ",
+          "desc": "乱視誤差率0%に挑戦する手術ナビゲーション。精密な手術ガイドを視覚化し、切開位置、サイズ、眼内レンズ位置、乱視軸を正確に表示します。",
+          "specs": [
+            "乱視誤差率0%",
+            "手術ガイド視覚化",
+            "正確な切開位置",
+            "乱視軸表示"
+          ]
+        },
+        {
+          "name": "LUMERA 700",
+          "tag": "超精密顕微鏡",
+          "desc": "卓越した視野確保機能で質の高い視力改善をご提供いたします。最適な手術視野を自動調節し、患者様の乱視軸を自動でカスタム調節いたします。",
+          "specs": [
+            "卓越した視野確保",
+            "自動視野調節",
+            "乱視軸自動調節",
+            "迅速で精密な手術"
+          ]
+        }
+      ]
+    }
+  },
+  "Insight": {
+    "Hero": {
+      "sectionTitle": "Insight",
+      "headline": "専門家と共にする",
+      "headlineHighlight": "目の健康のお話"
+    },
+    "VideoGallery": {
+      "channelLabel": "YouTube Channel",
+      "channelName": "眼科お姉さん @dreyesis",
+      "channelDescription": "眼科専門医がお届けする目の健康情報",
+      "visitChannel": "チャンネルへ",
+      "badge": "眼科お姉さん",
+      "emptyState": "現在表示できる動画がありません。",
+      "dates": {
+        "today": "今日",
+        "yesterday": "昨日",
+        "daysAgo": "{count}日前",
+        "weeksAgo": "{count}週間前",
+        "monthsAgo": "{count}ヶ月前",
+        "yearsAgo": "{count}年前"
+      }
+    },
+    "ExpertQnA": {
+      "sectionTitle": "Medical Q&A",
+      "headline": "何でも",
+      "headlineHighlight": "ご質問ください",
+      "description": "診療室で患者様が最も多く気になっていた質問。\n眼科専門医が直接明快にお答えいたします。",
+      "answeredBy": "Answered by",
+      "items": [
+        {
+          "q": "レーシック手術後、視力がまた悪くなることはありますか？",
+          "a": "近視の戻りは高度近視の患者様でまれに発生することがあります。しかし江南ヒーリング眼科の「スマイルプロ」は角膜切削量が少なく、構造的安定性に優れているため、近視の戻りの確率を画期的に低減いたしました。万が一視力が低下しても残存角膜量に応じて再矯正が可能であり、生涯管理プログラムを通じて継続的なケアをお受けいただけます。",
+          "doc": "金善英 代表院長"
+        },
+        {
+          "q": "老眼手術、白内障がなくても受けられますか？",
+          "a": "はい、可能です。水晶体の調節力が低下し近距離が不便な場合、「老眼矯正レンズ挿入術」または「モノビジョンレーシック」で矯正できます。ただし、40代後半〜50代前半であれば、今後の白内障発生の可能性まで考慮し、医療陣と十分なカウンセリング後に手術時期を決定することをお勧めいたします。",
+          "doc": "李準浩 院長"
+        },
+        {
+          "q": "ドライアイがひどいのですが、視力矯正術は可能ですか？",
+          "a": "ドライアイがひどい場合は、一般レーシックよりも角膜表面の損傷が少ない「スマイルレーシック」や「レンズ挿入術(ICL)」をお勧めいたします。手術前に「IPLレーザー」治療でドライアイを先に改善し、手術後に集中管理プログラムを併行すれば、健康な視力を取り戻すことができます。",
+          "doc": "朴志旻 院長"
+        }
+      ]
+    },
+    "Page": {
+      "heroDescription1": "正確な医学情報と健康的なライフスタイルのための",
+      "heroDescription2": "江南ヒーリング眼科の専門コラムをご覧ください。",
+      "medicalColumnTitle": "医療コラム",
+      "authorName": "金善英院長",
+      "newsletter": {
+        "description": "毎週、目の健康に役立つ情報をお届けします。",
+        "noSpam": "スパムは絶対に送りません。"
+      }
     }
   },
   "About": {
     "BrandStory": {
-      "sectionTitle": "Our Mission",
-      "headline": "More Than Vision,",
-      "headlineSubtitle": "We Design Your Life.",
-      "description": "単に視力を矯正することを超えて、\nあなたの人生がより鮮明で美しくなるように。\nヒーリングアイクリニックは技術と芸術の境界で\n最も完璧な視力を彫刻します。",
+      "sectionTitle": "私たちのミッション",
+      "headline": "視力を超えて、",
+      "headlineSubtitle": "あなたの人生をデザインします。",
+      "description": "単に視力を矯正することを超えて、\nあなたの人生がより鮮明で美しくなるように。\n江南ヒーリング眼科は技術と芸術の境界で\n最も完璧な視力を彫刻いたします。",
       "stats": [
         {
           "label": "成功症例",
@@ -341,31 +1109,32 @@
       ]
     },
     "DirectorMessage": {
-      "sectionTitle": "Greeting",
-      "headline": "Healing Your Eyes,",
-      "headlineSubtitle": "Design Your Life.",
-      "representativeDirector": "Representative Director",
-      "doctorName": "Dr. Kim, Sun-young",
-      "greeting": "こんにちは、ヒーリングアイクリニック代表院長の金善英です。",
+      "sectionTitle": "ご挨拶",
+      "headline": "あなたの目を癒し、",
+      "headlineSubtitle": "人生をデザインします。",
+      "representativeDirector": "代表院長",
+      "doctorName": "金善英 院長",
+      "greeting": "こんにちは、江南ヒーリング眼科代表院長の金善英でございます。",
       "paragraphs": [
-        "「見る」ということは、単に物を認識することを超えて、愛する人の顔を向き合い、美しい風景を記憶し、人生の全ての瞬間を完全に感じる過程です。",
-        "大学病院教授時代から今まで数万人の患者様にお会いして私が悟ったことは、結局最も良い医術は「共感」から始まるということです。患者様の小さな不便さまで耳を傾け、家族に接する心で診療すること。それが私が考える「ヒーリング」の本質です。",
-        "江南唯一の女性代表院長単独開院というタイトルよりも、お一人お一人の目の健康を最後まで責任を持つ生涯主治医として記憶されたいと思います。あなたの最も輝く瞬間のために、ヒーリングアイクリニックが共にいたします。"
+        "「見る」ということは、単に物を認識することを超えて、愛する人の顔と向き合い、美しい風景を記憶し、人生のあらゆる瞬間を完全に感じる過程です。",
+        "大学病院教授時代から今まで数万人の患者様にお会いして私が悟ったことは、結局最も良い医術は「共感」から始まるということです。患者様の小さなお悩みまで耳を傾け、ご家族に接する心で診療すること。それが私が考える「ヒーリング」の本質です。",
+        "江南唯一の女性代表院長単独開院というタイトルよりも、お一人お一人の目の健康を最後まで責任を持つ生涯主治医として記憶されたいと思います。あなたの最も輝く瞬間のために、江南ヒーリング眼科が共にいたします。"
       ]
     },
     "HistoryTimeline": {
-      "sectionTitle": "Milestones",
-      "headline": "Our History",
+      "sectionTitle": "沿革",
+      "headline": "私たちの歴史",
+      "historyLabel": "沿革",
       "timeline": [
         {
           "year": "2018",
-          "title": "ヒーリングアイクリニック開院",
+          "title": "江南ヒーリング眼科開院",
           "description": "駅三洞808タワー プレミアム視力矯正センターオープン"
         },
         {
           "year": "2019",
           "title": "大学病院級設備導入",
-          "description": "最新視力矯正設備及び精密検査システム構築"
+          "description": "最新視力矯正設備および精密検査システム構築"
         },
         {
           "year": "2020",
@@ -392,24 +1161,65 @@
           "title": "AI精密検査システム",
           "description": "最先端AI基盤オーダーメイド視力矯正システム構築"
         }
-      ],
-      "historyLabel": "HISTORY"
+      ]
+    },
+    "History": {
+      "sectionLabel": "Milestones",
+      "headline": "Our History",
+      "historyLabel": "HISTORY",
+      "items": [
+        {
+          "year": "2018",
+          "title": "江南ヒーリング眼科開院",
+          "desc": "駅三洞808タワー プレミアム視力矯正センターオープン"
+        },
+        {
+          "year": "2019",
+          "title": "大学病院級設備導入",
+          "desc": "最新視力矯正設備および精密検査システム構築"
+        },
+        {
+          "year": "2020",
+          "title": "スマイルレーシック専門センター",
+          "desc": "最小切開スマイルレーシック本格開始"
+        },
+        {
+          "year": "2021",
+          "title": "老眼/白内障センター拡大",
+          "desc": "プレミアム多焦点眼内レンズ専門診療開始"
+        },
+        {
+          "year": "2022",
+          "title": "最小切開術クリアレーシック",
+          "desc": "差別化された診療システムでクリアレーシック導入"
+        },
+        {
+          "year": "2023",
+          "title": "累積手術50,000眼達成",
+          "desc": "患者満足度4.9/5.0達成、地域代表眼科へ成長"
+        },
+        {
+          "year": "2024",
+          "title": "AI精密検査システム",
+          "desc": "最先端AI基盤オーダーメイド視力矯正システム構築"
+        }
+      ]
     },
     "Location": {
-      "sectionTitle": "Location",
-      "headline": "Visit Us",
+      "sectionTitle": "アクセス",
+      "headline": "ご来院方法",
       "address": {
-        "title": "Address",
+        "title": "住所",
         "line1": "ソウル特別市江南区江南大路470 808タワー10-11階",
         "line2": "(新論峴駅6番出口 徒歩1分)"
       },
       "contact": {
-        "title": "Contact",
+        "title": "連絡先",
         "phone": "02-566-1222",
         "kakao": "kakao @healingeye"
       },
       "hours": {
-        "title": "Hours",
+        "title": "診療時間",
         "weekday": "平日: 09:30 - 18:30 (休憩時間 13:00 - 14:00)",
         "friday": "金曜日: 09:30 - 21:00 (夜間診療)",
         "saturday": "土曜日: 09:30 - 16:00",
@@ -418,13 +1228,13 @@
       "mapLabel": "新論峴駅6番出口"
     },
     "Philosophy": {
-      "sectionTitle": "Philosophy",
-      "headline": "The Standard",
-      "headlineSubtitle": "of Excellence.",
-      "description": "ヒーリングアイクリニックは三つの核心価値をもとに\n最も完璧な視力矯正をお約束いたします。",
+      "sectionTitle": "理念",
+      "headline": "卓越性の",
+      "headlineSubtitle": "基準。",
+      "description": "江南ヒーリング眼科は三つの核心価値をもとに\n最も完璧な視力矯正をお約束いたします。",
       "values": [
         {
-          "title": "Safety First",
+          "title": "安全最優先",
           "subtitle": "妥協しない安全基準",
           "description": "手術前60段階精密検査、3重クロス検証システムで0.01%の誤差も許しません。",
           "stats": [
@@ -439,9 +1249,9 @@
           ]
         },
         {
-          "title": "Personalized",
-          "subtitle": "ただ一人のためのオーダーメイドプラン",
-          "description": "工場型手術を拒否します。患者様の角膜指紋、生活パターン、職業環境まで考慮した1:1オーダーメイドプランを設計します。",
+          "title": "オーダーメイド診療",
+          "subtitle": "ただお一人のためのオーダーメイドプラン",
+          "description": "工場型手術を拒否いたします。患者様の角膜指紋、生活パターン、職業環境まで考慮した1:1オーダーメイドプランを設計いたします。",
           "stats": [
             {
               "label": "オーダーメイドプラン",
@@ -454,9 +1264,9 @@
           ]
         },
         {
-          "title": "Lifetime Care",
-          "subtitle": "生涯目の健康パートナー",
-          "description": "手術後10年、20年が経ってもお客様の目の状態を正確に追跡観察できる生涯管理システムを運営しています。",
+          "title": "生涯ケア",
+          "subtitle": "生涯の目の健康パートナー",
+          "description": "手術後10年、20年が経ってもお客様の目の状態を正確に追跡観察できる生涯管理システムを運営しております。",
           "stats": [
             {
               "label": "データ保管",
@@ -473,51 +1283,288 @@
   },
   "Footer": {
     "brandName": "Healing Eye",
-    "tagline": "Experience the new standard of vision correction. Premium service, state-of-the-art technology, and a brand new life for your eyes.",
+    "tagline": "Experience the new standard of vision correction.\nPremium service, state-of-the-art technology, and a brand new life for your eyes.",
     "contact": {
       "title": "Contact",
-      "address": "ソウル特別市江南区江南大路470\n808タワー10-11階 (新論峴駅6番出口)",
+      "address": "ソウル特別市江南区江南大路470 808タワー10-11階",
+      "addressSub": "(新論峴駅6番出口 徒歩1分)",
       "phone": "02-566-1222",
       "kakao": "kakao @healingeye"
     },
     "hours": {
       "title": "Hours",
-      "weekday": "平日",
+      "weekday": "Mon - Thu",
       "weekdayTime": "09:30 - 18:30",
-      "lunchBreak": "(休憩 13:00-14:00)",
-      "friday": "金曜日",
+      "lunchBreak": "休憩時間 13:00 - 14:00",
+      "friday": "Fri",
+      "fridayLabel": "(夜間診療)",
       "fridayTime": "09:30 - 21:00",
-      "saturday": "土曜日",
+      "saturday": "Sat",
       "saturdayTime": "09:30 - 16:00",
-      "closed": "日曜日 / 祝日",
-      "closedStatus": "休診"
+      "closed": "Sun / Holiday",
+      "closedStatus": "Closed"
     },
     "copyright": "Healing Eye Clinic. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   },
-  "Common": {
-    "navigation": {
-      "home": "ホーム",
-      "about": "病院紹介",
-      "treatments": "診療案内",
-      "equipment": "設備紹介",
-      "community": "コミュニティ",
-      "reservation": "予約する"
-    },
-    "buttons": {
-      "book": "予約する",
-      "viewMore": "詳しく見る",
-      "previous": "前へ",
-      "next": "次へ",
-      "close": "閉じる",
-      "submit": "提出する",
-      "cancel": "キャンセル"
-    },
-    "labels": {
-      "loading": "読み込み中...",
-      "error": "エラーが発生しました",
-      "success": "正常に完了しました"
+  "Community": {
+    "Page": {
+      "buttons": {
+        "viewReviews": "手術レビューを見る",
+        "realTimeReservation": "今すぐ予約",
+        "visitLink": "訪問"
+      },
+      "notices": {
+        "title": "お知らせ & イベント",
+        "items": [
+          {
+            "title": "2024年旧正月休診のお知らせ",
+            "date": "2024.01.15",
+            "tag": "お知らせ"
+          },
+          {
+            "title": "受験生限定SMILEレーシック最大49%割引",
+            "date": "2024.01.01",
+            "tag": "イベント"
+          },
+          {
+            "title": "江南ヒーリング眼科累計5万件手術達成記念",
+            "date": "2023.12.10",
+            "tag": "ニュース"
+          }
+        ]
+      },
+      "social": {
+        "instagram": {
+          "name": "@healingeyeclinic",
+          "description": "江南ヒーリング眼科の日常と手術レビュー"
+        },
+        "youtube": {
+          "name": "眼科お姉さん",
+          "description": "@dreyesis 目の健康情報"
+        },
+        "blog": {
+          "name": "江南ヒーリング眼科",
+          "description": "専門コラムと医療情報"
+        }
+      },
+      "faq": {
+        "title": "よくある質問 (FAQ)",
+        "categories": [
+          "クリアレーシック",
+          "レーシック",
+          "ラセック",
+          "ICL（眼内レンズ）",
+          "白内障",
+          "翼状片",
+          "網膜"
+        ],
+        "items": {
+          "clearLasik": [
+            {
+              "q": "手術後7日経過しましたが、ぼやけて見えます。正常な現象でしょうか？",
+              "a": "手術後のぼやけた視界は、ほとんどの場合、角膜の腫れによって発生する一時的な現象です。個人差はありますが、角膜の腫れが完全に引くまでには約1ヶ月程度かかる場合があります。したがって、現在ぼやけて見えるのは回復過程の一部であり、ご心配には及びません。時間が経つにつれて視界は徐々に鮮明になり、1ヶ月後にはさらによく見えるようになるでしょう。"
+            },
+            {
+              "q": "手術後の洗顔、シャワー、入浴施設、サウナの利用はいつから可能ですか？",
+              "a": "手術後の洗顔とシャワーは翌日から可能です。ただし、目に水が入らないよう注意が必要です。入浴施設とサウナは手術後1ヶ月以降からのご利用をお勧めいたします。"
+            },
+            {
+              "q": "ヨガやジムのような運動はいつから可能ですか？",
+              "a": "ヨガやジムのような軽い運動は手術翌日から可能です。ただし、無理のない範囲で行う必要があります。激しい運動や接触の多い運動（球技種目など）は手術後1ヶ月以降から可能です。"
+            },
+            {
+              "q": "自己血清点眼薬に白い浮遊物が浮いていますが大丈夫でしょうか？",
+              "a": "はい、自己血清点眼薬に白い浮遊物が浮いているのは正常な現象です。自己血清点眼薬には私たちの体の血栓を作る成分が含まれているため、血栓が塊の形で現れて白い浮遊物のように見えることがあります。"
+            },
+            {
+              "q": "自己血清点眼薬はいつまで使用すべきですか？",
+              "a": "血清点眼薬は速やかな回復だけでなく、ドライアイの治療薬としても使用され、点眼薬がすべてなくなるまで使用していただけます。もし追加処方をご希望の場合は病院までお問い合わせください。"
+            },
+            {
+              "q": "手術後視力がぼやけて見えますが、いつ頃正常に戻りますか？",
+              "a": "手術後視力がぼやけて見えるのは、角膜浮腫によって発生する正常な現象です。一般的に1〜2週間後には浮腫が減少し、視力が徐々に改善されます。"
+            },
+            {
+              "q": "手術後近距離がまだ見えにくいのですが、いつ頃良くなりますか？",
+              "a": "手術後近距離視力が完全に回復するまでには約2週間の適応期間が必要です。この期間中、目が手術後の変化に適応しながら、徐々に近距離視力が改善されます。"
+            }
+          ],
+          "lasik": [
+            {
+              "q": "レーシック手術後、目がチクチクして痛みがあります。どうすればよいですか？",
+              "a": "レーシック手術後、目がチクチクして痛みを感じるのは正常な現象です。一般的に手術後6時間は涙が多く出て、しみることがありますが、1〜2日後には症状が徐々に和らぎます。目をこすらないよう注意してください。"
+            },
+            {
+              "q": "レーシック手術後帰宅して見ると保護レンズが外れていました。どうすればよいですか？",
+              "a": "レーシック手術後保護レンズが外れてもご心配には及びません。レーシック手術の場合、保護レンズは主に痛みの緩和と目の乾燥予防のために挿入されており、視力回復には大きな影響を与えません。"
+            },
+            {
+              "q": "自己血清点眼薬に白い浮遊物が浮いていますが大丈夫でしょうか？",
+              "a": "はい、自己血清点眼薬に白い浮遊物が浮いているのは正常な現象です。自己血清点眼薬には私たちの体の血栓を作る成分が含まれているため、血栓が塊の形で現れて白い浮遊物のように見えることがあります。"
+            },
+            {
+              "q": "自己血清点眼薬はいつまで使用すべきですか？",
+              "a": "血清点眼薬は速やかな回復だけでなく、ドライアイの治療薬としても使用され、点眼薬がすべてなくなるまで使用していただけます。もし追加処方をご希望の場合は病院までお問い合わせください。"
+            },
+            {
+              "q": "手術後モニターを見ながら仕事をしなければなりませんが、光のにじみがひどくて困っています。どうすればよいでしょうか？",
+              "a": "レーシック手術後の光のにじみは正常な現象です。視力が安定化する期間は約1ヶ月で、近距離視力はその中でも最も遅く回復します。したがって、手術後1ヶ月間は光のにじみがひどく現れることがあります。"
+            },
+            {
+              "q": "レーシック手術後も紫外線対策は必要ですか？",
+              "a": "過去に比べて紫外線対策の重要性は多少低くなりました。特に、フラップを作成するレーシック手術方法の場合は、角膜上皮が速やかに回復し、紫外線遮断効果も高いため、必ずしも紫外線対策をする必要はありません。"
+            },
+            {
+              "q": "レーシック手術後視力がぼやけて見えますが、いつ頃正常に戻りますか？",
+              "a": "手術後視力がぼやけて見えるのは、角膜浮腫によって発生する正常な現象です。一般的に1〜2週間後には浮腫が減少し、視力が徐々に改善されます。"
+            },
+            {
+              "q": "レーシック手術後、朝起きたときに視界がぼやけて見えますが、時間が経つと大丈夫になります。その理由は何ですか？",
+              "a": "レーシック手術後、朝に視界がぼやけて見えるのはドライアイが原因である可能性が高いです。手術後角膜上皮が回復する過程で涙の分泌が減少し、ドライアイが発生することがあり、これは朝に最もひどく現れることがあります。"
+            },
+            {
+              "q": "レーシック手術後翌日からパソコンとスマートフォンを自由に使ってもよいですか？",
+              "a": "レーシック手術後翌日からパソコンとスマートフォンを日常生活で使用することは可能です。ただし、目に負担がかからないよう途中で休憩を取り、人工涙液を点眼して乾燥しないように管理する必要があります。"
+            }
+          ],
+          "lasek": [
+            {
+              "q": "ラセック手術後4日目ですが、まだ痛みがあって心配です。正常な現象でしょうか？",
+              "a": "ラセック手術後2〜3日目が最も痛みがひどく、4日目から痛みが徐々に治まり始めるでしょう。ただし、個人の健康状態、手術方法、回復速度などによって痛みが続く期間は異なる場合があります。"
+            },
+            {
+              "q": "ラセック手術後4日目ですが、手術直後より視力が見えなくなった気がして心配です。",
+              "a": "ラセック手術後4日目に視力が見えなくなるのは、角膜上皮の回復過程によって発生する一時的な現象です。手術後3〜7日の間は、角膜上皮が中央に集まる過程で視力がぼやけて見えることがあります。"
+            },
+            {
+              "q": "ラセック手術後1ヶ月経ちましたが、視力が依然としてぼやけて見える理由は何でしょうか？",
+              "a": "ラセック手術後視力が完全に安定化するまでには個人差があり、一般的に3ヶ月までかかります。強度近視や強度乱視の場合、視力回復期間がさらに長くなることがあり、6ヶ月まで続くことがあります。"
+            },
+            {
+              "q": "ラセック手術後フルロン点眼薬はいつから使用すべきですか？また、1日に何回使用すべきで、使用期間はどのくらいですか？",
+              "a": "フルロン点眼薬はラセック手術後レンズを除去する直後に使用する必要があります。1日4回、朝、昼、夕方、就寝前にそれぞれ1滴ずつ点眼します。点眼薬は約3ヶ月間点眼する必要があり、眼科専門医の指示に従って使用期間が異なる場合があります。"
+            },
+            {
+              "q": "自己血清点眼薬に白い浮遊物が浮いていますが大丈夫でしょうか？",
+              "a": "はい、自己血清点眼薬に白い浮遊物が浮いているのは正常な現象です。自己血清点眼薬には私たちの体の血栓を作る成分が含まれているため、血栓が塊の形で現れて白い浮遊物のように見えることがあります。"
+            },
+            {
+              "q": "自己血清点眼薬はいつまで使用すべきですか？",
+              "a": "血清点眼薬は速やかな回復だけでなく、ドライアイの治療薬としても使用され、点眼薬がすべてなくなるまで使用していただけます。もし追加処方をご希望の場合は病院までお問い合わせください。"
+            },
+            {
+              "q": "ラセック後、室内でもUVカット眼鏡やサングラスを着用すべきですか？",
+              "a": "ラセック後、室内でLED遮断のためにUVカット眼鏡やサングラスを着用する必要はありません。外出時にはUVカット機能のあるサングラスを着用します。UV遮断率99%以上のサングラスを選択することをお勧めします。"
+            },
+            {
+              "q": "ラセック手術後、夜に運転しなければなりませんが、いつから可能ですか？今はまぶしさのため運転が難しいです。",
+              "a": "ラセック手術後の夜間運転は個人差がありますが、一般的に1〜3ヶ月以降から可能です。初期は光のにじみがあるため夜間運転を避けることをお勧めし、日中運転から始めてゆっくり適応した後、1〜3ヶ月以降の夜間運転をお勧めいたします。"
+            }
+          ],
+          "icl": [
+            {
+              "q": "レンズ挿入術後6ヶ月程度経ちましたが、定期検診は必要ですか？",
+              "a": "はい、レンズ挿入術後6ヶ月が経過しても定期検診は必須です。目の中にレンズが挿入されているため、角膜内皮細胞数が減少する可能性があり、定期検診を通じて角膜内皮細胞数を確認し、減少があるかどうかを把握する必要があります。"
+            },
+            {
+              "q": "レンズ挿入術後、入浴施設やサウナはいつから利用できますか？",
+              "a": "レンズ挿入術後、入浴施設やサウナは一般的に1ヶ月以降から利用可能です。ただし、個人の目の健康状態や手術結果によって利用可能時期が異なる場合があります。"
+            },
+            {
+              "q": "洗顔やシャワーはいつから可能ですか？",
+              "a": "洗顔とシャワーは一般的に3日以降から可能です。3日以内は目に水が入らないよう注意が必要です。洗顔は目を避けて残りの顔だけを洗う必要があります。"
+            },
+            {
+              "q": "レンズ挿入術後、うつ伏せで寝る姿勢は大丈夫でしょうか？",
+              "a": "レンズ挿入術後、最低1ヶ月間はうつ伏せで寝る姿勢を避けることをお勧めします。うつ伏せで寝る姿勢は眼圧上昇を引き起こす可能性があり、これはレンズ挿入術後の回復に悪影響を及ぼす可能性があります。"
+            },
+            {
+              "q": "眼帯はどのくらい着用すべきですか？",
+              "a": "就寝中に誤って目をこすった場合、レンズが目の中で位置を固定するのを妨げる可能性があり、手術部位の損傷を予防するため、一般的に2週間程度眼帯の着用をお勧めいたします。"
+            }
+          ],
+          "cataract": [
+            {
+              "q": "白内障手術後ぼやけて見える症状はいつ頃良くなりますか？",
+              "a": "白内障手術後ぼやけて見える症状は個人差がありますが、一般的に3〜6ヶ月以内に良くなります。手術後1〜2ヶ月間は人工水晶体に適応しながら視力が徐々に良くなり始めます。"
+            },
+            {
+              "q": "友人は手術後すぐによく見えたのに、私がよく見えない理由は何ですか？",
+              "a": "白内障手術後の視力回復速度は個人によって異なります。ご友人と比較するよりも、ご自身の目の状態に集中し、眼科専門医の指示に従うことが重要です。"
+            },
+            {
+              "q": "白内障手術後、目が不快で心配です。",
+              "a": "白内障手術後の目の不快感は、ほとんどの場合正常な現象です。麻酔が切れて目が回復する過程で発生し、時間が経つにつれて徐々に和らぎます。"
+            },
+            {
+              "q": "白内障手術は再発の可能性はありませんか？",
+              "a": "白内障手術自体は再発の可能性が非常に低いです。ただし、後発白内障という概念があります。後発白内障は手術後に残っている後嚢という部分に膜ができることを指し、レーザー治療で簡単に除去できます。"
+            },
+            {
+              "q": "昨日白内障手術をしましたが、充血がひどくて心配です。",
+              "a": "手術時に緊張すると目に力が入り充血が発生することがあります。白内障手術後の充血はほとんどの場合一時的な現象で、時間が経つにつれて改善されます。ほとんどの場合、手術後2週間から1ヶ月程度経つと充血が自然に消失します。"
+            },
+            {
+              "q": "白内障手術後、目が震える症状が現れました。",
+              "a": "手術後目が震える症状は、ドライアイおよび光のにじみ現象とともに、レンズが位置を固定するための適応症状です。ほとんどの場合、目の震えの症状は時間が経つにつれて改善されます。"
+            }
+          ],
+          "pterygium": [
+            {
+              "q": "翼状片手術後、充血がひどくて心配です。いつ頃良くなりますか？",
+              "a": "手術後回復する過程で異物感と充血が生じることがあり、ほとんどの場合2ヶ月以内に自然に良くなります。これは一時的な現象で、時間が経つにつれて充血が和らぎ、目の健康が回復するでしょう。"
+            },
+            {
+              "q": "翼状片手術当日、運転しても大丈夫ですか？",
+              "a": "翼状片手術当日の運転はお勧めしません。安全のため、手術後2〜3日程度は運転を避けることをお勧めします。2〜3日後、目の状態が楽になり視力が回復したと感じたら運転しても大丈夫です。"
+            },
+            {
+              "q": "翼状片手術当日、目がしみてひどくて心配です。大丈夫でしょうか？",
+              "a": "翼状片手術後の目のしみる感覚は、ほとんどの場合正常な現象です。手術過程で目に刺激が加わり、しみる感覚、ぼやけた視界、異物感などの不快感を感じることがあります。ほとんどの場合、目のしみる感覚は1日程度経つと改善されます。"
+            },
+            {
+              "q": "翼状片手術後、手術部位がでこぼこして翼状片が残っているようで心配です。",
+              "a": "翼状片があった場所は長く経つほど深く混濁が進行し、手術後も少し白く沈着することがあります。ほとんどの場合、でこぼこと翼状片は2ヶ月程度経つと改善されます。"
+            },
+            {
+              "q": "翼状片手術後、洗顔やシャワーはいつから可能ですか？",
+              "a": "洗顔とシャワーは一般的に3日以降から可能です。3日以内は目に水が入らないよう注意が必要です。洗顔は目を避けて残りの顔だけを洗う必要があります。"
+            },
+            {
+              "q": "翼状片手術後、いつから運動しても大丈夫ですか？",
+              "a": "翼状片手術後の運動可能時期は運動タイプによって異なります。軽い有酸素運動は手術後1週間以降から可能です。接触が多かったり激しい運動は手術後1ヶ月以降から可能です。"
+            }
+          ],
+          "retina": [
+            {
+              "q": "網膜手術当日、目がよく開かず重なって見えますが大丈夫でしょうか？",
+              "a": "手術後の回復過程で当日は麻酔のため目がよく開かず重なって見えることがあります。これは一時的な現象で、24時間以内に改善され始めます。"
+            },
+            {
+              "q": "網膜手術後の回復期間はどのくらいかかりますか？",
+              "a": "網膜手術後の回復期間は個人差がありますが、一般的に手術後1ヶ月は視界がぼやけてかすんで見えることがあります。1年から1年半程度まで視界が完全に回復することがあります。"
+            },
+            {
+              "q": "網膜手術後、眼帯を外して点眼薬をどのように使用すべきですか？",
+              "a": "手術翌日の朝に眼帯をご自身で取り外してください。説明した点眼薬を5分間隔で点眼後、病院に必ず来院して手術の経過観察を受ける必要があります。抗生剤、消炎剤の点眼薬は1日4回1ヶ月間使用し、ブロムフェン点眼薬は1日2回使用してください。"
+            },
+            {
+              "q": "網膜手術後の来院はいつですか？",
+              "a": "手術翌日、手術後の経過観察のため病院に来院する必要があります。1週間後、手術部位の状態確認のため来院します。1ヶ月後、2ヶ月後の来院が必要です。その後は1年ごとに健康診断の観点から目の経過観察のため来院します。"
+            },
+            {
+              "q": "網膜手術後、いつから運転しても大丈夫ですか？",
+              "a": "昼間の運転は1週間以降から可能で、夜間の運転は1ヶ月以降から可能です。手術後の状況に応じて危険ではない範囲で運転しても問題ありません。"
+            },
+            {
+              "q": "網膜手術後、点眼薬を使用しましたが目がとてもしみます。大丈夫でしょうか？",
+              "a": "網膜手術後、炎症防止のために処方された点眼薬は成分が強いため、目が少ししみることがあります。しみる感覚は正常な反応で、時間が経つにつれて徐々に和らぎます。"
+            }
+          ]
+        }
+      }
     }
   }
 }

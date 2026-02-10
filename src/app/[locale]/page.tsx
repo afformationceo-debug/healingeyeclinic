@@ -7,6 +7,18 @@ import MedicalTeam from "@/components/home/MedicalTeam";
 import AIPrediction from "@/components/home/AIPrediction";
 import PremiumFacility from "@/components/home/PremiumFacility";
 import WhyHealingEye from "@/components/home/WhyHealingEye";
+import { getMessages } from 'next-intl/server';
+
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
+    const params = await props.params;
+    const { locale } = params;
+    const messages = await getMessages({ locale }) as { Metadata: { title: string; description: string } };
+
+    return {
+        title: messages.Metadata.title,
+        description: messages.Metadata.description,
+    };
+}
 
 export default function MainPage() {
     return (

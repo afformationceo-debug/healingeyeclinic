@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,16 +16,25 @@ interface PageClientProps {
     blogPosts: NaverBlogPost[];
 }
 
-function formatDate(dateString: string): string {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('ko-KR', {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-    }).replace(/\. /g, '.').replace(/\.$/, '');
-}
-
 export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: PageClientProps) {
+    const t = useTranslations('Insight.Page');
+    const locale = useLocale();
+
+    function formatDate(dateString: string): string {
+        const date = new Date(dateString);
+        const localeMap: Record<string, string> = {
+            'ko': 'ko-KR',
+            'en': 'en-US',
+            'ja': 'ja-JP',
+            'zh-TW': 'zh-TW',
+            'zh-CN': 'zh-CN',
+        };
+        return date.toLocaleDateString(localeMap[locale] || 'en-US', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+        }).replace(/\. /g, '.').replace(/\.$/, '');
+    }
     return (
         <div className="min-h-screen bg-gradient-to-b from-black via-neutral-950 to-black pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 selection:bg-primary selection:text-black text-white">
             <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
@@ -42,7 +51,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                             className="relative w-full md:w-auto"
                         >
                             <div className="hidden md:block absolute -left-4 top-0 w-1 h-24 bg-gradient-to-b from-primary to-transparent" />
-                            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-4 sm:mb-6 block text-primary">Medical Journal</span>
+                            <span className="text-xs sm:text-sm font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-4 sm:mb-6 block text-primary">{t('sectionTitle')}</span>
                             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-serif font-medium leading-[0.9] sm:leading-[0.85] text-white mb-6 sm:mb-8 md:mb-4">
                                 INSIGHT <br />
                                 <span className="text-white/80">& LOOK</span>
@@ -55,8 +64,8 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                             className="w-full md:max-w-md md:mt-0"
                         >
                             <p className="text-neutral-300 text-sm sm:text-base md:text-lg leading-relaxed">
-                                정확한 의학 정보와 건강한 라이프스타일을 위한<br />
-                                <span className="text-primary font-semibold">힐링안과의 전문 칼럼</span>을 만나보세요.
+                                {t('heroDescription1')}<br />
+                                <span className="text-primary font-semibold">{t('heroDescription2')}</span>
                             </p>
                         </motion.div>
                     </div>
@@ -105,7 +114,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                     >
                                         <span className="inline-flex items-center gap-2 bg-primary text-black px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-6 shadow-lg shadow-primary/50">
                                             <Activity className="w-4 h-4" />
-                                            Featured Video
+                                            {t('featuredVideoBadge')}
                                         </span>
                                     </motion.div>
                                     <motion.h2
@@ -135,7 +144,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                             variant="outline"
                                             className="text-white border-2 border-white/40 hover:bg-white hover:text-black rounded-full px-10 py-6 text-base font-semibold backdrop-blur-sm hover:scale-105 transition-all duration-300 shadow-xl"
                                         >
-                                            Watch Now <Play className="ml-2 w-5 h-5" />
+                                            {t('watchNow')} <Play className="ml-2 w-5 h-5" />
                                         </Button>
                                     </motion.div>
                                 </div>
@@ -152,7 +161,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                             >
                                 <span className="inline-flex items-center gap-2 bg-primary text-black px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-lg shadow-primary/50">
                                     <Activity className="w-3 h-3" />
-                                    Featured Video
+                                    {t('featuredVideoBadge')}
                                 </span>
                             </motion.div>
                             <motion.h2
@@ -183,7 +192,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                     className="w-full sm:w-auto text-white border-2 border-white/40 hover:bg-white hover:text-black active:bg-white active:text-black rounded-full px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold backdrop-blur-sm transition-all duration-300 shadow-xl"
                                     onClick={() => window.open(featuredVideo.link, '_blank')}
                                 >
-                                    Watch Now <Play className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                                    {t('watchNow')} <Play className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                                 </Button>
                             </motion.div>
                         </div>
@@ -200,9 +209,9 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                     >
                         <div className="flex items-center gap-4 mb-4">
                             <div className="w-12 h-1 bg-primary rounded-full" />
-                            <span className="text-sm font-bold tracking-[0.3em] uppercase text-primary">Recent Columns</span>
+                            <span className="text-sm font-bold tracking-[0.3em] uppercase text-primary">{t('recentColumns')}</span>
                         </div>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">의료 칼럼</h2>
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-white">{t('medicalColumnTitle')}</h2>
                     </motion.div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -251,7 +260,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
 
                                         <div className="p-6 sm:p-7 md:p-8">
                                             <div className="flex items-center gap-3 mb-4 text-xs text-neutral-500 font-medium">
-                                                <span className="text-primary">김선영 원장</span>
+                                                <span className="text-primary">{t('authorName')}</span>
                                                 <span className="w-1 h-1 rounded-full bg-neutral-700" />
                                                 <span>{formatDate(post.publishedAt)}</span>
                                             </div>
@@ -299,7 +308,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                             transition={{ delay: 0.2 }}
                             className="text-4xl md:text-6xl font-serif font-bold mb-6 text-white"
                         >
-                            Stay <span className="text-primary">Informed</span>
+                            {t('stayInformed').split(' ')[0]} <span className="text-primary">{t('stayInformed').split(' ')[1]}</span>
                         </motion.h2>
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
@@ -308,8 +317,8 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                             transition={{ delay: 0.3 }}
                             className="text-neutral-300 text-lg mb-12 max-w-2xl mx-auto leading-relaxed"
                         >
-                            눈 건강을 위한 유익한 정보를 매주 받아보세요.<br />
-                            <span className="text-sm text-neutral-500">스팸은 절대 보내지 않습니다.</span>
+                            {t('newsletter.description')}<br />
+                            <span className="text-sm text-neutral-500">{t('newsletter.noSpam')}</span>
                         </motion.p>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -323,11 +332,11 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
 
                             <input
                                 type="email"
-                                placeholder="Enter your email address"
+                                placeholder={t('newsletter.emailPlaceholder')}
                                 className="relative w-full bg-white/5 border-2 border-white/10 rounded-full px-8 py-5 focus:outline-none focus:border-primary focus:bg-white/10 transition-all duration-300 text-white placeholder:text-neutral-500 text-base"
                             />
                             <button className="absolute right-2 top-2 bottom-2 bg-primary text-black rounded-full px-8 font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/50 hover:shadow-xl hover:shadow-primary/70">
-                                Subscribe
+                                {t('newsletter.subscribe')}
                             </button>
                         </motion.div>
 
@@ -343,21 +352,21 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                 <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
                                     <div className="w-2 h-2 rounded-full bg-primary" />
                                 </div>
-                                <span>Weekly Updates</span>
+                                <span>{t('newsletter.weeklyUpdates')}</span>
                             </div>
                             <div className="w-px h-4 bg-neutral-700" />
                             <div className="flex items-center gap-2">
                                 <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
                                     <div className="w-2 h-2 rounded-full bg-primary" />
                                 </div>
-                                <span>No Spam</span>
+                                <span>{t('newsletter.noSpamBadge')}</span>
                             </div>
                             <div className="w-px h-4 bg-neutral-700" />
                             <div className="flex items-center gap-2">
                                 <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
                                     <div className="w-2 h-2 rounded-full bg-primary" />
                                 </div>
-                                <span>Unsubscribe Anytime</span>
+                                <span>{t('newsletter.unsubscribeAnytime')}</span>
                             </div>
                         </motion.div>
                     </div>

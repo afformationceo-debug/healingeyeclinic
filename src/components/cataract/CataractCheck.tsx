@@ -3,17 +3,11 @@
 import { motion } from "framer-motion";
 import { CheckSquare, AlertCircle } from "lucide-react";
 import { useState } from "react";
-
-const checkList = [
-    "작은 글씨가 뿌옇게 보이거나 초점이 잘 맞지 않는다.",
-    "밝은 곳보다 어두운 곳에서 더 잘 보인다 (주맹 현상).",
-    "사물이 이중, 삼중으로 겹쳐 보인다 (복시).",
-    "빛 번짐이 심해 밤 운전이 어렵다.",
-    "눈이 자꾸 침침하고 피로감을 자주 느낀다.",
-    "돋보기를 써도 가까운 글씨가 잘 안 보인다."
-];
+import { useTranslations } from "next-intl";
 
 export default function CataractCheck() {
+    const t = useTranslations('Cataract.Check');
+    const checkList = t.raw('items') as string[];
     const [checkedItems, setCheckedItems] = useState<number[]>([]);
 
     const toggleCheck = (index: number) => {
@@ -30,21 +24,20 @@ export default function CataractCheck() {
                 <div className="flex flex-col md:flex-row gap-16">
 
                     <div className="w-full md:w-1/3">
-                        <span className="text-amber-600 font-bold tracking-[0.2em] uppercase block mb-4">Self Check</span>
+                        <span className="text-amber-600 font-bold tracking-[0.2em] uppercase block mb-4">{t('sectionTitle')}</span>
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 font-serif">
-                            혹시 나도 <br /> <span className="text-amber-600">백내장</span>일까요?
+                            {t('headline')} <br /> <span className="text-amber-600">{t('headlineHighlight')}</span>
                         </h2>
                         <p className="text-neutral-500 mb-8 leading-relaxed">
-                            백내장은 초기 증상이 노안과 비슷하여 방치하기 쉽습니다.
-                            3개 이상 해당된다면 정밀 검진이 필요합니다.
+                            {t('description')}
                         </p>
                         <div className="p-6 bg-amber-50 rounded-2xl border border-amber-100">
                             <div className="flex items-start gap-4 mb-2">
                                 <AlertCircle className="text-amber-600 shrink-0" />
-                                <span className="font-bold text-amber-900">Health Tip</span>
+                                <span className="font-bold text-amber-900">{t('healthTip.title')}</span>
                             </div>
                             <p className="text-sm text-amber-800">
-                                40대 이상이라면 1년에 한 번 안과 정기 검진을 권장합니다.
+                                {t('healthTip.content')}
                             </p>
                         </div>
                     </div>

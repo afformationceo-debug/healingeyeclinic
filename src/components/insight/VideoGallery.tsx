@@ -3,27 +3,30 @@
 import { motion } from "framer-motion";
 import { Play } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { YouTubeVideo } from "@/lib/youtube";
 
 interface VideoGalleryProps {
     videos: YouTubeVideo[];
 }
 
-function formatDate(dateString: string): string {
-    const date = new Date(dateString);
-    const now = new Date();
-    const diffTime = Math.abs(now.getTime() - date.getTime());
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-
-    if (diffDays === 0) return '오늘';
-    if (diffDays === 1) return '어제';
-    if (diffDays < 7) return `${diffDays}일 전`;
-    if (diffDays < 30) return `${Math.floor(diffDays / 7)}주 전`;
-    if (diffDays < 365) return `${Math.floor(diffDays / 30)}개월 전`;
-    return `${Math.floor(diffDays / 365)}년 전`;
-}
-
 export default function VideoGallery({ videos }: VideoGalleryProps) {
+    const t = useTranslations('Insight.VideoGallery');
+
+    function formatDate(dateString: string): string {
+        const date = new Date(dateString);
+        const now = new Date();
+        const diffTime = Math.abs(now.getTime() - date.getTime());
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+        if (diffDays === 0) return t('dates.today');
+        if (diffDays === 1) return t('dates.yesterday');
+        if (diffDays < 7) return t('dates.daysAgo', { count: diffDays });
+        if (diffDays < 30) return t('dates.weeksAgo', { count: Math.floor(diffDays / 7) });
+        if (diffDays < 365) return t('dates.monthsAgo', { count: Math.floor(diffDays / 30) });
+        return t('dates.yearsAgo', { count: Math.floor(diffDays / 365) });
+    }
+
     return (
         <section className="py-32 relative">
             {/* Decorative border */}
@@ -38,16 +41,16 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
                 <div>
                     <div className="flex items-center gap-4 mb-4">
                         <div className="w-12 h-1 bg-primary rounded-full" />
-                        <span className="text-sm font-bold tracking-[0.3em] uppercase text-primary">YouTube Channel</span>
+                        <span className="text-sm font-bold tracking-[0.3em] uppercase text-primary">{t('channelLabel')}</span>
                     </div>
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-3">안과언니 @dreyesis</h2>
-                    <p className="text-neutral-400 text-base">전문 안과의가 전하는 눈 건강 정보</p>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-3">{t('channelName')}</h2>
+                    <p className="text-neutral-400 text-base">{t('channelDescription')}</p>
                 </div>
                 <button
                     onClick={() => window.open('https://www.youtube.com/@dreyesis', '_blank')}
                     className="group flex items-center gap-2 text-sm font-bold px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-primary hover:border-primary text-white hover:text-black transition-all duration-300 hover:scale-105"
                 >
-                    채널 바로가기
+                    {t('visitChannel')}
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -100,7 +103,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
 
                                 <div className="p-4 sm:p-5">
                                     <span className="inline-block text-xs font-bold text-primary uppercase tracking-wider mb-3 opacity-80">
-                                        안과언니
+                                        {t('badge')}
                                     </span>
                                     <h3 className="text-base sm:text-lg font-bold leading-snug text-white group-hover:text-primary transition-colors duration-300 line-clamp-2">
                                         {video.title}
@@ -121,7 +124,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
                     <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/5 border border-white/10 mb-6">
                         <Play className="w-10 h-10 text-neutral-600" />
                     </div>
-                    <p className="text-neutral-500 text-lg">현재 표시할 영상이 없습니다.</p>
+                    <p className="text-neutral-500 text-lg">{t('emptyState')}</p>
                 </motion.div>
             )}
         </section>

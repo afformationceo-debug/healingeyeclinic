@@ -1,21 +1,85 @@
 {
+  "Metadata": {
+    "title": "Healing Eye Clinic | Premium Vision Correction",
+    "description": "Redefining the standard of vision correction. Healing Eye Clinic.",
+    "vision": {
+      "title": "Vision Correction Center | Healing Eye Clinic",
+      "description": "Specializing in SMILE LASIK, LASEK, and lens implant surgery. Premium vision correction by medical professionals from university hospital faculty."
+    },
+    "cataract": {
+      "title": "Presbyopia & Cataract Center | Healing Eye Clinic",
+      "description": "Multifocal IOL specialists. Restore youthful vision with customized premium lenses."
+    },
+    "center": {
+      "title": "Eye Disease Center | Healing Eye Clinic",
+      "description": "Specialists in dry eye syndrome, glaucoma, and retinal diseases. Precision diagnosis with state-of-the-art university hospital-grade equipment."
+    },
+    "about": {
+      "title": "About Us | Healing Eye Clinic",
+      "description": "Located near Sinnonhyeon Station in Gangnam. Premium ophthalmology by medical professionals from university hospital faculty."
+    },
+    "insight": {
+      "title": "Insight | Healing Eye Clinic",
+      "description": "Vision correction and cataract Q&A directly answered by ophthalmology specialists."
+    },
+    "community": {
+      "title": "Community | Healing Eye Clinic",
+      "description": "Healing Eye Clinic announcements, FAQ, and event information."
+    }
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "An error has occurred.",
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "treatments": "Treatments",
+      "equipment": "Equipment",
+      "community": "Community",
+      "reservation": "Reservation"
+    },
+    "buttons": {
+      "book": "Book Now",
+      "viewMore": "View More",
+      "previous": "Previous",
+      "next": "Next",
+      "close": "Close",
+      "submit": "Submit",
+      "cancel": "Cancel"
+    },
+    "labels": {
+      "loading": "Loading...",
+      "error": "An error has occurred",
+      "success": "Successfully completed",
+      "language": "Language"
+    }
+  },
+  "Navigation": {
+    "about": "About",
+    "vision": "Vision Correction",
+    "cataract": "Presbyopia & Cataract",
+    "dryeye": "Dry Eye Clinic",
+    "center": "Eye Disease Center",
+    "community": "Community",
+    "insight": "Insight"
+  },
   "Home": {
     "Hero": {
-      "clinicName": "Healing Eye Clinic",
+      "clinicName": "( Healing Eye Clinic )",
       "location": "Gangnam, Seoul",
       "established": "Est. 2016",
       "directorName": "Kim Sun-young",
       "brandName": "HEALING",
       "brandSubtitle": "EYE",
-      "tagline": "We redefine the standard of vision correction with uncompromising precision and safety.",
+      "tagline": "We redefine the standard of vision correction with\nuncompromising precision and safety.",
       "ctaButton": "BOOK",
       "ctaButtonSub": "NOW"
     },
     "Philosophy": {
       "sectionTitle": "Our Philosophy",
-      "mainQuote": "Beyond Treating Your Eyes,",
-      "mainQuoteHighlight": "We Heal Your Life.",
-      "description": "It's not simply about correcting vision.\nFrom the moment you open your eyes in the morning to when you fall asleep,\nwe make every world you encounter clearer and more beautiful.\nThis is the promise of Healing Eye Clinic.",
+      "mainQuote": "\"Beyond Treating Your Eyes,",
+      "mainQuoteHighlight": "We Heal Your Life.\"",
+      "description": "It's not simply about correcting vision.\nFrom the moment you open your eyes in the morning until you fall asleep,\nwe make every world you encounter clearer and more beautiful.\nThis is the promise of Healing Eye Clinic.",
       "movingText": {
         "text1": "BEYOND VISION",
         "text2": "HEALING LIFE",
@@ -29,7 +93,7 @@
         },
         "safety": {
           "title": "Safety",
-          "description": "With medical professionals from university hospital faculty and\nstate-of-the-art equipment at university hospital standards,\nyou can trust us with complete confidence."
+          "description": "With medical professionals from university hospital faculty\nand state-of-the-art equipment at university hospital standards,\nyou can trust us with complete confidence."
         },
         "empathy": {
           "title": "Empathy",
@@ -45,13 +109,13 @@
       "visionCorrection": {
         "badge": "Most Popular",
         "title": "Vision Correction",
-        "description": "From SMILE LASIK to Custom LASEK and Lens Implantation.\nUltra-precision laser solutions that go beyond the limits of traditional vision correction."
+        "description": "From SMILE LASIK to Custom LASEK and lens implant surgery.\nUltra-precision laser solutions that transcend the limits of conventional vision correction."
       },
       "presbyopiaCataract": {
         "title": "Presbyopia &",
         "titleLine2": "Cataract",
-        "subtitle": "Presbyopia/Cataract Center +",
-        "hoverText": "Presbyopia/Cataract Center +"
+        "subtitle": "Presbyopia & Cataract Center +",
+        "hoverText": "Presbyopia & Cataract Center +"
       },
       "eyeDisease": {
         "badge": "University Hospital Level",
@@ -67,25 +131,28 @@
       "headlineSubtitle": "Proven Results.",
       "stats": {
         "rating": "4.9/5.0",
-        "ratingLabel": "Patient Review",
+        "ratingLabel": "Patient Satisfaction",
         "cases": "50,000+",
         "casesLabel": "Successful Cases"
       },
       "features": {
         "faculty": {
           "title": "University Faculty",
+          "titleEng": "University Faculty",
           "subtitle": "Medical Staff from University Hospital Faculty",
           "description": "Medical professionals with extensive clinical experience and expertise\nprovide dedicated 1:1 care from consultation through surgery to post-operative management."
         },
         "equipment": {
           "title": "High-End Equipment",
+          "titleEng": "High-End Equipment",
           "subtitle": "State-of-the-Art Equipment at University Hospital Standards",
-          "description": "Equipped with the latest technology including Ziemer Z8 and ZEISS SUITE,\nfirst to use German Rein Lens, and ranked #1 nationwide in PanOptix quadrifocal usage,\nproving our expertise in cataract surgery."
+          "description": "Equipped with the latest technology including Ziemer Z8 and ZEISS SUITE,\nfirst to adopt German LARA Lens, and ranked #1 nationwide in PanOptix quadrifocal usage,\nproving our expertise in cataract surgery."
         },
         "guarantee": {
           "title": "Lifetime Guarantee",
+          "titleEng": "Lifetime Guarantee",
           "subtitle": "Lifetime Vision Guarantee System",
-          "description": "Taking responsibility for the next 40 years of your second life,\nour lifetime guarantee system ensures your vision for life."
+          "description": "Taking responsibility for the next 40 years of your second chapter,\nour lifetime guarantee system ensures your vision for life."
         }
       }
     },
@@ -98,15 +165,15 @@
         {
           "name": "Kim Ji*",
           "age": "20s",
-          "surgery": "SMILE LASIK",
-          "content": "I never knew mornings without glasses could be this amazing. The day of surgery was slightly hazy, but it was a whole new world from the next day. I was especially worried about night halos, but I have no discomfort and drive at night without any issues.",
+          "surgery": "SMILE LASIK (SMILE PRO)",
+          "content": "I never knew mornings without glasses could be this amazing. The day of surgery was slightly hazy, but it was a whole new world from the next day. I was especially worried about night halos, but I have no discomfort and drive at night without any issues. Having the director personally handle everything from eye examination to surgery gave me even more confidence.",
           "date": "2024.01.15"
         },
         {
           "name": "Lee Hyung*",
-          "age": "60s",
-          "surgery": "Multifocal IOL (Presbyopia Cataract)",
-          "content": "I couldn't even read my phone without reading glasses, but now I can see golf balls clearly and text my friends comfortably. It feels like I've received the gift of quality of life, beyond just surgery. The clinic facility is as luxurious as a hotel, and the staff were so kind that I felt comfortable throughout the surgery.",
+          "age": "40s",
+          "surgery": "Multifocal IOL (Presbyopia & Cataract)",
+          "content": "I couldn't even read my phone without reading glasses, but now I can see golf balls clearly and text my friends comfortably. It feels like I've received the gift of quality of life, beyond just surgery. The clinic facility is as luxurious as a hotel, and the staff were so kind that I felt comfortable throughout the procedure.",
           "date": "2024.01.12"
         },
         {
@@ -119,7 +186,7 @@
         {
           "name": "Choi Min*",
           "age": "50s",
-          "surgery": "Presbyopia LASIK",
+          "surgery": "Presbyopia LASIK (Monovision)",
           "content": "Work was so difficult due to presbyopia, but after monovision LASIK, near-distance tasks have become much easier. I was told there would be an adaptation period, but I adapted faster than expected, and now I can read meeting materials without glasses.",
           "date": "2023.12.29"
         },
@@ -127,14 +194,14 @@
           "name": "Jung Ha*",
           "age": "20s",
           "surgery": "Premium LASEK",
-          "content": "I was very worried about the pain, but I only had eye irritation for about 2 days, and it was comfortable after that. After removing the bandage contact lens, I could feel my vision improving dramatically. I'm maintaining 20/16 vision. Thank you!",
+          "content": "I was very worried about the pain, but I only had eye irritation for about 2 days, and it was comfortable after that. After removing the bandage contact lens, I could feel my vision improving dramatically. I'm maintaining 20/15 vision. Thank you!",
           "date": "2023.12.20"
         },
         {
           "name": "Ahn Soo*",
-          "age": "40s",
-          "surgery": "Re-operation (LASIK → Presbyopia LASEK)",
-          "content": "I had re-operation due to vision deterioration after LASIK at another clinic. I was anxious, but the director thoroughly checked my corneal condition and proceeded safely. Thank you. Now I'm maintaining 20/16 vision, and my night vision has improved compared to before.",
+          "age": "30s",
+          "surgery": "Re-operation (LASIK to Presbyopia LASEK)",
+          "content": "I had re-operation due to vision deterioration after LASIK at another clinic. I was anxious, but the director thoroughly checked my corneal condition and proceeded safely. Thank you. Now I'm maintaining 20/20 vision, and my night vision has improved compared to before.",
           "date": "2023.12.15"
         },
         {
@@ -146,7 +213,7 @@
         },
         {
           "name": "Cho Hyun*",
-          "age": "60s",
+          "age": "40s",
           "surgery": "Cataract (Premium Lens)",
           "content": "After cataract surgery, I feel like I've returned to my vision from 30 years ago. I play golf without glasses, read books, and my life has changed. Don't hesitate and get a consultation!",
           "date": "2023.12.05"
@@ -157,7 +224,7 @@
       "sectionTitle": "Premium Lounge",
       "headline": "Relaxation",
       "headlineSubtitle": "Before Perfection",
-      "description": "A space where even the pre-surgery tension turns into excitement.\nHealing Eye Clinic's premium lounge embodies the elegance of a 5-star hotel.\nWelcome your new vision in the best condition.",
+      "description": "A space where even the pre-surgery tension transforms into excitement.\nHealing Eye Clinic's premium lounge embodies the elegance of a 5-star hotel.\nWelcome your new vision in the best condition.",
       "galleryTitle": "Explore Our Facility",
       "facilityAlt": "Healing Eye Clinic Facility",
       "backgroundAlt": "Premium Facility",
@@ -166,16 +233,17 @@
     "Doctor": {
       "doctors": [
         {
-          "name": "김선영",
+          "name": "Kim Sun-young",
           "nameEng": "Kim Sun-young",
-          "position": "대표원장",
+          "position": "Representative Director",
           "positionEng": "Representative Director",
           "title": "Ophthalmologist / Clinical Professor",
-          "specialty": "SMILE·CLEAR / Presbyopia Cataract / Dry Eye Syndrome",
-          "quote": "Vision is not just seeing, it is experiencing.",
+          "specialty": "SMILE/CLEAR LASIK / Presbyopia & Cataract / Dry Eye Syndrome",
+          "quote": "Advancing established theory through endless exploration and research",
+          "quoteEng": "\"Vision is not just seeing, it is experiencing.\"",
           "quoteHighlight1": "seeing",
-          "quoteHighlight2": "experiencing",
-          "philosophy": "Perfectionism that allows not even 1% margin of error. Based on extensive clinical experience as a university hospital professor and deep understanding of cutting-edge equipment, we help you find the clearest moments of your life.",
+          "quoteHighlight2": "experiencing.",
+          "philosophy": "Perfectionism that allows not even 1% margin of error. Based on extensive clinical experience from university hospital faculty and deep understanding of cutting-edge equipment, we help you find the clearest moments of your life.",
           "career": [
             "Master's Degree, Graduate School of Medicine, Catholic University of Korea",
             "2009-2013 Ophthalmology Specialist, Catholic Medical Center, Catholic University of Korea",
@@ -188,49 +256,54 @@
             "Full Member, Korean External Eye Disease Study Group (KEEDS)",
             "Full Member, Korean Contact Lens Study Society (KCLSS)",
             "Full Member, European Society of Cataract and Refractive Surgeons (ESCRS)"
-          ]
+          ],
+          "img": "/images/doctors/1.png"
         },
         {
-          "name": "임성웅",
+          "name": "Lim Sung-woong",
           "nameEng": "Lim Sung-woong",
-          "position": "대표원장",
+          "position": "Representative Director",
           "positionEng": "Representative Director",
           "title": "Ophthalmologist",
-          "specialty": "Retina / Glaucoma / Refractive Surgery",
-          "quote": "Precision in diagnosis, excellence in treatment.",
+          "specialty": "Retina / Glaucoma / Vision Correction",
+          "quote": "Giving the best care with the patient's heart in mind",
+          "quoteEng": "\"Precision in diagnosis, excellence in treatment.\"",
           "quoteHighlight1": "diagnosis",
-          "quoteHighlight2": "treatment",
+          "quoteHighlight2": "treatment.",
           "philosophy": "Accurate diagnosis is the first step to successful surgery. Through university hospital-grade advanced examination systems and insightful data analysis, we establish personalized treatment plans most suitable for your eye condition.",
           "career": [
-            "Graduate, College of Medicine, Yonsei University",
+            "Graduate, Yonsei University College of Medicine",
             "Ophthalmology Specialist, Severance Hospital",
             "Former Head of Department, Siloam Eye Hospital",
             "Full Member, Korean Retina Society"
-          ]
+          ],
+          "img": "/images/doctors/2.png"
         },
         {
-          "name": "이용은",
+          "name": "Lee Yong-eun",
           "nameEng": "Lee Yong-eun",
-          "position": "원장",
+          "position": "Director",
           "positionEng": "Director",
           "title": "Ophthalmologist",
-          "specialty": "Pediatric Ophthalmology / Orthokeratology",
-          "quote": "Caring for children's vision, securing their future.",
+          "specialty": "Pediatric Ophthalmology / Orthokeratology (Dream Lens)",
+          "quote": "Building trust through endless research and diverse experience",
+          "quoteEng": "\"Caring for children's vision, securing their future.\"",
           "quoteHighlight1": "children's vision",
-          "quoteHighlight2": "future",
-          "philosophy": "A child's vision is a lifelong asset. From myopia progression control during growth to orthokeratology prescriptions, we provide warm and meticulous care tailored to children's eye level, relieving parents' concerns.",
+          "quoteHighlight2": "future.",
+          "philosophy": "A child's vision is a lifelong asset. From myopia progression control during growth to orthokeratology prescriptions, we provide warm and meticulous care tailored to children's eye level, relieving parents' concerns as well.",
           "career": [
             "Graduate, Daejeon Science High School",
-            "Second Place Graduate, College of Medicine, Catholic University of Korea",
+            "Salutatorian, Catholic University of Korea College of Medicine",
             "Master's Degree, Graduate School of Medicine, Catholic University of Korea",
             "Clinical Professor of Cataract, Seoul St. Mary's Hospital",
             "Full Member, Korean Ophthalmological Society (KOS)",
             "Full Member, Korean Society of Cataract and Refractive Surgery (KSCRS)",
-            "Full Member, Korean Ophthalmology Association (KOA)",
+            "Full Member, Korean Ophthalmologists Association (KOA)",
             "Full Member, American Society of Cataract and Refractive Surgery (ASCRS)",
             "Full Member, European Society of Cataract and Refractive Surgeons (ESCRS)",
-            "Veterans Evaluation Services Physician"
-          ]
+            "Veterans Evaluation Services Physician (USA)"
+          ],
+          "img": "/images/doctors/3.png"
         }
       ],
       "mainCareer": "Main Career",
@@ -251,8 +324,8 @@
           "name": "Kim Sun-young",
           "position": "Representative Director",
           "title": "Ophthalmologist / Clinical Professor",
-          "specialty": "SMILE·CLEAR / Presbyopia Cataract / Dry Eye Syndrome",
-          "description": "As a university hospital professor, I have dedicated myself to treating refractory dry eye syndrome and cataracts. As Gangnam's only solo-practicing female ophthalmologist, I promise the best surgical results through the difference of meticulousness.",
+          "specialty": "SMILE/CLEAR LASIK / Presbyopia & Cataract / Dry Eye Syndrome",
+          "description": "As a university hospital professor, I have dedicated myself to treating refractory dry eye syndrome and cataracts. As Gangnam's only solo-practicing female ophthalmologist, I promise the best surgical results through the difference that meticulousness makes.",
           "career": [
             "Master's Degree, Graduate School of Medicine, Catholic University of Korea",
             "2009-2013 Ophthalmology Specialist, Catholic Medical Center, Catholic University of Korea",
@@ -271,10 +344,10 @@
           "name": "Lim Sung-woong",
           "position": "Representative Director",
           "title": "Ophthalmologist",
-          "specialty": "Retina / Glaucoma / Refractive Surgery",
+          "specialty": "Retina / Glaucoma / Vision Correction",
           "description": "Accurate diagnosis is the first step to successful surgery. Through university hospital-grade advanced examination systems and insightful data analysis, we establish personalized treatment plans most suitable for your eye condition.",
           "career": [
-            "Graduate, College of Medicine, Yonsei University",
+            "Graduate, Yonsei University College of Medicine",
             "Ophthalmology Specialist, Severance Hospital",
             "Former Head of Department, Siloam Eye Hospital",
             "Full Member, Korean Retina Society"
@@ -284,19 +357,19 @@
           "name": "Lee Yong-eun",
           "position": "Director",
           "title": "Ophthalmologist",
-          "specialty": "Pediatric Ophthalmology / Orthokeratology",
-          "description": "A child's vision is a lifelong asset. From myopia progression control during growth to orthokeratology prescriptions, we provide warm and meticulous care tailored to children's eye level, relieving parents' concerns.",
+          "specialty": "Pediatric Ophthalmology / Orthokeratology (Dream Lens)",
+          "description": "A child's vision is a lifelong asset. From myopia progression control during growth to orthokeratology prescriptions, we provide warm and meticulous care tailored to children's eye level, relieving parents' concerns as well.",
           "career": [
             "Graduate, Daejeon Science High School",
-            "Second Place Graduate, College of Medicine, Catholic University of Korea",
+            "Salutatorian, Catholic University of Korea College of Medicine",
             "Master's Degree, Graduate School of Medicine, Catholic University of Korea",
             "Clinical Professor of Cataract, Seoul St. Mary's Hospital",
             "Full Member, Korean Ophthalmological Society (KOS)",
             "Full Member, Korean Society of Cataract and Refractive Surgery (KSCRS)",
-            "Full Member, Korean Ophthalmology Association (KOA)",
+            "Full Member, Korean Ophthalmologists Association (KOA)",
             "Full Member, American Society of Cataract and Refractive Surgery (ASCRS)",
             "Full Member, European Society of Cataract and Refractive Surgeons (ESCRS)",
-            "Veterans Evaluation Services Physician"
+            "Veterans Evaluation Services Physician (USA)"
           ]
         }
       ]
@@ -305,21 +378,716 @@
       "badge": "Healing AI Solutions",
       "title": "Find the Perfect Surgery",
       "titleHighlight": "Tailored for Your Eyes",
-      "description": "Healing Eye Clinic AI, trained on over 100,000 clinical cases,\nanalyzes your corneal data and lifestyle\nto recommend the safest and most effective vision correction procedure.",
+      "description": "Healing Eye Clinic's AI, trained on over 100,000 clinical cases,\nanalyzes your corneal data and lifestyle\nto recommend the safest and most effective vision correction procedure.",
       "features": [
         "3D Analysis of Corneal Thickness and Shape",
-        "Lifestyle-Based Matching",
+        "Lifestyle-Based Personalized Matching",
         "Post-Surgery Recovery Period Simulation"
       ],
-      "ctaButton": "Start AI Vision Correction Prediction",
+      "ctaButton": "Start AI Vision Correction Analysis",
       "visualTitle": "AI EYE SCANNING",
       "visualSubtitle": "Click to Start Analysis"
+    },
+    "AISurvey": {
+      "stepLabel": "AI Analysis Step {step}",
+      "questions": {
+        "age": {
+          "question": "What is your age group?",
+          "options": {
+            "under30": "Under 30",
+            "30s": "30s",
+            "40s": "40s",
+            "50plus": "50 and above"
+          }
+        },
+        "symptom": {
+          "question": "What bothers you the most?",
+          "options": {
+            "glassesDiscomfort": "Glasses/contacts discomfort",
+            "dryFatigue": "Dry eyes/fatigue",
+            "nearVision": "Difficulty seeing close text",
+            "lightGlare": "Severe light glare"
+          }
+        },
+        "lifestyle": {
+          "question": "What is your usual lifestyle?",
+          "options": {
+            "digitalDevice": "Heavy computer/smartphone use",
+            "outdoor": "Enjoy outdoor activities/sports",
+            "driving": "Frequent driving",
+            "reading": "Reading/detailed work"
+          }
+        }
+      },
+      "loading": {
+        "title": "AI is analyzing your eye condition...",
+        "subtitle": "Cross-referencing 100,000 clinical data points."
+      },
+      "result": {
+        "badge": "Recommendation",
+        "suitable": "is the best fit for you.",
+        "description": "This is a preliminary analysis based on your selected lifestyle and symptoms.",
+        "callToAction": "Would you like us to help you book a detailed examination?"
+      },
+      "results": {
+        "cataract": {
+          "name": "Presbyopia & Cataract Premium Center"
+        },
+        "smileLasik": {
+          "name": "SMILE LASIK (SMILE PRO)"
+        },
+        "customLasek": {
+          "name": "Custom LASEK"
+        }
+      },
+      "buttons": {
+        "retry": "Try Again",
+        "book": "Book Examination"
+      }
+    }
+  },
+  "Vision": {
+    "Hero": {
+      "sectionTitle": "Vision Correction",
+      "headline": "A Different Dimension of",
+      "headlineHighlight": "Vision Correction",
+      "description": "From SMILE LASIK to LASEK and lens implant surgery\nPremium vision correction by medical professionals from university hospital faculty"
+    },
+    "Comparison": {
+      "title": "Why Choose 'Healing SMILE'?",
+      "subtitle": "3rd generation procedure combining the advantages of LASIK/LASEK while minimizing their drawbacks",
+      "tableHeaders": {
+        "category": "Category",
+        "smileLasik": "SMILE LASIK",
+        "smileLasikBadge": "Best Choice",
+        "regularLasik": "Standard LASIK",
+        "regularLasek": "Standard LASEK"
+      },
+      "items": [
+        {
+          "label": "Procedure Method",
+          "healing": "Minimal corneal incision (2mm)",
+          "lasik": "Corneal flap creation (24mm)",
+          "lasek": "Epithelium removal"
+        },
+        {
+          "label": "Pain Level",
+          "healing": "Almost none",
+          "lasik": "Mild discomfort",
+          "lasek": "2-3 days of pain"
+        },
+        {
+          "label": "Recovery Period",
+          "healing": "Next day",
+          "lasik": "3-4 days",
+          "lasek": "5-7 days"
+        },
+        {
+          "label": "Corneal Damage",
+          "healing": "Minimized (Safe)",
+          "lasik": "Significant",
+          "lasek": "Significant"
+        },
+        {
+          "label": "Impact Resistance",
+          "healing": "Strong",
+          "lasik": "Weak",
+          "lasek": "Strong"
+        },
+        {
+          "label": "Dry Eye Risk",
+          "healing": "Almost none",
+          "lasik": "Possible",
+          "lasek": "Possible"
+        }
+      ]
+    },
+    "Process": {
+      "sectionTitle": "One-Day System",
+      "headline": "Same-Day Examination & Surgery,",
+      "headlineHighlight": "Your Life Doesn't Stop.",
+      "description": "Healing Eye Clinic's SMILE LASIK minimizes corneal damage,\nenabling morning examination, afternoon surgery, and face washing, showering, and light exercise from the next day.",
+      "steps": [
+        {
+          "time": "AM 10:00",
+          "title": "Comprehensive Examination",
+          "desc": "Over 60 precision tests and consultation, surgical eligibility assessment"
+        },
+        {
+          "time": "PM 02:00",
+          "title": "Surgery",
+          "desc": "10-minute procedure, minimal corneal incision with virtually no pain"
+        },
+        {
+          "time": "PM 03:00",
+          "title": "Rest & Discharge",
+          "desc": "1-hour rest in recovery room then immediate discharge, minimal discomfort even after anesthesia wears off"
+        },
+        {
+          "time": "Next Day",
+          "title": "Day After Surgery",
+          "desc": "90% of target vision recovered, face washing, basic makeup, and return to work possible"
+        },
+        {
+          "time": "1 Week",
+          "title": "One Week Later",
+          "desc": "Light exercise and most daily activities possible (except alcohol and smoking)"
+        }
+      ]
+    },
+    "SafetySystem": {
+      "sectionTitle": "Safety First",
+      "headline": "Uncompromising",
+      "headlineHighlight": "Safety Standards",
+      "items": [
+        {
+          "title": "1:1 Responsible Care",
+          "desc": "One representative director handles everything from consultation to surgery and follow-up care. We operate a 100% transparent system with no concerns about substitute surgeons."
+        },
+        {
+          "title": "DB & Backup",
+          "desc": "Your surgical data is preserved for life. Even 10 or 20 years after surgery, we can accurately track and monitor your eye condition."
+        },
+        {
+          "title": "Emergency Power",
+          "desc": "Uninterruptible Power Supply (UPS) in operation. Even during natural disasters or power outages, our laser equipment continues operating to safely complete your surgery."
+        },
+        {
+          "title": "Clean Room System",
+          "desc": "University hospital-grade positive pressure operating room. HEPA filters and air shower system block 99.9% of fine dust and bacteria to prevent infection."
+        },
+        {
+          "title": "Triple Check",
+          "desc": "Triple cross-verification by optometrist, examination director, and operating surgeon. A thorough examination system that allows no minor data errors."
+        }
+      ]
+    },
+    "HeroPage": {
+      "badge": "2026 Minimal-Incision New SMILE LASIK",
+      "title1": "NEW SMILE",
+      "title2": "LASIK",
+      "description1": "4th Generation Vision Correction Surgery with ZIEMER Z8 Femtosecond Laser\nMinimal-incision lenticule extraction method that penetrates the corneal surface and applies laser only to the corneal stroma",
+      "description2": "Next-generation vision correction system by medical professionals from university hospital faculty\nwith precise measurement and ablation of visual axis and rotational axis for accurate astigmatism correction"
+    },
+    "Procedures": {
+      "items": [
+        {
+          "id": "01",
+          "title": "New SMILE LASIK (New SMILE)",
+          "subtitle": "Next-Generation Minimal-Incision Vision Correction",
+          "desc": "4th generation vision correction surgery that minimizes corneal damage through minimal-incision method using ZIEMER Z8 femtosecond laser. Penetrating the corneal surface to precisely apply laser only to the stromal layer results in minimal corneal nerve damage, with high astigmatism correction precision through accurate visual axis-centered measurement.",
+          "features": [
+            "2mm minimal incision",
+            "Corneal nerve preservation",
+            "Precise astigmatism correction",
+            "Rapid daily life recovery"
+          ]
+        },
+        {
+          "id": "02",
+          "title": "Premium LASIK",
+          "subtitle": "Smart Vision Correction with Rapid Recovery",
+          "desc": "A proven vision correction surgery that corrects refractive errors by creating a corneal flap and then ablating the cornea with laser. Vision recovery is possible from the day of surgery, with virtually no pain and rapid return to daily activities. Advanced wavefront technology improves even nighttime vision quality.",
+          "features": [
+            "Same-day vision recovery",
+            "Minimal pain",
+            "Wavefront customization",
+            "Improved night vision"
+          ]
+        },
+        {
+          "id": "03",
+          "title": "Premium LASEK",
+          "subtitle": "Conservative Vision Correction with Proven Safety",
+          "desc": "A conservative method that removes only the corneal epithelial layer and applies laser to the stroma, suitable for patients with thin corneas or occupations involving frequent external impacts. With no flap creation and excellent structural stability, it is recommended for active occupations such as military personnel, firefighters, and athletes.",
+          "features": [
+            "No flap creation",
+            "Structural stability",
+            "High myopia correction",
+            "Impact resistant"
+          ]
+        },
+        {
+          "id": "04",
+          "title": "ICL Lens Implantation (EVO+ ICL)",
+          "subtitle": "Lens Implant Vision Correction Preserving the Cornea",
+          "desc": "An intraocular lens implantation surgery that corrects vision by inserting a special lens behind the iris without ablating the cornea. Made with biocompatible Collamer material with minimal side effects, it is the optimal alternative for patients with ultra-high myopia (-6 diopters or higher) or thin corneas who cannot undergo LASIK/LASEK. The surgery is reversible as the lens can be removed post-operatively.",
+          "features": [
+            "Non-ablative corneal approach",
+            "Ultra-high myopia correction",
+            "UV blocking function",
+            "Reversible procedure"
+          ]
+        },
+        {
+          "id": "05",
+          "title": "LASIK/LASEK Re-Surgery",
+          "subtitle": "Re-Correction Perfected with Precise Diagnosis and Experience",
+          "desc": "High-difficulty re-correction surgery that improves issues such as vision decline, residual refractive error, and nighttime halos following previous vision correction surgery. Based on the rich clinical experience of medical professionals from university hospital faculty, residual corneal thickness is precisely analyzed to determine re-surgery feasibility within safe parameters.",
+          "features": [
+            "Precise corneal analysis",
+            "Minimized side effects",
+            "Safety-first approach",
+            "1:1 customized consultation"
+          ]
+        }
+      ]
+    },
+    "ProcessSteps": {
+      "items": [
+        {
+          "title": "Comprehensive Examination",
+          "desc": "Over 60 precision ocular measurements"
+        },
+        {
+          "title": "1:1 Consultation",
+          "desc": "In-depth lifestyle analysis"
+        },
+        {
+          "title": "Customized Surgery",
+          "desc": "Performed directly by representative director"
+        },
+        {
+          "title": "Post-Operative Care",
+          "desc": "Lifetime eye care guarantee"
+        }
+      ]
+    },
+    "Button": {
+      "details": "View Details & Book Consultation"
+    }
+  },
+  "Cataract": {
+    "Hero": {
+      "sectionTitle": "Presbyopia & Cataract",
+      "headline": "Restore Your",
+      "headlineHighlight": "Youthful Vision",
+      "description": "Presbyopia and cataract treatment with customized premium lenses\nA clear start to the second chapter of your life"
+    },
+    "HeroPage": {
+      "badge": "Premium Aging Care",
+      "title1": "TIMELESS",
+      "title2": "SIGHT",
+      "description1": "Aging is a natural phenomenon, but blurry vision doesn't have to be.",
+      "description2": "With premium multifocal intraocular lenses (IOLs), we restore your vision to its most youthful clarity.",
+      "subtitle": "Are you ready to rediscover a world of clarity?",
+      "ctaButton": "Schedule Presbyopia Comprehensive Exam"
+    },
+    "AgingProcess": {
+      "sectionTitle": "The Process",
+      "headline": "Why does vision",
+      "headlineHighlight": "fade away?",
+      "description1": "The crystalline lens in our eye works like a camera lens. As we age, this lens becomes rigid and cloudy - this is presbyopia and cataract.",
+      "description2": "Healing Eye Clinic goes beyond simply replacing the clouded crystalline lens. We focus on restoring the youngest, clearest vision suited to each patient's lifestyle.",
+      "labels": {
+        "cornea": "Cornea",
+        "iris": "Iris",
+        "lens": "Crystalline Lens",
+        "retina": "Retina",
+        "opticNerve": "Optic Nerve",
+        "normal": "Normal",
+        "cataract": "Cataract",
+        "afterSurgery": "After Surgery"
+      },
+      "sectionLabel": "Eye Cross-Section"
+    },
+    "Check": {
+      "sectionTitle": "Self Check",
+      "headline": "Could I Have",
+      "headlineHighlight": "Cataract?",
+      "description": "Cataract's early symptoms are similar to presbyopia, making it easy to ignore.\nIf you experience 3 or more symptoms, a comprehensive examination is recommended.",
+      "healthTip": {
+        "title": "Health Tip",
+        "content": "If you are over 40, we recommend an annual eye examination."
+      },
+      "items": [
+        "Small text appears blurry or difficult to focus on.",
+        "I see better in dim environments than in bright ones (day blindness).",
+        "Objects appear doubled or tripled (diplopia).",
+        "Severe light glare makes night driving difficult.",
+        "Eyes feel constantly hazy and fatigued.",
+        "Even with reading glasses, nearby text is hard to see."
+      ]
+    },
+    "LensGuide": {
+      "sectionTitle": "Premium Lens",
+      "headline": "Which Intraocular Lens",
+      "headlineHighlight": "Is Right for Me?",
+      "description": "We prescribe the most suitable premium lens on a 1:1 basis,\nconsidering each patient's lifestyle, occupation, and hobbies.",
+      "interactionHint": "Hover over each distance zone to experience the vision difference",
+      "distanceZones": [
+        {
+          "id": "near",
+          "label": "Near",
+          "distance": "30cm"
+        },
+        {
+          "id": "mid",
+          "label": "Intermediate",
+          "distance": "1m"
+        },
+        {
+          "id": "far",
+          "label": "Distance",
+          "distance": "5m"
+        }
+      ],
+      "visionStatus": {
+        "clear": "Clear",
+        "blurry": "Blurry"
+      },
+      "allClear": "ALL CLEAR",
+      "features": "Features",
+      "recommendFor": "Recommended For",
+      "lenses": [
+        {
+          "name": "Multifocal IOL",
+          "eng": "Multifocal IOL",
+          "desc": "Provides clear vision at near, intermediate, and distance, eliminating the need for reading glasses after surgery.",
+          "pros": [
+            "Vision at all distances",
+            "No glasses or readers needed",
+            "Treats both cataract and presbyopia"
+          ],
+          "recommend": "Active middle-aged adults with busy social lives"
+        },
+        {
+          "name": "Monofocal IOL",
+          "eng": "Monofocal IOL",
+          "desc": "Focuses on either distance or near vision, with less light glare and faster adaptation.",
+          "pros": [
+            "Crisp distance vision",
+            "Minimal nighttime halos",
+            "Cost-effective option"
+          ],
+          "recommend": "Those who frequently drive at night"
+        }
+      ]
+    },
+    "LifestyleMatch": {
+      "sectionTitle": "Find Your Lens",
+      "headline": "Find Your Lens",
+      "description": "The key to cataract surgery is 'which lens to choose.'\nSelect your lifestyle and discover your optimal lens solution.",
+      "recommendationBadge": "RECOMMENDATION",
+      "recommendationTitle": "Recommended Solution",
+      "ctaButton": "Request 1:1 Comprehensive Examination",
+      "lifestyles": [
+        {
+          "id": "active",
+          "title": "Active Outdoor Enthusiast",
+          "desc": "Do you enjoy activities like golf, hiking, or traveling that require distance vision?",
+          "recommendation": "For those who prioritize distance vision, we recommend the 'PanOptix' or 'Vivity' lens. Enjoy clear, wide-field vision for your outdoor activities."
+        },
+        {
+          "id": "digital",
+          "title": "Digital Device User",
+          "desc": "Do you frequently watch TV, work on computers, or use smartphones?",
+          "recommendation": "For those who prioritize intermediate vision, the 'Synergy' or 'RayOne EMV' lens is ideal. Optimized for comfortable screen viewing."
+        },
+        {
+          "id": "daily",
+          "title": "Frequent Driver",
+          "desc": "Do you drive during the day and night, or is daily life mobility important to you?",
+          "recommendation": "For frequent night drivers, we recommend the 'Vivity' lens. Minimizes light glare and provides crisp contrast for safe driving."
+        },
+        {
+          "id": "reading",
+          "title": "Avid Reader / Detail Worker",
+          "desc": "Do you often read books or newspapers, or do work requiring close-up focus?",
+          "recommendation": "For those who prioritize near vision, we recommend the 'Synergy' or 'PanOptix' lens. Provides the clearest vision at 30-40cm distance."
+        }
+      ]
+    }
+  },
+  "Center": {
+    "Hero": {
+      "sectionTitle": "Specialized Medical Center",
+      "headline": "EYE DISEASE",
+      "headlineHighlight": "CLINIC",
+      "description": "University hospital-grade precision diagnostic equipment and specialized medical professionals in each field\nwill protect your eye health for a lifetime."
+    },
+    "Clinics": {
+      "items": [
+        {
+          "title": "Dry Eye Syndrome Clinic",
+          "eng": "Dry Eye Clinic",
+          "desc": "We introduce the latest M22 IPL equipment to restore meibomian gland function and treat the fundamental causes of dry eye syndrome.",
+          "stats": "IPL Treatment"
+        },
+        {
+          "title": "Retina Center",
+          "eng": "Retina Center",
+          "desc": "Early detection and treatment of vision-threatening diseases such as macular degeneration and diabetic retinopathy using university hospital-grade wide-angle OCT equipment.",
+          "stats": "Ultra-Precision OCT"
+        },
+        {
+          "title": "Glaucoma Center",
+          "eng": "Glaucoma Care",
+          "desc": "Prevent glaucoma, the silent vision thief, through optic nerve analysis and precisely manage intraocular pressure.",
+          "stats": "Lifetime Management"
+        },
+        {
+          "title": "General Eye Care",
+          "eng": "General Eye Care",
+          "desc": "Careful treatment from common eye conditions such as conjunctivitis, styes, and allergies to pediatric eye examinations.",
+          "stats": "Family Physician"
+        }
+      ]
+    },
+    "Programs": {
+      "sectionTitle": "Treatment Programs",
+      "headline": "University Hospital-Level",
+      "headlineHighlight": "Specialized Treatment System",
+      "description": "Our dedicated medical specialists in each field\npromise thorough care for your eye health.",
+      "items": [
+        {
+          "title": "Intensive Dry Eye Care (Dry Eye IPL)",
+          "desc": "We don't just prescribe artificial tears. Through IPL laser treatment that restores meibomian gland function and thermal massage, we address the root cause of dry eye syndrome.",
+          "details": [
+            "M22 IPL Laser Treatment",
+            "Meibomian Gland Expression",
+            "Autologous Serum Eye Drops"
+          ]
+        },
+        {
+          "title": "Precision Glaucoma Early Detection",
+          "desc": "Once damaged, the optic nerve cannot recover. Through university hospital-grade OCT and visual field testing equipment, we detect early glaucoma and prescribe customized medications.",
+          "details": [
+            "Optic Disc Analysis",
+            "Retinal Nerve Fiber Layer Imaging",
+            "24-Hour Intraocular Pressure Monitoring"
+          ]
+        },
+        {
+          "title": "Macular Degeneration Anti-VEGF Clinic",
+          "desc": "Macular degeneration is the leading cause of blindness. Through proven anti-VEGF injection treatments like Lucentis and Eylea, we prevent vision loss and preserve retinal function.",
+          "details": [
+            "Optical Coherence Tomography (OCT)",
+            "Fluorescein Angiography",
+            "Same-Day Anti-VEGF Injection"
+          ]
+        },
+        {
+          "title": "Orthokeratology / Pediatric Myopia Clinic",
+          "desc": "Orthokeratology lenses correct vision while you sleep. We slow myopia progression in growing children and give them the freedom of glasses-free daytime hours.",
+          "details": [
+            "Corneal Topography Exam",
+            "Authentic Lens Trial Fitting",
+            "Regular Vision Management"
+          ]
+        }
+      ]
+    },
+    "SymptomChecklist": {
+      "sectionTitle": "Self Check",
+      "headline": "Don't Ignore",
+      "headlineHighlight": "Your Eye's Warning Signs.",
+      "description": "If you experience 2 or more of these symptoms, it could be early signs of eye disease.\nLeft untreated, it can lead to vision loss. Get a comprehensive examination now.",
+      "checkedLabel": "CHECKED SYMPTOMS",
+      "items": [
+        "Eyes often feel dry and gritty.",
+        "It's difficult to open eyes when waking up in the morning.",
+        "Light causes eye discomfort and tearing.",
+        "Eyes are so light-sensitive, I want to wear sunglasses even indoors.",
+        "Vision appears hazy and uncomfortable.",
+        "Straight lines appear wavy, or there's a dark spot in central vision."
+      ]
+    },
+    "TreatmentProcess": {
+      "sectionTitle": "Our Process",
+      "headline": "Healing Therapy Process",
+      "description": "Our systematic 5-step treatment process delivers optimal results",
+      "steps": [
+        {
+          "title": "One-Stop Examination",
+          "desc": "Over 50 precision tests in a single day"
+        },
+        {
+          "title": "1:1 Physician Consultation",
+          "desc": "Detailed analysis based on examination data"
+        },
+        {
+          "title": "Customized Laser Treatment",
+          "desc": "Treatment with latest equipment including M22, IPL"
+        },
+        {
+          "title": "Dedicated Nurse Care",
+          "desc": "Intensive recovery room care after surgery/procedures"
+        },
+        {
+          "title": "Lifetime Assurance",
+          "desc": "Regular check-ups and recurrence prevention program"
+        }
+      ]
+    },
+    "Equipment": {
+      "sectionTitle": "Technology",
+      "headline": "World Class",
+      "headlineSubtitle": "High-End Equipment",
+      "items": [
+        {
+          "name": "AMARIS SPT",
+          "tag": "Vision Correction Laser",
+          "desc": "Premium laser equipment AMARIS. Delivers precise vision correction through 3D three-dimensional correction and corneal polishing system.",
+          "specs": [
+            "3D Three-Dimensional Correction",
+            "0.54mm Precision Laser Beam",
+            "7-Dimensional Eye Tracking",
+            "Smart Pulse Technology"
+          ]
+        },
+        {
+          "name": "Galilei G4",
+          "tag": "Corneal Tomography",
+          "desc": "State-of-the-art 3D corneal analysis equipment. Measures 122,000 data points with the fastest 1-second examination.",
+          "specs": [
+            "1-Second Ultra-Fast Scan",
+            "122,000 Data Points",
+            "3D Corneal Analysis",
+            "Anterior Segment CT Precision Equipment"
+          ]
+        },
+        {
+          "name": "Pentacam HR",
+          "tag": "Corneal Topography",
+          "desc": "Determines surgical eligibility through precise corneal analysis and enables rapid response to complications. Also provides accurate cataract examination.",
+          "specs": [
+            "Precise Corneal Analysis",
+            "Complication Management",
+            "Accurate Topography Data",
+            "Cataract Examination"
+          ]
+        },
+        {
+          "name": "3D OCT-1",
+          "tag": "Optical Coherence Tomography",
+          "desc": "CT imaging of the optic nerve and retina. Short scan time reduces discomfort and enables diagnosis of glaucoma, diabetic retinopathy, and macular degeneration.",
+          "specs": [
+            "Optic Nerve & Retina CT",
+            "Short Scan Time",
+            "Glaucoma Diagnosis",
+            "Retinal Disease Diagnosis"
+          ]
+        },
+        {
+          "name": "Optos Daytona P200T",
+          "tag": "Ultra-Widefield Retinal Imaging",
+          "desc": "Captures images in just 0.25 seconds without pupil dilation. 200-degree wide-field imaging captures peripheral retina in one shot for early detection and prevention of retinal diseases.",
+          "specs": [
+            "0.25-Second Ultra-Fast",
+            "200-Degree Wide Field",
+            "No Dilation Required",
+            "Early Detection & Prevention"
+          ]
+        },
+        {
+          "name": "FEMTO LDV Z8",
+          "tag": "Femtosecond Cataract Laser",
+          "desc": "The most precise laser equipment available today. Precise crystalline lens removal shortens surgery time and enables faster recovery.",
+          "specs": [
+            "Precise Lens Removal",
+            "Shortened Surgery Time",
+            "Minimized Bubble Formation",
+            "7-Dimensional Eye Tracking"
+          ]
+        },
+        {
+          "name": "IOL MASTER 700",
+          "tag": "Biometry",
+          "desc": "Ultra-precise eye measurement laser device. A non-contact, cutting-edge ultra-precision ocular laser biometer capable of precisely examining all parts of the eye.",
+          "specs": [
+            "Non-Contact Measurement",
+            "Full-Eye Precision Examination",
+            "High Measurement Accuracy",
+            "Fast and Safe Surgery"
+          ]
+        },
+        {
+          "name": "CALLISTO EYE",
+          "tag": "Astigmatism Tracking Navigation",
+          "desc": "Surgical navigation system challenging 0% astigmatism error rate. Visualizes precise surgical guides showing incision position, size, IOL position, and astigmatism axis accurately.",
+          "specs": [
+            "0% Astigmatism Error Target",
+            "Visual Surgical Guide",
+            "Precise Incision Location",
+            "Astigmatism Axis Display"
+          ]
+        },
+        {
+          "name": "LUMERA 700",
+          "tag": "Surgical Microscope",
+          "desc": "Delivers high-quality vision improvement with excellent visualization capabilities. Automatically adjusts for optimal surgical view and automatically aligns patient's astigmatism axis.",
+          "specs": [
+            "Excellent Visualization",
+            "Automatic View Adjustment",
+            "Automatic Astigmatism Alignment",
+            "Fast and Precise Surgery"
+          ]
+        }
+      ]
+    }
+  },
+  "Insight": {
+    "Hero": {
+      "sectionTitle": "Insight",
+      "headline": "Eye Health Stories",
+      "headlineHighlight": "with Our Experts"
+    },
+    "VideoGallery": {
+      "channelLabel": "YouTube Channel",
+      "channelName": "Dr. Eye Sister @dreyesis",
+      "channelDescription": "Eye health information from a professional ophthalmologist",
+      "visitChannel": "Visit Channel",
+      "badge": "Dr. Eye Sister",
+      "emptyState": "No videos available at the moment.",
+      "dates": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "daysAgo": "{count} days ago",
+        "weeksAgo": "{count} weeks ago",
+        "monthsAgo": "{count} months ago",
+        "yearsAgo": "{count} years ago"
+      }
+    },
+    "ExpertQnA": {
+      "sectionTitle": "Medical Q&A",
+      "headline": "Ask Us",
+      "headlineHighlight": "Anything",
+      "description": "The most frequently asked questions from patients in our consultation rooms.\nOur ophthalmology specialists provide clear, direct answers.",
+      "answeredBy": "Answered by",
+      "items": [
+        {
+          "q": "Can my vision deteriorate again after LASIK surgery?",
+          "a": "Myopic regression can rarely occur in high myopia patients. However, Healing Eye Clinic's 'SMILE PRO' dramatically reduces the probability of regression due to minimal corneal tissue removal and superior structural stability. If vision does decline, re-correction may be possible depending on residual corneal thickness, and our lifetime care program provides continuous monitoring and care.",
+          "doc": "Dr. Kim Sun-young, Representative Director"
+        },
+        {
+          "q": "Can I get presbyopia surgery even without cataracts?",
+          "a": "Yes, it's possible. If the crystalline lens has lost its accommodative power and near vision is uncomfortable, you can correct it through 'presbyopia-correcting lens implantation' or 'monovision LASIK.' However, if you're in your late 40s to early 50s, it's advisable to consider the possibility of future cataract development and consult thoroughly with your doctor about the optimal timing for surgery.",
+          "doc": "Dr. Lee Jun-ho, Director"
+        },
+        {
+          "q": "I have severe dry eye syndrome. Can I still get vision correction surgery?",
+          "a": "For patients with severe dry eye syndrome, we recommend 'SMILE LASIK,' which causes less corneal surface damage than standard LASIK, or 'ICL lens implantation.' By first improving dry eye with 'IPL laser' treatment before surgery, combined with an intensive post-operative care program, you can restore healthy vision.",
+          "doc": "Dr. Park Ji-min, Director"
+        }
+      ]
+    },
+    "Page": {
+      "heroDescription1": "Accurate medical information for a healthy lifestyle",
+      "heroDescription2": "Explore our expert medical columns from Healing Eye Clinic.",
+      "medicalColumnTitle": "Medical Columns",
+      "authorName": "Dr. Sunyoung Kim",
+      "newsletter": {
+        "description": "Get weekly updates on eye health information.",
+        "noSpam": "We never send spam."
+      }
     }
   },
   "About": {
     "BrandStory": {
       "sectionTitle": "Our Mission",
-      "headline": "More Than Vision,",
+      "headline": "Beyond Vision,",
       "headlineSubtitle": "We Design Your Life.",
       "description": "Beyond simply correcting vision,\nto make your life clearer and more beautiful.\nHealing Eye Clinic sculpts the most perfect vision\nat the intersection of technology and art.",
       "stats": [
@@ -343,19 +1111,20 @@
     "DirectorMessage": {
       "sectionTitle": "Greeting",
       "headline": "Healing Your Eyes,",
-      "headlineSubtitle": "Design Your Life.",
+      "headlineSubtitle": "Designing Your Life.",
       "representativeDirector": "Representative Director",
-      "doctorName": "Dr. Kim, Sun-young",
+      "doctorName": "Dr. Kim Sun-young",
       "greeting": "Hello, I am Dr. Kim Sun-young, Representative Director of Healing Eye Clinic.",
       "paragraphs": [
-        "'Seeing' is not merely recognizing objects, but a process of facing the faces of loved ones, remembering beautiful scenery, and fully experiencing every moment of life.",
-        "From my time as a university hospital professor until now, having met tens of thousands of patients, what I have realized is that ultimately, the best medical care begins with 'empathy.' Listening carefully to even the smallest discomforts of patients and treating them with the care I would give to family—that is the essence of 'healing' as I understand it.",
-        "More than the title of Gangnam's only solo-practicing female representative director, I want to be remembered as a lifelong primary physician who takes responsibility for each person's eye health to the very end. For your most brilliant moments, Healing Eye Clinic will be with you."
+        "'Seeing' is not merely recognizing objects, but a process of looking into the faces of loved ones, remembering beautiful scenery, and fully experiencing every moment of life.",
+        "From my time as a university hospital professor until now, having met tens of thousands of patients, what I have realized is that ultimately, the best medical care begins with 'empathy.' Listening carefully to even the smallest discomfort of patients and treating them with the heart I would give to family - that is the essence of 'healing' as I understand it.",
+        "More than the title of Gangnam's only solo-practicing female representative director, I want to be remembered as a lifelong primary care physician who takes responsibility for each person's eye health to the very end. For your most brilliant moments, Healing Eye Clinic will be with you."
       ]
     },
     "HistoryTimeline": {
       "sectionTitle": "Milestones",
       "headline": "Our History",
+      "historyLabel": "HISTORY",
       "timeline": [
         {
           "year": "2018",
@@ -374,8 +1143,8 @@
         },
         {
           "year": "2021",
-          "title": "Presbyopia/Cataract Center Expansion",
-          "description": "Launched specialized treatment with premium multifocal IOL"
+          "title": "Presbyopia & Cataract Center Expansion",
+          "description": "Launched specialized treatment with premium Multifocal IOL"
         },
         {
           "year": "2022",
@@ -392,16 +1161,57 @@
           "title": "AI Precision Examination System",
           "description": "Established cutting-edge AI-based personalized vision correction system"
         }
-      ],
-      "historyLabel": "HISTORY"
+      ]
+    },
+    "History": {
+      "sectionLabel": "Milestones",
+      "headline": "Our History",
+      "historyLabel": "HISTORY",
+      "items": [
+        {
+          "year": "2018",
+          "title": "Healing Eye Clinic Opening",
+          "desc": "Premium Vision Correction Center opened in Yeoksam-dong 808 Tower"
+        },
+        {
+          "year": "2019",
+          "title": "University Hospital-Grade Equipment Introduction",
+          "desc": "Established state-of-the-art vision correction equipment and precision examination system"
+        },
+        {
+          "year": "2020",
+          "title": "SMILE LASIK Specialty Center",
+          "desc": "Full-scale launch of minimal-incision SMILE LASIK"
+        },
+        {
+          "year": "2021",
+          "title": "Presbyopia & Cataract Center Expansion",
+          "desc": "Launched specialized treatment with premium Multifocal IOL"
+        },
+        {
+          "year": "2022",
+          "title": "Minimal-Incision CLEAR LASIK",
+          "desc": "Introduced CLEAR LASIK with differentiated treatment system"
+        },
+        {
+          "year": "2023",
+          "title": "Achieved 50,000 Cumulative Surgeries",
+          "desc": "Achieved 4.9/5.0 patient satisfaction, established as regional leading ophthalmology clinic"
+        },
+        {
+          "year": "2024",
+          "title": "AI Precision Examination System",
+          "desc": "Established cutting-edge AI-based personalized vision correction system"
+        }
+      ]
     },
     "Location": {
       "sectionTitle": "Location",
       "headline": "Visit Us",
       "address": {
         "title": "Address",
-        "line1": "808 Tower, 10-11F, 470 Gangnam-daero, Gangnam-gu, Seoul",
-        "line2": "(1 minute walk from Sinnonhyeon Station Exit 6)"
+        "line1": "808 Tower, 10-11F, 470 Gangnam-daero, Gangnam-gu, Seoul, Korea",
+        "line2": "(1-minute walk from Sinnonhyeon Station Exit 6)"
       },
       "contact": {
         "title": "Contact",
@@ -411,9 +1221,9 @@
       "hours": {
         "title": "Hours",
         "weekday": "Weekdays: 09:30 - 18:30 (Lunch Break 13:00 - 14:00)",
-        "friday": "Friday: 09:30 - 21:00 (Night Clinic)",
+        "friday": "Friday: 09:30 - 21:00 (Evening Clinic)",
         "saturday": "Saturday: 09:30 - 16:00",
-        "closed": "Closed Sundays / Public Holidays"
+        "closed": "Closed Sundays & Public Holidays"
       },
       "mapLabel": "Sinnonhyeon Station Exit 6"
     },
@@ -439,16 +1249,16 @@
           ]
         },
         {
-          "title": "Personalized",
-          "subtitle": "Customized Plan for One Individual Only",
-          "description": "We reject factory-style surgery. We design 1:1 customized plans considering the patient's corneal fingerprint, lifestyle patterns, and occupational environment.",
+          "title": "Personalized Care",
+          "subtitle": "Customized Plan for Each Individual",
+          "description": "We reject factory-style surgery. We design 1:1 customized plans considering the patient's corneal profile, lifestyle patterns, and occupational environment.",
           "stats": [
             {
               "label": "Customized Plan",
               "value": "1:1"
             },
             {
-              "label": "Analysis Items",
+              "label": "Analysis Factors",
               "value": "20+"
             }
           ]
@@ -456,7 +1266,7 @@
         {
           "title": "Lifetime Care",
           "subtitle": "Lifelong Eye Health Partner",
-          "description": "We operate a lifetime management system that can accurately track and observe your eye condition even after 10 or 20 years post-surgery.",
+          "description": "We operate a lifetime management system that can accurately track and monitor your eye condition even 10 or 20 years after surgery.",
           "stats": [
             {
               "label": "Data Retention",
@@ -473,51 +1283,288 @@
   },
   "Footer": {
     "brandName": "Healing Eye",
-    "tagline": "Experience the new standard of vision correction. Premium service, state-of-the-art technology, and a brand new life for your eyes.",
+    "tagline": "Experience the new standard of vision correction.\nPremium service, state-of-the-art technology, and a brand new life for your eyes.",
     "contact": {
       "title": "Contact",
-      "address": "808 Tower, 10-11F, 470 Gangnam-daero,\nGangnam-gu, Seoul (Sinnonhyeon Station Exit 6)",
+      "address": "808 Tower, 10-11F, 470 Gangnam-daero, Gangnam-gu, Seoul",
+      "addressSub": "(1-minute walk from Sinnonhyeon Station Exit 6)",
       "phone": "02-566-1222",
       "kakao": "kakao @healingeye"
     },
     "hours": {
       "title": "Hours",
-      "weekday": "Weekdays",
+      "weekday": "Mon - Thu",
       "weekdayTime": "09:30 - 18:30",
-      "lunchBreak": "(Lunch Break 13:00-14:00)",
-      "friday": "Friday",
+      "lunchBreak": "Lunch Break 13:00 - 14:00",
+      "friday": "Fri",
+      "fridayLabel": "(Evening Clinic)",
       "fridayTime": "09:30 - 21:00",
-      "saturday": "Saturday",
+      "saturday": "Sat",
       "saturdayTime": "09:30 - 16:00",
-      "closed": "Sundays / Public Holidays",
+      "closed": "Sun / Holiday",
       "closedStatus": "Closed"
     },
     "copyright": "Healing Eye Clinic. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   },
-  "Common": {
-    "navigation": {
-      "home": "Home",
-      "about": "About",
-      "treatments": "Treatments",
-      "equipment": "Equipment",
-      "community": "Community",
-      "reservation": "Reservation"
-    },
-    "buttons": {
-      "book": "Book Now",
-      "viewMore": "View More",
-      "previous": "Previous",
-      "next": "Next",
-      "close": "Close",
-      "submit": "Submit",
-      "cancel": "Cancel"
-    },
-    "labels": {
-      "loading": "Loading...",
-      "error": "An error has occurred",
-      "success": "Successfully completed"
+  "Community": {
+    "Page": {
+      "buttons": {
+        "viewReviews": "View Reviews",
+        "realTimeReservation": "Book Now",
+        "visitLink": "Visit"
+      },
+      "notices": {
+        "title": "Notices & Events",
+        "items": [
+          {
+            "title": "2024 Lunar New Year Holiday Notice",
+            "date": "2024.01.15",
+            "tag": "Notice"
+          },
+          {
+            "title": "Student Special: Up to 49% Off SMILE LASIK",
+            "date": "2024.01.01",
+            "tag": "Event"
+          },
+          {
+            "title": "Healing Eye Clinic Celebrates 50,000 Surgeries",
+            "date": "2023.12.10",
+            "tag": "News"
+          }
+        ]
+      },
+      "social": {
+        "instagram": {
+          "name": "@healingeyeclinic",
+          "description": "Daily updates and patient reviews"
+        },
+        "youtube": {
+          "name": "Dr. Eye Sis",
+          "description": "@dreyesis Eye health information"
+        },
+        "blog": {
+          "name": "Healing Eye Clinic",
+          "description": "Expert columns and medical information"
+        }
+      },
+      "faq": {
+        "title": "Frequently Asked Questions (FAQ)",
+        "categories": [
+          "Clear LASIK",
+          "LASIK",
+          "LASEK",
+          "ICL (Lens Implant)",
+          "Cataract",
+          "Pterygium",
+          "Retina"
+        ],
+        "items": {
+          "clearLasik": [
+            {
+              "q": "It's been 7 days since surgery and my vision is still blurry. Is this normal?",
+              "a": "Blurry vision after surgery is mostly a temporary phenomenon caused by corneal swelling. While there are individual differences, it can take about a month for corneal swelling to completely subside. Therefore, the blurriness you are currently experiencing is part of the recovery process and there is no need to worry. Your vision will gradually become clearer over time, and you will be able to see much better after one month."
+            },
+            {
+              "q": "When can I start washing my face, showering, and using public baths or saunas after surgery?",
+              "a": "You can wash your face and shower from the day after surgery. However, you must be careful not to get water in your eyes. Public baths and saunas are recommended after 1 month following surgery."
+            },
+            {
+              "q": "When can I start exercising like yoga or working out at the gym?",
+              "a": "Light exercises such as yoga and gym workouts are possible from the day after surgery. However, they should be done within a comfortable range. Intense exercise or contact sports (ball sports, etc.) are possible after 1 month following surgery."
+            },
+            {
+              "q": "There are white particles floating in my autologous serum eye drops. Is this okay?",
+              "a": "Yes, white particles floating in autologous serum eye drops is a normal phenomenon. Autologous serum eye drops contain components from our body that form blood clots, so clots may appear as lumps that look like white floating particles."
+            },
+            {
+              "q": "How long should I use autologous serum eye drops?",
+              "a": "Serum eye drops are used not only for faster recovery but also as a treatment for dry eye syndrome, and you should use them until they are completely finished. If you would like additional prescriptions, please contact the clinic."
+            },
+            {
+              "q": "My vision is blurry after surgery. When will it return to normal?",
+              "a": "Blurry vision after surgery is a normal phenomenon caused by corneal edema. Generally, the edema decreases after 1-2 weeks and vision gradually improves."
+            },
+            {
+              "q": "My near vision is still not fully recovered. When will it improve?",
+              "a": "It takes about 2 weeks of adaptation for near vision to fully recover after surgery. During this period, near vision gradually improves as your eyes adapt to the post-surgical changes."
+            }
+          ],
+          "lasik": [
+            {
+              "q": "My eyes sting and hurt after LASIK surgery. What should I do?",
+              "a": "Stinging and pain after LASIK surgery is a normal phenomenon. Generally, you may experience excessive tearing and stinging for 6 hours after surgery, and the symptoms gradually subside after 1-2 days. Please be careful not to rub your eyes."
+            },
+            {
+              "q": "When I got home after LASIK surgery, I noticed the protective lens had fallen out. What should I do?",
+              "a": "If the protective lens falls out after LASIK surgery, there is no need to worry. In LASIK surgery, the protective lens is mainly inserted to relieve pain and prevent eye dryness, and it does not significantly affect vision recovery."
+            },
+            {
+              "q": "There are white particles floating in my autologous serum eye drops. Is this okay?",
+              "a": "Yes, white particles floating in autologous serum eye drops is a normal phenomenon. Autologous serum eye drops contain components from our body that form blood clots, so clots may appear as lumps that look like white floating particles."
+            },
+            {
+              "q": "How long should I use autologous serum eye drops?",
+              "a": "Serum eye drops are used not only for faster recovery but also as a treatment for dry eye syndrome, and you should use them until they are completely finished. If you would like additional prescriptions, please contact the clinic."
+            },
+            {
+              "q": "After surgery, I need to work while looking at a monitor, but severe light glare is making it difficult. What should I do?",
+              "a": "Light glare after LASIK surgery is a normal phenomenon. The period for vision to stabilize is about 1 month, and near vision recovers the slowest among all distances. Therefore, you may experience severe light glare for about 1 month after surgery."
+            },
+            {
+              "q": "Is UV protection still necessary after LASIK surgery?",
+              "a": "The importance of UV protection has become somewhat less critical compared to the past. Particularly with LASIK surgery where the flap is covered, the corneal epithelium recovers quickly and provides high UV protection, so UV protection is not necessarily required."
+            },
+            {
+              "q": "My vision is blurry after LASIK surgery. When will it return to normal?",
+              "a": "Blurry vision after surgery is a normal phenomenon caused by corneal edema. Generally, the edema decreases after 1-2 weeks and vision gradually improves."
+            },
+            {
+              "q": "Why is my vision blurry when I wake up in the morning after LASIK surgery, but gets better as time passes?",
+              "a": "Blurry vision in the morning after LASIK surgery is likely due to dry eye syndrome. During the corneal epithelium recovery process after surgery, tear production decreases and dry eye syndrome can occur, which can be most severe in the morning."
+            },
+            {
+              "q": "Can I freely use computers and smartphones from the day after LASIK surgery?",
+              "a": "You can use computers and smartphones in your daily life from the day after LASIK surgery. However, you should take breaks in between to avoid straining your eyes and apply artificial tears to prevent dryness."
+            }
+          ],
+          "lasek": [
+            {
+              "q": "It's the 4th day after LASEK surgery and I still have pain. I'm worried. Is this normal?",
+              "a": "Pain is most severe 2-3 days after LASEK surgery and begins to gradually subside from the 4th day. However, the duration of pain can vary depending on individual health conditions, surgical method, and recovery speed."
+            },
+            {
+              "q": "It's the 4th day after LASEK surgery and my vision is worse than right after surgery. I'm worried.",
+              "a": "Reduced vision on the 4th day after LASEK surgery is a temporary phenomenon caused by the corneal epithelium recovery process. Between 3-7 days after surgery, vision can appear blurry as the corneal epithelium gathers toward the center."
+            },
+            {
+              "q": "It's been a month after LASEK surgery and my vision is still blurry. What could be the reason?",
+              "a": "The time it takes for vision to fully stabilize after LASEK surgery varies by individual, and generally takes up to 3 months. In cases of high myopia or high astigmatism, the vision recovery period can be longer and may last up to 6 months."
+            },
+            {
+              "q": "When should I start using Fluorometholone eye drops after LASEK surgery? How many times a day should I use them, and for how long?",
+              "a": "Fluorometholone eye drops should be used immediately after removing the lens following LASEK surgery. Apply one drop 4 times a day: morning, lunch, evening, and before bed. The eye drops should be used for approximately 3 months, though the duration may vary according to your ophthalmologist's instructions."
+            },
+            {
+              "q": "There are white particles floating in my autologous serum eye drops. Is this okay?",
+              "a": "Yes, white particles floating in autologous serum eye drops is a normal phenomenon. Autologous serum eye drops contain components from our body that form blood clots, so clots may appear as lumps that look like white floating particles."
+            },
+            {
+              "q": "How long should I use autologous serum eye drops?",
+              "a": "Serum eye drops are used not only for faster recovery but also as a treatment for dry eye syndrome, and you should use them until they are completely finished. If you would like additional prescriptions, please contact the clinic."
+            },
+            {
+              "q": "Do I need to wear UV-blocking glasses or sunglasses indoors after LASEK?",
+              "a": "There is no need to wear UV-blocking glasses or sunglasses indoors to block LED light after LASEK. When going outdoors, wear sunglasses with UV protection. It is recommended to choose sunglasses with 99% or higher UV protection rate."
+            },
+            {
+              "q": "When can I start night driving after LASEK surgery? Right now, driving is difficult due to glare.",
+              "a": "Night driving after LASEK surgery varies by individual, but is generally possible after 1-3 months. In the beginning, it is advisable to avoid night driving due to light glare. We recommend starting with daytime driving and gradually adapting, then attempting night driving after 1-3 months."
+            }
+          ],
+          "icl": [
+            {
+              "q": "It's been about 6 months after ICL surgery. Do I still need regular check-ups?",
+              "a": "Yes, regular check-ups are essential even 6 months after ICL surgery. Since a lens is implanted inside the eye, corneal endothelial cell count may decrease, and regular check-ups are necessary to check the endothelial cell count and determine if there is any decrease."
+            },
+            {
+              "q": "When can I use public baths or saunas after ICL surgery?",
+              "a": "Public baths and saunas are generally available after 1 month following ICL surgery. However, the available timing may vary depending on individual eye health conditions and surgical results."
+            },
+            {
+              "q": "When can I start washing my face or showering?",
+              "a": "Face washing and showering are generally possible after 3 days. Within 3 days, you must be careful not to get water in your eyes. When washing your face, you should avoid your eyes and only clean the rest of your face."
+            },
+            {
+              "q": "Is it okay to sleep face down after ICL surgery?",
+              "a": "It is advisable to avoid sleeping face down for at least one month after ICL surgery. Sleeping face down can cause increased intraocular pressure, which may adversely affect recovery after ICL surgery."
+            },
+            {
+              "q": "How long should I wear the eye shield?",
+              "a": "If you accidentally rub your eyes while sleeping, it can interfere with the lens settling in your eye, and to prevent damage to the surgical site, we generally recommend wearing an eye shield for about 2 weeks."
+            }
+          ],
+          "cataract": [
+            {
+              "q": "When will the blurry vision after cataract surgery improve?",
+              "a": "Blurry vision after cataract surgery varies by individual, but generally improves within 3-6 months. During 1-2 months after surgery, you adapt to the intraocular lens and vision gradually begins to improve."
+            },
+            {
+              "q": "My friend could see clearly right after surgery, but why can't I see well?",
+              "a": "Vision recovery speed after cataract surgery varies for each individual. Rather than comparing yourself to your friend, it is important to focus on your own eye condition and follow your ophthalmologist's instructions."
+            },
+            {
+              "q": "I'm worried because my eyes feel uncomfortable after cataract surgery.",
+              "a": "Eye discomfort after cataract surgery is mostly a normal phenomenon. It occurs as the anesthesia wears off and the eye recovers, and gradually subsides over time."
+            },
+            {
+              "q": "Can cataract surgery recur?",
+              "a": "The cataract surgery itself has a very low recurrence rate. However, there is a concept called posterior capsule opacification. Posterior capsule opacification refers to the formation of a membrane on the remaining posterior capsule after surgery, and it can be easily removed with laser treatment."
+            },
+            {
+              "q": "I had cataract surgery yesterday and I'm worried because the redness is severe.",
+              "a": "If you tense up during surgery, your eyes can strain and cause redness. Redness after cataract surgery is mostly a temporary phenomenon and improves over time. In most cases, the redness naturally disappears after 2 weeks to 1 month following surgery."
+            },
+            {
+              "q": "My eyes have been twitching after cataract surgery.",
+              "a": "Eye twitching after surgery is an adaptation symptom along with dry eye syndrome and light glare as the lens settles into place. In most cases, eye twitching improves over time."
+            }
+          ],
+          "pterygium": [
+            {
+              "q": "I'm worried because the redness is severe after pterygium surgery. When will it improve?",
+              "a": "Foreign body sensation and redness can occur during the recovery process after surgery, and most cases improve naturally within 2 months. This is a temporary phenomenon, and the redness will subside over time and eye health will recover."
+            },
+            {
+              "q": "Can I drive on the day of pterygium surgery?",
+              "a": "Driving on the day of pterygium surgery is not recommended. For safety reasons, it is advisable to avoid driving for about 2-3 days after surgery. You may drive after 2-3 days once your eyes feel comfortable and you feel your vision has recovered."
+            },
+            {
+              "q": "I'm worried because my eyes sting severely on the day of pterygium surgery. Is it okay?",
+              "a": "Eye stinging after pterygium surgery is mostly a normal phenomenon. Irritation to the eye during the surgical process can cause stinging, blurry vision, and foreign body sensation. In most cases, eye stinging improves after about a day."
+            },
+            {
+              "q": "I'm worried because the surgical area is bumpy and it looks like the pterygium is still there.",
+              "a": "The area where the pterygium was located can have deeper opacity that progresses over time and may remain slightly white even after surgery. In most cases, the bumpiness and pterygium improve after about 2 months."
+            },
+            {
+              "q": "When can I start washing my face or showering after pterygium surgery?",
+              "a": "Face washing and showering are generally possible after 3 days. Within 3 days, you must be careful not to get water in your eyes. When washing your face, you should avoid your eyes and only clean the rest of your face."
+            },
+            {
+              "q": "When can I exercise after pterygium surgery?",
+              "a": "The timing for exercising after pterygium surgery varies depending on the type of exercise. Light aerobic exercise is possible after 1 week following surgery. Contact-heavy or intense exercise is possible after 1 month following surgery."
+            }
+          ],
+          "retina": [
+            {
+              "q": "On the day of retina surgery, my eyes won't open well and I'm seeing double. Is this okay?",
+              "a": "During the recovery process after surgery, on the day of surgery, your eyes may not open well and you may see double due to anesthesia. This is a temporary phenomenon and begins to improve within 24 hours."
+            },
+            {
+              "q": "How long does recovery take after retina surgery?",
+              "a": "The recovery period after retina surgery varies by individual, but generally, vision can be blurry and hazy for 1 month after surgery. Vision can fully recover up to 1 year to 1.5 years."
+            },
+            {
+              "q": "How should I use eye drops after removing the eye shield following retina surgery?",
+              "a": "You can remove the eye shield yourself the morning after surgery. Apply the prescribed eye drops at 5-minute intervals, then you must visit the clinic to receive a follow-up examination regarding the surgery. Use antibiotic and anti-inflammatory eye drops 4 times a day for one month, and use Bromfenac eye drops twice a day."
+            },
+            {
+              "q": "When should I visit the clinic after retina surgery?",
+              "a": "You should visit the clinic the day after surgery for a post-operative follow-up examination. You should visit 1 week later to check the surgical site condition. Visits are also needed at 1 month and 2 months post-surgery. After that, you should visit annually for eye follow-up examinations as a health check-up."
+            },
+            {
+              "q": "When can I start driving after retina surgery?",
+              "a": "Daytime driving is possible after 1 week, and nighttime driving is possible after 1 month. Depending on the situation after surgery, you may drive as long as it is not dangerous."
+            },
+            {
+              "q": "My eyes sting a lot after using eye drops following retina surgery. Is this okay?",
+              "a": "Eye drops prescribed after retina surgery to prevent inflammation have strong ingredients, so your eyes may sting a little. Stinging is a normal reaction and gradually subsides over time."
+            }
+          ]
+        }
+      }
     }
   }
 }

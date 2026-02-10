@@ -8,42 +8,18 @@ import SymptomChecklist from "@/components/center/SymptomChecklist";
 import TreatmentProcess from "@/components/center/TreatmentProcess";
 import EquipmentShowcase from "@/components/center/EquipmentShowcase";
 
-const clinics = [
-    {
-        title: "안구건조증 클리닉",
-        eng: "Dry Eye Clinic",
-        icon: <Droplets size={40} />,
-        desc: "M22 IPL 최신 장비를 도입하여 마이봄샘 기능을 회복시키고, 근본적인 안구건조증 원인을 치료합니다.",
-        stats: "IPL 치료",
-        bg: "from-blue-900/40"
-    },
-    {
-        title: "망막 센터",
-        eng: "Retina Center",
-        icon: <ScanEye size={40} />,
-        desc: "황반변성, 당뇨망막병증 등 실명 유발 질환을 대학병원급 광각 OCT 장비로 조기 발견 및 치료합니다.",
-        stats: "초정밀 OCT",
-        bg: "from-amber-900/40"
-    },
-    {
-        title: "녹내장 센터",
-        eng: "Glaucoma Care",
-        icon: <Eye size={40} />,
-        desc: "시신경 분석기를 통해 소리 없는 시력 도둑 녹내장을 예방하고, 안압을 정밀하게 관리합니다.",
-        stats: "평생 관리",
-        bg: "from-emerald-900/40"
-    },
-    {
-        title: "일반 진료",
-        eng: "General Eye Care",
-        icon: <Activity size={40} />,
-        desc: "결막염, 눈 다래끼, 알러지 등 일상적인 안질환부터 소아 안과 검진까지 세심하게 진료합니다.",
-        stats: "가족 주치의",
-        bg: "from-purple-900/40"
-    }
-];
+const clinicIcons = [<Droplets size={40} />, <ScanEye size={40} />, <Eye size={40} />, <Activity size={40} />];
+const clinicBgs = ["from-blue-900/40", "from-amber-900/40", "from-emerald-900/40", "from-purple-900/40"];
 
 export default function CenterPageClient() {
+    const tHero = useTranslations('Center.Hero');
+    const tClinics = useTranslations('Center.Clinics');
+
+    const clinics = tClinics.raw('items').map((clinic: any, index: number) => ({
+        ...clinic,
+        icon: clinicIcons[index],
+        bg: clinicBgs[index]
+    }));
     return (
         <div className="min-h-screen pt-32 pb-20 bg-background relative overflow-hidden">
 
@@ -60,21 +36,20 @@ export default function CenterPageClient() {
                     className="mb-24 md:flex justify-between items-end"
                 >
                     <div>
-                        <span className="text-primary font-bold tracking-[0.2em] uppercase mb-4 block animate-pulse">Specialized Medical Center</span>
+                        <span className="text-primary font-bold tracking-[0.2em] uppercase mb-4 block animate-pulse">{tHero('sectionTitle')}</span>
                         <h1 className="text-5xl md:text-8xl font-black text-white leading-tight">
-                            EYE DISEASE <br />
-                            <span className="text-neutral-500">CLINIC</span>
+                            {tHero('headline')} <br />
+                            <span className="text-neutral-500">{tHero('headlineHighlight')}</span>
                         </h1>
                     </div>
-                    <p className="text-lg text-neutral-400 font-light max-w-md mt-8 md:mt-0 text-right md:text-left leading-relaxed">
-                        대학병원급 정밀 진단 장비와 분야별 전문 의료진이<br />
-                        여러분의 눈 건강을 평생 지켜드립니다.
+                    <p className="text-lg text-neutral-400 font-light max-w-md mt-8 md:mt-0 text-right md:text-left leading-relaxed whitespace-pre-line">
+                        {tHero('description')}
                     </p>
                 </motion.div>
 
                 {/* Grid System */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {clinics.map((clinic, i) => (
+                    {clinics.map((clinic: any, i: number) => (
                         <motion.div
                             key={i}
                             initial={{ opacity: 0, y: 50 }}

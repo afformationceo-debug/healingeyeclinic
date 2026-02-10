@@ -2,9 +2,11 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
+    const t = useTranslations('Home.Hero');
     const containerRef = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -45,9 +47,9 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.5 }}
                         className="text-[10px] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase leading-tight"
                     >
-                        ( Healing Eye Clinic )
+                        {t('clinicName')}
                         <br />
-                        Gangnam, Seoul
+                        {t('location')}
                     </motion.div>
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}
@@ -55,9 +57,9 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.7 }}
                         className="text-right text-[10px] sm:text-xs md:text-sm font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase leading-tight"
                     >
-                        Est. 2016
+                        {t('established')}
                         <br />
-                        Kim Sun-young
+                        {t('directorName')}
                     </motion.div>
                 </div>
 
@@ -69,9 +71,9 @@ export default function Hero() {
                         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                         className="text-[18vw] sm:text-[16vw] md:text-[14vw] font-black leading-[0.85] tracking-tighter text-center"
                     >
-                        HEALING
+                        {t('brandName')}
                         <br />
-                        <span className="italic font-serif font-light">EYE</span>
+                        <span className="italic font-serif font-light">{t('brandSubtitle')}</span>
                     </motion.h1>
                 </div>
 
@@ -83,9 +85,8 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 1 }}
                         className="text-center sm:text-left order-2 sm:order-1"
                     >
-                        <p className="max-w-xs text-xs sm:text-sm md:text-base leading-relaxed opacity-80">
-                            We redefine the standard of vision correction with
-                            uncompromising precision and safety.
+                        <p className="max-w-xs text-xs sm:text-sm md:text-base leading-relaxed opacity-80 whitespace-pre-line">
+                            {t('tagline')}
                         </p>
                     </motion.div>
 
@@ -96,8 +97,8 @@ export default function Hero() {
                         className="pointer-events-auto order-1 sm:order-2"
                     >
                         <Button className="rounded-full w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 bg-primary text-black font-bold text-base sm:text-lg hover:scale-110 active:scale-95 transition-transform duration-300 flex flex-col gap-0.5 sm:gap-1 items-center justify-center border-none shadow-lg shadow-primary/20">
-                            <span>BOOK</span>
-                            <span className="text-[10px] sm:text-xs font-normal">NOW</span>
+                            <span>{t('ctaButton')}</span>
+                            <span className="text-[10px] sm:text-xs font-normal">{t('ctaButtonSub')}</span>
                         </Button>
                     </motion.div>
                 </div>

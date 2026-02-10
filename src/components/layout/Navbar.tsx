@@ -21,6 +21,7 @@ const navItems = [
 
 export default function Navbar() {
     const t = useTranslations('Navigation');
+    const tCommon = useTranslations('Common');
     const locale = useLocale();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -71,7 +72,7 @@ export default function Navbar() {
                     <div className="hidden md:flex items-center gap-4">
                         <LanguageSwitcher />
                         <Button size="sm" className="hidden lg:inline-flex">
-                            Reservation
+                            {tCommon('buttons.book')}
                         </Button>
                     </div>
 
@@ -126,10 +127,10 @@ export default function Navbar() {
                                     ))}
                                     <div className="h-px bg-white/10 my-4" />
                                     <div className="flex justify-between items-center py-2">
-                                        <span className="text-sm text-muted-foreground">Language</span>
+                                        <span className="text-sm text-muted-foreground">{tCommon('labels.language')}</span>
                                         <LanguageSwitcher />
                                     </div>
-                                    <Button className="w-full mt-4 h-12 text-base">Reservation</Button>
+                                    <Button className="w-full mt-4 h-12 text-base">{tCommon('buttons.book')}</Button>
                                 </nav>
                             </div>
                         </motion.div>

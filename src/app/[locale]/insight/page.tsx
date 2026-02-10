@@ -1,6 +1,7 @@
 import PageClient from './PageClient';
 import { getYouTubeVideos, getFeaturedYouTubeVideo } from '@/lib/youtube';
 import { getNaverBlogPosts } from '@/lib/naver-blog';
+import { getMessages } from 'next-intl/server';
 
 export const revalidate = 3600; // 1시간마다 재검증
 
@@ -20,10 +21,11 @@ const FEATURED_VIDEO_INFO = {
 export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
     const params = await props.params;
     const { locale } = params;
+    const messages = await getMessages({ locale }) as { Metadata: { insight: { title: string; description: string } } };
 
     return {
-        title: `인사이트 (칼럼/유튜브) | Healing Eye`,
-        description: `힐링안과 인사이트. 전문 의료진이 전하는 눈 건강 칼럼과 유튜브 영상(안과언니). 올바른 안과 상식을 전달합니다.`,
+        title: messages.Metadata.insight.title,
+        description: messages.Metadata.insight.description,
     };
 }
 

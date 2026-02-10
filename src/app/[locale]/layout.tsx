@@ -28,13 +28,13 @@ export default async function LocaleLayout({
         notFound();
     }
 
-    const messages = await getMessages();
+    const messages = await getMessages({ locale });
 
     return (
         <html lang={locale} className="dark">
             {/* Font is applied via globals.css :root variables mapping to font-sans */}
             <body className={`font-sans antialiased selection:bg-primary selection:text-primary-foreground cursor-auto md:cursor-none`}>
-                <NextIntlClientProvider messages={messages}>
+                <NextIntlClientProvider messages={messages} locale={locale}>
                     <CustomCursor />
                     <GlobalMessenger />
                     <SmoothScroll>
