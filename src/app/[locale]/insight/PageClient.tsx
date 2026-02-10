@@ -21,7 +21,9 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
     const locale = useLocale();
 
     function formatDate(dateString: string): string {
+        if (!dateString) return 'Unknown';
         const date = new Date(dateString);
+        if (isNaN(date.getTime())) return 'Unknown';
         const localeMap: Record<string, string> = {
             'ko': 'ko-KR',
             'en': 'en-US',
@@ -84,7 +86,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
 
                         <div
                             className="relative aspect-video sm:aspect-[16/9] md:aspect-[21/9] rounded-xl sm:rounded-2xl md:rounded-[2rem] overflow-hidden group cursor-pointer border border-white/10"
-                            onClick={() => window.open(featuredVideo.link, '_blank')}
+                            onClick={() => window.open(featuredVideo.link, '_blank', 'noopener,noreferrer')}
                         >
                             <Image
                                 src={featuredVideo.thumbnail}
@@ -190,7 +192,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                 <Button
                                     variant="outline"
                                     className="w-full sm:w-auto text-white border-2 border-white/40 hover:bg-white hover:text-black active:bg-white active:text-black rounded-full px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold backdrop-blur-sm transition-all duration-300 shadow-xl"
-                                    onClick={() => window.open(featuredVideo.link, '_blank')}
+                                    onClick={() => window.open(featuredVideo.link, '_blank', 'noopener,noreferrer')}
                                 >
                                     {t('watchNow')} <Play className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                                 </Button>
@@ -223,7 +225,7 @@ export default function PageClient({ featuredVideo, youtubeVideos, blogPosts }: 
                                 transition={{ delay: i * 0.15, duration: 0.6 }}
                                 viewport={{ once: true }}
                                 className="group cursor-pointer"
-                                onClick={() => window.open(post.link, '_blank')}
+                                onClick={() => window.open(post.link, '_blank', 'noopener,noreferrer')}
                             >
                                 <div className="relative">
                                     {/* Hover glow effect */}

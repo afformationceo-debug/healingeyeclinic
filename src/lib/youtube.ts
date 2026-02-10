@@ -33,7 +33,7 @@ export async function getYouTubeVideos(limit: number = 15): Promise<YouTubeVideo
       id: item.id.split(':')[2], // yt:video:VIDEO_ID
       title: item.title || '',
       link: item.link || '',
-      publishedAt: item.pubDate || item.isoDate || '',
+      publishedAt: item.pubDate || item.isoDate || new Date().toISOString(),
       thumbnail: item.media?.['media:thumbnail']?.[0]?.$.url ||
                  `https://i.ytimg.com/vi/${item.id.split(':')[2]}/hqdefault.jpg`,
       description: item.contentSnippet || item.content || '',

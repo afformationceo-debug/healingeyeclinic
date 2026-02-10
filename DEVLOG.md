@@ -1,5 +1,73 @@
 # 힐링안과 개발 일지
 
+## 2026-02-11 (화) - 다국어 완성 + 코드 감사 버그 수정
+
+### 📋 작업 개요
+태국어/러시아어 번역 100% 완성 및 코드 감사 기반 11건 버그 수정
+
+---
+
+### ✅ 완료된 작업
+
+#### 1. **태국어/러시아어 번역 100% 완성** 🌐
+- th.json: 523 → 1564 lines (368 leaf keys, EN과 완전 일치)
+- ru.json: 523 → 1564 lines (368 leaf keys, EN과 완전 일치)
+- 추가 섹션: Metadata, Navigation, Vision, Cataract, Center, Insight, Community
+- FAQ 47개 항목 (7개 카테고리) 번역 완료
+- 누락 키 6개 보정: Common.labels.language 외 5개
+- 빌드 스크립트 방식 (scripts/build-i18n.js)으로 생성
+- 검증 스크립트 (scripts/verify-i18n.js)로 정합성 확인
+
+#### 2. **코드 감사 기반 버그 수정 (11건)** 🔧
+
+**P1 (성능/보안)**:
+- SmoothScroll.tsx: RAF 메모리 누수 수정 (cancelAnimationFrame 추가)
+- 3개 파일 8개소: window.open 'noopener,noreferrer' 보안 적용
+
+**P2 (안정성/SEO)**:
+- vision/PageClient.tsx: procedureColors 배열 범위 modulo 처리
+- center/PageClient.tsx: clinicIcons/clinicBgs 배열 범위 modulo 처리
+- community/PageClient.tsx: FAQ categoryKeys 안전 폴백
+- sitemap.ts: 블로그 경로 추가 (/blog, /blog/[slug])
+- youtube.ts, naver-blog.ts: 날짜 빈 문자열 → new Date().toISOString()
+- VideoGallery.tsx, insight/PageClient.tsx: formatDate Invalid Date 가드
+
+**P3 (접근성/클린업)**:
+- globals.css: 숨겨진 스크롤바 → 골드 톤 스타일 스크롤바
+- Review.tsx: console.log 디버그 코드 제거
+- blog/page.tsx: 미사용 import/주석 코드 제거
+
+#### 3. **빌드 검증** ✅
+- `npm run build` 성공 (TypeScript 에러 0건)
+- 정적 페이지 5/5 생성 완료
+
+### 📁 수정 파일 (14개)
+```
+src/components/layout/SmoothScroll.tsx
+src/components/insight/VideoGallery.tsx
+src/app/[locale]/community/PageClient.tsx
+src/app/[locale]/insight/PageClient.tsx
+src/app/[locale]/vision/PageClient.tsx
+src/app/[locale]/center/PageClient.tsx
+src/app/sitemap.ts
+src/lib/youtube.ts
+src/lib/naver-blog.ts
+src/components/home/Review.tsx
+src/app/globals.css
+src/app/[locale]/blog/page.tsx
+src/messages/th.json
+src/messages/ru.json
+```
+
+### 📝 신규 파일 (3개)
+```
+scripts/build-i18n.js
+scripts/verify-i18n.js
+docs/bugfix-report-2026-02-11.md
+```
+
+---
+
 ## 2026-02-09 (일) - Insight 페이지 Featured Video 안정화
 
 ### 📋 작업 개요

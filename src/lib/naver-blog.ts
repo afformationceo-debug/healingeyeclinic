@@ -50,7 +50,7 @@ export async function getNaverBlogPosts(limit: number = 10): Promise<NaverBlogPo
       return {
         title: item.title || '',
         link: item.link || '',
-        publishedAt: item.pubDate || item.isoDate || '',
+        publishedAt: item.pubDate || item.isoDate || new Date().toISOString(),
         description: description || '',
         thumbnail: thumbnail,
         category: item.category || 'MEDICAL COLUMN',

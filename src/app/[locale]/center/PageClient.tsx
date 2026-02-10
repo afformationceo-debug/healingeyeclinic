@@ -17,8 +17,8 @@ export default function CenterPageClient() {
 
     const clinics = tClinics.raw('items').map((clinic: any, index: number) => ({
         ...clinic,
-        icon: clinicIcons[index],
-        bg: clinicBgs[index]
+        icon: clinicIcons[index % clinicIcons.length],
+        bg: clinicBgs[index % clinicBgs.length]
     }));
     return (
         <div className="min-h-screen pt-32 pb-20 bg-background relative overflow-hidden">

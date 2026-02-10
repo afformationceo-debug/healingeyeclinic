@@ -21,7 +21,7 @@ function FAQSection() {
     const [activeTab, setActiveTab] = useState(0);
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-    const currentFaqItems = faqItems[categoryKeys[activeTab]] || [];
+    const currentFaqItems = (categoryKeys[activeTab] && faqItems[categoryKeys[activeTab]]) || [];
 
     return (
         <div>
@@ -141,7 +141,7 @@ export default function CommunityPageClient() {
                     <div className="md:col-span-1 space-y-4">
                         {/* Instagram */}
                         <div className="bg-gradient-to-br from-purple-900/20 to-blue-900/20 rounded-[2rem] p-8 border border-white/10 relative overflow-hidden group hover:border-white/30 transition-all cursor-pointer"
-                            onClick={() => window.open('https://www.instagram.com/healingeyeclinic/', '_blank')}>
+                            onClick={() => window.open('https://www.instagram.com/healingeyeclinic/', '_blank', 'noopener,noreferrer')}>
                             <div className="absolute top-0 right-0 p-8 text-neutral-500 group-hover:text-white transition-colors">
                                 <Instagram size={32} />
                             </div>
@@ -160,7 +160,7 @@ export default function CommunityPageClient() {
 
                         {/* YouTube */}
                         <div className="bg-gradient-to-br from-red-900/20 to-rose-900/20 rounded-[2rem] p-8 border border-white/10 relative overflow-hidden group hover:border-white/30 transition-all cursor-pointer"
-                            onClick={() => window.open('https://www.youtube.com/@dreyesis', '_blank')}>
+                            onClick={() => window.open('https://www.youtube.com/@dreyesis', '_blank', 'noopener,noreferrer')}>
                             <div className="absolute top-0 right-0 p-8 text-neutral-500 group-hover:text-white transition-colors">
                                 <Youtube size={32} />
                             </div>
@@ -179,7 +179,7 @@ export default function CommunityPageClient() {
 
                         {/* Naver Blog */}
                         <div className="bg-gradient-to-br from-green-900/20 to-emerald-900/20 rounded-[2rem] p-8 border border-white/10 relative overflow-hidden group hover:border-white/30 transition-all cursor-pointer"
-                            onClick={() => window.open('https://blog.naver.com/wpsjtltmals7', '_blank')}>
+                            onClick={() => window.open('https://blog.naver.com/wpsjtltmals7', '_blank', 'noopener,noreferrer')}>
                             <div className="absolute top-0 right-0 p-8 text-neutral-500 group-hover:text-white transition-colors">
                                 <BookOpen size={32} />
                             </div>

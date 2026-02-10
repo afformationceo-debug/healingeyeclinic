@@ -1,6 +1,6 @@
 # 힐링안과 웹사이트 개발 완료 보고서
 
-**최종 업데이트**: 2026-02-09
+**최종 업데이트**: 2026-02-11
 **프로젝트**: 힐링안과 프리미엄 웹사이트
 **기술 스택**: Next.js 16.1.6, TypeScript, Tailwind CSS v4, Framer Motion
 
@@ -274,9 +274,11 @@ public/images/
   - 다른 6개 언어만 번역 적용
 
 ### 4. **코드 품질 개선 (우선순위: 낮음)**
+- [x] 코드 감사 기반 버그 수정 (11건) ✅ 완료 (2026-02-11)
+- [x] 접근성 개선 (스크롤바) ✅ 완료 (2026-02-11)
 - [ ] ESLint 경고 수정 (unused imports/variables)
 - [ ] TypeScript strict 모드 검토
-- [ ] 접근성 개선 (ARIA labels)
+- [ ] 추가 접근성 개선 (ARIA labels)
 
 ### 5. **배포 준비 (우선순위: 낮음)**
 - [ ] 환경변수 설정 (.env)
@@ -317,9 +319,9 @@ public/images/
    - Community: Instagram 이미지
    - DirectorMessage: 대표원장 사진
 
-3. **다국어 메시지**: ko.json만 최소한으로 작성됨
-   - 대부분 텍스트가 하드코딩 상태
-   - 완전한 다국어 지원 위해 번역 작업 필요
+3. ~~**다국어 메시지**: ko.json만 최소한으로 작성됨~~ ✅ 해결 (2026-02-11)
+   - 7개 언어 모두 100% 번역 완료 (368 leaf keys × 7개 언어)
+   - th.json, ru.json 신규 완성 (1564 lines each)
 
 ---
 
@@ -346,10 +348,12 @@ public/images/
 | **중국어 병원명 통일** | ✅ 완료 | **100%** |
 | **한국어 원본 유지** | ✅ 완료 | **100%** |
 | **실제 이미지 (의료진/장비)** | ✅ 완료 | **100%** |
+| **코드 감사 버그 수정 (11건)** | ✅ 완료 | **100%** |
+| **접근성 개선 (스크롤바)** | ✅ 완료 | **100%** |
 | Community 실데이터 | ⚠️ 부분 | 40% |
 | 외부 이미지 로컬화 | ⚠️ 부분 | 20% |
 
-**전체 진행률**: 약 **98% 완성** (2026-02-08 업데이트)
+**전체 진행률**: 약 **99% 완성** (2026-02-11 업데이트)
 
 ---
 
@@ -388,9 +392,10 @@ public/images/
 구조가 완성되어 있습니다.
 
 **개발 시작일**: 2026-01-30
-**최종 업데이트**: 2026-02-08
+**최종 업데이트**: 2026-02-11
 **개발 방법**: bkit PDCA 방법론 + 병렬 서브에이전트 활용
 **병렬 처리 효율**: 50% 시간 단축 (AgingProcess + LensGuide 동시 작업)
+**코드 품질**: 코드 감사 11건 수정, npm run build 0 에러
 
 ---
 
@@ -494,4 +499,32 @@ public/images/
 
 ---
 
-*이 보고서는 2026-02-08에 최종 업데이트되었습니다.*
+---
+
+## 📝 2026-02-11 주요 업데이트
+
+### 다국어 번역 완성 (th, ru)
+- **태국어 (th.json)**: 42% → 100% (523 → 1564 lines, 368 leaf keys)
+- **러시아어 (ru.json)**: 42% → 100% (523 → 1564 lines, 368 leaf keys)
+- 추가 섹션: Metadata, Navigation, Vision, Cataract, Center, Insight, Community (FAQ 47개)
+- 누락 키 6개 보정: Common.labels.language, Footer.contact.addressSub, Footer.hours.fridayLabel, Home.WhyHealingEye.features.*.titleEng
+- 검증: `scripts/verify-i18n.js` 스크립트로 전체 7개 언어 키 정합성 확인
+
+### 코드 감사 기반 버그 수정 (11건)
+- **P1**: SmoothScroll RAF 메모리 누수 수정 (`cancelAnimationFrame` 추가)
+- **P1**: `window.open` 보안 취약점 수정 (8개소, `noopener,noreferrer`)
+- **P2**: 배열 범위 안전 처리 (vision, center, community 3개 파일)
+- **P2**: sitemap.ts 블로그 경로 추가
+- **P2**: 날짜 포맷 빈 문자열 처리 (youtube.ts, naver-blog.ts, VideoGallery.tsx, insight/PageClient.tsx)
+- **P3**: 스크롤바 접근성 개선 (골드 톤 스타일 스크롤바)
+- **P3**: console.log/TODO 제거, 미사용 코드 정리
+- 빌드 검증: `npm run build` 통과 (TypeScript 에러 0건)
+
+### 개발 도구 추가
+- `scripts/build-i18n.js`: 번역 파일 빌드 스크립트
+- `scripts/verify-i18n.js`: i18n 키 정합성 검증 스크립트
+- `docs/bugfix-report-2026-02-11.md`: 버그 수정 상세 리포트
+
+---
+
+*이 보고서는 2026-02-11에 최종 업데이트되었습니다.*

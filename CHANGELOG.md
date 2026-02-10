@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-02-11
+
+### Added
+- Thai (th) language pack: 100% complete (1564 lines, 368 leaf keys)
+- Russian (ru) language pack: 100% complete (1564 lines, 368 leaf keys)
+- Blog routes in sitemap.ts (static /blog + dynamic /blog/[slug])
+- i18n verification script: scripts/verify-i18n.js
+- i18n build script: scripts/build-i18n.js
+- Bug fix report: docs/bugfix-report-2026-02-11.md
+
+### Fixed
+- **P1 - SmoothScroll RAF memory leak**: Added cancelAnimationFrame in cleanup (SmoothScroll.tsx)
+- **P1 - window.open security**: Added 'noopener,noreferrer' to all 8 instances across 3 files
+- **P2 - Array bounds safety**: Modulo wrap for procedureColors, clinicIcons, clinicBgs
+- **P2 - FAQ category safety**: Fallback to empty array for out-of-bounds activeTab
+- **P2 - Date format handling**: Invalid Date guards in VideoGallery.tsx, insight/PageClient.tsx
+- **P2 - Date fallback**: Empty string → new Date().toISOString() in youtube.ts, naver-blog.ts
+
+### Improved
+- Scrollbar accessibility: Replaced hidden scrollbar with styled thin gold scrollbar (globals.css)
+- Removed console.log debug code from Review.tsx
+- Removed unused imports and commented code from blog/page.tsx
+
+---
+
 ## [Unreleased] - 2024-01-XX
 
 ### Added
@@ -135,7 +160,7 @@ src/components/vision/VisionProcess.tsx
    - Flex direction changes: `flex-col md:flex-row`
 
 ### Next Steps
-- [ ] Implement i18n language pack (multi-language support)
+- [x] Implement i18n language pack (multi-language support) ✅ 7개 언어 완료
 - [ ] Additional feature development
 - [ ] Performance optimization
 - [ ] Cross-browser testing

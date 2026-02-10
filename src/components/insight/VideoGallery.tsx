@@ -14,7 +14,9 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
     const t = useTranslations('Insight.VideoGallery');
 
     function formatDate(dateString: string): string {
+        if (!dateString) return 'Unknown';
         const date = new Date(dateString);
+        if (isNaN(date.getTime())) return 'Unknown';
         const now = new Date();
         const diffTime = Math.abs(now.getTime() - date.getTime());
         const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
@@ -47,7 +49,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
                     <p className="text-neutral-400 text-base">{t('channelDescription')}</p>
                 </div>
                 <button
-                    onClick={() => window.open('https://www.youtube.com/@dreyesis', '_blank')}
+                    onClick={() => window.open('https://www.youtube.com/@dreyesis', '_blank', 'noopener,noreferrer')}
                     className="group flex items-center gap-2 text-sm font-bold px-6 py-3 rounded-full bg-white/5 border border-white/10 hover:bg-primary hover:border-primary text-white hover:text-black transition-all duration-300 hover:scale-105"
                 >
                     {t('visitChannel')}
@@ -66,7 +68,7 @@ export default function VideoGallery({ videos }: VideoGalleryProps) {
                         transition={{ delay: index * 0.1, duration: 0.5 }}
                         viewport={{ once: true }}
                         className="group cursor-pointer"
-                        onClick={() => window.open(video.link, '_blank')}
+                        onClick={() => window.open(video.link, '_blank', 'noopener,noreferrer')}
                     >
                         <div className="relative">
                             {/* Hover glow effect */}

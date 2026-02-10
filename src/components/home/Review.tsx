@@ -132,8 +132,7 @@ export default function Review() {
                         </p>
                         <Button
                             onClick={() => {
-                                console.log('CTA clicked - will connect to booking modal/page later');
-                                // TODO: Connect to booking modal or consultation page
+                                // Future: connect to booking modal or consultation page
                             }}
                             className="w-full sm:w-auto bg-[#FFD700] hover:bg-[#FFC700] text-black font-bold text-base sm:text-lg px-8 sm:px-10 md:px-12 py-5 sm:py-6 md:py-7 rounded-full shadow-lg hover:shadow-2xl hover:shadow-[#FFD700]/30 transition-all duration-300 hover:scale-105 group"
                         >

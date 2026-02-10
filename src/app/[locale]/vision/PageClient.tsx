@@ -82,7 +82,7 @@ export default function VisionPageClient() {
 
     const procedures = tProcedures.raw('items').map((proc: any, index: number) => ({
         ...proc,
-        ...procedureColors[index]
+        ...procedureColors[index % procedureColors.length]
     }));
 
     return (
