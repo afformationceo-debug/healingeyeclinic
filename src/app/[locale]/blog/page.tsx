@@ -1,5 +1,28 @@
 import Link from 'next/link';
 import { getPosts } from '@/lib/blog';
+import { getSeoForPage } from '@/lib/seo';
+import type { Metadata } from 'next';
+
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await props.params;
+    const seo = getSeoForPage('blog', locale);
+
+    const title = seo?.title_tag || 'Healing Journal | Healing Eye Clinic';
+    const description = seo?.meta_description || 'In-depth stories about eye health and vision correction.';
+
+    return {
+        title,
+        description,
+        openGraph: {
+            title: seo?.og_title || title,
+            description: seo?.og_description || description,
+            ...(seo?.og_image && { images: [seo.og_image] }),
+        },
+        ...(seo?.keywords && { keywords: seo.keywords }),
+        ...(seo?.canonical_url && { alternates: { canonical: seo.canonical_url } }),
+        ...(seo?.robots && { robots: seo.robots }),
+    };
+}
 
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;

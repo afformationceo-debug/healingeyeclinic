@@ -2,6 +2,8 @@ import PageClient from './PageClient';
 import { getYouTubeVideos, getFeaturedYouTubeVideo } from '@/lib/youtube';
 import { getNaverBlogPosts } from '@/lib/naver-blog';
 import { getMessages } from 'next-intl/server';
+import { getSeoForPage } from '@/lib/seo';
+import type { Metadata } from 'next';
 
 export const revalidate = 3600; // 1시간마다 재검증
 
@@ -18,14 +20,25 @@ const FEATURED_VIDEO_INFO = {
   description: 'LAL(Light Adjustable Lens) 렌즈를 이용한 프리미엄 백내장 수술에 대해 소개합니다.',
 };
 
-export async function generateMetadata(props: { params: Promise<{ locale: string }> }) {
-    const params = await props.params;
-    const { locale } = params;
+export async function generateMetadata(props: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await props.params;
+    const seo = getSeoForPage('insight', locale);
     const messages = await getMessages({ locale }) as { Metadata: { insight: { title: string; description: string } } };
 
+    const title = seo?.title_tag || messages.Metadata.insight.title;
+    const description = seo?.meta_description || messages.Metadata.insight.description;
+
     return {
-        title: messages.Metadata.insight.title,
-        description: messages.Metadata.insight.description,
+        title,
+        description,
+        openGraph: {
+            title: seo?.og_title || title,
+            description: seo?.og_description || description,
+            ...(seo?.og_image && { images: [seo.og_image] }),
+        },
+        ...(seo?.keywords && { keywords: seo.keywords }),
+        ...(seo?.canonical_url && { alternates: { canonical: seo.canonical_url } }),
+        ...(seo?.robots && { robots: seo.robots }),
     };
 }
 

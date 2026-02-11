@@ -1,21 +1,22 @@
 import createMiddleware from 'next-intl/middleware';
 import { locales, defaultLocale } from './src/i18n/config';
+import { NextRequest } from 'next/server';
 
-export default createMiddleware({
-    // A list of all locales that are supported
+const intlMiddleware = createMiddleware({
     locales,
-
-    // Used when no locale matches
     defaultLocale,
-
-    // Always show locale prefix for consistency
     localePrefix: 'always'
 });
 
+export default function middleware(request: NextRequest) {
+    // Skip i18n middleware for admin routes
+    if (request.nextUrl.pathname.startsWith('/admin')) {
+        return;
+    }
+    return intlMiddleware(request);
+}
+
 export const config = {
-    // Match all pathnames except for
-    // - … if they start with `/api`, `/_next` or `/_vercel`
-    // - … the ones containing a dot (e.g. `favicon.ico`)
     matcher: [
         '/',
         '/(ko|en|ja|zh-CN|zh-TW|th|ru)/:path*',
