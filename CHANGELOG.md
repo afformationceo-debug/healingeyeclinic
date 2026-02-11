@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2026-02-11
+
+### Added
+- **SEO 관리 시스템**: 8개 페이지 x 7개 언어 = 56개 SEO 설정 관리
+  - `/admin` 관리자 페이지 (다크 테마, 로그인 불필요)
+  - JSON 파일 기반 SEO 데이터 저장 (`src/data/seo-settings.json`)
+  - API Route: GET/PUT `/api/seo` (페이지별/언어별 조회/저장)
+  - SEO 헬퍼 함수: `getSeoForPage()` (DB 우선, 번역 JSON 폴백)
+  - Google 검색결과 미리보기 + 소셜 미디어 미리보기
+  - 언어별 설정 완료 상태 뱃지 (초록=7/7, 주황=일부, 회색=0)
+  - Title tag, Meta description, OG tags, Keywords, Canonical URL, Robots, JSON-LD 지원
+
+### Changed
+- **Navbar 모바일 UX 고도화**
+  - 스크롤 다운 시 네비바 자동 숨김 (Framer Motion slide up)
+  - 스크롤 업 시 재등장 + backdrop-blur + 반투명 배경 + 그림자
+  - 상단 여백 축소 (모바일 py-3, 스크롤 시 py-2.5)
+  - 로고 크기 스크롤 시 축소 애니메이션
+  - 언어 전환 버튼을 햄버거 메뉴 옆으로 이동 (모바일)
+  - 햄버거/X 아이콘 회전 전환 애니메이션
+  - 활성 링크 금색 하이라이트 + 하단 인디케이터
+  - 모바일 메뉴 패널 디자인 개선 (슬라이드 인, 순차 등장)
+- **8개 페이지 generateMetadata**: Supabase → JSON SEO 조회 우선, 번역 폴백
+- **middleware.ts**: `/admin` 경로 i18n 처리 제외
+
+### New Files
+```
+src/data/seo-settings.json          # SEO 데이터 저장소 (8페이지 x 7언어)
+src/lib/seo.ts                      # SEO 헬퍼 함수 (read/write/getForPage)
+src/app/api/seo/route.ts            # SEO API (GET/PUT)
+src/app/(admin)/admin/layout.tsx    # 관리자 레이아웃 (noindex)
+src/app/(admin)/admin/page.tsx      # SEO 관리 UI
+```
+
+---
+
 ## [1.1.0] - 2026-02-11
 
 ### Added
@@ -161,6 +197,8 @@ src/components/vision/VisionProcess.tsx
 
 ### Next Steps
 - [x] Implement i18n language pack (multi-language support) ✅ 7개 언어 완료
-- [ ] Additional feature development
+- [x] SEO 관리 시스템 ✅ 8페이지 x 7언어
+- [x] Navbar 모바일 UX 고도화 ✅
 - [ ] Performance optimization
 - [ ] Cross-browser testing
+- [ ] Production deployment

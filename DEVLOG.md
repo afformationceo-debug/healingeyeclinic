@@ -1,5 +1,72 @@
 # 힐링안과 개발 일지
 
+## 2026-02-11 (화) - SEO 관리 시스템 + Navbar 고도화
+
+### 📋 작업 개요
+해외 타겟용 SEO 관리 시스템 구축 및 모바일 네비게이션 UX 개선
+
+---
+
+### ✅ 완료된 작업
+
+#### 1. **SEO 관리 시스템** 🔍
+- JSON 파일 기반 SEO 데이터 저장 (Supabase 미사용, 경량화)
+- 8개 페이지 x 7개 언어 = 56개 SEO 설정 관리
+- `/admin` 관리자 페이지:
+  - 페이지 선택 드롭다운 + 언어 탭 전환
+  - Title tag, Meta description, OG tags, Keywords, Canonical, Robots, JSON-LD 편집
+  - Google 검색결과 미리보기 (실시간)
+  - 소셜 미디어 카드 미리보기
+  - 언어별 설정 완료 상태 뱃지
+  - 저장 시 toast 피드백
+- API Route: `GET /api/seo?page=home&locale=ko`, `PUT /api/seo`
+- 헬퍼 함수: `getSeoForPage(pageKey, locale)` - DB 우선, 번역 JSON 폴백
+- 8개 페이지 `generateMetadata()` 수정 완료
+
+#### 2. **Navbar 모바일 UX 고도화** 📱
+- Framer Motion `useScroll` + `useMotionValueEvent` 기반 3단계 스크롤 감지
+- 스크롤 다운 → 네비바 숨김, 스크롤 업 → 재등장 (backdrop-blur)
+- 상단 여백 축소 (모바일 py-3 → 스크롤 시 py-2.5)
+- 언어 전환 버튼 햄버거 옆으로 이동 (모바일)
+- 햄버거/X 아이콘 회전 애니메이션
+- 로고 크기 축소 애니메이션
+- 활성 링크 금색 하이라이트
+- 모바일 메뉴 패널 리디자인
+
+#### 3. **기타 수정**
+- middleware.ts: `/admin` 경로 i18n 제외
+- blog/page.tsx: `generateMetadata` 신규 추가
+
+### 📁 신규 파일 (5개)
+```
+src/data/seo-settings.json
+src/lib/seo.ts
+src/app/api/seo/route.ts
+src/app/(admin)/admin/layout.tsx
+src/app/(admin)/admin/page.tsx
+```
+
+### 📁 수정 파일 (10개)
+```
+middleware.ts
+src/app/[locale]/page.tsx
+src/app/[locale]/about/page.tsx
+src/app/[locale]/blog/page.tsx
+src/app/[locale]/cataract/page.tsx
+src/app/[locale]/center/page.tsx
+src/app/[locale]/community/page.tsx
+src/app/[locale]/insight/page.tsx
+src/app/[locale]/vision/page.tsx
+src/components/layout/Navbar.tsx
+```
+
+### 🔑 핵심 결정
+- Supabase 미사용 → JSON 파일 기반 (운영 단순화)
+- 관리자 인증 미적용 → URL 접근 제어 (최소 구현)
+- Route Group `(admin)` 사용 → i18n과 분리
+
+---
+
 ## 2026-02-11 (화) - 다국어 완성 + 코드 감사 버그 수정
 
 ### 📋 작업 개요

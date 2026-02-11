@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useMotionValueEvent, useScroll } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Button } from "@/components/ui/button";
@@ -23,69 +23,130 @@ export default function Navbar() {
     const t = useTranslations('Navigation');
     const tCommon = useTranslations('Common');
     const locale = useLocale();
-    const [isScrolled, setIsScrolled] = useState(false);
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    // Pathname used only for active state if needed, but not for locale
     const pathname = usePathname();
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    // Scroll state: "top" | "scrolled-up" | "scrolled-down"
+    const [scrollState, setScrollState] = useState<'top' | 'up' | 'down'>('top');
+    const lastScrollY = useRef(0);
+    const { scrollY } = useScroll();
+
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        const prev = lastScrollY.current;
+        if (latest < 30) {
+            setScrollState('top');
+        } else if (latest < prev) {
+            setScrollState('up');
+        } else if (latest > prev + 5) {
+            setScrollState('down');
+        }
+        lastScrollY.current = latest;
+    });
+
+    const isScrolled = scrollState !== 'top';
+    const isHidden = scrollState === 'down' && !isMobileMenuOpen;
+
+    // Active link detection
+    const isActive = (href: string) => {
+        return pathname === `/${locale}${href}`;
+    };
 
     return (
         <>
-            <header
+            <motion.header
+                animate={{
+                    y: isHidden ? '-100%' : '0%',
+                }}
+                transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                 className={cn(
-                    "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+                    "fixed top-0 left-0 right-0 z-50 transition-all duration-400",
                     isScrolled
-                        ? "bg-background/80 backdrop-blur-md border-b border-white/5 py-3 sm:py-4"
-                        : "bg-transparent py-5 sm:py-6"
+                        ? "bg-background/70 backdrop-blur-xl border-b border-white/[0.06] shadow-[0_1px_30px_rgba(0,0,0,0.5)]"
+                        : "bg-transparent"
                 )}
             >
-                <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
+                <div className={cn(
+                    "container mx-auto px-4 sm:px-6 flex items-center justify-between transition-all duration-400",
+                    isScrolled ? "py-2.5 sm:py-3" : "py-3 sm:py-5"
+                )}>
                     {/* Logo */}
                     <Link href={`/${locale}`} className="relative z-50">
-                        <span className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white">
+                        <motion.span
+                            className="font-serif font-bold tracking-tight text-white block"
+                            animate={{
+                                fontSize: isScrolled ? '1.125rem' : '1.25rem',
+                            }}
+                            transition={{ duration: 0.3 }}
+                        >
                             Healing Eye<span className="text-primary">.</span>
-                        </span>
+                        </motion.span>
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-8">
+                    <nav className="hidden md:flex items-center gap-7 lg:gap-8">
                         {navItems.map((item) => (
                             <Link
                                 key={item.key}
                                 href={`/${locale}${item.href}`}
-                                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
+                                className={cn(
+                                    "text-sm font-medium transition-colors relative group py-1",
+                                    isActive(item.href)
+                                        ? "text-primary"
+                                        : "text-foreground/70 hover:text-white"
+                                )}
                             >
                                 {t(item.key)}
-                                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-primary transition-all duration-300 group-hover:w-full" />
+                                <span className={cn(
+                                    "absolute -bottom-0.5 left-0 h-[1.5px] bg-primary transition-all duration-300 rounded-full",
+                                    isActive(item.href) ? "w-full" : "w-0 group-hover:w-full"
+                                )} />
                             </Link>
                         ))}
                     </nav>
 
-                    {/* Right Actions */}
-                    <div className="hidden md:flex items-center gap-4">
+                    {/* Desktop Right Actions */}
+                    <div className="hidden md:flex items-center gap-3">
                         <LanguageSwitcher />
                         <Button size="sm" className="hidden lg:inline-flex">
                             {tCommon('buttons.book')}
                         </Button>
                     </div>
 
-                    {/* Mobile Toggle */}
-                    <button
-                        className="md:hidden z-50 text-white p-2 -mr-2 active:scale-95 transition-transform"
-                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        aria-label="Toggle menu"
-                    >
-                        {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-                    </button>
+                    {/* Mobile Right Actions: Language + Hamburger */}
+                    <div className="flex md:hidden items-center gap-1.5 z-50">
+                        <LanguageSwitcher />
+                        <button
+                            className="text-white p-2 active:scale-90 transition-transform rounded-xl hover:bg-white/5"
+                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                            aria-label="Toggle menu"
+                        >
+                            <AnimatePresence mode="wait">
+                                {isMobileMenuOpen ? (
+                                    <motion.div
+                                        key="close"
+                                        initial={{ rotate: -90, opacity: 0 }}
+                                        animate={{ rotate: 0, opacity: 1 }}
+                                        exit={{ rotate: 90, opacity: 0 }}
+                                        transition={{ duration: 0.2 }}
+                                    >
+                                        <X size={24} />
+                                    </motion.div>
+                                ) : (
+                                    <motion.div
+                                        key="menu"
+                                        initial={{ rotate: 90, opacity: 0 }}
+                                        animate={{ rotate: 0, opacity: 1 }}
+                                        exit={{ rotate: -90, opacity: 0 }}
+                                        transition={{ duration: 0.2 }}
+                                    >
+                                        <Menu size={24} />
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </button>
+                    </div>
                 </div>
-            </header>
+            </motion.header>
 
             {/* Mobile Menu Overlay */}
             <AnimatePresence>
@@ -96,42 +157,61 @@ export default function Navbar() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
+                            transition={{ duration: 0.25 }}
                             onClick={() => setIsMobileMenuOpen(false)}
-                            className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm md:hidden"
+                            className="fixed inset-0 z-40 bg-black/70 backdrop-blur-md md:hidden"
                         />
-                        {/* Menu Content */}
+                        {/* Menu Panel */}
                         <motion.div
                             initial={{ opacity: 0, x: '100%' }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: '100%' }}
-                            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                            className="fixed top-0 right-0 bottom-0 z-50 w-[85vw] max-w-sm bg-background border-l border-white/10 md:hidden overflow-y-auto"
+                            transition={{ type: "spring", damping: 28, stiffness: 220 }}
+                            className="fixed top-0 right-0 bottom-0 z-50 w-[80vw] max-w-[320px] bg-[#0a0a0a]/95 backdrop-blur-2xl border-l border-white/[0.06] md:hidden overflow-y-auto"
                         >
-                            <div className="px-6 py-20">
-                                <nav className="flex flex-col gap-8">
+                            <div className="px-6 pt-20 pb-10 min-h-full flex flex-col">
+                                <nav className="flex flex-col gap-1 flex-1">
                                     {navItems.map((item, index) => (
                                         <motion.div
                                             key={item.key}
-                                            initial={{ opacity: 0, x: 20 }}
+                                            initial={{ opacity: 0, x: 30 }}
                                             animate={{ opacity: 1, x: 0 }}
-                                            transition={{ delay: index * 0.05 }}
+                                            transition={{ delay: 0.05 + index * 0.04, duration: 0.3 }}
                                         >
                                             <Link
                                                 href={`/${locale}${item.href}`}
                                                 onClick={() => setIsMobileMenuOpen(false)}
-                                                className="block text-2xl font-serif font-medium text-foreground hover:text-primary active:text-primary py-2 transition-colors"
+                                                className={cn(
+                                                    "block text-xl font-medium py-3.5 transition-colors border-b border-white/[0.04]",
+                                                    isActive(item.href)
+                                                        ? "text-primary"
+                                                        : "text-white/80 active:text-primary"
+                                                )}
                                             >
-                                                {t(item.key)}
+                                                <span className="flex items-center justify-between">
+                                                    {t(item.key)}
+                                                    {isActive(item.href) && (
+                                                        <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                                                    )}
+                                                </span>
                                             </Link>
                                         </motion.div>
                                     ))}
-                                    <div className="h-px bg-white/10 my-4" />
-                                    <div className="flex justify-between items-center py-2">
-                                        <span className="text-sm text-muted-foreground">{tCommon('labels.language')}</span>
-                                        <LanguageSwitcher />
-                                    </div>
-                                    <Button className="w-full mt-4 h-12 text-base">{tCommon('buttons.book')}</Button>
                                 </nav>
+
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.35 }}
+                                    className="mt-auto pt-6"
+                                >
+                                    <Button className="w-full h-12 text-base rounded-xl">
+                                        {tCommon('buttons.book')}
+                                    </Button>
+                                    <p className="text-[10px] text-white/20 text-center mt-4">
+                                        Healing Eye Clinic
+                                    </p>
+                                </motion.div>
                             </div>
                         </motion.div>
                     </>
